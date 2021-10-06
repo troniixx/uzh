@@ -1,12 +1,19 @@
-import math
-
 # You are completely free to change this variables to check your algorithm.
-num1 = 5
-num2 = 28
+num1 = 0
+num2 = 1
 
 
 # Function to check whether two numbers are friendly pairs or not.
 def isFriendlyPair():
+    if num1 == num2:
+        return False
+
+    if num1 <= 0:
+        return False
+
+    if num2 <= 0:
+        return False
+
     sum1 = 0
     sum2 = 0
 
