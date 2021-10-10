@@ -13,6 +13,17 @@ def build_string_pyramid():
     if h == 0:
         s = ""
 
+        # untere hälfte
+    for i in range(0, h):
+        c = 1
+        print(c, end=" ")
+        for j in range(h - i - 1, 0, -1):
+            print('*', end=" ")
+            c = c + 1
+            print(c, end=" ")
+        print("\n")
+
+    return s
 
     # Enter your code here
     # use nested loops and the range() function
@@ -28,6 +39,7 @@ def build_string_pyramid():
         print(" ")
 """
 
+"""
 #obere hälfte
     for i in range(0, h):
         e = 1
@@ -37,22 +49,11 @@ def build_string_pyramid():
             e = e + 1
             print(e, end = " ")
         print("\n")
-
-
-#untere hälfte
-    for i in range(0, h):
-        c = 1
-        print(c, end=" ")
-        for j in range(h - i - 1, 0, -1):
-            print('*', end=" ")
-            c = c + 1
-            print(c, end=" ")
-        print("\n")
+"""
 
 
     # You don't need to change the following line.
-    # It simply returns the string created above.
-    return s
+    # It simply returns the string created above
 
 # The following line calls the function and prints the return
 # value to the Console. This way you can check what it does.
