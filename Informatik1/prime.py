@@ -46,4 +46,5 @@ def is_prime(n):
 # value to the Console. This way you can check what it does.
 # However, we encourage you to write tests, because then you
 # can easily test many different values on every "Test & Run"!
-print(is_prime(1234321))
+q = int(input("Enter a number: "))
+print(is_prime(q))
