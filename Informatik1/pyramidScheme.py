@@ -13,6 +13,9 @@ def build_string_pyramid():
     if h == 0:
         s = ""
 
+    #obere haelfte
+
+
         # untere hälfte
     for i in range(0, h):
         c = 1
@@ -24,6 +27,8 @@ def build_string_pyramid():
         print("\n")
 
     return s
+
+
 
     # Enter your code here
     # use nested loops and the range() function

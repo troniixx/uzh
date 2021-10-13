@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import os
+#import os
 
 # This signature is required for the automated grading to work.
 # Do not rename the function or change its list of parameters!

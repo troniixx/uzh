@@ -18,17 +18,13 @@ def is_valid():
     validity1 = True
     validity2 = False
 
-    if not any(char.isdigit() for char in pwd):
-        validity1 = False
+    if not any(char.isdigit() for char in pwd): validity1 = False
 
-    if not any(char.islower() for char in pwd):
-        validity1 = False
+    if not any(char.islower() for char in pwd): validity1 = False
 
-    if not any(char.isupper() for char in pwd):
-        validity1 = False
+    if not any(char.isupper() for char in pwd): validity1 = False
 
-    if not any(char in special for char in pwd):
-        validity1 = False
+    if not any(char in special for char in pwd): validity1 = False
 
     # You don't need to change the following line.
     # return validity

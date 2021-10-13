@@ -1,11 +1,17 @@
-import math
-# You are completely free to change this variables to check your algorithm.
-num1 = 14326
-num2 = 0
+#You are completely free to change this variables to check your algorithm.
+num1 = 6
+num2 = 28
 
-
-# Function to check whether two numbers are friendly pairs or not.
 def isFriendlyPair():
+    sum1 = 0
+    sum2 = 0
+    validity = True
+    if type(num1) != int:
+        return "Invalid"
+
+    if type(num2) != int:
+        return "Invalid"
+
     if num1 == num2:
         return "Invalid"
 
@@ -15,35 +21,18 @@ def isFriendlyPair():
     if num2 <= 0:
         return "Invalid"
 
-    sum1 = 1 + num1  # sum of divisor of n
-    sum2 = 1 + num2 # sum of divisor of m
-    i = 2
-    j = 2
-    # finding divisor
-    while i <= math.sqrt(num1):
-        if num1 % i == i:
-            if num1 // i == i:
-                sum1 += i
+    for i in range(1,num1):
+        if(num1 % i == 0):
+            sum1 = sum1 + i
 
-            else:
-                sum1 += i + num1 // i
+    for i in range(1,num2):
+        if(num2 % i == 0):
+            sum2 = sum2 + i
 
-        i = i + 1
+    if(sum1/sum2 == num1/ num2):
 
-    while j <= math.sqrt(num2):
-        if num2 % j == j:
-            if num2 // j == j:
-                sum2 += j
-
-            else:
-                sum2 += j + sum2 // j
-
-        j = j + 1
-    if num1 / num2 == sum1 / sum2:
         return True
     else:
         return False
 
-
-# This line prints your method's return so that you can check your output.
 print(isFriendlyPair())

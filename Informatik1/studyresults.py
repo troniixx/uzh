@@ -5,9 +5,19 @@ import os
 # This signature is required for the automated grading to work.
 # Do not rename the function or change its list of parameters!
 def get_average_grade(path):
-    if not os.path.exists(path):
-        return None # what to do?
 
+    avg = 0
+
+    with open("my_grades.txt") as f:
+        lines = f.readlines()
+
+    if not os.path.exists(path):
+        return None  # what to do?
+
+    for lines in f:
+        if ":" in lines:
+
+    f.close()
 
     return -1
 
