@@ -14,10 +14,9 @@ def get_average_grade(path):
     if not os.path.exists(path):
         return None  # what to do?
 
-    for lines in f:
-        if ":" in lines:
-
-    f.close()
+    while lines != "":
+        print(lines, end = " ")
+        lines = f.readlines()
 
     return -1
 
