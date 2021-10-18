@@ -1,6 +1,3 @@
-# first semesters
-Informatik 1:5.75
-Informatik 2: 5.5
-
-# later
-Advanced Software Engineering : 6.00
+info1:3.25
+bwl: 6.0
+mathe: 3
