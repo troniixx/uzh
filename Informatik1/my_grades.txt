@@ -1,3 +1,4 @@
 info1:3.25
-bwl: 6.0
-mathe: 3
+bwl:
+mathe: 
+vwl: 

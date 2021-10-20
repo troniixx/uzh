@@ -41,6 +41,7 @@ def gcd(a, b):
 # value to the Console. This way you can check what it does.
 # However, we encourage you to write tests, because then you
 # can easily test many different values on every "Test & Run"!
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-print(f"greatest common divisor of {a} and {b} is = {gcd(a, b)}")
+while True:
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+    print(f"greatest common divisor of {a} and {b} is = {gcd(a, b)}")

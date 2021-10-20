@@ -6,6 +6,9 @@
 		{
 			"name": "uzh",
 			"path": ".."
+		},
+		{
+			"path": "../../../../Downloads/Data processing"
 		}
 	],
 	"settings": {}
