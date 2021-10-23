@@ -1,9 +1,6 @@
 {
 	"folders": [
 		{
-			"path": "../../../../vscode/Java/Algos"
-		},
-		{
 			"name": "uzh",
 			"path": ".."
 		}
