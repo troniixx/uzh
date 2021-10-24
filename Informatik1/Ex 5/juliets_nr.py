@@ -52,11 +52,11 @@ def get_possible_nrs(n):
     x = 10 - len(n)
 
     for i in range(x):
-        for d in range(9):
-            n += str(d)
+        for i in range(9):
+            n += str(i)
             if len(n) == 10:
                 all_possible_numbers.append(n)
-    
+        print(all_possible_numbers)
 
     # Don't forget to return your result
 
