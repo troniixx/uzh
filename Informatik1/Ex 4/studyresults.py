@@ -13,7 +13,7 @@ def get_average_grade(path):
     list_me = []
     list_us = []
 
-    f = open("/Users/merterol/Desktop/uzhpython/uzh/Informatik1/my_grades.txt")
+    f = open("/Users/merterol/Desktop/uzhpython/uzh/Informatik1/Ex 4/my_grades.txt")
 
     #get all values after : from txt file
     lines = f.readlines()
@@ -61,4 +61,4 @@ def get_average_grade(path):
 # value to the Console. This way you can check what it does.
 # However, we encourage you to write tests, because then you
 # can easily test many different values on every "Test & Run"!
-print(get_average_grade("/Users/merterol/Desktop/uzhpython/uzh/Informatik1/my_grades.txt"))
+print(get_average_grade("/Users/merterol/Desktop/uzhpython/uzh/Informatik1/Ex 4/my_grades.txt"))
