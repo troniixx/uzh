@@ -1,4 +1,8 @@
 info1:3.25
-bwl:
-mathe: 
-vwl: 
+bwl: 2
+mathe: 4
+vwl: 6
+info2: 4.25
+sport: 5.75
+philosophie: 3.75
+religion: 1.25
