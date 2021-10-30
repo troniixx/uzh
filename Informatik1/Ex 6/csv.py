@@ -10,6 +10,8 @@ def read_csv(path):
         if line:
             tuples.append(tuple(line.strip().split(",")))
 
+
+    file.close()
     return tuples        
 
 
