@@ -1,25 +1,3 @@
-""""
-your job in this task is to help Romeo by writing a program that produces all possibilities of phone numbers
-and provides him a list of possble numbers that are linked on Whatsapp. For this you may adhere to the following specification:
-
-Valid numbers have 10 digits in total and start with 07
-
-get_possible_nrs(n) accepts a number string n where one digit is missing
-n may be assumed to start with 07 and then contain 7 further digits (in total 9, i.e. one missing digit).
-
-get_possible_nrs(n) returns a list of whatsapp number strings that might belong to juliet.
-
-A number that may belong to juliet contains exactly one digit more than n (10 digits).
-
-The single missing digit may be assumed to be at any index after the starting 07 within n.
-
-Make sure your returned list does not contain duplicates.
-
-wa_nrs is a list of numbers that are registered with Whatsapp.
-
-Compare your generated numbers with the numbers in wa_nrs to return only those from your function which exist in Whatsapp.
-"""
-
 #!/usr/bin/env python3
 
 # use this list of presumably known Whatsapp numbers to check
@@ -33,37 +11,27 @@ wa_nrs = ["0781111119", "0792653913", "0797763139", "0792793193", "0781139022", 
 def get_possible_nrs(n):
     # This function accepts a string n for juliets number where one digit is missing.
     # and should return a list of all whatsapp numbers that might belong to juliet 
-    all_possible_numbers = []
     possible_nrs_for_juliet = []
-    digits = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+    x = 10
 
-    #constraints
-    if len(n) < 2:
-        return False
+    for i in range(len(n)):
+        for y in range((x)):
+            y = str(y)
+            number_complete = n[:i] + y + n[i:]
 
-    if len(n) > 10:
-        return False
+            if i == max(range(len(n))):
+                number_complete = n[:i+1] + y
 
-    for char in range(len(n)):
-        if n[char] not in digits:
-            return False
+            possible_nrs_for_juliet.append(number_complete)
 
-    #get the number of digits missing from number
-    x = 10 - len(n)
+    list1 = set(wa_nrs)
+    intersect = list1.intersection(possible_nrs_for_juliet)
+    intersect_list = list(intersect)
+    n = intersect_list
 
-    for i in range(x):
-        for i in range(9):
-            n += str(i)
-            if len(n) == 10:
-                all_possible_numbers.append(n)
-        print(all_possible_numbers)
-
+    return n
     # Don't forget to return your result
 
 # For this particular number, the function should find the
 # last element in wa_nrs
 print(get_possible_nrs("076432165"))
-
-#testing
-print(get_possible_nrs("075"))
-print()

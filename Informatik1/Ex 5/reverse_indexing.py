@@ -4,34 +4,30 @@ from collections import defaultdict
 dataset = [
     "Hello world",
     "This is the WORLD",
-    "hello again"] 
+    "hello again"
+] 
 
 def reverse_index(dataset):
-    
+
     index_dictionary = {}
 
-    #lower casing the whole set
-    lower_case_dataset = []
-    for element in dataset:
-        lower_case_dataset.append(element.lower())
-    print(lower_case_dataset)
+    dataset2 = [d.lower().split(" ") for d in dataset]
 
-    #new list with each word seperated
-    seperated = []
-    for elements in lower_case_dataset:
-        seperated.append(elements.split(' '))
-    print(seperated)
+    words = []
+    for line in dataset2:
+        for word in line:
+            if word not in words:
+                words.append(word)
+    
+    index_dictionary = {word: [] for word in words}
 
-    #add to dictionary
-    for sublist in seperated:
-        pass
-            
-        
-
-
-
-    # don't forget to return your resulting dictionary
+    for word in words:
+        for index, line in enumerate(dataset2):
+            if word in line:
+                index_dictionary[word].append(index)
+    
     return index_dictionary
+    # don't forget to return your resulting dictionary
 
 # You can see the output of your function here
 print(reverse_index(dataset))
