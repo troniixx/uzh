@@ -9,11 +9,14 @@ def read_csv(path):
     for line in file:
         if line:
             tuples.append(tuple(line.strip().split(",")))
+        else:
+            del line
 
+    while ("",) in tuples:
+        tuples.remove(("",))
 
     file.close()
-    return tuples        
-
+    return tuples
 
 # The following line calls the function and prints the return
 # value to the Console. This way you can check what it does.
