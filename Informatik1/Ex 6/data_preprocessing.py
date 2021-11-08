@@ -1,7 +1,10 @@
+import datetime
 #!/usr/bin/env python3
 
 # This signature is required for the automated grading to work.
 # Do not rename the function or change its list of parameters!
+begin_time = datetime.datetime.now()
+
 def preprocess(records):
     titanic1 = []
     titanic_final = []
@@ -83,4 +86,6 @@ titanic = [
             ('Dead', '4', 'Lennon Mr. Denis', 'male', '13', '15.5')]
 
 print(preprocess(titanic))
+
+print(datetime.datetime.now() - begin_time)
 

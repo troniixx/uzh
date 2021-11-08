@@ -5,6 +5,33 @@
 def gender_class_rates(dataset):
     # implement this function
     # the function might have other useful parameters, explore `help(round)`
+    final = []
+    male_values = ["Male", "male", "M", "m"]
+    female_values = ["Female", "female", "F", "f"]
+    male_first = []
+    female_first = []
+    male_second = []
+    female_second = []
+    male_third = []
+    female_third = []
+
+    for element in dataset:
+        if element[1] == 1 and element[3] in male_values:
+            element.append(male_first)
+        elif element[1] == 1 and element[3] in female_values:
+            element.append(female_first)
+        elif element[1] == 2 and element[3] in male_values:
+            element.append(male_second)
+        elif element[1] == 2 and element[3] in female_values:
+            element.append(female_second)
+        elif element[1] == 3 and element[3] in male_values:
+            element.append(male_third)
+        elif element[1] == 3 and element[3] in female_values:
+            element.append(female_third)
+        else:
+            continue
+
+
     round(1.2345)
     pass
 
