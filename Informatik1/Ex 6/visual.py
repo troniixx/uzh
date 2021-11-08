@@ -3,54 +3,58 @@
 # This signature is required for the automated grading to work.
 # Do not rename the function or change its list of parameters!
 def visualize(records):
-    first = []
-    second = []
-    third = []
-    alive_values = ["Yes", "yes", "Survived", "survived", "True", "true", "Survived=alive", "Alive", "alive", "T", "t"]
-    alive_first = 0
-    alive_second = 0
-    alive_third = 0
-    number_of_stars = 0
-    
-    for element in records[1]:
-        if element[1] == 1:
-            first.append(element)
-        elif element[1] == 2:
-            second.append(element)
-        elif element[1] == 3:
-            third.append(element)
-        else:
-            continue
+    pclass_1 = 0
+    pclass_1_alive = 0
+    pclass_2 = 0
+    pclass_2_alive = 0
+    pclass_3 = 0
+    pclass_3_alive = 0
 
-    #calculate
-    for tuple in first:
-        if tuple[0] in alive_values:
-            alive_first += 1
-    
-    for tuple in second:
-        if tuple[0] in alive_values:
-            alive_second += 1
+    dataset = records[1]
 
-    for tuple in second:
-        if tuple[0] in alive_values:
-            alive_third += 1
-    
-    #visual for first class
-    print("== 1st Class ==\n")
-    print("Total |", "\n")
-    print("Alive |", "\n")
+    for p in dataset:
+        pclass = p[1]
+        alive = p[0]
 
-    #visual for second class
-    print("== 2nd Class ==\n")
-    print("Total |", "\n")
-    print("Alive |", "\n")
+        #first class counter
+        if pclass == 1:
+            pclass_1 += 1
+            if alive == True:
+                pclass_1_alive += 1
+        #second class counter
+        elif pclass == 2:
+            pclass_2 += 1
+            if alive == True:
+                pclass_2_alive += 1
+        #third class counter
+        elif pclass == 3:
+            pclass_3 += 1
+            if alive == True:
+                pclass_3_alive += 1
 
-    #visual for third class
-    print("== 3rd Class ==\n")
-    print("Total |", "\n")
-    print("Alive |", "\n")
+    #percentage of passengers in each class
+    totpas = len(dataset)
+    tot_1 = round((pclass_1/totpas * 100), 1)
+    tot_2 = round((pclass_2/totpas * 100), 1)
+    tot_3 = round((pclass_3/totpas * 100), 1)
 
-    print(first, "\n", second, "\n", third)
+    #percentage of each passanger that survived in each class
+    surv_1 = round((pclass_1_alive/pclass_1 * 100), 1)
+    surv_2 = round((pclass_2_alive/pclass_2 * 100), 1)
+    surv_3 = round((pclass_3_alive/pclass_3 * 100), 1)
+
+    #building the visual step by step
+    string = "== 1st Class ==\n"
+    string += "Total |" + (round(tot_1/5)) * "*" + str((20- round(tot_1/5))* " ") + "| " + str(tot_1) + "%\n"
+    string += "Alive |" + (round(surv_1/5)) * "*" + str((20-round(surv_1/5)) * " ") + "| " + str(surv_1) + "%\n"
+    string += "== 2nd Class ==\n"
+    string += "Total |" + (round(tot_2/5)) * "*" + str((20- round(tot_2/5))* " ") + "| " + str(tot_2) + "%\n"
+    string += "Alive |" + (round(surv_2/5)) * "*" + str((20-round(surv_2/5)) * " ") + "| " + str(surv_2) + "%\n"
+    string += "== 3rd Class ==\n"
+    string += "Total |" + (round(tot_3/5)) * "*" + str((20- round(tot_3/5))* " ") + "| " + str(tot_3) + "%\n"
+    string += "Alive |" + (round(surv_3/5)) * "*" + str((20-round(surv_3/5)) * " ") + "| " + str(surv_3) + "%\n"
+
+    return string
 
 # The following line calls the function and prints the return
 # value to the Console. This way you can check what it does.
