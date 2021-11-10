@@ -12,14 +12,27 @@ char_end_global = 65
 # This signature is required for the automated grading to work.
 # You must not rename the function or change its list of parameters.
 def fuzzer(min_length, max_length, char_start, char_end):
-    pass
+    sol = ""
+    r = random.randint(min_length, max_length+1)
+    
+    while len(sol) != r:
+        x = random.randint(char_start, char_end+1)
+        y = chr(x)
+        sol = sol + y
+
+    return sol
 
 
 # This signature is required for the automated grading to work.
 # You must not rename the function or change its list of parameters.
 def calculate_factorial(inp):
-    pass
+    if inp == None:
+        return None
+    
+    if int(inp) > 10:
+        raise ValueError("ValueError: number too large")
 
+    pass
 # This signature is required for the automated grading to work.
 # You must not rename the function or change its list of parameters.
 def run(trials):
@@ -31,5 +44,7 @@ def run(trials):
 
 # The following line calls the function run and prints the return
 # value to the Console.
-print(run(10))
+if __name__ == '__main__':
+    print(fuzzer(4, 10, 43, 57))
+    print(run(10))
 

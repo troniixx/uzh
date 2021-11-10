@@ -11,4 +11,4 @@ menu = {
 # --> 37.5 = (2*4.00 + 3*1.50 - 2*1.50 + 8*4.00 - 1*4.00)
 # --> 2 waters and one beer are free in this order
 def bill(order):
-    
+    parse_qsl(qs, keep_blank_values=False, strict_parsing=False)
