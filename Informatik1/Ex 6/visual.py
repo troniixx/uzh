@@ -60,12 +60,13 @@ def visualize(records):
 # value to the Console. This way you can check what it does.
 # However, we encourage you to write tests, because then you
 # can easily test many different values on every "Test & Run"!
-print(visualize((
-    ('Survived', 'Pclass', 'Name', 'Gender', 'Age', 'Fare'),
-    [
-        (True, 1, 'Cumings Mrs. John Bradley (Florence Briggs Thayer)',
-        'female', 38, 71.2833),
-        (True, 2, 'Flunky Mr Hazelnut', 'female', 18, 51.2),
-        (False, 3, 'Heikkinen Miss. Laina', 'female', 26, 7.925)
-    ]
-)))
+if __name__ == '__main__':
+    print(visualize((
+        ('Survived', 'Pclass', 'Name', 'Gender', 'Age', 'Fare'),
+        [
+            (True, 1, 'Cumings Mrs. John Bradley (Florence Briggs Thayer)',
+            'female', 38, 71.2833),
+            (True, 2, 'Flunky Mr Hazelnut', 'female', 18, 51.2),
+            (False, 3, 'Heikkinen Miss. Laina', 'female', 26, 7.925)
+        ]
+    )))

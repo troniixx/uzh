@@ -39,9 +39,10 @@ def merge(a, b):
 # value to the Console. This way you can check what it does.
 # However, we encourage you to write tests, because then you
 # can easily test many different values on every "Test & Run"!
-print("a = b = ", merge([0, 1, 2], [5, 6, 7]))
-print("a > b = ", merge([2, 1, 0], [5, 6]))
-print("a < b = ", merge([2, 1], [5, 6, 7]))
-print("a empty = ", merge([], [0, 1]))
-print("b empty = ", merge([0, 1], []))
+if __name__ == '__main__':
+    print("a = b = ", merge([0, 1, 2], [5, 6, 7]))
+    print("a > b = ", merge([2, 1, 0], [5, 6]))
+    print("a < b = ", merge([2, 1], [5, 6, 7]))
+    print("a empty = ", merge([], [0, 1]))
+    print("b empty = ", merge([0, 1], []))
 

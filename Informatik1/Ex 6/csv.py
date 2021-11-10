@@ -22,5 +22,6 @@ def read_csv(path):
 # value to the Console. This way you can check what it does.
 # However, we encourage you to write tests, because then you
 # can easily test many different values on every "Test & Run"!
-print(read_csv("/Users/merterol/Desktop/uzhpython/uzh/Informatik1/Ex 6/task1.csv"))
-#print(read_csv("public/example.csv"))
+if __name__ == '__main__':
+    print(read_csv("/Users/merterol/Desktop/uzhpython/uzh/Informatik1/Ex 6/task1.csv"))
+    print(read_csv("public/example.csv"))  

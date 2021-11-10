@@ -1,5 +1,5 @@
 def sum(a, b):
-    if b == Type:
+    if b == None:
         return a + 1
     else:
         return a + b 
