@@ -28,9 +28,9 @@ def fuzzer(min_length, max_length, char_start, char_end):
 def calculate_factorial(inp):
     if inp == None:
         return None
-    
-    if int(inp) > 10:
-        raise ValueError("ValueError: number too large")
+    try:int(inp)
+        if int(inp) > 10:
+            raise ValueError("ValueError: number too large")
 
     pass
 # This signature is required for the automated grading to work.
