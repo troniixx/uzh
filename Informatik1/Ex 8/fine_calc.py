@@ -38,11 +38,11 @@ def fine_calculator(area, speed):
     return round(fine)
 
 if __name__ == '__main__':
-    #print(fine_calculator("motorway", 180))
-    #print(fine_calculator("expressway", 140))
-    #print(fine_calculator("urban", 80))
+    print(fine_calculator("motorway", 180))
+    print(fine_calculator("expressway", 140))
+    print(fine_calculator("urban", 80))
 
-    print(fine_calculator("boom", 130)) 
+    #print(fine_calculator("boom", 130)) 
     #print(fine_calculator(1, 130))
     #print(fine_calculator("motorway", "130"))
     #print(fine_calculator("motorway", -12))

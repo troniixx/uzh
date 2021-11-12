@@ -213,7 +213,7 @@ s1 = (
     "#   o ##",
     "   #####"
 )
-s2 = move(s1, "right")
+s2 = move(s1, "up")
 
 print("= New State =")
 print("\n".join(s2[0]))
