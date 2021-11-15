@@ -16,5 +16,5 @@ def count_keyword_occurrence(string, strings_to_be_searched):
     return counter
 
 if __name__ == '__main__':
-    print(count_keyword_occurrence("This is a short sentence which serves as an example.",["is", "short"]))
+    print(count_keyword_occurrence("This is a short sentence which serves as an example. He is a short man who likes to play short.", ["is", "short"]))
 

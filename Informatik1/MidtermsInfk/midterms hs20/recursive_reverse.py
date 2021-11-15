@@ -5,4 +5,4 @@ def recursive_reverse(s):
 
 
 if __name__ == '__main__':
-    print(recursive_reverse("hello daddy"))
+    print(recursive_reverse("hello"))
