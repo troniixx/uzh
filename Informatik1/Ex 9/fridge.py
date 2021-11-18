@@ -4,6 +4,7 @@ class Fridge:
 
     def __init__(self):
         self.storage = []
+        self.max = len(self.storage)
 
     def __str__(self):
             fridge_info = "Fridge information: "
@@ -14,7 +15,8 @@ class Fridge:
         pass
     
     def __iter__(self):
-        pass
+        self.fridge = 0
+        return self
 
     def __len__(self): #check how many items are in the fridge
         return len(self.storage)
@@ -57,17 +59,17 @@ class Fridge:
 if __name__ == '__main__':
     my_fridge = Fridge()
 
-    my_fridge.store((191115, "Cock"))
-    my_fridge.store((191128, "Balls"))
-    my_fridge.store((191010, "Cock"))
-    my_fridge.store((191112, "Piss"))
-    my_fridge.store((191130, "Cum"))
-    my_fridge.store((191128, "Shit"))
+    my_fridge.store((191115, "Butter"))
+    my_fridge.store((191128, "Milch"))
+    my_fridge.store((191010, "Sucuk"))
+    my_fridge.store((191112, "Brot"))
+    my_fridge.store((191130, "Milch"))
+    my_fridge.store((191128, "Döner"))
     #print(my_fridge.storage)
-    #my_fridge.take((191128, "Balls"))
+    #my_fridge.take((191128, "Milch"))
     #my_fridge.take((191128, "Ass"))
-    #print(my_fridge.storage)
+    print(my_fridge.storage)
     #print(my_fridge.take_closest())
     #print(my_fridge.take_before(191128))
-    print(my_fridge.find("Cock"))
+    #print(my_fridge.find("Cock"))
     
