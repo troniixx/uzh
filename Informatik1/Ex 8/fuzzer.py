@@ -15,6 +15,11 @@ def fuzzer(min_length, max_length, char_start, char_end):
     string = ""
     for a in range(random.randint(min_length,max_length)):
         string += chr(random.randint(char_start,char_end))
+        list = []
+        for i in string:
+            list.append(i)
+        random.shuffle(list)
+        string = ''.join(list)
     return string
 
 
