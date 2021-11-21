@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+__author__ = "Mert Erol"
 # You can freely adopt this number to print pyramids of different sizes
 h = 2
 

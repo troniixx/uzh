@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from unittest import TestCase
 from public.script import move
-
+__author__ = "Mert Erol"
 
 # You are supposed to develop the functionality in a test-driven way.
 # Think about relevant test cases and extend the following test suite

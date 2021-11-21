@@ -1,5 +1,7 @@
 s = "aB:cD"
 
+__author__ = "Mert Erol"
+
 print("Start string = " + s)
 
 a, b = s.split(":", 1)

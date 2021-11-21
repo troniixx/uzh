@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+__author__ = "Mert Erol"
 # This signature is required for the automated grading to work. 
 # Do not rename the function or change its list of parameters.
 def analyze(posts):

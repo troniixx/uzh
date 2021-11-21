@@ -1,27 +1,42 @@
-from public.item import Item
-from public.order import Order
+import item
+import order
 
+__author__ = "Mert Erol"
 
 class Restaurant:
 
+    global cash
+    cash = []
+
     def __init__(self, restaurant_name, menu_list):
-        pass
+        self.restaurant_name = restaurant_name
+        self.menu_list = menu_list
 
     def get_restaurant_name(self):
-        pass
+        return self.restaurant_name
 
     def get_menu_list(self):
-        pass
+        return self.menu_list
 
     def get_order_list(self):
-        pass
+        if len(order_list) == 0:
+            return "No order yet"
+        else: return order_list
 
     def set_order(self, item_list):
-        pass
+        o = Order()
+        o.__get_item_list(item_list)
+        o.get_bill_amount(item_list)
+        x = o.__calculate_bill_amount(item_list)
+
+        cash.append(x)
 
     def get_revenue(self):
-        pass
-
+        revenue = 0
+        for num in cash:
+            revenue += num
+        
+        return revenue
 
 # You can play around with your implementation in the body of the following 'if'.
 # The contained statements will be ignored while evaluating your solution.

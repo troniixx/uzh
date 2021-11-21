@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # "+", "-", "*", "/".
 # Must contain at least 2 lower case and 2 upper case characters, 2 digits, and 2 special chars.
-
+__author__ = "Mert Erol"
 pwd = "aA00++"
 
 

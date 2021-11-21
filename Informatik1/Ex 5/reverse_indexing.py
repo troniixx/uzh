@@ -1,5 +1,5 @@
 from collections import defaultdict
-
+__author__ = "Mert Erol"
 # Dataset contains data that will be reverse indexed
 dataset = [
     "Hello world",

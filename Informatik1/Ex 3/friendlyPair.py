@@ -1,4 +1,5 @@
 #You are completely free to change this variables to check your algorithm.
+__author__ = "Mert Erol"
 num1 = 6
 num2 = 28
 

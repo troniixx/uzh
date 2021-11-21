@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Implement this function
-#
+__author__ = "Mert Erol"
 # This signature is required for the automated grading to work.
 # You must not rename the function or change its list of parameters.
 def move(state, direction):

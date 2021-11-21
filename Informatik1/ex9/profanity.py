@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+__author__ = "Mert Erol"
 # The signatures of this class and its public methods are required for the automated grading to work. 
 # You must not change the names or the list of parameters. 
 # You may introduce private/protected utility methods though.
@@ -10,10 +10,14 @@ class ProfanityFilter:
         self.template = template
 
     def filter(self, msg):
-        pass
+        liste = msg.split(' ')
 
-    def __clean(self, word):
-        pass
+        for word in liste:
+            if word in self.keywords:
+                return word.replace(word, self.template)
+            
+            else: return None
+
 
 
 # You can play around with your implementation in the body of the following 'if'.

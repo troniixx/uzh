@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+__author__ = "Mert Erol"
 PATH = "/Users/merterol/Desktop/uzhpython/uzh/Informatik1/data process/titanic.csv"
 # This signature is required for the automated grading to work.
 def rundown(path):

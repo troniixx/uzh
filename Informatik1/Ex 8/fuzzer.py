@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import random
-
+__author__ = "Mert Erol"
 # These variables are required for the automatic grading to work, do not change
 # their names. You can change values of these variables.
 min_length_global = 1

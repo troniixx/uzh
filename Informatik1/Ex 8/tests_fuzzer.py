@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from unittest import TestCase
 from public.script import calculate_factorial
-
+__author__ = "Mert Erol"
 class MyTests(TestCase):
 
     # write here your tests for calculate_factorial

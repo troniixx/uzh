@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+__author__ = "Mert Erol"
 class Fridge:
 
     def __init__(self):
@@ -21,6 +21,12 @@ class Fridge:
     def __len__(self): #check how many items are in the fridge
         return len(self.storage)
 
+    def __iter__(self):
+        return iter(self.storage)
+
+    def __next__(self):
+        return next(iter(self.storage))
+
     def store(self, tup):
             self.storage.append(tup)
 
@@ -29,6 +35,8 @@ class Fridge:
         for item in sorted_storage:
             if item[1] == name:
                 return "The item " + str(name) + " with the earliest eat-by date is in index " + str(self.storage.index(item)) + "!"
+            else:
+                return None
         
         return sorted_storage
 
@@ -38,12 +46,15 @@ class Fridge:
         return x
     
     def take_before(self, date):
-        out = [item for item in self.storage if item[0] == date]
-        
         new_list = []
-        for item in self.storage:
-            if item not in out:
-                new_list.append(item)
+        out = [item for item in self.storage if item[0] == date]
+
+        if len(out) == 0:
+            return []
+        else:
+            for item in self.storage:
+                if item not in out:
+                    new_list.append(item)
 
         return new_list
 
@@ -53,23 +64,14 @@ class Fridge:
         else:
             self.storage.remove(name)
 
+        return name
+
     
 
 
 if __name__ == '__main__':
-    my_fridge = Fridge()
-
-    my_fridge.store((191115, "Butter"))
-    my_fridge.store((191128, "Milch"))
-    my_fridge.store((191010, "Sucuk"))
-    my_fridge.store((191112, "Brot"))
-    my_fridge.store((191130, "Milch"))
-    my_fridge.store((191128, "Döner"))
-    #print(my_fridge.storage)
-    #my_fridge.take((191128, "Milch"))
-    #my_fridge.take((191128, "Ass"))
-    print(my_fridge.storage)
-    #print(my_fridge.take_closest())
-    #print(my_fridge.take_before(191128))
-    #print(my_fridge.find("Cock"))
-    
+    f = Fridge()
+    f.store((191112, "Butter"))
+    print(f.storage)
+    f.take((191112, "Butter"))
+    print(f.storage)

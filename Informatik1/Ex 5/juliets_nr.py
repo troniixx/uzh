@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+__author__ = "Mert Erol"
 # use this list of presumably known Whatsapp numbers to check
 # whether a trial nr from the function below exists in Whatsapp.
 # Note that the grading framework might use different numbers here.
