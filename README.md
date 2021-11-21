@@ -1,2 +1,2 @@
-# uzh
-Python stuff from uni
+# University of Zürich (UZH)
+Python, C and Java stuff from Uni
