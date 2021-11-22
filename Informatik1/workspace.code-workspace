@@ -5,5 +5,10 @@
 			"path": ".."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"java.project.sourcePaths": [
+			"Java/Ex 1",
+			"Java/Ex 2"
+		]
+	}
 }
