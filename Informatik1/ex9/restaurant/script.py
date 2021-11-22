@@ -24,7 +24,7 @@ class Restaurant:
         else: return order_list
 
     def set_order(self, item_list):
-        o = Order()
+        o = Order(item_list)
         o.__get_item_list(item_list)
         o.get_bill_amount(item_list)
         x = o.__calculate_bill_amount(item_list)
