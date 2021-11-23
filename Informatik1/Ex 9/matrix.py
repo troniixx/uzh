@@ -11,6 +11,12 @@ class Matrix:
         # create adequate instance variables and check whether they should be private or public
         pass
 
+    def __add__(self, other):
+        pass   
+
+    def __mul__(self, other):
+        pass
+
     # To implement the required functionality, you will also have to implement two more
     # of the special functions that include a double underscore as per the task description.
 

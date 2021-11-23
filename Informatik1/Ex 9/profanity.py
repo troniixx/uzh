@@ -33,7 +33,8 @@ class ProfanityFilter:
 
 if __name__ == '__main__':
     f = ProfanityFilter(["duck", "Shot", "batch", "mastard"], "?#$")
-    #offensive_msg = "absHOtc DebATChfghi AaaMaStard jklMnoDUCK duck sHOt"
-    offensive_msg = "xxduckxx"
+    #offensive_msg = "absHOtc DebATChfghi AaaMaStard jklMnoDUCK duck sHOt" works
+    offensive_msg = "xxduckxx" #still have to fix that len(msg) == len(clean_msg)
+    #offensive_msg = "BaTch" #works
     clean_msg = f.filter(offensive_msg)
     print(clean_msg)

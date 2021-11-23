@@ -22,8 +22,6 @@ class Fridge:
     def __iter__(self):
         return iter(sorted(self.__storage))
 
-    #def __next__(self):
-    #    return next(iter(self.__storage))
 
     def find(self, name): #look up if item in fridge and best before
         for i in self:
@@ -49,7 +47,7 @@ class Fridge:
 
 if __name__ == '__main__':
     f = Fridge()
-    #f.store((191112, "Butter"))
-    #print(f.inventory())
-    #f.take((191112, "Butter"))
-    #print(f.inventory())
+    f.store((191112, "Butter"))
+    print(f.inventory())
+    f.take((191112, "Butter"))
+    print(f.inventory())
