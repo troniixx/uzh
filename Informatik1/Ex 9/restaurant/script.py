@@ -1,22 +1,20 @@
-import item
-import order
+from Item import Item
+from Order import Order
 
 __author__ = "Mert Erol"
 
 class Restaurant:
 
-    global cash
-    cash = []
-
     def __init__(self, restaurant_name, menu_list):
-        self.restaurant_name = restaurant_name
-        self.menu_list = menu_list
+        self.__restaurant_name = restaurant_name
+        self.__menu_list = menu_list
+        self.__cash = []
 
     def get_restaurant_name(self):
-        return self.restaurant_name
+        return self.__restaurant_name
 
     def get_menu_list(self):
-        return self.menu_list
+        return self.__menu_list
 
     def get_order_list(self):
         if len(order_list) == 0:
@@ -25,15 +23,15 @@ class Restaurant:
 
     def set_order(self, item_list):
         o = Order(item_list)
-        o.__get_item_list(item_list)
-        o.get_bill_amount(item_list)
-        x = o.__calculate_bill_amount(item_list)
-
-        cash.append(x)
+        
+        for item in item_list:
+            if item in self.__menu_list:
+                self.__cash.append(item.get_item_price())
+        #print(self.__cash)
 
     def get_revenue(self):
         revenue = 0
-        for num in cash:
+        for num in self.__cash:
             revenue += num
         
         return revenue
