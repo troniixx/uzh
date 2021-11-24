@@ -6,20 +6,20 @@ class GeometricObject:
     #color = str, filled = bool
 
     def __init__(self, color, filled):
-        self.__color = color
-        self.__filled = filled
+        self.color = color
+        self.filled = filled
 
     def get_color(self):
-        return self.__color
+        return self.color
 
     def set_color(self, color):
-        pass
+        self.color = color
 
     def get_filled(self):
-        return self.__filled
+        return self.filled
 
     def set_filled(self, filled):
-        pass
+        self.filled = filled
 
     @abstractmethod
     def get_area(self): #float

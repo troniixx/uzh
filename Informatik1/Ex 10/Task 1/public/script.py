@@ -3,8 +3,8 @@
 # The purpose of this file is illustrating the class usages. This script
 # is irrelevant for the grading and you can freely change its contents.
 
-from public.cone import Cone
-from public.cube import Cube
+import cone
+import cube
 
 # Create first cone object
 cone_1 = Cone(2, 4, 2, "red", True)

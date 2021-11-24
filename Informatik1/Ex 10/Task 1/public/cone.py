@@ -6,12 +6,10 @@ class Cone(geometric_object):
     Pi = 3.14
 
     def __init__(self, radius, vertical_height, slant_height, color, filled):
-        
         self.__radius = radius
         self.__vertical_height = vertical_height
         self.__slant_height = slant_height
-        self.color = color
-        self.filled = filled
+        super().__init__(color, filled)
 
     def get_radius(self):
         return self.__radius
