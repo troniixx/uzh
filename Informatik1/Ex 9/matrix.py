@@ -1,29 +1,63 @@
-#!/usr/bin/env python3
-__author__ = "Mert Erol"
-# The signatures of this class and its public methods are required for the automated grading to work. 
-# You must not change the names or the list of parameters.
-# You may introduce private/protected utility methods though.
 class Matrix:
 
     def __init__(self, matrix):
+        assert matrix != [], 'empty list'
+        assert isinstance(matrix, list), 'not a nested list'
+        for row in matrix:
+            assert isinstance(row, list), 'not a nested list'
+            assert row != [], 'empty sublist'
+            assert len(row) == len(matrix[0]), 'matrix not rectangular'
+            for num in row:
+                assert isinstance(num, (int, float)), 'invalid type in sublist'
         self.__matrix = matrix
-        # Implement this function and perform required checks
-        # create adequate instance variables and check whether they should be private or public
-        pass
 
     def __add__(self, other):
-        pass   
+        
+        # validate operation
+        assert isinstance(other, Matrix), 'not a matrix'
+        rows = len(self.__matrix)
+        cols = len(self.__matrix[0])
+        assert rows == len(other.__matrix), 'not the same number of rows'
+        assert cols == len(other.__matrix[0]), 'not the same number of columns'
+
+        # create matrix with correct size
+        sum = []
+        for i in range(rows):
+            sum.append([])
+            for j in range(cols):
+                sum[i].append(0)
+
+        # fill in sums
+        for i in range(rows):
+            for j in range(cols):
+                sum[i][j] = self.__matrix[i][j] + other.__matrix[i][j]
+
+        return Matrix(sum)
 
     def __mul__(self, other):
-        pass
 
-    # To implement the required functionality, you will also have to implement two more
-    # of the special functions that include a double underscore as per the task description.
+        # validate operation
+        assert isinstance(other, Matrix), 'not a matrix'
+        rows1 = len(self.__matrix)
+        cols1 = len(self.__matrix[0])
+        rows2 = len(other.__matrix)
+        cols2 = len(other.__matrix[0])
+        assert cols1 == rows2, 'number of colums (1st matrix) != number of rows (2nd matrix)'
+        
+        # create matrix with correct size
+        prod = []
+        for i in range(rows1):
+            prod.append([])
+            for j in range(cols2):
+                prod[i].append(0)
 
+        # fill in prods
+        for i in range(rows1):
+            for j in range(cols2):
+                for k in range(rows2):
+                    prod[i][j] += self.__matrix[i][k] * other.__matrix[k][j]
 
-
-    # DO NOT CHANGE the functions below! Consider also implementing __repr__ and __str__ for nice printing
-
+        return Matrix(prod)
 
     def __eq__(self, other):
         if not isinstance(other, Matrix):
@@ -34,11 +68,10 @@ class Matrix:
     def __hash__(self):
         return hash(tuple([tuple(row) for row in self.__matrix]))
 
+    def __repr__(self):
+        return repr(self.__matrix)
 
 
-
-# You can play around with your implementation in the body of the following 'if'.
-# The contained statements will be ignored while evaluating your solution.
 if __name__ == '__main__':
     M = Matrix([[5,5],[5,5]])
     T = Matrix([[5,5],[5,5]])
@@ -47,4 +80,3 @@ if __name__ == '__main__':
     d = {M: "1", T: "2"}
     d.update({M: "3"})
     print(d)
-
