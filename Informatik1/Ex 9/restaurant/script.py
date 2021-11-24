@@ -21,7 +21,7 @@ class Restaurant:
             return "No order yet"
         else: return order_list
 
-    def set_order(self, item_list):
+    def set_order(self, item_list): #fix this using o
         o = Order(item_list)
         
         for item in item_list:
