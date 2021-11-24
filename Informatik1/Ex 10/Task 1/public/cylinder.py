@@ -1,10 +1,12 @@
-from public.geometric_object import GeometricObject
+import geometric_object
 
 
-class Cylinder(GeometricObject):
+class Cylinder(geometric_object):
     
+    global Pi
+    Pi = 3.14
+
     def __init__(self, radius, height, color, filled):
-        self.__PI = 3.14
         self.__radius = radius
         self.__height = height
         self.color = color
@@ -17,7 +19,7 @@ class Cylinder(GeometricObject):
         return self.__height
 
     def get_area(self):
-        return (self.__PI * (self.__radius**2)) * (2*self.__PI*self.__radius*self.__height)
+        return (Pi * (self.__radius**2)) * (2*Pi*self.__radius*self.__height)
 
     def get_volume(self):
-        return self.__PI*(self.__radius**2)*self.__height
+        return Pi*(self.__radius**2)*self.__height

@@ -1,10 +1,12 @@
-from public.geometric_object import GeometricObject
+import geometric_object
 
 
-class Cone(GeometricObject):
+class Cone(geometric_object):
+    global Pi
+    Pi = 3.14
 
     def __init__(self, radius, vertical_height, slant_height, color, filled):
-        self.__PI = 3.14
+        
         self.__radius = radius
         self.__vertical_height = vertical_height
         self.__slant_height = slant_height
@@ -21,8 +23,8 @@ class Cone(GeometricObject):
         return self.__slant_height
 
     def get_area(self):
-        return (self.__PI * (self.__radius**2)) * (self.__PI * self.__radius * self.__slant_height)
+        return (Pi * (self.__radius**2)) * (Pi * self.__radius * self.__slant_height)
 
     def get_volume(self):
         x = 1/3
-        return x * self.__PI * (self.__radius**2) * self.__vertical_height
+        return x * Pi * (self.__radius**2) * self.__vertical_height

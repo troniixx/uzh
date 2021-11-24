@@ -1,7 +1,7 @@
-from public.geometric_object import GeometricObject
+import geometric_object
 
 
-class Cube(GeometricObject):
+class Cube(geometric_object):
     
     def __init__(self, side_length, color, filled):
         self.__side_length = side_length
