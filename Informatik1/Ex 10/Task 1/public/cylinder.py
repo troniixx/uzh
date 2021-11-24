@@ -9,8 +9,7 @@ class Cylinder(geometric_object):
     def __init__(self, radius, height, color, filled):
         self.__radius = radius
         self.__height = height
-        self.color = color
-        self.filled = filled
+        super().__init__(color, filled)
 
     def get_radius(self):
         return self.__radius

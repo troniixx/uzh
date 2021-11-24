@@ -5,8 +5,7 @@ class Cube(geometric_object):
     
     def __init__(self, side_length, color, filled):
         self.__side_length = side_length
-        self.color = color
-        self.filled = filled
+        super().__init__(color, filled)
 
     def get_side_length(self):
         return self.__side_length
