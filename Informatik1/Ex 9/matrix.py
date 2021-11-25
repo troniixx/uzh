@@ -1,3 +1,4 @@
+#not written by myself
 class Matrix:
 
     def __init__(self, matrix):
@@ -21,18 +22,18 @@ class Matrix:
         assert cols == len(other.__matrix[0]), 'not the same number of columns'
 
         # create matrix with correct size
-        sum = []
+        sums = []
         for i in range(rows):
-            sum.append([])
+            sums.append([])
             for j in range(cols):
-                sum[i].append(0)
+                sums[i].append(0)
 
         # fill in sums
         for i in range(rows):
             for j in range(cols):
-                sum[i][j] = self.__matrix[i][j] + other.__matrix[i][j]
+                sums[i][j] = self.__matrix[i][j] + other.__matrix[i][j]
 
-        return Matrix(sum)
+        return Matrix(sums)
 
     def __mul__(self, other):
 

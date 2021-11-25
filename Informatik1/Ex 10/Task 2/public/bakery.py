@@ -1,30 +1,36 @@
 #!/usr/bin/env python3
 
-from public.shop import Shop
+import shop
 
 
-class Bakery(Shop):
+class Bakery(shop):
 
     def __init__(self, capital):
-        pass
+        self._capital = capital
+        self.__produced_units = 0
+        self.__loan = 0
+        self.__initial_loan_amount = 0
+        self.__interest = 0
+        self.__dough = 0
+        self.__bread = 0
 
     def sell(self, price_per_unit, units):
-        pass
+        self._capital += (price_per_unit*0.25)*units
 
     def produce(self, costs_per_unit):
-        pass
+        self._capital -= costs_per_unit
 
     def add_procured_units(self, units):
-        pass
+        self.__produced_units.append(units)
 
     def get_produced_units(self):
-        pass
+        return self.__produced_units
 
     def set_produced_units(self, units):
-        pass
+        self.units = units
 
     def pay_rent_and_loan(self, rent):
-        pass
+        return super().pay_rent_and_loan(rent)
 
     def get_status(self):
-        pass
+        return super().get_status()
