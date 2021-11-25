@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+import abc
 
 class Shop:
 
@@ -26,14 +26,17 @@ class Shop:
         self.add_procured_units(units)
         self._capital -= units * price_per_unit
 
+    @abc.abstractmethod
     def add_procured_units(self, units):
         pass
-
+    
+    @abc.abstractmethod
     def get_produced_units(self):
-        pass
+        return self
 
+    @abc.abstractmethod
     def set_produced_units(self, units):
-        pass
+        self.units = units
 
     def pay_rent_and_loan(self, rent):
         amount_owed = rent

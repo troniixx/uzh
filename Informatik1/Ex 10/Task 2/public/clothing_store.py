@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
+import shop
 
-from public.shop import Shop
 
-
-class ClothingStore(Shop):
+class ClothingStore(shop):
 
     def __init__(self, capital):
-        pass
+        super().__init__()
+        self._capital = capital
 
     def procure(self, price_per_unit, units):
         pass
@@ -21,4 +21,4 @@ class ClothingStore(Shop):
         pass
 
     def get_status(self):
-        pass
+        return super().get_status()
