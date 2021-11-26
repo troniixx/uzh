@@ -1,15 +1,7 @@
 def shout(text):
-    sol = ""
-    for char in text:
-        sol += char.upper()
-
-    if "!" not in text:
-        sol += "!"
-    else:
-        x = text.find("!")
-        sol += sol[x]
-    
-    return sol
+    exclams = text.count("!")
+    if exclams == 0: exclams = 1
+    return text.upper() + exclams * "!"
 
 print(shout("Hello, God"))
 print(shout("Hello, World!"))
