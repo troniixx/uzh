@@ -1,40 +1,45 @@
-#!/usr/bin/env python3
-import re
-# The signatures of this class and its public methods are required for the automated grading to work. 
-# You must not change the names or the list of parameters. 
-# You may introduce private/protected utility methods though.
-
-
 class ProfanityFilter:
 
     def __init__(self, keywords, template):
-        self.__keywords = sorted(keywords, key=len, reverse=True)
+        self.__keywords = keywords
         self.__template = template
 
-    def __clean(self, word):
-        badword = False
-        rest = ['', '']
-        for i in self.__keywords:
-            if i.lower() in word.lower():
-                rest = re.split(i, word, flags=re.IGNORECASE)
-                badword = True
-                break
-        if badword:    
-            factor = len(word) // len(self.__template) + 1
-            clean = factor * self.__template
-            clean = rest[0] + clean[:len(word)] + rest[1]
-            return clean
-        else: return word
+    def __clean(self, length):
+        import math as math
+        output = ""
+        temp_resultado = length % len(self.__template)
+        temp_largo = math.floor(length/len(self.__template))
+        output = self.__template*temp_largo+self.__template[0:temp_resultado]
+        return output
+
+    def __find_badwords(self, msg):
+        badwords = []
+        for badword in self.__keywords:
+            if badword.lower() in msg.lower():
+                found = [i for i in range(len(msg.lower())) if msg.lower().startswith(badword.lower(), i)]
+                for i_start in found:
+                    i_end = i_start + len(badword)
+                    badword_sensitive = msg[i_start:i_end]
+                    badwords.append(badword_sensitive)
+
+        badwords = sorted(badwords, key=len)
+        badwords.reverse()
+
+        return badwords
 
     def filter(self, msg):
-        for word in msg.split():
-            msg = msg.replace(word, self.__clean(word))
+        found_badwords = self.__find_badwords(msg)
+
+        for w in found_badwords:
+            r = self.__clean(len(w))
+            msg = msg.replace(w, r)
+
         return msg
 
+
 if __name__ == '__main__':
-    f = ProfanityFilter(["duck", "Shot", "batch", "mastard"], "?#$")
-    #offensive_msg = "absHOtc DebATChfghi AaaMaStard jklMnoDUCK duck sHOt" works
-    offensive_msg = "xxduckxx" #still have to fix that len(msg) == len(clean_msg)
-    #offensive_msg = "BaTch" #works
+    f = ProfanityFilter(["duck", "shit", "mashitard", "mastard"], "?#$")
+    #offensive_msg = "ABC shit Shit mashitard jklmno"
+    offensive_msg = "xxduckxx"
     clean_msg = f.filter(offensive_msg)
-    print(clean_msg)
+    print(clean_msg)  # abc defghi ?#$?#$? jklmno
