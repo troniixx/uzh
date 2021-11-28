@@ -9,7 +9,8 @@ from public.car import Car
 class CombustionCar:
 
     def __init__(self, gas_capacity, gas_per_100km):
-        pass
+        self.__gas_capactiy = gas_capacity
+        self.__gas_per_100km = gas_per_100km
 
     def fuel(self, f):
         pass

@@ -3,14 +3,16 @@
 # Implement this class. Stick to the naming that is introduced in the
 # UML diagram. Do not change the class name or the method signatures
 # or the automated grading won't work.
-
-from public.restaurant import Restaurant
+import restaurant
 
 
 class OnsiteRestaurant:
 
     def __init__(self, name, cuisine_type, num_tables, is_open=False):
-        pass
+        self.__name = name
+        self.__cuisine_type = cuisine_type
+        self.__num_tables = num_tables
+        self.__is_open = is_open
 
     def occupy_table(self):
         pass
