@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 
+import cone, cube, cylinder
+
 from unittest import TestCase
-from public.cube import Cube
-from public.cone import Cone
-from public.cylinder import Cylinder
+#from public.cube import Cube
+#from public.cone import Cone
+#from public.cylinder import Cylinder
+#3 commented out only work in access
 
 
 class CubeTest(TestCase):
