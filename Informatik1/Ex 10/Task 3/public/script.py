@@ -3,9 +3,9 @@
 # The purpose of this file is illustrating the class usages. This script
 # is irrelevant for the grading and you can freely change its contents.
 
-from solution.onsite_restaurant import OnsiteRestaurant
-from solution.delivery_restaurant import DeliveryRestaurant
-from solution.restaurant import Restaurant
+from onsite_restaurant import OnsiteRestaurant
+from delivery_restaurant import DeliveryRestaurant
+from restaurant import Restaurant
 
 
 

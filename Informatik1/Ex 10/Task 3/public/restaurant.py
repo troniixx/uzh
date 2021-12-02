@@ -12,9 +12,11 @@ class Restaurant:
         self.__name = name
         self.__cuisine_type = cuisine_type
         self.__is_open = is_open
+        self.__menu = dict()
+        self.__sales = 0
 
     def describe_restaurant(self):
-        return self.__name
+        return f"{self.__name}: {self.__cuisine_type}"
 
     def open_restaurant(self):
         self.__is_open = True
@@ -22,23 +24,23 @@ class Restaurant:
     def close_restaurant(self):
         self.__is_open = False
         
-
     def is_open(self):
         return self.__is_open
 
     def add_consumption_unit(self, name, price):
-        d = {}
-        d[name] = price
+        self.__menu[name] = price
 
     def remove_consumption_unit(self, name):
-        pass
+        del self.__menu[name]
 
     def get_menu(self):
-        pass
+        return copy.deepcopy(self.__menu)
 
     def sell_unit(self, name):
-        pass
+        if self.__is_open:
+            self.__sales += self.__menu[name]
+        else: raise Warning("Restaurant is closed")
 
     def get_sales(self):
-        pass
+        return self.__sales
 

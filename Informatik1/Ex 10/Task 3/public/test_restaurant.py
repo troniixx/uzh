@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 from unittest import TestCase
-from public.onsite_restaurant import OnsiteRestaurant
-from public.delivery_restaurant import DeliveryRestaurant
-from public.restaurant import Restaurant
+from onsite_restaurant import OnsiteRestaurant
+from delivery_restaurant import DeliveryRestaurant
+from restaurant import Restaurant
 
 class RestaurantTest(TestCase):
 
