@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # add imports, if necessary
-
+from currency_converter import convert
+from exchange_rates import EXCHANGE_RATES as er
 class BankAccount:
 
     def __init__(self, currency="CHF"):
