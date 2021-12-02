@@ -10,15 +10,13 @@ git clone $REPO_URL repo
 cd repo
 git branch feature_x
 git checkout feature_x
-printf "print('Hello World!')" > hello.py
+printf 'print("Hello World!")' > hello.py
 git add hello.py
-git commit -m "Add 'Hello World' example"
+git commit -m 'Add "Hello World" example'
 git push origin feature_x
-checkout master
-printf "# goodbye" > bye.py
+git checkout master
+printf '# good bye' > bye.py
 git add bye.py
-git commit -m "Add 'Good Bye' comment"
-git merge -m feature_x
+git commit -m 'Add "Good Bye" comment'
+git merge feature_x -m 'Merge "feature_x"'
 git push
-
-
