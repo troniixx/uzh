@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 from unittest import TestCase
-from public.combustion_car import CombustionCar
-from public.electric_car import ElectricCar
-from public.hybrid_car import HybridCar
+from combustion_car import CombustionCar
+from electric_car import ElectricCar
+from hybrid_car import HybridCar
 
 
 class TestCars(TestCase):

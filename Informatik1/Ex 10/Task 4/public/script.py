@@ -3,9 +3,9 @@
 # The purpose of this file is illustrating the class usages. This script
 # is irrelevant for the grading and you can freely change its contents.
 
-from public.combustion_car import CombustionCar
-from public.electric_car import ElectricCar
-from public.hybrid_car import HybridCar
+from combustion_car import CombustionCar
+from electric_car import ElectricCar
+from hybrid_car import HybridCar
 
 c = CombustionCar(40.0, 8.0)
 c.get_remaining_range() # 500
