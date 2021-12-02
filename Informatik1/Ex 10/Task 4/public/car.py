@@ -8,6 +8,9 @@ from abc import ABC, abstractmethod
 
 class Car:
 
+    def __init__(self):
+        pass
+
     @abstractmethod
     def get_remaining_range(self):
         pass
