@@ -17,5 +17,19 @@ class GameRunner(object):
                 yield start
         return list(rand())
 
+#test function
+""""
+def generate_hex_codes():
+    chars = "0123456789ABCDEF"
+    def rand():
+        for _ in range(17 * 2):
+            start = "0x"
+            for _ in range(4):
+                start += choice(chars)
+            yield start
 
+    return list(rand())
+        
+print(generate_hex_codes())
+"""
 
