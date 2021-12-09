@@ -1,1 +1,0 @@
-print(type(print("Hello World")))
