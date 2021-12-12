@@ -3,12 +3,18 @@
 import random
 
 class Revolver:
-    
-    def reload():
-        pass
+    def __init__(self, cylinder_size):
+        self.cylinder_size = cylinder_size
+        self.reload()
 
-    def trigger():
-        pass
+    def reload(self):
+        self.chamber = [True] + ([False] * (self.cylinder_size - 1))
+        random.shuffle(self.chamber)
+
+    def trigger(self):
+        if self.chamber and self.chamber.pop():
+            return "BANG!!!"
+        return "Click!"
 
 #-- THIS LINE SHOULD BE THE LAST LINE OF YOUR SUBMISSION! ---#
 
