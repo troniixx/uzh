@@ -3,7 +3,19 @@
 def censor(text, censored_words):
     words = text.split()
     res = []
-    # complete the function implementation here
+
+    for word in words:
+        alpha = "".join(e for e in word if e.isalpha())
+        #print(alpha) #just for testing
+        if alpha.lower() in censored_words:
+            w = ""
+            for c in word:
+                if c.isalpha(): w += "#"
+                else: w += c
+            res.append(w)
+        else: res.append(word)    
+                
+    
     
     return " ".join(res)
 
