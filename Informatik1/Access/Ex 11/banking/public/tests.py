@@ -1,7 +1,6 @@
-#!/usr/bin/env python3
 from unittest import TestCase
-
-# You need to add missing imports to make the test work!
+from public.currency_converter import convert
+from public.bank_account import BankAccount
 
 class PrivateFunctionalTestSuite(TestCase):
 
@@ -17,10 +16,14 @@ class PrivateFunctionalTestSuite(TestCase):
         actual = sut.get_balance()
         expected = 89.0
         self.assertAlmostEqual(expected, actual, delta=0.0001)
-    
-    # This current test suite only contains one very basic test case. By now,
-    # you have some experience in writing test cases. We strongly encourage
-    # you to implement further test cases. The additional tests can be run via
-    # 'Test&Run' in ACCESS. These tests won't affect the grading of your solution
-    # directly, but they can help you with identifying relevant corner cases
-    # that you have to consider in your implementation.
+
+    def test_warnings(self):
+        with self.assertRaises(Warning):
+            acc = BankAccount("A")
+        acc = BankAccount("USD")
+        with self.assertRaises(Warning):
+            acc.deposit("baum", "USD")
+        with self.assertRaises(Warning):
+            acc.deposit(-1, "USD")
+        with self.assertRaises(Warning):
+            acc.deposit(100, "A")
