@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# IMPORTANT: Do not change this file!
-
-# List of exchange rates that follows two simple rules:
-# - all valid currencies exist as keys on the first level
-# - only one CURRENCY-CURRENCY combination is added (e.g., CAD-USD),
-#   the inverse is omitted to avoid redundant information
 EXCHANGE_RATES = {
     "CAD": {
         "USD": 0.753,
