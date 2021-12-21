@@ -7,7 +7,7 @@ symbols = ["a", "b", "c", "d", "e", "f", "g",
 "v", "w", "x", "y", "z", ".", "?",
 "V", "W", "X", "Y", "Z", " ", "!"]
 
-indices = [3, 64, 21, 30, 27, 14, 28]
+indices = [3, 64, 21, 30, 27, 14, 28] #change this
 s = ""
 for idx in indices:
     if idx < 10:
