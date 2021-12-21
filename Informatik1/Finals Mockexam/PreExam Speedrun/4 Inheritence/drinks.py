@@ -1,4 +1,7 @@
-#!/usr/bin/env python3
+#-- THIS LINE SHOULD BE THE FIRST LINE OF YOUR SUBMISSION! --#
+
+from abc import ABC, abstractmethod
+import unittest
 
 from abc import ABC, abstractmethod
 import unittest
@@ -81,22 +84,25 @@ class ShopTestSuite(unittest.TestCase):
             c.add(b)
         self.assertEqual(c.get_price(), 18.00)
 
-if __name__ == '__main__':
 
+#-- THIS LINE SHOULD BE THE LAST LINE OF YOUR SUBMISSION! ---#
+
+### DO NOT SUBMIT THE FOLLOWING LINES!!! THESE ARE FOR LOCAL TESTING ONLY!
+if __name__ == '__main__':
     bottles = [Bottle(3.50, "Light Beer"), Bottle(4.50, "Passable Wine")] + 3 * [Bottle(4.00, "Strong Stuff")]
     assert(bottles[0].get_price() == 3.50)
-    
+
     c = Crate()
     for b in bottles: c.add(b)
     assert(c.get_size() == 5)
     assert(c.get_price() == 20.00)
-    
+
     c = FixedPriceCrate(11.11)
     for b in bottles: c.add(b)
     assert(c.get_price() == 11.11)
-    
+
     c = DiscountCrate()
     for b in bottles: c.add(b)
     assert(c.get_price() == 18.00)
-    
+
     unittest.main()
