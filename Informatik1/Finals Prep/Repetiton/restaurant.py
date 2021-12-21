@@ -22,13 +22,13 @@ class Order:
         self.__bill_amount = self.__calculate_bill_amount(item_list)
 
     def __get_item_list(self, item_list):
-        dict = {}
+        d = {}
         for item in item_list:
             try:
-                dict[item] += 1
+                d[item] += 1
             except KeyError:
-                dict[item] = 1
-        return dict
+                d[item] = 1
+        return d
 
     def get_bill_amount(self):
         return self.__bill_amount
@@ -69,8 +69,8 @@ class Restaurant:
                 actual.append(item)
         
         if len(actual) != 0:
-            ord = Order(actual)
-            self.order_list.append(ord)
+            o = Order(actual)
+            self.order_list.append(o)
 
     def get_revenue(self):
         rev = 0
