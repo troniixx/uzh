@@ -1,7 +1,7 @@
 ## 9 Object-oriented
 
 ##### DE: Eine statische Methode erhät keine Referenzen zu self.
-##### EN: A static method does not receive a reference to self.
+##### EN: A static method does not receive a reference to self.
 ###### True
 
 ##### DE: Standartmässig werden zwei Instanzen derselben Klasse als equivaent angesehen wenn alle deren Intanzattrribute equivalent sind.
@@ -21,8 +21,8 @@
 ## 10 Debugging and Testing
 
 ##### DE: Es ist möglich, ein Programm normal weiterlaufen zu lassen, auch wenn man es zuvor mit einem Debugger pausiert hat.
-###### EN: It's possible to resume normal execution even after having paused a program using a debugger.
-####### True
+##### EN: It's possible to resume normal execution even after having paused a program using a debugger.
+###### True
 
 ##### DE: Es ist möglich, ein Programm normal weiterlaufen zu lassen, auch wenn man es zuvor mit einem Debugger pausiert hat.
 ##### EN: It's possible to resume normal execution even after having paused a program using a debugger.
