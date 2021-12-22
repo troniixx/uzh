@@ -3,9 +3,6 @@
 from abc import ABC, abstractmethod
 import unittest
 
-from abc import ABC, abstractmethod
-import unittest
-
 class Product(ABC):
 
     @abstractmethod
