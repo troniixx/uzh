@@ -6,7 +6,7 @@
 
 int find_nth_term(int n, int a, int b, int c) {
   //Write your code here.
-  return 0;
+    return 0;
 }
 
 int main() {
