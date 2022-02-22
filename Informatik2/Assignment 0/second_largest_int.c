@@ -9,16 +9,12 @@ int main() {
     /* first sort the array from largest to smallest and then output the second number */
 
     /* sort */
-    
     for(i = 0; i < n; ++i){
         for(j = i + 1; j < n; ++j) {
-
             if (Arr[i] < Arr[j]) {
-
                 temp = Arr[i];
                 Arr[i] = Arr[j];
                 Arr[j] = temp;
-
             }
         }
     }
@@ -29,8 +25,6 @@ int main() {
     }
 
     /* print the result */
-
     printf("%d\n", Arr[1]);
-    return 0;
 
 }
