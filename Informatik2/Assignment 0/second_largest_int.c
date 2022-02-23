@@ -20,11 +20,13 @@ int main() {
     }
 
     /* print the array */
+    printf("Sorted array: ");
     for(i = 0; i < n; ++i) {
-        printf("%d\n", Arr[i]);
+        printf("%d ", Arr[i]);
     }
+    printf("\n");
 
     /* print the result */
-    printf("%d\n", Arr[1]);
+    printf("The second largest integer in the array is: %d\n", Arr[1]);
 
 }
