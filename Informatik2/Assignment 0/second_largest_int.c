@@ -3,8 +3,8 @@
 int main() {
 
     int i, j, temp;
-    int Arr[] = {0, 1, 2, 3, 4, 5, 6, 7};
-    int n = 8;
+    int Arr[] = {0, 1, 2, 3, 4, 5, 6, 7, 7, 6, 5, 12};
+    int n = 12;
     
     /* first sort the array from largest to smallest and then output the second number */
 
