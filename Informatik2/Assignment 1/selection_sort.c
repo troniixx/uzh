@@ -2,19 +2,19 @@
 #include <stdio.h>
 
 int even_odd_selection(int A[], int n) {
+    int i, j, temp;
+    int even[n];
+    int odd[n];
 
-    int i, j;
-    int arr[50]; /*even*/
-    int arr1[50]; /*odd*/
+    for(int i = 0; i < n; i++) {
+        if(A[i]%2 == 0) {
+            even[i] = A[i];
+        } else {odd[i] = A[i];}
+        }
     
-    /* split array into even and odd */
-    for(i = 0; i <= n; ++i) {
-        if(A[i] % 2 == 0){
-            arr[i] = A[i];
-        } else {arr1[i] = A[i];}
-    }
+    
 
-}
+} 
 
 
 int main() {
