@@ -11,6 +11,10 @@
 const int MAX_LENGTH = 1000;
 
 // TODO: your implementation
+int second_smallest_recursion(int A[]) {
+	int sol = 0;
+	
+}
 
 int main() {
 	printf("Values of array separated by spaces (non-number to stop): ");
