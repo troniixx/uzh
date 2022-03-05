@@ -56,9 +56,11 @@ void BS(char A[]){
 int main() {
 
     int num;
-    char A[] = "Hello Worldi";
+    char A[] = "Informatik";
+    BS(A);
 
     num = count_vowels(A);
+
     printf("The number of vowels in the given string is: %d", num);
 
 }
