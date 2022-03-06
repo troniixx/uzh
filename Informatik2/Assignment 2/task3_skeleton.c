@@ -7,7 +7,6 @@
 
 #include <stdio.h>
 
-// TODO: your implementation
 int blink_me_daddy(int blinks) {
 	if(blinks == 1){ return 1; } 
 		else if(blinks == 2){ return 2; } 
@@ -20,8 +19,7 @@ int main() {
 	printf("Enter the number of blinks: ");
 	scanf("%d", &input);
 
-	// TODO: your implementation
-	printf("%d", blink_me_daddy(input));
+	printf("The amount of possible combinations for %d blinks is: %d", input, blink_me_daddy(input));
 
 	return 0;
 }
