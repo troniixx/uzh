@@ -10,10 +10,22 @@
 // hard-coded maximum length for input strings
 const int MAX_LENGTH = 1000;
 
-// TODO: your implementation
-int second_smallest_recursion(int A[]) {
-	int sol = 0;
-	
+void insertionSort(int arr[], int i, int n) {
+
+    int value = arr[i];
+    int j = i;
+
+	while (j > 0 && arr[j - 1] > value)
+    {
+        arr[j] = arr[j - 1];
+        j--;
+    }
+	arr[j] = value;
+
+	if (i + 1 <= n) {
+        insertionSort(arr, i + 1, n);
+    }
+
 }
 
 int main() {
@@ -26,6 +38,9 @@ int main() {
 	// variable pos will contain number of integers read in from user
 
 	// TODO: your implementation
+	int n = sizeof(*arr)/sizeof(arr[0]);
+	insertionSort(arr, 1, n-1);
+	printf("The second smallest number is %d", arr[1]);
 
 	return 0;
 }
