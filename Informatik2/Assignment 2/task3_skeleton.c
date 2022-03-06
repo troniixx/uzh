@@ -9,16 +9,9 @@
 
 // TODO: your implementation
 int blink_me_daddy(int blinks) {
-	if(blinks == 1){
-		return 1; } 
-			else if(blinks == 2){return 2; } 
-				else {
-					return blink_me_daddy(blinks - 1)+(blinks-2);
-		
-	//num of blinks == blinks.previous+(blinks-2)
-
-	}
-
+	if(blinks == 1){ return 1; } 
+		else if(blinks == 2){ return 2; } 
+			else { return blink_me_daddy(blinks - 1)+(blinks-2); }
 
 }
 
