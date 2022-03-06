@@ -28,7 +28,7 @@ int main() {
 	scanf("%d", &input);
 
 	// TODO: your implementation
-	blink_me_daddy(input);
+	printf("%d", blink_me_daddy(input));
 
 	return 0;
 }
