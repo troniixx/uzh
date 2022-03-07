@@ -29,18 +29,23 @@ void BubbleSortRecursion(int a[],int num) {
 }
 
 int main() {
-	printf("Values of array separated by spaces (non-number to stop): ");
+	/*printf("Values of array separated by spaces (non-number to stop): ");
 	int arr[MAX_LENGTH];
 	int pos = 0;
 	while (scanf("%d", &arr[pos]) == 1) {
 		pos++;
-	}
+	}*/
 	// variable pos will contain number of integers read in from user
-
+	int arr[6] = {12, 52, 17, 63, 46, 34};
 	// TODO: your implementation
-	int n = sizeof(*arr)/sizeof(arr[0]);
+	int n = 6;
 	BubbleSortRecursion(arr, n);
-	printf("The second smallest number is %d", arr[1]);
+	
+	/* for(int i = 0; i < n; i++){
+		printf("%d ", arr[i]);
+	} */
+
+	printf("The second smallest number is: %d", arr[1]);
 
 	return 0;
 }
