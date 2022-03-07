@@ -10,22 +10,22 @@
 // hard-coded maximum length for input strings
 const int MAX_LENGTH = 1000;
 
-void insertionSort(int arr[], int i, int n) {
+void BubbleSortRecursion(int a[],int num) {
+	int i,j,temp;
+	i=num;
 
-    int value = arr[i];
-    int j = i;
+	if(i>0) {
+		for(j=0;j<num-1;j++) {
 
-	while (j > 0 && arr[j - 1] > value)
-    {
-        arr[j] = arr[j - 1];
-        j--;
-    }
-	arr[j] = value;
-
-	if (i + 1 <= n) {
-        insertionSort(arr, i + 1, n);
-    }
-
+		if(a[j]>a[j+1]) {
+			temp=a[j];
+			a[j]=a[j+1];
+			a[j+1]=temp;
+			}
+	}
+	BubbleSortRecursion(a,num-1);
+	}
+		else { return; }
 }
 
 int main() {
@@ -39,7 +39,7 @@ int main() {
 
 	// TODO: your implementation
 	int n = sizeof(*arr)/sizeof(arr[0]);
-	insertionSort(arr, 1, n-1);
+	BubbleSortRecursion(arr, n);
 	printf("The second smallest number is %d", arr[1]);
 
 	return 0;
