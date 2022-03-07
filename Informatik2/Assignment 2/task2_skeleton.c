@@ -29,13 +29,20 @@ void BubbleSortRecursion(int a[],int num) {
 }
 
 int main() {
+
+	//part doesnt work
+	// variable pos will contain number of integers read in from user
+	
 	/*printf("Values of array separated by spaces (non-number to stop): ");
 	int arr[MAX_LENGTH];
 	int pos = 0;
 	while (scanf("%d", &arr[pos]) == 1) {
 		pos++;
 	}*/
-	// variable pos will contain number of integers read in from user
+
+
+	//algo doesnt work with user input for some odd reason
+	//works perfectly with predetermined array 
 	int arr[6] = {12, 52, 17, 63, 46, 34};
 	// TODO: your implementation
 	int n = 6;
