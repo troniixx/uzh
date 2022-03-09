@@ -20,7 +20,6 @@ int main() {
     int n = 7;
     int k = 3;
 
-    int sol = whatDoesItDo(arr, n, k);
-
-    printf("The output for this example is: %d", sol);
+    printf("The output for this example is: %d", whatDoesItDo(arr, n, k));
+    return 0;
 }
