@@ -11,8 +11,8 @@ int whatDoesItDo(int arr[], int n, int k){
         if(current > result) {
             result = current;
         }
-    return result;
     }
+    return result;
 }
 
 int main() {
