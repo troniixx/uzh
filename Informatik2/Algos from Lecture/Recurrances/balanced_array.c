@@ -26,8 +26,6 @@ bool is_balanced_iterative(int A[], int l, int r){
 }
 
 int main(){
-    int arr[5] = {1,2,3,5,7};
-    int arr1[5] = {2,5,3,5,7};
-    printf("If 1 gets returned then the array is balanced: %i\n", is_balanced_iterative(arr, arr[0], arr[4]));
-    printf("If 1 gets returned then the array is balanced: %i", is_balanced_iterative(arr1, arr1[0], arr1[4]));
+    int arr[] = {1,3,10,2,3,7,5,7};
+    printf("If 1 gets returned then the array is balanced: %i\n", is_balanced_iterative(arr, arr[0], arr[8]));
 }
