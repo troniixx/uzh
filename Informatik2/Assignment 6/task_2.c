@@ -34,7 +34,8 @@ void insertList_end(int value){
     } else { 
 
         temp = head;
-        while(temp->next != NULL){temp = temp->next;}
+        while(temp->next != NULL){
+            temp = temp->next; }
 
         temp->next = (struct Node *)malloc(sizeof(struct Node));
         temp->next->data = value;
@@ -43,7 +44,11 @@ void insertList_end(int value){
 }
 
 void groupingLinkedList(){
-
+    while(temp->next != NULL){
+        if(temp->data%2 == 1){ 
+            insertList_beginning(temp->data);
+        } else{ insertList_end(temp->data); }
+    }
 }
 
 int main() {
