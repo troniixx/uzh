@@ -49,9 +49,11 @@ struct Item *insert(int key, int data){
     }
 
     HashArray[hashIndex] = item;
+
+    return NULL;
 }
 
-struct Item* delete(struct DataItem* item) {
+struct Item* delete(struct Item* item) {
     int key = item->key;
 
     int hashIndex = Encoding(key);
@@ -76,7 +78,7 @@ void display() {
 	
     for(i = 0; i<SIZE; i++) {
 	
-        if(hashArray[i] != NULL)
+        if(HashArray[i] != NULL)
             printf(" (%d,%d)",HashArray[i]->key,HashArray[i]->data);
         else
             printf(" ~~ ");
@@ -85,6 +87,38 @@ void display() {
     printf("\n");
 }
 
-void main(){
-    
+int main() {
+    blank = (struct Item*) malloc(sizeof(struct Item));
+    blank->data = -1;  
+    blank->key = -1; 
+
+    insert(1, 20);
+    insert(2, 70);
+    insert(42, 80);
+    insert(4, 25);
+    insert(12, 44);
+    insert(14, 32);
+    insert(17, 11);
+    insert(13, 78);
+    insert(37, 97);
+
+    display();
+    item = search(37);
+
+    if(item != NULL) {
+        printf("Element found: %d\n", item->data);
+    } else {
+        printf("Element not found\n");
+    }
+
+    delete(item);
+    item = search(37);
+
+    if(item != NULL) {
+        printf("Element found: %d\n", item->data);
+    } else {
+        printf("Element not found\n");
+    }
+
+    return 0;
 }
