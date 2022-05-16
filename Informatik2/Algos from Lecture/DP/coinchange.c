@@ -1,3 +1,5 @@
+//this algo just gives you the number of possible solutions
+
 #include <stdio.h>
 
 int coins[] = {1,2,3}, sum = 4;
@@ -33,6 +35,8 @@ int solve(int DPTable[][sum+1]){
     return DPTable[numOfCoins][sum];
 
 }
+
+
 
 int main(){
     int DPTable[numOfCoins+1][sum+1];
