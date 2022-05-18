@@ -1,22 +1,33 @@
 #include <stdio.h>
 
-int search(int A[], int n){
-    int max = A[0];
+int search(int arr[], int n)
+{
 
-    for(int i = 0; i < n; i++){
-        if(A[i] > max){
-            max = A[i];
+    int l = 0;
+    int r = n -1;
+
+    while( l < r){
+        int m = (l+r)/2;
+        if(l == m && arr[m] < arr[m+1]){
+            l = r;
+        }
+        else if(l == m) {
+            r = l;
+        } else if (arr[m-1] > arr[m]){
+            r = m;
+        } else {
+            l = m;
         }
     }
 
-    return max;
-}   
+    return arr[l];
+    }
 
-int main(){
-
-    int A[] = {1, 2, 3, 4, 5, 7, 9, 6, 3};
-    int n = sizeof A / sizeof A[0];
-    int sol = search(A, n);
-
-    printf("The largest integer in the given array is: %d", sol);
+/* Driver program to check above functions */
+int main()
+{
+int arr[] = {1,2,4,5,7,9,6,3};
+int n = sizeof(arr)/sizeof(arr[0]);
+printf("The maximum element is %d", search(arr, n));
+return 0;
 }
