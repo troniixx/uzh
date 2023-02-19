@@ -21,7 +21,7 @@ int coin_change(int d[], int n, int k)
             }
         }
     }
-    
+
     //returns min amount if possible or -1 if not possible
     if(Change[k] == INT_MAX){ return -1; }
     else { return Change[k]; }
@@ -29,10 +29,11 @@ int coin_change(int d[], int n, int k)
 
 int main()
 {   
-    int d[] = {25, 10, 5};
-    int k = 30;
+    //only change the folowing variables: d, k!
+    int d[] = {9, 6, 5, 1};
+    int k = 13;
     int n = sizeof(d)/sizeof(d[0]);
     int sol = coin_change(d, n, k);
 
-    printf("The minimum number of required coins is: %d\n", sol);
+    printf("The minimum number of required coins to change %d is: %d\n", k, sol);
 }
