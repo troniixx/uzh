@@ -1,0 +1,15 @@
+define array
+
+if a[0] > a[1] then: a[1] = second and a[0] = largest
+else: a[0] = second and a[1] = largest
+
+for every element in a, starting at a[2]:
+    if largest <  current index:
+        second = largest
+        largest = current index
+    else if second < current index:
+        second = current index
+
+print out the second and the largest element
+
+    
