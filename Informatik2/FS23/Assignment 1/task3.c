@@ -52,7 +52,7 @@ void pairSumSorted(int A[], int c, int n){
             }
         }
     }
-
+    //nested loop + bubble sort
     //O(n^2+n^2) = O(n^2)
 
 }
