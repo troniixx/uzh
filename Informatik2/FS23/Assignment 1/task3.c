@@ -44,16 +44,23 @@ void pairSumSorted(int A[], int c, int n){
     
     bubbleSort(A, n); //O(n^2)
 
-    //O(n^2)
-    for(i = 0; i < n; i++){
-        for(j = i + 1; j < n; j++){
-            if(A[i] + A[j] == c) {
-                printf("%i and %i\n", A[i], A[j]);
-            }
+    int i = 0;
+    int j = n-1;
+
+    while(i < j){
+        if(A[i] + A[j] == c){
+            printf("True");
+            return;
+        }
+        else if(A[i] + A[j] < c){
+            i++;
+        }
+        else{
+            j--;
         }
     }
-    //nested loop + bubble sort
-    //O(n^2+n^2) = O(n^2)
+    printf("False");
+    return;
 
 }
 

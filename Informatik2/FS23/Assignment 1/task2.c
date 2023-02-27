@@ -24,8 +24,8 @@ int main()
     int original[2][2] = {{a, b},
                         {c, d}};
 
-    int squared[2][2] = {{a*a, b*b},
-                        {c*c, d*d}};
+    int squared[2][2] = {{a*a+c*b, a*b+d*b},
+                        {a*c+c*d, b*c+d*d}};
 
     printf("\n");
     printf("Printing the matrices:\n\n");
