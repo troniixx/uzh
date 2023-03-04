@@ -17,6 +17,7 @@ int main(){
     int disks, moves;
     printf("Enter # of Disks: ");
     scanf("%d", &disks);
+    fill(stack1[], top1, disks);
     printf("Enter # of Moves: ");
     scanf("%d", &moves);
 
@@ -26,20 +27,25 @@ int main(){
 
 int hanoi(int disks, int stack1[], int stack2[], int stack3[], int moves){
     
+    if(disks == 1){
+        printf("Move from rod 1 to 3");
+        return;
+    }
     
 }
 
-int fill(int stack[], int disks){
-    
+int fill(int stack[], int top, int disks){
+
+    int i;
+    for (i = disks; i > 0; i--){
+        push(stack[], top, i);
+    }
 }
 
-void push(int stack[], int top){
+void push(int stack[], int top, int x){
     if(top == N-1){
         printf("Cant add more elements\n")
     } else {
-        int x; 
-        printf("Enter element to pe pushed: ")
-        scanf("%d",&x);
         top += 1;
         stack[top] = x;
     }

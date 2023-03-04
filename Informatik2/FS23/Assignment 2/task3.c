@@ -2,7 +2,7 @@
 
 void hanoi(int d, int a, int b, int c){
     
-    int moves = ;
+    int moves = 12;
     //printf("Enter # of Moves: ");
     //scanf("%d", &moves);
     
@@ -26,8 +26,8 @@ int main(){
     int disks, moves;
     printf("Enter # of Disks: ");
     scanf("%d", &disks);
-    //printf("Enter # of Moves: ");
-    //scanf("%d", &moves);
+    printf("Enter # of Moves: ");
+    scanf("%d", &moves);
     hanoi(disks, 1, 2, 3);
     return 0;
 }
