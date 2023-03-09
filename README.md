@@ -1,6 +1,6 @@
 # University of Zürich (UZH)
 
-Hello everyone as you might know I usually post many exercises etc on my github and while I have to do them anyway even without posting, I still want to share them with you to help us all out (including myself 😇) so thats why i created this https://www.buymeacoffee.com/merterol . If you want to give back, you use this to send me sth so I can buy me a coffe ♥️ ofc if you dont want to, you dont have too
+Hello everyone as you might know I usually post many exercises etc on my github and while I have to do them anyway even without posting, I still want to share them with you to help us all out (including myself 😇) so thats why i created this https://www.buymeacoffee.com/merterol . If you want to give back, you use this to send me sth so I can donate some of it to the earthquake victims in Turkey/Syria ♥️ ofc if you dont want to, you dont have too
 
 
 I'm currently enrolled in the University of Zurich to study computer science with a focus on sofware systems and in this repo I'll post all Coding/Compsci related tasks or interesting concepts we learned in the lectures from my different courses (I'll promise to do my best to create an amazing folder strucutre <3).
