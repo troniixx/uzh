@@ -8,13 +8,13 @@ void mergeSort(int A[], int l, int r); void merge(int A[], int l, int m, int r);
 
 int main(){
 
-    int A[] = {12, 11, 31, 5, 2, 7, 0, 1};
-    n = 8;
+    int A[] = {12, 11, 31, 5, 2, 7, 1};
+    n = 7;
 
     printf("Given Array: \n");
-    printArray(A, n);
+    printArray(A,  n);
 
-    mergeSort(A, 0, n);
+    mergeSort(A, 0, n-1);
 
     printf("Sorted Array: \n");
     printArray(A, n);
@@ -34,7 +34,7 @@ void printArray(int A[], int n){
 
 void mergeSort(int A[], int l, int r){
     if(l < r){
-        m = (l+r)/2;
+        m = l + (r - l)/2;
 
         mergeSort(A, l, m); //Mergesort the left part
         mergeSort(A, m+1, r); //Mergesort the right part
@@ -52,11 +52,11 @@ void merge(int A[], int l, int m, int r){
     int Left[n1], Right[n2];
 
     //copy into temp arrays
-    for(int i=0; i<n1; i++){
+    for(int i = 0; i < n1; i++){
         Left[i] = A[l+i];
     }
-    for(int j=0; j<n2; j++){
-        Right[j] = A[m+j+1];
+    for(int j = 0; j < n2; j++){
+        Right[j] = A[m+1+j];
     }
 
     //Merge temp arrays back into original
