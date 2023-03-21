@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void swap(int *a, int *b){
     int temp = *a;
@@ -70,9 +71,16 @@ void printArray(int arr[], int n){
 }
 
 int main(){
-    int arr[] = { 24, 8, 42, 75, 29, 77, 38, 57 };
-    quicksort(arr, 0, 7);
-    printArray(arr, 7);
+    clock_t start, end;
+    int arr[] = {10, 7, 3, 15, 6, 2, 5, 1, 17, 8};
     
+    start = clock();
+    quicksort(arr, 0, 10);
+    end = clock();
+    printArray(arr, 10);
+
+    printf("\n");
+    double runtime = ((double)(end - start))/(CLOCKS_PER_SEC/1000);
+    printf("Double Pivot Quicksort takes : %f millseconds\n", runtime); 
     return 0;
 }
