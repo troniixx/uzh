@@ -26,14 +26,14 @@ int leftToRightSum(int arr[], int l, int r){
     int right = leftToRightSum(arr, mid+1, r);
     int across = midpointSum(arr, left, mid, right);
 
-    return maximum(left, across, right);
+    return maximum(left, right, across);
 }
 
 int midpointSum(int arr[], int l, int m, int r){
     
     int sum = 0;
     int left = INT_MIN;
-    for(int i = m; i > l; i--){
+    for(int i = m; i >= l; i--){
         sum = sum + arr[i];
         if(sum > left){
             left = sum;
@@ -42,7 +42,7 @@ int midpointSum(int arr[], int l, int m, int r){
 
     sum = 0;
     int right = INT_MIN;
-    for(int i = m+1; i < r; i++){
+    for(int i = m+1; i <= r; i++){
         sum = sum + arr[i];
         if(sum > right){
             right = sum;
