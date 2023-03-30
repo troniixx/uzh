@@ -52,9 +52,12 @@ int main(){
     int arr[] = {6, 4, 3, 9, 5, 10, 15, 19, 11, 7, 8, 13};
     int n = sizeof(arr) / sizeof(arr[0]); 
     int d = 3;
+    printf("The original:\n");
     printArray(arr,n);
     printf("\n");
     heapSort(arr,n,d);
+    printf("\n");
+    printf("The sorted: \n");
     printArray(arr,n);
     
     return 0;
