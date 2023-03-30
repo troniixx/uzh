@@ -29,3 +29,17 @@ int main(){
 
     return 0;
 }
+
+void print(node *curr){
+    
+}
+
+struct node *convertArraytoLinkedList(int *arr, int n){
+
+    return nullptr;
+}
+
+struct node *reverseLinkedList(node *head){
+
+    return nullptr;
+}

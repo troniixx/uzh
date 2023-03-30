@@ -30,3 +30,19 @@ int main(){
 
     return 0;
 }
+
+void print(int *arr, int n){
+    for(int i = 0; i < n; i++){
+        printf("%d ", *(arr+i));
+    }
+}
+
+int *reverse(int *arr, int n)
+{
+    return nullptr;
+}
+
+int *prepend(int *arr, int v)
+{
+    return nullptr;
+}
