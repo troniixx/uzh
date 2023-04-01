@@ -7,6 +7,7 @@ struct node{
     struct node* next;
 };
 
+
 struct node* convertArraytoLinkedList(int *arr, int n); void print(struct node* curr); struct node* reverseLinkedList(struct node* head);
 
 int main(){
@@ -30,14 +31,23 @@ int main(){
     return 0;
 }
 
-void print(node *curr){
-    
-}
-
 struct node *convertArraytoLinkedList(int *arr, int n){
+    struct node* root = NULL;
 
+    for(int i = 0; i < n; i++){
+
+    }
+    
     return nullptr;
 }
+
+void print(struct node *curr){
+    while(curr != NULL){
+        printf("%d -> ", curr->key);
+        curr = curr->next;
+    }
+}
+
 
 struct node *reverseLinkedList(node *head){
 
