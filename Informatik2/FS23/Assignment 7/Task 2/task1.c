@@ -10,17 +10,15 @@ void push(int data); int pop(); void printStack();
 
 
 int main(){
-    push(5);
-    push(10);
-    push(12);
-    push(6);
-    push(1);
+    push(5); push(10); push(12); push(6); push(1);
+
     printf("Before Pop: ");
     printStack();
+
     printf("\n");
     printf("After Pop: ");
-    pop();
-    pop();
+
+    pop(); pop();
     printStack();
 }
 
