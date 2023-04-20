@@ -34,17 +34,18 @@ and dequeue operations on Q′.
 
     We have to stacks: one called Stack1 (this will be our input stack) and stack2 (this will be our output stack).
 
-###### Enqueue operation\
+> ###### Enqueue operation
 
     ```text
     Push every new element into stack1:
     ```
 
-###### Dequeue Operation\
+> ###### Dequeue Operation
 
     ```text
     If(stack2 is empty) {pop every element in stack1 and push onto stack2 until stack1 is empty}
     Pop everything from stack2.
+    ```
 
 1. Explain how to implement a stack S′ using two queues. Analyze the running time of the pop
 and push operations on S′.
