@@ -42,5 +42,14 @@ and dequeue operations on Q′.
     &nbsp;&nbsp;&nbsp;&nbsp;If(stack2 is empty) {pop every element in stack1 and push onto stack2 until stack1 is empty}\
     &nbsp;&nbsp;&nbsp;&nbsp;Pop everything from stack2.
 
-1. Explain how to implement a stack S′ using two queues. Analyze the running time of the pop
+5. Explain how to implement a stack S′ using two queues. Analyze the running time of the pop
 and push operations on S′.
+
+    &nbsp;&nbsp;&nbsp;&nbsp;We use two queues similar to task 4. One called queue1 and the other called queue2. Our elementto push to stack is "x".
+
+    &nbsp;&nbsp;&nbsp;&nbsp;**Push operation**\
+    &nbsp;&nbsp;&nbsp;&nbsp;if q1 is empty, enqueue to q1\
+    &nbsp;&nbsp;&nbsp;&nbsp;if q1 is not empty, enqueue all elements from q1 to q2. Then enqueue element x to q1 and enqueue all elements from q2 back to q1.
+
+    &nbsp;&nbsp;&nbsp;&nbsp;**Pop operation**\
+    &nbsp;&nbsp;&nbsp;&nbsp;dequeue an element from q1.
