@@ -25,7 +25,7 @@ unless the total number of elements in both stacks together is n. The push and p
 should run in O(1) time.
 
     &nbsp;&nbsp;&nbsp;&nbsp;Divide the array into two halves (arr[0] upto arr[n/2] is stack1 and arr[n/2 + 1] to arr[n-1] is stack 2).\
-    &nbsp;&nbsp;&nbsp;&nbsp;This requires to have two push functions (push1, push2), two pop functions (pop1, pop2) and two variables (e.g top1 of stack1 and top2 for stack2.)\
+    &nbsp;&nbsp;&nbsp;&nbsp;This requires to have two push functions (push1, push2), two pop functions (pop1, pop2) and two variables (e.g top1 of stack1 and &nbsp;&nbsp;&nbsp;&nbsp;top2 for stack2.)\
     &nbsp;&nbsp;&nbsp;&nbsp;top1 has to be > 0 an top2 < n-1.\
     &nbsp;&nbsp;&nbsp;&nbsp;For more details check out this: [Implement two Stacks in an Array](https://www.geeksforgeeks.org/implement-two-stacks-in-an-array/).
 
