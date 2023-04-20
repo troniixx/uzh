@@ -34,11 +34,11 @@ and dequeue operations on Q′.
 
     &nbsp;&nbsp;&nbsp;&nbsp;We have to stacks: one called Stack1 (this will be our input stack) and stack2 (this will be our output stack).
 
-    &nbsp;&nbsp;&nbsp;&nbsp;**Enqueue operation:**
+    &nbsp;&nbsp;&nbsp;&nbsp;**Enqueue operation:**\
     &nbsp;&nbsp;&nbsp;&nbsp;Push every new element into stack1  
 
 
-    &nbsp;&nbsp;&nbsp;&nbsp;**Dequeue Operation:**
+    &nbsp;&nbsp;&nbsp;&nbsp;**Dequeue Operation:**\
     &nbsp;&nbsp;&nbsp;&nbsp;If(stack2 is empty) {pop every element in stack1 and push onto stack2 until stack1 is empty}\
     &nbsp;&nbsp;&nbsp;&nbsp;Pop everything from stack2.
 
