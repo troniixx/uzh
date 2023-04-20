@@ -36,11 +36,11 @@ and dequeue operations on Q′.
 
     &nbsp;&nbsp;&nbsp;&nbsp;**Enqueue operation:**
 
-    &nbsp;&nbsp;&nbsp;&nbsp;Push every new element into stack1:
+    &nbsp;&nbsp;&nbsp;&nbsp;Push every new element into stack1  
 
     &nbsp;&nbsp;&nbsp;&nbsp;**Dequeue Operation:**
 
-    &nbsp;&nbsp;&nbsp;&nbsp;If(stack2 is empty) {pop every element in stack1 and push onto stack2 until stack1 is empty}
+    &nbsp;&nbsp;&nbsp;&nbsp;If(stack2 is empty) {pop every element in stack1 and push onto stack2 until stack1 is empty}\
     &nbsp;&nbsp;&nbsp;&nbsp;Pop everything from stack2.
 
 1. Explain how to implement a stack S′ using two queues. Analyze the running time of the pop
