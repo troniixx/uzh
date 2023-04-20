@@ -8,7 +8,7 @@ struct node{
 };
 
 
-struct node* convertArraytoLinkedList(int *arr, int n); void print(struct node* curr); struct node* reverseLinkedList(struct node* head);
+struct node* convertArraytoLinkedList(int *arr, int n); void print(struct node* curr); struct node* reverseLinkedList(struct node* head); struct node *reverse(struct node* prev, struct node* curr);
 
 int main(){
     int *arr;
@@ -20,36 +20,58 @@ int main(){
 
     struct node *head = convertArraytoLinkedList(arr, N);
 
-    printf("\nThe original");
+    printf("\nThe original: ");
     print(head);
 
     struct node* newHead = reverseLinkedList(head);
 
-    printf("\nThe reversed");
+    printf("\nThe reversed: ");
     print(newHead);
 
     return 0;
 }
 
 struct node *convertArraytoLinkedList(int *arr, int n){
-    struct node* root = NULL;
+    struct node *newNode;
+    newNode = malloc(sizeof(struct node));
+    newNode->key = *(arr);
 
-    for(int i = 0; i < n; i++){
-
+    struct node* curr = newNode;
+    for(int i = 0; i < N; i++){
+        curr->next = malloc(sizeof(struct node));
+        curr = curr->next;
+        curr->key = arr[i];
+        curr->next = NULL;
     }
     
-    return nullptr;
+    return newNode;
 }
 
 void print(struct node *curr){
     while(curr != NULL){
-        printf("%d -> ", curr->key);
+        printf("%d ", curr->key);
         curr = curr->next;
     }
 }
 
 
-struct node *reverseLinkedList(node *head){
+struct node *reverseLinkedList(struct node *head){
+    struct node** h = malloc(sizeof(struct node*));
+    *h = malloc(sizeof(struct node*));
+    reverse(*h, head);
 
-    return nullptr;
+    return (*h)->next;
+}
+
+struct node *reverse(struct node* prev, struct node* curr){
+    if(curr->next == NULL){
+        prev->next = curr;
+        return curr;
+    }
+
+    struct node* temp = reverse(prev, curr->next);
+    temp->next = curr;
+    curr->next = NULL;
+
+    return curr;
 }
