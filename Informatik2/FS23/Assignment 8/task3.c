@@ -70,16 +70,26 @@ void insert(struct TreeNode** root, int val){
 
 int maxPathSum(struct TreeNode *root){
     int sum; int left_sum; int right_sum;
-
+    
     if(!root){return 0;}
     
+    //values[idx] = root->val;
     left_sum = max(0, maxPathSum(root->left));
     right_sum = max(0, maxPathSum(root->right));
 
     
+    //idx += 1;
+
+    return root->val+max(left_sum,right_sum);
+
+}
+
+//iterate thorugh the longest largest path in the tree and add all the values starting from root
+void through(struct TreeNode *root){
+    values[idx] = root->val;
     idx = idx + 1;
 
-    return root->val+max(lsum,rsum);
+
 
 }
 
