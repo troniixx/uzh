@@ -40,11 +40,46 @@ struct TreeNode* search(struct TreeNode* root, int val) {
 
 
 struct TreeNode* leftRotate(struct TreeNode* root, int key) {
+  struct TreeNode* current = search(root, key);
+  if(current == NULL || current->right == NULL){ return root; }
+
+  struct TreeNode* r = current->right;
+  current->right = r->left;
+  if (r->left != NULL) { r->left->parent = current; }
+
+  r->parent = current->parent;
+  if (current->parent == NULL){ r->left = current; r->parent = r; return r; 
   
+  } else if(current == current->parent->left) {current->parent->left = r; 
+  
+  } else {current->parent->right = r; }
+
+  r->left = current;
+  current->parent = r;
+
+  return root;
+
 }
 
 struct TreeNode* rightRotate(struct TreeNode* root, int key) {
-    //Write code here
+  struct TreeNode* current = search(root, key);
+  if(current == NULL || current->left == NULL){ return root; }
+
+  struct TreeNode* r = current->left;
+  current->left = r->right;
+  if (r->right != NULL) { r->right->parent = current; }
+
+  r->parent = current->parent;
+  if (current->parent == NULL){ r->right = current; r->parent = r; return r; 
+  
+  } else if(current == current->parent->right) {current->parent->right = r; 
+  
+  } else {current->parent->left = r; }
+
+  r->right = current;
+  current->parent = r;
+  
+  return root;
 }
 
 void printTreeRecursive(struct TreeNode *root) {
