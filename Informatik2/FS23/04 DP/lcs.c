@@ -21,14 +21,14 @@ int lcsRec(int m, int n, char *x, char *y){
 
 int lcsMemo(int m, int n, char *x, char *y){
     int c[m + 1][n + 1], i, j;
-
     for(i = 0; i <= m; i++){ c[i][0] = -1; }
     for(j = 0; j <= n; j++){ c[0][j] = -1; }
 
-    if(m == 0 || n == 0){ return 0; }
+
+    if(m == 0 || n == 0){ c[m][n] = 0; return 0;}
     else if(c[m][n] != -1){ return c[m][n]; }
-    else if(x[m] == y[n]){ c[m][n] = (lcsMemo(m-1, n-1, x, y)+1); return c[m][n]; }
-    else{ max(lcsMemo(m-1, n, x, y), lcsMemo(m, n-1, x, y)); return c[m][n]; }
+    else if(x[m] == y[n]){ c[m][n] = (lcsMemo(m+1, n+1, x, y)+1); return c[m][n]; }
+    else{ return max(lcsMemo(m-1, n, x, y), lcsMemo(m, n-1, x, y)); /*return c[m][n];*/ }
 }
 
 int lcsDP(int m, int n, char *x, char *y){
@@ -52,6 +52,7 @@ int main(){
     char y[] = "GGTTCAT";
     int x_len = strlen(x);
     int y_len = strlen(y);
+    int memo[20];
 
     printf("LCSRec: %d\n", lcsRec(x_len, y_len, x, y));
     printf("LCSMemo: %d\n", lcsMemo(x_len, y_len, x, y));
