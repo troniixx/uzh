@@ -23,7 +23,7 @@ int main(){
 
     insert(&root, 4); 
     insert(&root, 2); 
-    insert(&root, 3); 
+    insert(&root, 3);
     insert(&root, 8); 
     insert(&root, 6); 
     insert(&root, 7); 
@@ -31,10 +31,10 @@ int main(){
     insert(&root, 12); 
     insert(&root, 12);
 
-    printf("Before deleting node 4, 12 and 2");
+    //printf("Before deleting node 4, 12 and 2");
     printTree(root);
-    printf("\n");
-    traverseTree(root);
+    //printf("\n");
+    //traverseTree(root);
     //printf("\n");
 
     //delete(&root, 4); 
@@ -52,8 +52,8 @@ int main(){
 void insert(struct TreeNode **root, int val){
     
     struct TreeNode *newNode = NULL;
-    struct TreeNode *current = NULL;
-    struct TreeNode *prev = *root;
+    struct TreeNode *prev = NULL;
+    struct TreeNode *current = *root;
 
     newNode = (struct TreeNode*)malloc(sizeof(struct TreeNode));
     newNode->val = val;
@@ -77,9 +77,9 @@ void insert(struct TreeNode **root, int val){
             }
     }
 }
-void delete(struct TreeNode** root, int val){
-    return;
-}
+//void delete(struct TreeNode** root, int val){
+//    return;
+//}
 
 void traverseTree(struct TreeNode *root){
     printf("preOrder: ");
@@ -115,8 +115,24 @@ void postOrder(struct TreeNode *root){
     printf("%d ", root->val);
 }
 
-void printTree(struct TreeNode* root){
-    if(root == NULL){ return; }
+void printHelper(struct TreeNode *root, int lvl){
+    if(root == NULL){
+        return; }
 
-    return;
+    if(root->left != NULL){
+        printf("  %d -- %d : %d\n", root->val, root->left->val, lvl);
+        printHelper(root->left, lvl+1);
+    }
+    if(root->right != NULL){
+        printf("  %d -- %d : %d\n", root->val, root->right->val, lvl);
+        printHelper(root->right, lvl+1);
+    }
 }
+
+void printTree(struct TreeNode *root){
+    printf("graph g {\n");
+    printHelper(root, 1);
+    printf("}\n");
+}
+
+

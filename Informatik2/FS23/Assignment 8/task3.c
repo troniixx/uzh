@@ -73,12 +73,8 @@ int maxPathSum(struct TreeNode *root){
     
     if(!root){return 0;}
     
-    //values[idx] = root->val;
     left_sum = max(0, maxPathSum(root->left));
     right_sum = max(0, maxPathSum(root->right));
-
-    
-    //idx += 1;
 
     return root->val+max(left_sum,right_sum);
 
