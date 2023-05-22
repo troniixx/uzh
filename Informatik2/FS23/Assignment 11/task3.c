@@ -66,8 +66,7 @@ int biggestPlus(int x, int y, int m[x][y]){
     int bottom[x][y]; int left[x][y]; int right[x][y]; int top[x][y];
     makeHelper(x, y, m, bottom, left, right, top);
 
-    int max = 0;
-    int new; int s[x][y];
+    int max = 0; int new; int s[x][y];
 
     for(int i = 0; i < x; i++){
         for(int j = 0; j < y; j++){
