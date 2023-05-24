@@ -31,11 +31,12 @@ int main(){
     insert(&root, 12); 
     insert(&root, 12);
 
-    //printf("Before deleting node 4, 12 and 2");
+    printf("Before deleting node 4, 12 and 2\n");
     printTree(root);
-    //printf("\n");
-    //traverseTree(root);
-    //printf("\n");
+    printf("\n");
+    printf("\n");
+    traverseTree(root);
+    printf("\n");
 
     //delete(&root, 4); 
     //delete(&root, 12); 
@@ -51,9 +52,9 @@ int main(){
 
 void insert(struct TreeNode **root, int val){
     
+    struct TreeNode *current = *root;
     struct TreeNode *newNode = NULL;
     struct TreeNode *prev = NULL;
-    struct TreeNode *current = *root;
 
     newNode = (struct TreeNode*)malloc(sizeof(struct TreeNode));
     newNode->val = val;
@@ -67,7 +68,7 @@ void insert(struct TreeNode **root, int val){
     } else {
         current = current->right;
     }
-
+    }
     if(prev == NULL){
         *root = newNode;
     } else if(val < prev->val){
@@ -76,7 +77,7 @@ void insert(struct TreeNode **root, int val){
         prev->right = newNode;
             }
     }
-}
+
 //void delete(struct TreeNode** root, int val){
 //    return;
 //}
