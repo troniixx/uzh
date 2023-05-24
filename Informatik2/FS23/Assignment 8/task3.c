@@ -8,9 +8,13 @@ struct TreeNode{
     struct TreeNode* right;
 };
 
-void insert(struct TreeNode** root, int val); void lrlp(struct TreeNode* root); int max(int a,int b);
-#define N 8
-int values[9]; int idx;
+struct list{
+    int sum; int len; int data[20];
+}list;
+
+void insert(struct TreeNode** root, int val);
+struct list* lrlp(struct TreeNode *root);
+
 
 int main(){
 
@@ -24,13 +28,13 @@ int main(){
     insert(&root, 10);
     insert(&root, 9);
     insert(&root, 13);
+    struct list *l = lrlp(root);
+    printf("LRLP for the given graph: ");
+    for(int i = (l->len)-1; i > 0; i--){ printf("%d--", l->data[i]); }
+    printf("%d ", l->data[0]);
+    printf("sum: %d", l->sum);
 
-    lrlp(root);
-    
-    // this should return something in the style of [7, 15, 10, 13]
-    for(int i = 0; i < N; i++) {
-        printf(" %d\n", values[i]);
-    }
+    return 0;
 }
 
 int max(int a,int b){
@@ -68,29 +72,38 @@ void insert(struct TreeNode** root, int val){
     }
 }
 
-int maxPathSum(struct TreeNode *root){
-    int sum; int left_sum; int right_sum;
-    
-    if(!root){return 0;}
-    
-    left_sum = max(0, maxPathSum(root->left));
-    right_sum = max(0, maxPathSum(root->right));
-
-    return root->val+max(left_sum,right_sum);
-
-}
-
-//iterate thorugh the longest largest path in the tree and add all the values starting from root
-void through(struct TreeNode *root){
-    values[idx] = root->val;
-    idx = idx + 1;
-
-
-
-}
-
-void lrlp(struct TreeNode *root) {
-		int summy = maxPathSum(root);
-		printf("The largest root-leaf path of the given tree equals to: %d\n", summy);
-        return;
+struct list* lrlp(struct TreeNode *root) {
+		if(root->left && root->right){
+            struct list* left_list = lrlp(root->left);
+            struct list* right_list = lrlp(root->right);
+            if(left_list->sum > right_list->sum){
+                left_list->data[left_list->len] = root->val;
+                left_list->len++;
+                left_list->sum += root->val;
+                return left_list;
+            } else{
+                right_list->data[right_list->len] = root->val;
+                right_list->len++;
+                right_list->sum += root->val;
+                return right_list;
+            }
+        } else if(root->left){
+            struct list* left_list = lrlp(root->left);
+            left_list->data[left_list->len] = root->val;
+            left_list->len++;
+            left_list->sum += root->val;
+            return left_list;
+        } else if(root->right){
+            struct list* right_list = lrlp(root->right);
+            right_list->data[right_list->len] = root->val;
+            right_list->len++;
+            right_list->sum += root->val;
+            return right_list;
+        } else {
+            struct list* l = (struct list*)malloc(sizeof(struct list));
+            l->sum = root->val;
+            l->len = 1;
+            l->data[0] = root->val;
+            return l;
+        }
 	}
