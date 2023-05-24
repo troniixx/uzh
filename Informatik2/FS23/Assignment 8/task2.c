@@ -15,8 +15,10 @@ struct TreeNode *newTreeNode(int name){
     return newNode;
 }
 
-void insert(struct TreeNode** root, int val); void delete(struct TreeNode** root, int val); void traverseTree(struct TreeNode* root); void printTree(struct TreeNode* root);
+void insert(struct TreeNode** root, int val); void delete(struct TreeNode** root, int val);
+void traverseTree(struct TreeNode* root); void printTree(struct TreeNode* root);
 void preOrder(struct TreeNode *root); void inOrder(struct TreeNode *root); void postOrder(struct TreeNode *root);
+struct TreeNode* search(struct TreeNode* root, int val);
 
 int main(){
     struct TreeNode* root = NULL;
@@ -29,25 +31,39 @@ int main(){
     insert(&root, 7); 
     insert(&root, 9); 
     insert(&root, 12); 
-    insert(&root, 12);
+    insert(&root, 1);
 
-    printf("Before deleting node 4, 12 and 2\n");
+    printf("Before deleting node 4, 12 and 2:\n");
     printTree(root);
-    printf("\n");
     printf("\n");
     traverseTree(root);
     printf("\n");
+    printf("\n");
 
-    //delete(&root, 4); 
-    //delete(&root, 12); 
-    //delete(&root, 2);
-    //printf("After deleting node 4, 12 and 2");
-    //printf("\n");
-    //printTree(root);
-    //printf("\n");
-    //traverseTree(root);
+    delete(&root, 4); 
+    delete(&root, 12); 
+    delete(&root, 2);
+    printf("After deleting node 4, 12 and 2:");
+    printf("\n");
+    printTree(root);
+    printf("\n");
+    traverseTree(root);
 
     return 0;
+}
+
+struct TreeNode* search(struct TreeNode* root, int val){
+    struct TreeNode* curr = root;
+
+    while(curr != NULL && curr->val != val){
+        if(val < curr->val){
+            curr = curr->left;
+        } else {
+            curr = curr->right;
+        }
+    }
+
+    return curr;
 }
 
 void insert(struct TreeNode **root, int val){
@@ -78,9 +94,64 @@ void insert(struct TreeNode **root, int val){
             }
     }
 
-//void delete(struct TreeNode** root, int val){
-//    return;
-//}
+void delete(struct TreeNode** root, int val){
+    struct TreeNode* x = search(*root, val);
+
+    if(x == NULL){
+        return;
+    }
+
+    struct TreeNode* u = *root;
+    struct TreeNode* prev = NULL;
+
+    while(u != x){
+        prev = u;
+        if(x->val < u->val){
+            u = u->left;
+        } else {
+            u = u->right;
+        }
+    }
+
+    if(u->right == NULL){
+        if(prev == NULL){
+            *root = u->left;
+        } else if(prev->left == u){ 
+            prev->left = u->left;
+        } else {
+            prev->right = u->left;
+        }
+    }  else if(u->left == NULL){
+        if(prev == NULL){
+            *root = u->right;
+        } else if(prev->left == u){
+            prev->left = u->right;
+        } else {
+            prev->right = u->right;
+        }
+    } else {
+        struct TreeNode* y = x->left;
+        struct TreeNode* z = y;
+        while(y->right != NULL){
+            z = y;
+            y = y->right;
+        }
+        if(prev == NULL){
+            *root = y;
+        } else if(prev->left == u){
+            prev->left = y;
+        } else {
+            prev->right = y;
+        }
+        y->right = u->right;
+        if(z != y){
+            z->right = y->left;
+            y->left = u->left;
+        }
+    }
+
+    free(u);
+}
 
 void traverseTree(struct TreeNode *root){
     printf("preOrder: ");
