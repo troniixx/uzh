@@ -72,5 +72,5 @@ int main(){
     int n = 8;
 
     int result = apex(arr, n, 0, 7);
-    printf("The smallest apex in the given array is %d\n", result);
+    printf("The smallest apex in the given array is at index %d\n", result);
 }
