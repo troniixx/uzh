@@ -3,24 +3,22 @@
 
 int d(int i){
     int sum = i;
+
     while(i != 0){
-        sum = sum + i%10;
+        sum = sum + (i%10);
         i = i/10;
     }
+
     return sum;
 }
 
 void DNumbers(int i, int n){
-    int k;
-
-    for(k = 1; k <= n; k++){
+    for(int j = 1; j <= n; j++){
         i = d(i);
-        printf("%d ", i);
+        printf("%d\n",i);
     }
-    printf("\n");
-
 }
 
 int main(){
-    DNumbers(81, 4);
+    DNumbers(81,4);
 }
