@@ -1,6 +1,6 @@
-array = [2, "xzy", 5, [2.71]] #subtask a
-print(f"Subtask b: {type(array)}")
-print(f"Subtask c: {array[-1]}")
-names = ["Mert", "Erol"] #subtask d
-concatenated = array + names #subtask e
-print(f"Subtask f: {len(concatenated)}")
+sentence = "You are using Python right now." #subtask a
+print(f"Subtask b: {type(sentence)}") 
+print(f"Subtask c: {sentence[0]}")
+print(f"Subtask d: {sentence[-7:]}")
+print(f"Subtask e: {sentence[0:3]}")
+print(f"Subtask f: {len(sentence)}")

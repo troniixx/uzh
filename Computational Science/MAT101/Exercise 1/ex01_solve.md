@@ -16,6 +16,7 @@ g = (-b)**(0.5)
 
 print(f"a = {type(a)}\nb = {type(b)}\nc = {type(c)}\nd = {type(d)}\ne = {type(e)}\nf = {type(f)}\ng = {type(g)}\n ")
 ```
+
 > Output:
 > a = <class 'int'>
 b = <class 'float'>
@@ -24,7 +25,6 @@ d = <class 'float'>
 e = <class 'float'>
 f = <class 'float'>
 g = <class 'complex'>
-
 
 #### b)
 
@@ -62,19 +62,19 @@ a = True, b = False, c = False, d = True, e = 0, f = True, g = False
 
 ``` python
 sentence = "You are using Python right now." #subtask a
-print(type(sentence)) #subtask b
-print(sentence[0]) #subtask c
-print(sentence[-7:]) #subtask d
-print(sentence[0:3]) #subtask e
-print(len(sentence)) #subtask f
+print(f"Subtask b: {type(sentence)}") 
+print(f"Subtask c: {sentence[0]}")
+print(f"Subtask d: {sentence[-7:]}")
+print(f"Subtask e: {sentence[0:3]}")
+print(f"Subtask f: {len(sentence)}")
 ```
 
 >Output:
-<class 'str'>
-Y
-ht now.
-You
-31
+Subtask b: <class 'str'>
+Subtask c: Y
+Subtask d: ht now.
+Subtask e: You
+Subtask f: 31
 
 ### Exercise 4
 
