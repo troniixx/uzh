@@ -23,7 +23,7 @@ SAC-Jahrbuch_1939_mul_columns.txt:9501
 ### b)
 
 ``` bash
-ggrep -P '^\w+[\t ].*lang="de">' SAC-Jahrbuch_193*_mul_columns.txt | ggrep -P '\w+en$' SAC-Jahrbuch_193*_mul_columns.txt
+ggrep -P '(VAFIN | VAIMP | VVFIN | VVIMP | VMFIN | VVINF | VAINF | VMINF | VVIZU | VVPP | VMPP | VAPP)' SAC-Jahrbuch_193*_mul_columns.txt | ggrep -P '\w+en\t' SAC-Jahrbuch_193*_mul_columns.txt
 ```
 
 >Solution:
