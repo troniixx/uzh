@@ -55,6 +55,10 @@ ggrep -Pow '\b(haben|sein)\b' SAC-Jahrbuch_193*_mul_columns.txt | sort | uniq -c
 3315 SAC-Jahrbuch_1938_mul_columns.txt:sein
 1259 SAC-Jahrbuch_1939_mul_columns.txt:haben
 3169 SAC-Jahrbuch_1939_mul_columns.txt:sein
+
+sein: 29933
+haben: 10582 
+
 ### d)
 
 ``` bash
@@ -81,8 +85,9 @@ ggrep -Pow '\b(haben|sein)\b' SAC-Jahrbuch_193*_mul_columns.txt | sort | uniq -c
 
 ### g)
 
+m as second character
 ``` bash
-
+ggrep -P '\b\wm\w+\b$' SAC-Jahrbuch_1930_mul_columns.txt
 ```
 
 >Solution:
@@ -90,10 +95,10 @@ ggrep -Pow '\b(haben|sein)\b' SAC-Jahrbuch_193*_mul_columns.txt | sort | uniq -c
 ### h)
 
 ``` bash
-
+ggrep -P '[a-zA-Z0-9]+-[a-zA-z0-9]+\t' SAC-Jahrbuch_193*_mul_columns.txt | wc
 ```
 
->Solution:
+>Solution: 9612   28836  569251
 
 ### i)
 
