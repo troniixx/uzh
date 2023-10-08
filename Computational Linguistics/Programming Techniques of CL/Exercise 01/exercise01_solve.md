@@ -95,10 +95,10 @@ ggrep -P '\b\wm\w+\b$' SAC-Jahrbuch_1930_mul_columns.txt
 ### h)
 
 ``` bash
-ggrep -P '[a-zA-Z0-9]+-[a-zA-z0-9]+\t' SAC-Jahrbuch_193*_mul_columns.txt | wc
+ggrep -P '[a-zA-Z0-9]+-[a-zA-z0-9]+\t' SAC-Jahrbuch_193*_mul_columns.txt | wc -l
 ```
 
->Solution: 9612   28836  569251
+>Solution: 9612
 
 ### i)
 
