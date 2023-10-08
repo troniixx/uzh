@@ -111,17 +111,47 @@ ggrep -P '[a-zA-Z0-9]+-[a-zA-z0-9]+\t' SAC-Jahrbuch_193*_mul_columns.txt | wc
 ### a)
 
 ``` bash
+ggrep -P '.*\?$' GreatGatsby.txt
+```
+
+>Solution:
+her back inside? 
+What would happen now in the dim, incalculable hours?
+“Come on!” His temper cracked a little. “What’s the matter, anyhow?
+conception of the affair that couldn’t be measured?
+“You said a bad driver was only safe until she met another bad driver?
+
+### b)
+
+``` bash
 
 ```
 
 >Solution:
 
+### c)
+
+``` bash
+ggrep -Pc '^[A-Z]' GreatGatsby.txt
+```
+
+>Solution: 941
+
+### d)
+
+``` bash
+ggrep -Pc '(happy|joy|love|excited)' GreatGatsby.txt 
+ggrep -Pc '(sad|sorrow|hate|angry)' GreatGatsby.txt 
+```
+
+>Solution: 81 // 26
+
 ## Reflection
 
 ### a)
 
->
+> Very small mistakes in the RegEx can lead to very different results. It is important to be very precise when writing RegEx and it takes a long time to get used to it.
 
 ### b)
 
->
+> It pretty much took from the day the exercise was released to the day we had to hand it in.
