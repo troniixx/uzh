@@ -62,18 +62,18 @@ haben: 10582
 ### d)
 
 ``` bash
-
+ggrep -oP '\b(\w*([bcdfghjklmnpqrstvwxyz])\2{3,}\w*)\b' SAC-Jahrbuch_193*_mul_columns.txt | wc -l
 ```
 
->Solution:
+>Solution: 5
 
 ### e)
 
 ``` bash
-
+ggrep -P '\b(\w*([bcdfghjklmnpqrstvwxyz])\2{3,}\w*)\b' SAC-Jahrbuch_193*_mul_columns.txt
 ```
 
->Solution:
+>Solution: N_P
 
 ### f)
 
