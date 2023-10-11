@@ -1,14 +1,13 @@
 #Exercise 2a
 def is_leap_year(year):
-    if year % 4 == 0 and year % 100 != 0 and year % 400 == 0:
-        return True
-    return False
+    return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
 
 #Exercise 2b
 def days_since_new_year(date):
     months = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30 ,31, 30, 31]
     day = date[0]
     month = date[1]
+        
     result = day
     
     for day in range(1, month):
@@ -18,13 +17,23 @@ def days_since_new_year(date):
 
 #Exercise 2c
 def days_between(start, end):
-    months = []
-    day_start = start[0], month_start = start[1], year_start = start[2]
+    days_start = days_since_new_year(start)
+    days_end = days_since_new_year(end)
     
-    day_end = end[0], month_end = end[1], year_end = end[2]
+    if start[2] == end[2]:
+        return days_end - days_start
+    else:
+        total_days = days_end + (366 if is_leap_year(end[2]) else 365) - days_start
+        for year in range(start[2] + 1, end[2]):
+            total_days += 366 if is_leap_year(year) else 365
+        return total_days
+        
+        
+if __name__ == '__main__':
+    print(is_leap_year(2000))
+    print(days_since_new_year([1, 1]))
+    print(days_since_new_year([19, 2]))
+    print(days_between([1, 1, 2000], [1, 1, 2001]))
+    print(days_between([1, 1, 2000], [1, 1, 2000]))
+    print(days_between([25, 12, 2023], [4, 1, 2024]))
     
-    if year_start == year_end:
-        if month_start == month_end:
-            return day_end - day_start
-        else:
-            pass
