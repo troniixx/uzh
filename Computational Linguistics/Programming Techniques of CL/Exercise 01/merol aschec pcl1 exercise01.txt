@@ -1,0 +1,113 @@
+Exercise 1: Searching with Regular Expressions
+Programming Techniques in Computational Linguistics 1
+Programming for Linguists
+
+1. Corpus
+a)	How many words (tokens) in all the books start with the letter m?
+
+ggrep -P -i '^m' SAC-Jahrbuch_193*_mul_columns.txt | wc -l
+Solution: 94005
+
+b)	How often do tokens of German verbs end with ‘en’?
+
+ggrep -P '.+en\s(VAFIN | VAIMP | VVFIN | VVIMP | VMFIN | VVINF | VAINF | VMINF | VVIZU | VVPP | VMPP | VAPP)' SAC-Jahrbuch_193*_mul_columns.txt | wc -l
+Solution: 69338
+
+c)	Out of the two German verbs ‘haben’ and ‘sein’ (in all their conjugated forms), which occurs more often in the corpus? (Bonus points if you can do it with a single grep search)
+
+ggrep -P '(VAFIN|VAIMP|VVFIN|VVIMP|VMFIN|VVINF|VAINF|VMINF|VVIZU|VVPP|VMPP|VAPP)\s(haben|sein)' SAC-Jahrbuch_193*_mul_columns.txt | grep -Po '(haben|sein)' | sort | uniq -c
+Solution: 10591 haben, 24416 sein
+
+//TODO: Try to make it into one ggrep command
+
+d)	How many words in the corpus have the same consonant appearing more than four times? As an example, the German word Sonnentrunkenheiten has 6 n. Search for unique occurrences in the lemmas.
+
+ggrep -Pi '\w*([bcdfghjklmnprstvwxyz])(\w*\1){3,}\w*\s' SAC-Jahrbuch_193*_mul_columns.txt | sort | uniq -c | wc -l
+Solution: 2772
+
+e)	Among the words with the same consonant appearing more than four times found above, which PoS tag appears the most, from which language is it?
+
+ggrep -Pi '\w*([bcdfghjklmnprstvwxyz])(\w*\1){3,}\w*\s' SAC-Jahrbuch_193*_mul_columns.txt | sort | uniq | grep -Po '\s[A-Z]*\s' | sort | uniq -c | sort -rn
+Solution: 1269 NN (German, noun)
+
+f)	What are the five most common German conjunctions in the corpus?
+grep -Po '\s(KOUI|KOUS|KON|KOKOM)\s.+' SAC-Jahrbuch_193*_mul_columns.txt | grep -Po '\s.+' | sort | uniq -c | sort -rn | head -5
+Solution:
+39435        KON     und
+4658         KOUS    dass
+2977         KOKOM   als
+2519         KON     oder
+2228         KON     aber
+
+g)	Which are the three most frequently occurring german verbs whose lemma forms have the letter
+’m’ in the second position of the word?
+Hint: you only need one grep command. Don’t forget to match all verb tags!
+
+ggrep -P '\s(VAFIN|VAIMP|VVFIN|VVIMP|VMFIN|VVINF|VAINF|VMINF|VVIZU|VVPP|VMPP|VAPP)\s\wm\w+' SAC-Jahrbuch_193*_mul_columns.txt | sort | uniq -c | sort -rn | head -3
+
+Solution:
+     14 SAC-Jahrbuch_1933_mul_columns.txt:stiegen       VVFIN   empor+steigen
+     12 SAC-Jahrbuch_1938_mul_columns.txt:umgangen      VVPP    umgehen
+     12 SAC-Jahrbuch_1937_mul_columns.txt:umgangen      VVPP    umgehen
+
+h)	How many tokens in the corpus contain a dash (-)? What kinds of tokens did you find?
+
+ggrep -P '^\S+-\S+\t' SAC-Jahrbuch_193*_mul_columns.txt | sort | uniq -c | wc -l
+
+Solution: 8428, a lot of French tokens
+
+i)	Bonus task: you don’t have to answer this to earn the full point, but it will help if you are missing some other task.
+Which German prefix of the following occurs most often with verbs: ‘ab-’, ‘an-’, ‘auf-’, ‘aus-’? How can the frequencies be counted at the same time in one command? (Note: These prefixes can be separated from the verb in a German sentence.)
+
+//TODO
+
+
+2. Book: The Great Gatsby
+a)	How many lines in the book contain direct questions (lines ending with a question mark)? Extract the first five such lines. Do they give insights into the main topics or concerns of the book?
+ggrep -P '?$' GreatGatsby.txt | head -n 5
+Solution:
+	her back inside? What would happen now in the dim, incalculable hours?
+	"Come on!" His temper cracked a little. "What’s the matter, anyhow?
+	conception of the affair that couldn’t be measured?
+	"You said a bad driver was only safe until she met another bad driver?
+
+There were no more than 4 matches. Because there is a lot of dialog in the story, we get better results by inserting an optional quoatition mark after the question mark: grep -P '\?"*' GreatGatsby.txt | head -5
+This way, we also get dialog sentences ending with ?, which give us a much better idea of the people and mood of the book (including a well-known line involving 2 main characters as the 4th match):
+	"She’s asleep. She’s three years old. Haven’t you ever seen her?"
+	"What you doing, Nick?"
+	"Who with?"
+	"Gatsby?" demanded Daisy. "What Gatsby?"
+	helplessly: "What do people plan?"
+
+b)	Characters sometimes have dialogues pre- or postfixed with their names, like ’Alice: How are you?’. identify if your book contains such a pattern, and extract the ten most frequently mentioned character names. Which character seems to be the most dominant or involved based on this?
+Note: If your book does not contain this pattern, propose another way to identify character names in your book.
+
+ggrep -P '\w:\s".' GreatGatsby.txt would search for Name: ", but does not return any names.
+By using a grep to capture capitalized words before or after the quotation marks (most likely names), we get better results: ggrep -P '([A-Z]\w+\s*\w*:\s"|"\s[A-Z]\w+)' GreatGatsby.txt
+We can then extract the capitalized words only, sort and count them: ggrep -Po '([A-Z]\w+\s*\w*:\s"|"\s[A-Z]\w+)' GreatGatsby.txt | ggrep -Po '[A-Z]\w+' | sort | uniq -c | sort -rn
+The most frequent names are:
+      9 Tom
+      7 Gatsby
+      5 Daisy
+      2 Jordan
+
+c)	Identify if there are any lines written in all uppercase (this could be indicative of titles, headings, or emphasis). How many such lines are there? Provide the first three such lines you found.
+
+ggrep -Pc '^[A-Z].*[A-Z]$' GreatGatsby.txt and grep -P '^[A-Z].*[A-Z]$' GreatGatsby.txt | head -3
+
+Solution: 12 lines, first 3 are:
+START: FULL LICENSE
+THE FULL PROJECT GUTENBERG LICENSE
+PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+
+d)	Estimate the mood of the book by counting how many times positive words like ’happy’, ’joy’, ’love’, and ’excited’ appear compared to negative words like ’sad’, ’sorrow’, ’hate’, and ’angry’. Which group of words appears more frequently?
+
+ggrep -Pc '(happy|joy|love|excited)' GreatGatsby.txt and ggrep -Pc '(sad|sorrow|hate|angry)' GreatGatsby.txt 
+Solution: 81 to 26
+
+3	Reflection/Feedback
+a)	Summarize your discoveries and your learning progress in two sentences.
+Very small mistakes in the RegEx can lead to very different results. It is important to be very precise when writing RegEx and it takes a long time to get used to it.
+
+b)	How long did it take you overall to finish this exercise?
+It pretty much took from the day the exercise was released to the day we had to hand it in. It's important to be able to work on the RegEx uninterrupted, since it's quite difficult to take the work up again on a later day.
