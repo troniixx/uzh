@@ -62,8 +62,6 @@ Which German prefix of the following occurs most often with verbs: ‘ab-’, �
 ggrep -Po '(ab|an|auf|aus)\w+\t(VAFIN|VAIMP|VVFIN|VVIMP|VMFIN|VVINF|VAINF|VMINF|VVIZU|VVPP|VMPP|VAPP)' SAC-Jahrbuch_193*_mul_columns.txt | grep -Po '(ab|an|auf|aus)' | sort | uniq -c | sort -rn | head -1
 > Solution: 9820 an
 
-> Solution: 14 SAC-Jahrbuch_1936_mul_columns.txt:angelangt
-
 
 2. Book: The Great Gatsby
 a)	How many lines in the book contain direct questions (lines ending with a question mark)? Extract the first five such lines. Do they give insights into the main topics or concerns of the book?
