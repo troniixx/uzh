@@ -31,7 +31,7 @@ ggrep -Pi '\w*([bcdfghjklmnprstvwxyz])(\w*\1){3,}\w*\s' SAC-Jahrbuch_193*_mul_co
 Solution: 1269 NN (German, noun)
 
 f)	What are the five most common German conjunctions in the corpus?
-grep -Po '\s(KOUI|KOUS|KON|KOKOM)\s.+' SAC-Jahrbuch_193*_mul_columns.txt | grep -Po '\s.+' | sort | uniq -c | sort -rn | head -5
+ggrep -Po '\s(KOUI|KOUS|KON|KOKOM)\s.+' SAC-Jahrbuch_193*_mul_columns.txt | ggrep -Po '\s.+' | sort | uniq -c | sort -rn | head -5
 Solution:
 39435        KON     und
 4658         KOUS    dass
