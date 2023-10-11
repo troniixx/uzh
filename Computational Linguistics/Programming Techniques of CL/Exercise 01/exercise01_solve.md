@@ -89,31 +89,39 @@ ggrep -Po '(ab|an|auf|aus)\w+\t(VAFIN|VAIMP|VVFIN|VVIMP|VMFIN|VVINF|VAINF|VMINF|
 ggrep -P '?$' GreatGatsby.txt | head -n 5
 ```
 
->Solution: her back inside? What would happen now in the dim, incalculable hours?
-"Come on!" His temper cracked a little. "What’s the matter, anyhow?
-conception of the affair that couldn’t be measured?
-"You said a bad driver was only safe until she met another bad driver?
-There were no more than 4 matches. Because there is a lot of dialog in the story, we get better results by inserting an optional quotation mark after the question mark: ggrep -P '\?"*' GreatGatsby.txt | head -5
-This way, we also get dialog sentences ending with ?, which give us a much better idea of the people and mood of the book (including a well-known line involving 2 main characters as the 4th match):
-"She’s asleep. She’s three years old. Haven’t you ever seen her?"
-"What you doing, Nick?"
-"Who with?"
-"Gatsby?" demanded Daisy. "What Gatsby?"
+>Solution: her back inside? What would happen now in the dim, incalculable hours?\
+"Come on!" His temper cracked a little. "What’s the matter, anyhow?  
+
+conception of the affair that couldn’t be measured?  
+
+"You said a bad driver was only safe until she met another bad driver?  
+
+
+There were no more than 4 matches. Because there is a lot of dialog in the story, we get better results by inserting an optional quotation mark after the question mark: ```bash ggrep -P '\?"*' GreatGatsby.txt | head -5 ```  
+
+
+This way, we also get dialog sentences ending with ?, which give us a much better idea of the people and mood of the book (including a well-known line involving 2 main characters as the 4th match):\
+"She’s asleep. She’s three years old. Haven’t you ever seen her?"\
+"What you doing, Nick?"\
+"Who with?"\
+"Gatsby?" demanded Daisy. "What Gatsby?"\
 helplessly: "What do people plan?"
 
 ### b)
 
-Characters sometimes have dialogues pre- or postfixed with their names, like ’Alice: How are you?’. identify if your book contains such a pattern, and extract the ten most frequently mentioned character names. Which character seems to be the most dominant or involved based on this?
+Characters sometimes have dialogues pre- or postfixed with their names, like ’Alice: How are you?’. identify if your book contains such a pattern, and extract the ten most frequently mentioned character names. Which character seems to be the most dominant or involved based on this?\
 Note: If your book does not contain this pattern, propose another way to identify character names in your book.
 
 ``` bash ggrep -P '\w:\s".' GreatGatsby.txt ``` would search for Name: ", but does not return any names.
-By using a ggrep to capture capitalized words before or after the quotation marks (most likely names), we get better results: ``` bash ggrep -P '([A-Z]\w+\s*\w*:\s"|"\s[A-Z]\w+)' GreatGatsby.txt ```
+
+By using a ggrep to capture capitalized words before or after the quotation marks (most likely names), we get better results: ``` bash ggrep -P '([A-Z]\w+\s*\w*:\s"|"\s[A-Z]\w+)' GreatGatsby.txt ```  
+
 We can then extract the capitalized words only, sort and count them: ```bash ggrep -Po '([A-Z]\w+\s*\w*:\s"|"\s[A-Z]\w+)' GreatGatsby.txt | ggrep -Po '[A-Z]\w+' | sort | uniq -c | sort -rn ```
 
->Solution: The most frequent names are:
-      9 Tom
-      7 Gatsby
-      5 Daisy
+>Solution: The most frequent names are:\
+      9 Tom\
+      7 Gatsby\
+      5 Daisy\
       2 Jordan
 
 ### c)
@@ -122,9 +130,9 @@ We can then extract the capitalized words only, sort and count them: ```bash ggr
 ggrep -Pc '^[A-Z].*[A-Z]$' GreatGatsby.txt and ggrep -P '^[A-Z].*[A-Z]$' GreatGatsby.txt | head -3
 ```
 
->Solution: START: FULL LICENSE
-THE FULL PROJECT GUTENBERG LICENSE
-PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+>Solution: START: FULL LICENSE 
+ THE FULL PROJECT GUTENBERG LICENSE
+ PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
 
 ### d)
 
