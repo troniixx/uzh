@@ -57,7 +57,6 @@ ggrep -Po '\s(KOUI|KOUS|KON|KOKOM)\s.+' SAC-Jahrbuch_193*_mul_columns.txt | ggre
 
 ### g)
 
-m as second character
 ``` bash
 ggrep -P '\s(VAFIN|VAIMP|VVFIN|VVIMP|VMFIN|VVINF|VAINF|VMINF|VVIZU|VVPP|VMPP|VAPP)\s\wm\w+' SAC-Jahrbuch_193*_mul_columns.txt | sort | uniq -c | sort -rn | head -3
 ```
@@ -107,8 +106,8 @@ helplessly: "What do people plan?"
 Characters sometimes have dialogues pre- or postfixed with their names, like ’Alice: How are you?’. identify if your book contains such a pattern, and extract the ten most frequently mentioned character names. Which character seems to be the most dominant or involved based on this?
 Note: If your book does not contain this pattern, propose another way to identify character names in your book.
 
-``` bash ggrep -P '\w:\s".' GreatGatsby.txt `````` would search for Name: ", but does not return any names.
-By using a ggrep to capture capitalized words before or after the quotation marks (most likely names), we get better results: ``` bash ggrep -P '([A-Z]\w+\s*\w*:\s"|"\s[A-Z]\w+)' GreatGatsby.txt ``````
+``` bash ggrep -P '\w:\s".' GreatGatsby.txt ``` would search for Name: ", but does not return any names.
+By using a ggrep to capture capitalized words before or after the quotation marks (most likely names), we get better results: ``` bash ggrep -P '([A-Z]\w+\s*\w*:\s"|"\s[A-Z]\w+)' GreatGatsby.txt ```
 We can then extract the capitalized words only, sort and count them: ```bash ggrep -Po '([A-Z]\w+\s*\w*:\s"|"\s[A-Z]\w+)' GreatGatsby.txt | ggrep -Po '[A-Z]\w+' | sort | uniq -c | sort -rn ```
 
 >Solution: The most frequent names are:
@@ -124,8 +123,8 @@ ggrep -Pc '^[A-Z].*[A-Z]$' GreatGatsby.txt and ggrep -P '^[A-Z].*[A-Z]$' GreatGa
 ```
 
 >Solution: START: FULL LICENSE
-	THE FULL PROJECT GUTENBERG LICENSE
-	PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+THE FULL PROJECT GUTENBERG LICENSE
+PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
 
 ### d)
 
