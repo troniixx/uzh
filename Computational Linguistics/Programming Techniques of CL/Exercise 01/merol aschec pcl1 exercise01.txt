@@ -59,8 +59,8 @@ Solution: 8428, a lot of French tokens
 i)	Bonus task: you don’t have to answer this to earn the full point, but it will help if you are missing some other task.
 Which German prefix of the following occurs most often with verbs: ‘ab-’, ‘an-’, ‘auf-’, ‘aus-’? How can the frequencies be counted at the same time in one command? (Note: These prefixes can be separated from the verb in a German sentence.)
 
-//TODO
-ggrep -oP '\b(ab|an|auf|aus)\w+\t(VAFIN|VAIMP|VVFIN|VVIMP|VMFIN|VVINF|VAINF|VMINF|VVIZU|VVPP|VMPP|VAPP)' SAC-Jahrbuch_193*_mul_columns.txt | sort | uniq -c | sort -nr | head -n 1
+ggrep -Po '(ab|an|auf|aus)\w+\t(VAFIN|VAIMP|VVFIN|VVIMP|VMFIN|VVINF|VAINF|VMINF|VVIZU|VVPP|VMPP|VAPP)' SAC-Jahrbuch_193*_mul_columns.txt | grep -Po '(ab|an|auf|aus)' | sort | uniq -c | sort -rn | head -1
+> Solution: 9820 an
 
 > Solution: 14 SAC-Jahrbuch_1936_mul_columns.txt:angelangt
 
