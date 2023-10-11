@@ -1,32 +1,25 @@
-Exercise 1: Searching with Regular Expressions
+﻿Exercise 1: Searching with Regular Expressions
 Programming Techniques in Computational Linguistics 1
 Programming for Linguists
 
 1. Corpus
 a)	How many words (tokens) in all the books start with the letter m?
-
 ggrep -P -i '^m' SAC-Jahrbuch_193*_mul_columns.txt | wc -l
 Solution: 94005
 
 b)	How often do tokens of German verbs end with ‘en’?
-
 ggrep -P '.+en\s(VAFIN | VAIMP | VVFIN | VVIMP | VMFIN | VVINF | VAINF | VMINF | VVIZU | VVPP | VMPP | VAPP)' SAC-Jahrbuch_193*_mul_columns.txt | wc -l
 Solution: 69338
 
 c)	Out of the two German verbs ‘haben’ and ‘sein’ (in all their conjugated forms), which occurs more often in the corpus? (Bonus points if you can do it with a single ggrep search)
-
 ggrep -P '(VAFIN|VAIMP|VVFIN|VVIMP|VMFIN|VVINF|VAINF|VMINF|VVIZU|VVPP|VMPP|VAPP)\s(haben|sein)' SAC-Jahrbuch_193*_mul_columns.txt | ggrep -Po '(haben|sein)' | sort | uniq -c
 Solution: 10591 haben, 24416 sein
 
-//TODO: Try to make it into one ggrep command
-
 d)	How many words in the corpus have the same consonant appearing more than four times? As an example, the German word Sonnentrunkenheiten has 6 n. Search for unique occurrences in the lemmas.
-
 ggrep -Pi '\w*([bcdfghjklmnprstvwxyz])(\w*\1){3,}\w*\s' SAC-Jahrbuch_193*_mul_columns.txt | sort | uniq -c | wc -l
 Solution: 2772
 
 e)	Among the words with the same consonant appearing more than four times found above, which PoS tag appears the most, from which language is it?
-
 ggrep -Pi '\w*([bcdfghjklmnprstvwxyz])(\w*\1){3,}\w*\s' SAC-Jahrbuch_193*_mul_columns.txt | sort | uniq | ggrep -Po '\s[A-Z]*\s' | sort | uniq -c | sort -rn
 Solution: 1269 NN (German, noun)
 
@@ -39,40 +32,31 @@ Solution:
 2519         KON     oder
 2228         KON     aber
 
-g)	Which are the three most frequently occurring german verbs whose lemma forms have the letter
-’m’ in the second position of the word?
-Hint: you only need one ggrep command. Don’t forget to match all verb tags!
-
+g)	Which are the three most frequently occurring german verbs whose lemma forms have the letter ’m’ in the second position of the word?
 ggrep -P '\s(VAFIN|VAIMP|VVFIN|VVIMP|VMFIN|VVINF|VAINF|VMINF|VVIZU|VVPP|VMPP|VAPP)\s\wm\w+' SAC-Jahrbuch_193*_mul_columns.txt | sort | uniq -c | sort -rn | head -3
-
 Solution:
      14 SAC-Jahrbuch_1933_mul_columns.txt:stiegen       VVFIN   empor+steigen
      12 SAC-Jahrbuch_1938_mul_columns.txt:umgangen      VVPP    umgehen
      12 SAC-Jahrbuch_1937_mul_columns.txt:umgangen      VVPP    umgehen
 
 h)	How many tokens in the corpus contain a dash (-)? What kinds of tokens did you find?
-
 ggrep -P '^\S+-\S+\t' SAC-Jahrbuch_193*_mul_columns.txt | sort | uniq -c | wc -l
-
 Solution: 8428, a lot of French tokens
 
-i)	Bonus task: you don’t have to answer this to earn the full point, but it will help if you are missing some other task.
-Which German prefix of the following occurs most often with verbs: ‘ab-’, ‘an-’, ‘auf-’, ‘aus-’? How can the frequencies be counted at the same time in one command? (Note: These prefixes can be separated from the verb in a German sentence.)
-
-ggrep -Po '(ab|an|auf|aus)\w+\t(VAFIN|VAIMP|VVFIN|VVIMP|VMFIN|VVINF|VAINF|VMINF|VVIZU|VVPP|VMPP|VAPP)' SAC-Jahrbuch_193*_mul_columns.txt | grep -Po '(ab|an|auf|aus)' | sort | uniq -c | sort -rn | head -1
-> Solution: 9820 an
-
+i)	Which German prefix of the following occurs most often with verbs: ‘ab-’, ‘an-’, ‘auf-’, ‘aus-’? How can the frequencies be counted at the same time in one command? (Note: These prefixes can be separated from the verb in a German sentence.)
+ggrep -Po '(ab|an|auf|aus)\w+\t(VAFIN|VAIMP|VVFIN|VVIMP|VMFIN|VVINF|VAINF|VMINF|VVIZU|VVPP|VMPP|VAPP)' SAC-Jahrbuch_193*_mul_columns.txt | ggrep -Po '(ab|an|auf|aus)' | sort | uniq -c | sort -rn | head -1
+Solution: 9820 an
 
 2. Book: The Great Gatsby
 a)	How many lines in the book contain direct questions (lines ending with a question mark)? Extract the first five such lines. Do they give insights into the main topics or concerns of the book?
+
 ggrep -P '?$' GreatGatsby.txt | head -n 5
 Solution:
 	her back inside? What would happen now in the dim, incalculable hours?
 	"Come on!" His temper cracked a little. "What’s the matter, anyhow?
 	conception of the affair that couldn’t be measured?
 	"You said a bad driver was only safe until she met another bad driver?
-
-There were no more than 4 matches. Because there is a lot of dialog in the story, we get better results by inserting an optional quoatition mark after the question mark: ggrep -P '\?"*' GreatGatsby.txt | head -5
+There were no more than 4 matches. Because there is a lot of dialog in the story, we get better results by inserting an optional quotation mark after the question mark: ggrep -P '\?"*' GreatGatsby.txt | head -5
 This way, we also get dialog sentences ending with ?, which give us a much better idea of the people and mood of the book (including a well-known line involving 2 main characters as the 4th match):
 	"She’s asleep. She’s three years old. Haven’t you ever seen her?"
 	"What you doing, Nick?"
@@ -95,14 +79,12 @@ The most frequent names are:
 c)	Identify if there are any lines written in all uppercase (this could be indicative of titles, headings, or emphasis). How many such lines are there? Provide the first three such lines you found.
 
 ggrep -Pc '^[A-Z].*[A-Z]$' GreatGatsby.txt and ggrep -P '^[A-Z].*[A-Z]$' GreatGatsby.txt | head -3
-
 Solution: 12 lines, first 3 are:
-START: FULL LICENSE
-THE FULL PROJECT GUTENBERG LICENSE
-PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+	START: FULL LICENSE
+	THE FULL PROJECT GUTENBERG LICENSE
+	PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
 
 d)	Estimate the mood of the book by counting how many times positive words like ’happy’, ’joy’, ’love’, and ’excited’ appear compared to negative words like ’sad’, ’sorrow’, ’hate’, and ’angry’. Which group of words appears more frequently?
-
 ggrep -Pc '(happy|joy|love|excited)' GreatGatsby.txt and ggrep -Pc '(sad|sorrow|hate|angry)' GreatGatsby.txt 
 Solution: 81 to 26
 
