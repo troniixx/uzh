@@ -2,6 +2,7 @@
 def power(base, exponent):
     if not isinstance(base, (int, float)):
         return TypeError("Base must be a number")
+        #I prefer doing error handling like this more than the specified way in the exercise sheet
     if not isinstance(exponent, int):
         return TypeError("Exponent must be an integer")   
     if exponent < 0:

@@ -36,4 +36,3 @@ if __name__ == '__main__':
     print(days_between([1, 1, 2000], [1, 1, 2001]))
     print(days_between([1, 1, 2000], [1, 1, 2000]))
     print(days_between([25, 12, 2023], [4, 1, 2024]))
-    
