@@ -42,4 +42,6 @@ The end message uses the counter instead of the n variable.
 """
 
 
-"""Explanation for 2.:"""
+"""Explanation for 2.:
+The idea behind it is the same but the output has small differences, because the code is not exactly the same.
+"""
