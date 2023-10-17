@@ -1,0 +1,6 @@
+print("Numbers from 60 to 90:")
+print(seq(60,90))
+print("The mean of the numbers from 60 to 90:")
+print(mean(60:90))
+print("The sum of the numbers from 60 to 90:")
+print(sum(60:90))
