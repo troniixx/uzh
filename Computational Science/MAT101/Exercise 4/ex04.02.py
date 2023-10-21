@@ -20,14 +20,17 @@ def collatz(num):
     result.append(1)
     return result
 
-#TODO longest collatz
+#NOTE Bonus Exercise
+# Its only 5 lines but i never thought that it would take such a long time to come up with it
 def longest_collatz():
-    result = 0
-    for num in range(1, 10000):
-        if len(collatz(num)) > len(collatz(result)):
-            result = num
-    return result
-
+    longest = []
+    for num in range(1, 10001):
+        if len(collatz(num)) > len(longest):
+            longest = collatz(num)
+    return longest
 
 if __name__ == "__main__":
-    print(longest_collatz())
+    print(f"Collatz sequence of 13: {collatz(13)}")
+    print(f"Collatz sequence of 1: {collatz(1)}")
+    print("\n")
+    print(f"The number with the longest collatz sequence from 1 to 10'000 (including) is: {longest_collatz()[0]} with a length of: {len(longest_collatz())}")
