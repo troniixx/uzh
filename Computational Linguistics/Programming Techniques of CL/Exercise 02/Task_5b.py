@@ -2,7 +2,7 @@
 PCL & PFL Exercise 2, Task 5b
 Author: PCL & PFL Tutors
 University of Zurich
-Student Names: <your names>
+Student Names: Mert Erol
 """
 
 # ----- You can ignore the following lines of code for now ----- #
