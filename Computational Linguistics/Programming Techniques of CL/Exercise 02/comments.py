@@ -1,5 +1,6 @@
 #Creates a mini book rating system where one can enter the name of the book, the rating out of 10 and the
 #program will display the rating in stars and a comment on the rating.
+#Comments by: Mert Erol
 
 print("Welcome to the Mini Book Rating System!")
 
