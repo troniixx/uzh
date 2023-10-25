@@ -2,7 +2,7 @@
 PCL & PFL Exercise 2, Task 3
 Author: PCL & PFL Tutors
 University of Zurich
-Student Names: Mert Erol
+Student Names: Mert Erol, Ishana Rana
 """
 
 
