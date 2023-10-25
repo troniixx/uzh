@@ -1,4 +1,4 @@
-# Daten aus der CSV-Datei laden
+# Daten aus der CSV-Datei laden, das in den Klammern ist der Pfad zur Datei, den ändern das es bei euch funktioniert
 data <- read.csv("/Users/merterol/uzh/Computational Linguistics/Computational Processing of Speech Rhythm/R not so Basic Practice/luft.csv", header = TRUE, sep = ",")
 #alle NA Werte entfernen aus der Tabelle
 data <- na.omit(data)
