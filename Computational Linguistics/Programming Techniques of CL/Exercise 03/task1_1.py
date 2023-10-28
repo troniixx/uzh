@@ -31,7 +31,7 @@ aquarium.append("golfball")
 print(aquarium)
 
 #d
-aquarium[4] = "cat"
+aquarium.insert(5, "cat")
 print(aquarium)
 
 #e
