@@ -14,6 +14,11 @@ computercollection["IBM 5150"] = [1981, "IBM"]
 computercollection["Commodore 64"] = [1982, "Commodore International"]
 
 #b
+oldest = next(iter(computercollection))
+for key in computercollection:
+    if computercollection[key][0] < computercollection[oldest][0]:
+        oldest = key
+        
+print(f"I currently have {len(computercollection)} computers in my collection. The oldest is the {oldest} which was released in {computercollection[oldest][0]}.")
 
-print(f"I currently have {len(computercollection)} computers in my collection.
-        The oldest is the ")
+#c
