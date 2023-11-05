@@ -2,13 +2,13 @@ def my_primefactors(n):
     if not isinstance(n, int) or n <= 0:
         return ValueError("n must be an integer and larger than zero")
     
-    primes = [2, 3, 5, 7]
     sol_list = []
-    while n >= 1:
-        for prime in primes:
-            if n % prime == 0:
-                n = n / prime
-                sol_list.append(prime)
+    divisor = 2
+    while n > 1:
+        while n % divisor == 0:
+            n = n / divisor
+            sol_list.append(divisor)
+        divisor += 1
                 
     return sol_list
 
