@@ -22,22 +22,37 @@ with open("/Users/merterol/uzh/Computational Linguistics/Programming Techniques 
     dune = dune.read().lower().rsplit()
     
     #b
-    filtered_dune = []
-    
-    for word in dune:
-        if word not in stopwords:
-            filtered_dune.append(word)
+    def filtering(dune):
+        filtered_dune = []
+        
+        for word in dune:
+            if word not in stopwords:
+                filtered_dune.append(word)
+        
+        return filtered_dune
 
     #c
-    frequency = {}
-    
-    for word in filtered_dune:
-        if word in frequency:
-            frequency[word] += 1
-        else:
-            frequency[word] = 1
+    def frequency(dune):
+        filtered_dune = filtering(dune)
+        frequency = {}
+
+        for word in filtered_dune:
+            if word in frequency:
+                frequency[word] += 1
+            else:
+                frequency[word] = 1
             
+        return frequency
 
     #d
-    sorted_frequency = sorted(frequency.items(), key=lambda x: x[1], reverse=False)
-    print(sorted_frequency)
+    def get_word(dune):
+        return dune[0]
+    
+    def sorting(dune):
+        freq = frequency(dune)
+        sorted_frequency = sorted(freq.items(), key = get_word)
+        
+        return sorted_frequency
+    
+if __name__ == '__main__':
+    print(sorting(dune))
