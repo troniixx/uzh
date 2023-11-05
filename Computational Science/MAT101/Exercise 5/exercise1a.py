@@ -14,3 +14,15 @@ def digital_root(n):
         digit_sum = digital_root(digit_sum)
     
     return digit_sum
+
+"""
+I used this for testing:
+For part b) look at the file "exercise1b.py"
+
+if __name__ == "__main__":
+    print(digital_root(16))
+    print(digital_root(942))
+    print(digital_root(132189))
+    print(digital_root(493193))
+    
+"""
