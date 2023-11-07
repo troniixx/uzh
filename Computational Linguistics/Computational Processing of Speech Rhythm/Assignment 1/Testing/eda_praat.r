@@ -1,37 +1,26 @@
 library(dplyr)
 library(tidyr)
 library(ggplot2)
-library(nycflights13)
-library(dlookr)
-library(cowplot)
-library(modelr)
 
+# Load your data
 data <- read.csv("/Users/merterol/uzh/Computational Linguistics/Computational Processing of Speech Rhythm/Assignment 1/Testing/table_Mert.csv")
 
-#Variables incase we need them:
-var1 <- "n"
-var2 <- "rate"
-var3 <- "mean"
-var4 <- "meanLn"
-var5 <- "delta"
-var6 <- "deltaLn"
-var7 <- "varco"
-var8 <- "rPVI"
-var9 <- "nPVI"
-var10 <- "percentV"
+# Filter the data to include only "be," "ba," and "zh"
+data_filtered <- data %>% filter(dialect %in% c("be", "ba", "zh"))
 
+# Filter the data for the specified variables
+variables_to_plot <- c("varcoC_tier1", "varcoV_tier1", "nPVI_C_tier1", "nPVI_V_tier1")
 
-#str(data)
-#describe(data)
-#summary(data)
+# Gather the data for plotting with preserved variable names
+data_long <- gather(data_filtered, key = "Variable", value = "Value", all_of(variables_to_plot))
 
-#data %>% correlate() %>% plot()
+custom_colors <- c("be" = "#FF5733", "ba" = "#FFB906", "zh" = "#283BDA")
 
-# Create a box plot for all 10 variables
-data_long <- gather(data, key = "Variable", value = "Value", var1:var10)
-ggplot(data_long, aes(x = "", y = Value, fill = Variable)) +
-    geom_boxplot() +
-    labs(title = "Box Plot for Multiple Variables", y = "Value") +
-    theme_minimal() +
-    theme(legend.title = element_blank())
-
+# Create separate box plots with custom colors
+ggplot(data_long, aes(x = dialect, y = Value, fill = dialect)) +
+  geom_boxplot() +
+  scale_fill_manual(values = custom_colors) +  # Specify custom colors using hexadecimal codes
+  facet_wrap(~Variable, scales = "free") +
+  labs(title = "Box Plots for Hypothesis 1", x = "dialect", y = "Value") +
+  theme_minimal() +
+  theme(legend.title = element_blank())
