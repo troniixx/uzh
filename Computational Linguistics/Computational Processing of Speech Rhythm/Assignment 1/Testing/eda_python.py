@@ -15,6 +15,6 @@ data.hist(bins=50, figsize=(20,15))
 plt.show()
 
 # Correlation matrix
-corr_matrix = data.corr()
-sns.heatmap(corr_matrix, annot=True)
+matrix = data.corr()
+sns.heatmap(matrix, annot=True)
 plt.show()
