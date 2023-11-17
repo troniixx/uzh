@@ -15,15 +15,15 @@ def foobar():
     return x
 
 
-# TODO: a.) Describe the code in natural language
+# DONE: a.) Describe the code in natural language
 #IT goes through all the characters in the string and checks if they are alphanumeric. If not, it appends them to the list x.
 #including spaces
 
-# TODO: b.) Rewrite the code using list comprehensions
+# DONE: b.) Rewrite the code using list comprehensions
 def foobar_lc():
     return [y for y in "I love solving exercises & getting them right! :)" if not y.isalnum()]
 
-# TODO: c.) Generalise the code to all strings, not just the one above
+# DONE: c.) Generalise the code to all strings, not just the one above
 def get_nonalphanum(sentence):
     return [y for y in sentence if not y.isalnum()]
 
