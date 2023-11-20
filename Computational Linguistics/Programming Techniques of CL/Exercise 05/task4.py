@@ -100,7 +100,7 @@ def collector(key, test):
 # DONE: Calculate TP/FP/FN/TN values for each tag
 def confusion_matrix(key, test):
     stats_key, stats_test = collector(key, test)
-    tag_counts = {tag: {'TP': 0, 'FP': 0, 'FN': 0, 'TN': 0} for tag in set(stats_key) | set(stats_test)} #got this idea of using dicts from ChatGPT
+    tag_counts = {tag: {"TP": 0, "FP": 0, "FN": 0, "TN": 0} for tag in set(stats_key) | set(stats_test)} #got this idea of using dicts from ChatGPT
     #query i used: i sent both .tts files and asked if there is a way of categorizing the tags into TP, FP, FN, TN. The awnser was to use a dict to keep track of the tags while being time/space efficient
 
     with open(key, "r", encoding="utf-8") as key_file, open(test, "r", encoding="utf-8") as test_file:
@@ -118,13 +118,13 @@ def confusion_matrix(key, test):
                 #classifying each tag from the files into TP, FP, FN, TN
                 for tag in tag_counts.keys():
                     if key_tag == test_tag == tag:
-                        tag_counts[tag]['TP'] += 1
+                        tag_counts[tag]["TP"] += 1
                     elif key_tag == tag and test_tag != tag:
-                        tag_counts[tag]['FN'] += 1
+                        tag_counts[tag]["FN"] += 1
                     elif key_tag != tag and test_tag == tag:
-                        tag_counts[tag]['FP'] += 1
+                        tag_counts[tag]["FP"] += 1
                     else:
-                        tag_counts[tag]['TN'] += 1
+                        tag_counts[tag]["TN"] += 1
     
     return tag_counts
 
