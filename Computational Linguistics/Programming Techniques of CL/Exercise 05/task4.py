@@ -40,6 +40,7 @@ def format_evaluation_line(tag, present, found, wrong, missed, prec, recal, f_me
 
     return f"{tag:^10} | {present:^10} | {found:^10} | {wrong:^10} | {missed:^10} | {prec:^10.2f} | {recal:^10.2f} | {f_mea:^10.2f}"
 
+# DONE: Check if the key and test files are identical, if not print an error message in runner() and exit the program
 def sanity_check(key, test):
     with open(key, "r", encoding = "utf-8") as key_file, open(test, "r", encoding = "utf-8") as test_file:
         content_key = set(line.split("\t")[0] for line in key_file)
@@ -96,21 +97,45 @@ def collector(key, test):
                 
     return stats_key, stats_test
 
-# TODO: Calculate TP/FP/FN/TN values for each tag
+# DONE: Calculate TP/FP/FN/TN values for each tag
 def confusion_matrix(key, test):
     stats_key, stats_test = collector(key, test)
-    tp, fp, fn, tn = 0, 0, 0, 0
+    tag_counts = {tag: {'TP': 0, 'FP': 0, 'FN': 0, 'TN': 0} for tag in set(stats_key) | set(stats_test)} #got this idea of using dicts from ChatGPT
+    #query i used: i sent both .tts files and asked if there is a way of categorizing the tags into TP, FP, FN, TN. The awnser was to use a dict to keep track of the tags while being time/space efficient
+
+    with open(key, "r", encoding="utf-8") as key_file, open(test, "r", encoding="utf-8") as test_file:
+        #combining the two files into one list to iterate over them at the same time, thank god for stackoverflow 
+        for key_line, test_line in zip(key_file, test_file):
+            #strip the lines to remove the \n at the end and split them into parts, looks something like this: ['token', 'tag']
+            key_parts = key_line.strip().split("\t")
+            test_parts = test_line.strip().split("\t")
+
+            #if the length of the parts is 2, assign the token and tag to the variables. this is making sure that it is comparable
+            if len(key_parts) == 2 and len(test_parts) == 2:
+                key_tag = key_parts[1].strip()
+                test_tag = test_parts[1].strip()
+
+                #classifying each tag from the files into TP, FP, FN, TN
+                for tag in tag_counts.keys():
+                    if key_tag == test_tag == tag:
+                        tag_counts[tag]['TP'] += 1
+                    elif key_tag == tag and test_tag != tag:
+                        tag_counts[tag]['FN'] += 1
+                    elif key_tag != tag and test_tag == tag:
+                        tag_counts[tag]['FP'] += 1
+                    else:
+                        tag_counts[tag]['TN'] += 1
     
-    #need to rewrite this to print for each tags
-    return tp, fp, fn, tn
+    return tag_counts
 
 # TODO: Calculate the precision, recall and f-score for each tag
 def values_calc(key, test):
-    tp, fp, fn, tn = confusion_matrix(key, test)
-    prec, recal, f_mea = 0, 0, 0
+    tag_list = confusion_matrix(key, test)
+    values_each = {}
+
     
-    #need to rewrite this to print for each tags
-    return prec, recal, f_mea
+    
+    return values_each
 
 # TODO: Print the scores for each tag
 def printer_score(key, test):
@@ -123,11 +148,13 @@ def printer_score(key, test):
 def printer_avg(key, test):
     pass
 
+# DONE: runner function to keep the main nice and clean
 def runner(key, test):
     if not sanity_check(key, test):
         print("The files are not identical.")
         return
     
+    print(confusion_matrix(key, test))
     #evaluation_header()
     #format_evaluation_line()
     #printer_score(key, test)
@@ -143,8 +170,9 @@ if __name__ == '__main__':
     key = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/test.tts"
     test = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/result.tts"
 
-    # DONE: Implement command line arguments
+    # DONE: Implement command line arguments to get key and test
     #key = argv[1]
     #test = argv[2]
     runner(key, test)
     
+
