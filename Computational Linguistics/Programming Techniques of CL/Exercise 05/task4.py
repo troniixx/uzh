@@ -11,6 +11,7 @@ Note: this templates uses Google style Python Docstrings se https://sphinxcontri
 """
 
 from sys import argv
+import openpyxl as xl
 
 def evaluation_header():
     """
