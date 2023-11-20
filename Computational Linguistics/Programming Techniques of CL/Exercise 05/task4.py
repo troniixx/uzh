@@ -5,7 +5,7 @@
 PCL 1 Exercise 5
 Author: PCL Tutors
 University of Zurich
-Student Names: <your names>
+Student Names: Mert Erol
 
 Note: this templates uses Google style Python Docstrings se https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html
 """
@@ -39,6 +39,16 @@ def format_evaluation_line(tag, present, found, wrong, missed, prec, recal, f_me
     """
 
     return f"{tag:^10} | {present:^10} | {found:^10} | {wrong:^10} | {missed:^10} | {prec:^10.2f} | {recal:^10.2f} | {f_mea:^10.2f}"
+
+def sanity_check(key, test):
+    with open(key, "r", encoding = "utf-8") as key_file, open(test, "r", encoding = "utf-8") as test_file:
+        content_key = set(line.split("\t")[0] for line in key_file)
+        content_test = set(line.split("\t")[0] for line in test_file)
+
+    if content_key == content_test:
+        return True
+    else:
+        return False
 
 
 # DONE: Process both tabulator-separeted input files (first column TOKEN, second column TAG) and collect statistics
@@ -114,19 +124,27 @@ def printer_avg(key, test):
     pass
 
 def runner(key, test):
+    if not sanity_check(key, test):
+        print("The files are not identical.")
+        return
     
     #evaluation_header()
     #format_evaluation_line()
-    printer_score(key, test)
-    printer_avg(key, test)
+    #printer_score(key, test)
+    #printer_avg(key, test)
 
 
 if __name__ == '__main__':
-    key = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/test.tts"
-    test = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/result.tts"
+    #key, test laptop
+    #key = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/test.tts"
+    #test = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/result.tts"
     
+    #key, test, nmsg
+    key = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/test.tts"
+    test = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/result.tts"
+
     # DONE: Implement command line arguments
     #key = argv[1]
     #test = argv[2]
-    #runner(key, test)
-    print(collector(key, test))
+    runner(key, test)
+    
