@@ -129,25 +129,53 @@ def confusion_matrix(key, test):
     
     return tag_counts
 
-# TODO: Calculate the precision, recall and f-score for each tag
+# DONE: Calculate the precision, recall and f-score for each tag
 def values_calc(key, test):
     tag_list = confusion_matrix(key, test)
     values_each = {}
+    
+    #prec = TP / (TP + FP)
+    #recal = TP / (TP + FN)
+    #f_mea = 2 * ((prec * recal) / (prec + recal))
+    
+    #calc prec for each tag
+    for tag in tag_list.keys():
+        if tag_list[tag]["TP"] + tag_list[tag]["FP"] == 0:
+            prec = 0
+        else:
+            prec = round(tag_list[tag]["TP"] / (tag_list[tag]["TP"] + tag_list[tag]["FP"]), 3)
+            
+        if tag_list[tag]["TP"] + tag_list[tag]["FN"] == 0:
+            recal = 0
+        else:
+            recal = round(tag_list[tag]["TP"] / (tag_list[tag]["TP"] + tag_list[tag]["FN"]), 3)
+        
+        if prec + recal == 0:
+            f_mea = 0
+        else:
+            f_mea = round(2 * ((prec * recal) / (prec + recal)), 3)
+            
+        values_each[tag] = [prec, recal, f_mea]
 
     
     
     return values_each
 
-# TODO: Print the scores for each tag
+# DONE: Print the scores for each tag
 def printer_score(key, test):
-    prec, recal, f_mea = values_calc(key, test)
+    value_dict = values_calc(key, test)
     
-    
-    print("x")
+    for tag in value_dict.keys():
+        print(f"{tag} \t Precision = {value_dict[tag][0]} \t Recal = {value_dict[tag][1]} \t F-Measure = {value_dict[tag][2]}")
+
 
 # TODO: Print the average scores
 def printer_avg(key, test):
-    pass
+    value_dict = values_calc(key, test)
+    
+    for tag in value_dict.keys():
+        s = value_dict[tag][0]+value_dict[tag][1]+value_dict[tag][2]
+        print(f"Average score for {tag} = {round(s/3, 3)}")
 
 # DONE: runner function to keep the main nice and clean
 def runner(key, test):
@@ -155,25 +183,25 @@ def runner(key, test):
         print("The files are not identical.")
         return
     
-    print(confusion_matrix(key, test))
-    #evaluation_header()
+    #print(confusion_matrix(key, test))
+    #print(values_calc(key, test))
+    #printer_avg(key, test)
+    evaluation_header()
     #format_evaluation_line()
     #printer_score(key, test)
-    #printer_avg(key, test)
 
 
 if __name__ == '__main__':
     #key, test laptop
-    #key = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/test.tts"
-    #test = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/result.tts"
+    key = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/test.tts"
+    test = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/result.tts"
     
     #key, test, nmsg
-    key = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/test.tts"
-    test = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/result.tts"
+    #key = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/test.tts"
+    #test = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/result.tts"
 
     # DONE: Implement command line arguments to get key and test
     #key = argv[1]
     #test = argv[2]
     runner(key, test)
-    
 
