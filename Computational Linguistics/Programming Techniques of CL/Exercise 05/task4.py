@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+from os.path import basename as bn
+from sys import argv
+import openpyxl as xl
 
 """
 PCL 1 Exercise 5
@@ -10,9 +13,6 @@ Student Names: Mert Erol
 Note: this templates uses Google style Python Docstrings se https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html
 """
 
-from sys import argv
-import openpyxl as xl
-
 def evaluation_header():
     """
     Return the header line of the output.
@@ -20,7 +20,7 @@ def evaluation_header():
         str: the formatted head of the confusion table
     """
     
-    return f"{'-' * 60} \n{'tag':^10} | {'present':^10} | {'found':^10} | {'wrong':^10} | {'missed':^10} | {'prec':^10} | {'recal':^10} | {'f-mea':^10} \n{'-' * 60}"
+    return f"{'tag':^9} | {'present':^9} | {'found':^9} | {'wrong':^9} | {'missed':^9} | {'prec':^9} | {'recal':^9} | {'f-mea':^9}"
 
 
 def format_evaluation_line(tag, present, found, wrong, missed, prec, recal, f_mea):
@@ -143,17 +143,17 @@ def values_calc(key, test):
         if tag_list[tag]["TP"] + tag_list[tag]["FP"] == 0:
             prec = 0
         else:
-            prec = round(tag_list[tag]["TP"] / (tag_list[tag]["TP"] + tag_list[tag]["FP"]), 3)
+            prec = round(tag_list[tag]["TP"] / (tag_list[tag]["TP"] + tag_list[tag]["FP"]), 2)
             
         if tag_list[tag]["TP"] + tag_list[tag]["FN"] == 0:
             recal = 0
         else:
-            recal = round(tag_list[tag]["TP"] / (tag_list[tag]["TP"] + tag_list[tag]["FN"]), 3)
+            recal = round(tag_list[tag]["TP"] / (tag_list[tag]["TP"] + tag_list[tag]["FN"]), 2)
         
         if prec + recal == 0:
             f_mea = 0
         else:
-            f_mea = round(2 * ((prec * recal) / (prec + recal)), 3)
+            f_mea = round(2 * ((prec * recal) / (prec + recal)), 2)
             
         values_each[tag] = [prec, recal, f_mea]
 
@@ -169,16 +169,29 @@ def printer_score(key, test):
         print(f"{tag} \t Precision = {value_dict[tag][0]} \t Recal = {value_dict[tag][1]} \t F-Measure = {value_dict[tag][2]}")
 
 
-# TODO: Print the average scores
+# DONE: Print the average scores
 def printer_avg(key, test):
     value_dict = values_calc(key, test)
     
     for tag in value_dict.keys():
         s = value_dict[tag][0]+value_dict[tag][1]+value_dict[tag][2]
-        print(f"Average score for {tag} = {round(s/3, 3)}")
+        print(f"Average score for {tag} = {round(s/3, 2)}")
+
+def tag_eval(key, test, argv1, argv2):
+    #the following two lines are from chatgpt
+    key_filename = bn(argv1)
+    test_filename = bn(argv2)
+
+    print("CLASSIFICATION EVALUATION STATISTICS")
+    print("*"*40+"\n")
+    print(f"Key file: {key_filename}\n\t (with reference tags, treated as gold standard)\n")
+    print(f"Test file: {test_filename}\n\t (with test tags, possibly wrong)\n\n")
+    print("+----------"*8+"+")
+    print(evaluation_header())
+    print("+----------"*8+"+")
 
 # DONE: runner function to keep the main nice and clean
-def runner(key, test):
+def runner(key, test, argv1, argv2):
     if not sanity_check(key, test):
         print("The files are not identical.")
         return
@@ -186,22 +199,23 @@ def runner(key, test):
     #print(confusion_matrix(key, test))
     #print(values_calc(key, test))
     #printer_avg(key, test)
-    evaluation_header()
+    #evaluation_header()
+    tag_eval(key, test, argv1, argv2)
     #format_evaluation_line()
     #printer_score(key, test)
 
 
 if __name__ == '__main__':
     #key, test laptop
-    key = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/test.tts"
-    test = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/result.tts"
+    #key = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/test.tts"
+    #test = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/result.tts"
     
     #key, test, nmsg
     #key = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/test.tts"
     #test = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Exercise 05/result.tts"
 
     # DONE: Implement command line arguments to get key and test
-    #key = argv[1]
-    #test = argv[2]
-    runner(key, test)
+    key = argv[1]
+    test = argv[2]
+    runner(key, test, key, test)
 
