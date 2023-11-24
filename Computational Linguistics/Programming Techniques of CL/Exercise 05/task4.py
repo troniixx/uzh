@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from os.path import basename as bn
 from sys import argv
+from os.path import basename as bn
 import openpyxl as xl
 
 """
@@ -176,19 +176,6 @@ def printer_avg(key, test):
     for tag in value_dict.keys():
         s = value_dict[tag][0]+value_dict[tag][1]+value_dict[tag][2]
         print(f"Average score for {tag} = {round(s/3, 2)}")
-
-def tag_eval(key, test, argv1, argv2):
-    #the following two lines are from chatgpt
-    key_filename = bn(argv1)
-    test_filename = bn(argv2)
-
-    print("CLASSIFICATION EVALUATION STATISTICS")
-    print("*"*40+"\n")
-    print(f"Key file: {key_filename}\n\t (with reference tags, treated as gold standard)\n")
-    print(f"Test file: {test_filename}\n\t (with test tags, possibly wrong)\n\n")
-    print("+----------"*8+"+")
-    print(evaluation_header())
-    print("+----------"*8+"+")
 
 # DONE: runner function to keep the main nice and clean
 def runner(key, test, argv1, argv2):
