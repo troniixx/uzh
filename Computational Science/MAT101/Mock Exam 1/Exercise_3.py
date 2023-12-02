@@ -16,6 +16,20 @@ def polynominal_derivative(P: list) -> list:
 
 class Polynomial:
     
-    def __init__(self, d: int, P: list):
+    def __init__(self, d: int, coefs: list):
         self.d = d
-        self.P = P
+        self.coefs = coefs
+        
+    def derivative(self, d, coefs):
+        if d < 1:
+            return [1]
+        
+        res = []
+        
+        for coef in self.coefs:
+            res.append(coef-1)
+            
+    def __add__(self, other):
+        res = []
+        for idx, coef in enumerate(self.coefs):
+            res.append(coef + other.coefs[idx])
