@@ -1,9 +1,9 @@
-# Directory where chapter files are located
+# Chapter Directory of each book
 #chapter_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Chapters"
 #chapter_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Chapters"
 chapter_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Chapters"
 
-# Directory where you want to save the analysis results
+# Results Directory of each book
 #results_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results"
 #results_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Results"
 results_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Results"
@@ -14,10 +14,10 @@ mkdir -p "$results_dir"
 for file in "$chapter_dir"/*; do
     echo "Analyzing $file..."
 
-    # Extract filename without path for naming the results file
+    # Extract filename without path for naming the results file and remove .txt from the chapter file
     filename=$(basename "$file" .txt)
     
-    # Define the output file for the results
+    # Define the output file for the results and add .txt back
     output_file="$results_dir/${filename}_analysis.txt"
 
     # Grep for capitalized words (potential named entities)
