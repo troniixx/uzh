@@ -158,10 +158,13 @@ def split_book_by_chapter(cleaned_text, book_title):
     """
     # Add your code here to split the cleaned_text into chapters
     # and save each chapter in a separate file
-    pattern = r'\b(?:CHAPTER|Chapter|Letter)\s+(?:[A-Z0-9]+|[0-9]+)\.?\n+'
+    pattern = r'\b(?:CHAPTER|Chapter|Letter)\s+(?:[A-Z0-9]+|[0-9]+)\.?\n+' # Regex pattern to split the text into chapters
     chapters = re.split(pattern, cleaned_text)[1:]
-    length = len(chapters)
+    length = len(chapters) # Get the length of the chapters list (used in my fancy progess bar :D)
     
+    # This block made me lose my sanity but the overall thing is that It created a new txt file with the corresponding
+    # chapter number and saved the chapter in it while ingoring the empty chapters, "chapters" with just the title in it
+    # and similar things
     chapter_number = 0
     for chapter in chapters:
         # Check if the chapter is not just whitespace
@@ -171,6 +174,7 @@ def split_book_by_chapter(cleaned_text, book_title):
             with open(filename, "w") as file:
                 file.write(chapter.strip())
     
+    # Always wanted to have a progess bar in my code, so here it is! :)
     for _ in tqdm(range(length), total = length, colour = "#1E90FF", desc = "Splitting into chapters..."):
         pass
     
@@ -196,6 +200,8 @@ def main():
         python3 gutenberg_cleanup.py alice.txt Alice_in_Wonderland
     """
     
+    # Did a small change here to make sure the user enters the correct number of arguments with my usage version
+    # --> User specifies the name of the new directory that gets created to store the data
     if len(sys.argv) != 3:
         print("Invalid number of arguments! Make sure to be in the correct directory where all files and/or folders are located.")
         print("Usage: python gutenberg_cleanup.py <path_to_book_file> <new_name_of_the_book_folder>")
@@ -220,6 +226,7 @@ def main():
         with open(dir_clean, "w") as dir:
             dir.write(cleaned_text)
     
+    # Always wanted to have a progess bar in my code, so here it is! :)
     for _ in tqdm(range(len(cleaned_text)), colour = "#1E90FF", desc = "Cleaning up..."):
         pass
     
@@ -228,6 +235,7 @@ def main():
     
     # 4. Split the text into chapters and save them in the book title folder under a subfolder named 'chapters'
     split_book_by_chapter(cleaned_text, dir_book)
-    
+
+# standard main function
 if __name__ == '__main__':
     main()
