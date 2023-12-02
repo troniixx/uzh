@@ -5,6 +5,7 @@
 
 import os
 import sys
+import re
 
 # Markers for the start and end of Project Gutenberg headers/footers
 TEXT_START_MARKERS = frozenset((
@@ -146,6 +147,8 @@ def strip_headers(text):
 
 #### MODIFY HERE ####
 
+#TODO: Implement the function split_book_by_chapter
+
 def split_book_by_chapter(cleaned_text, book_title):
     """
     Implement a function that splits the book into chapters and saves 
@@ -153,26 +156,61 @@ def split_book_by_chapter(cleaned_text, book_title):
     """
     # Add your code here to split the cleaned_text into chapters
     # and save each chapter in a separate file
-    pass
+    pattern = r'\b(?:CHAPTER|Chapter|Letter)\s+(?:[A-Z0-9]+|[0-9]+)\.?\n+'
+    chapters = re.split(pattern, cleaned_text)[1:]
+    
+    chapter_number = 0
+    for chapter in chapters:
+        # Check if the chapter is not just whitespace
+        if chapter.strip():
+            chapter_number += 1  # Increment chapter number only for non-empty chapters
+            filename = os.path.join(book_title, "Chapters", f"chapter_{chapter_number}.txt")
+            with open(filename, "w") as file:
+                file.write(chapter.strip())
+    
+    print("Splitting into chapters Successful!")
 
+
+#DONE: Implement the main function
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: python gutenberg_cleanup.py <path_to_book_file>")
+    """
+    Processes a Gutenberg book text file for cleanup and chapter-wise separation.
+
+    Reads and cleans a book text file specified by the command line argument. Saves 
+    the cleaned text in a book-named directory, and splits it into chapters saved 
+    in a 'chapters' subfolder within this directory.
+
+    Expects two command line arguments:
+    1. Path to the original book file.
+    2. Path to the output base directory.
+
+    Creates output directories and files, and prints relevant success messages and paths.
+    
+    Example usage:
+        python3 gutenberg_cleanup.py alice.txt Alice_in_Wonderland
+    """
+    
+    if len(sys.argv) != 3:
+        print("Invalid number of arguments! Make sure to be in the correct directory where all files and/or folders are located.")
+        print("Usage: python gutenberg_cleanup.py <path_to_book_file> <new_name_of_the_book_folder>")
         sys.exit(1)
 
-    file_path = sys.argv[1]# Add your code here to get the file path from the command line arguments
-    book_title = os.path.basename(file_path).replace('.txt', '')
+    file_path = sys.argv[1] # Gutenberg Book Path
+    dir_book = sys.argv[2] # Path of "Title" Folder
+    book_title = os.path.basename(file_path).replace('.txt', '') #get book title from path
+    dir_clean = os.path.join(dir_book, book_title + "_cleaned.txt") # directory where the cleaned text will be saved
 
+    os.makedirs(dir_book) # create a folder named after the book title
+    os.makedirs(os.path.join(dir_book, "Chapters")) # create a folder named 'Chapters' inside the book title folder
+    
     # 1. Read the text file
-    with open(file_path, "r") as file:
+    with open(file_path, "r", encoding = "utf-8") as file:
         text = file.read()
 
         # 2. Clean the text
         cleaned_text = strip_headers(text)
         
         # 3. Save the cleaned text in the book title folder
-        dir_book = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Title"
-        dir_clean = os.path.join(dir_book, book_title + "_cleaned.txt")
         with open(dir_clean, "w") as dir:
             dir.write(cleaned_text)
     
@@ -181,7 +219,6 @@ def main():
     
     # 4. Split the text into chapters and save them in the book title folder under a subfolder named 'chapters'
     split_book_by_chapter(cleaned_text, dir_book)
-    print("Splitting into chapters Successful!")
     
 if __name__ == '__main__':
     main()

@@ -1,0 +1,653 @@
+DR. SEWARD’S DIARY--_continued_.
+
+
+The funeral was arranged for the next succeeding day, so that Lucy and
+her mother might be buried together. I attended to all the ghastly
+formalities, and the urbane undertaker proved that his staff were
+afflicted--or blessed--with something of his own obsequious suavity.
+Even the woman who performed the last offices for the dead remarked to
+me, in a confidential, brother-professional way, when she had come out
+from the death-chamber:--
+
+“She makes a very beautiful corpse, sir. It’s quite a privilege to
+attend on her. It’s not too much to say that she will do credit to our
+establishment!”
+
+I noticed that Van Helsing never kept far away. This was possible from
+the disordered state of things in the household. There were no relatives
+at hand; and as Arthur had to be back the next day to attend at his
+father’s funeral, we were unable to notify any one who should have been
+bidden. Under the circumstances, Van Helsing and I took it upon
+ourselves to examine papers, etc. He insisted upon looking over Lucy’s
+papers himself. I asked him why, for I feared that he, being a
+foreigner, might not be quite aware of English legal requirements, and
+so might in ignorance make some unnecessary trouble. He answered me:--
+
+“I know; I know. You forget that I am a lawyer as well as a doctor. But
+this is not altogether for the law. You knew that, when you avoided the
+coroner. I have more than him to avoid. There may be papers more--such
+as this.”
+
+As he spoke he took from his pocket-book the memorandum which had been
+in Lucy’s breast, and which she had torn in her sleep.
+
+“When you find anything of the solicitor who is for the late Mrs.
+Westenra, seal all her papers, and write him to-night. For me, I watch
+here in the room and in Miss Lucy’s old room all night, and I myself
+search for what may be. It is not well that her very thoughts go into
+the hands of strangers.”
+
+I went on with my part of the work, and in another half hour had found
+the name and address of Mrs. Westenra’s solicitor and had written to
+him. All the poor lady’s papers were in order; explicit directions
+regarding the place of burial were given. I had hardly sealed the
+letter, when, to my surprise, Van Helsing walked into the room,
+saying:--
+
+“Can I help you, friend John? I am free, and if I may, my service is to
+you.”
+
+“Have you got what you looked for?” I asked, to which he replied:--
+
+“I did not look for any specific thing. I only hoped to find, and find I
+have, all that there was--only some letters and a few memoranda, and a
+diary new begun. But I have them here, and we shall for the present say
+nothing of them. I shall see that poor lad to-morrow evening, and, with
+his sanction, I shall use some.”
+
+When we had finished the work in hand, he said to me:--
+
+“And now, friend John, I think we may to bed. We want sleep, both you
+and I, and rest to recuperate. To-morrow we shall have much to do, but
+for the to-night there is no need of us. Alas!”
+
+Before turning in we went to look at poor Lucy. The undertaker had
+certainly done his work well, for the room was turned into a small
+_chapelle ardente_. There was a wilderness of beautiful white flowers,
+and death was made as little repulsive as might be. The end of the
+winding-sheet was laid over the face; when the Professor bent over and
+turned it gently back, we both started at the beauty before us, the tall
+wax candles showing a sufficient light to note it well. All Lucy’s
+loveliness had come back to her in death, and the hours that had passed,
+instead of leaving traces of “decay’s effacing fingers,” had but
+restored the beauty of life, till positively I could not believe my eyes
+that I was looking at a corpse.
+
+The Professor looked sternly grave. He had not loved her as I had, and
+there was no need for tears in his eyes. He said to me: “Remain till I
+return,” and left the room. He came back with a handful of wild garlic
+from the box waiting in the hall, but which had not been opened, and
+placed the flowers amongst the others on and around the bed. Then he
+took from his neck, inside his collar, a little gold crucifix, and
+placed it over the mouth. He restored the sheet to its place, and we
+came away.
+
+I was undressing in my own room, when, with a premonitory tap at the
+door, he entered, and at once began to speak:--
+
+“To-morrow I want you to bring me, before night, a set of post-mortem
+knives.”
+
+“Must we make an autopsy?” I asked.
+
+“Yes and no. I want to operate, but not as you think. Let me tell you
+now, but not a word to another. I want to cut off her head and take out
+her heart. Ah! you a surgeon, and so shocked! You, whom I have seen with
+no tremble of hand or heart, do operations of life and death that make
+the rest shudder. Oh, but I must not forget, my dear friend John, that
+you loved her; and I have not forgotten it, for it is I that shall
+operate, and you must only help. I would like to do it to-night, but for
+Arthur I must not; he will be free after his father’s funeral to-morrow,
+and he will want to see her--to see _it_. Then, when she is coffined
+ready for the next day, you and I shall come when all sleep. We shall
+unscrew the coffin-lid, and shall do our operation: and then replace
+all, so that none know, save we alone.”
+
+“But why do it at all? The girl is dead. Why mutilate her poor body
+without need? And if there is no necessity for a post-mortem and nothing
+to gain by it--no good to her, to us, to science, to human
+knowledge--why do it? Without such it is monstrous.”
+
+For answer he put his hand on my shoulder, and said, with infinite
+tenderness:--
+
+“Friend John, I pity your poor bleeding heart; and I love you the more
+because it does so bleed. If I could, I would take on myself the burden
+that you do bear. But there are things that you know not, but that you
+shall know, and bless me for knowing, though they are not pleasant
+things. John, my child, you have been my friend now many years, and yet
+did you ever know me to do any without good cause? I may err--I am but
+man; but I believe in all I do. Was it not for these causes that you
+send for me when the great trouble came? Yes! Were you not amazed, nay
+horrified, when I would not let Arthur kiss his love--though she was
+dying--and snatched him away by all my strength? Yes! And yet you saw
+how she thanked me, with her so beautiful dying eyes, her voice, too, so
+weak, and she kiss my rough old hand and bless me? Yes! And did you not
+hear me swear promise to her, that so she closed her eyes grateful? Yes!
+
+“Well, I have good reason now for all I want to do. You have for many
+years trust me; you have believe me weeks past, when there be things so
+strange that you might have well doubt. Believe me yet a little, friend
+John. If you trust me not, then I must tell what I think; and that is
+not perhaps well. And if I work--as work I shall, no matter trust or no
+trust--without my friend trust in me, I work with heavy heart and feel,
+oh! so lonely when I want all help and courage that may be!” He paused a
+moment and went on solemnly: “Friend John, there are strange and
+terrible days before us. Let us not be two, but one, that so we work to
+a good end. Will you not have faith in me?”
+
+I took his hand, and promised him. I held my door open as he went away,
+and watched him go into his room and close the door. As I stood without
+moving, I saw one of the maids pass silently along the passage--she had
+her back towards me, so did not see me--and go into the room where Lucy
+lay. The sight touched me. Devotion is so rare, and we are so grateful
+to those who show it unasked to those we love. Here was a poor girl
+putting aside the terrors which she naturally had of death to go watch
+alone by the bier of the mistress whom she loved, so that the poor clay
+might not be lonely till laid to eternal rest....
+
+       *       *       *       *       *
+
+I must have slept long and soundly, for it was broad daylight when Van
+Helsing waked me by coming into my room. He came over to my bedside and
+said:--
+
+“You need not trouble about the knives; we shall not do it.”
+
+“Why not?” I asked. For his solemnity of the night before had greatly
+impressed me.
+
+“Because,” he said sternly, “it is too late--or too early. See!” Here he
+held up the little golden crucifix. “This was stolen in the night.”
+
+“How, stolen,” I asked in wonder, “since you have it now?”
+
+“Because I get it back from the worthless wretch who stole it, from the
+woman who robbed the dead and the living. Her punishment will surely
+come, but not through me; she knew not altogether what she did and thus
+unknowing, she only stole. Now we must wait.”
+
+He went away on the word, leaving me with a new mystery to think of, a
+new puzzle to grapple with.
+
+The forenoon was a dreary time, but at noon the solicitor came: Mr.
+Marquand, of Wholeman, Sons, Marquand & Lidderdale. He was very genial
+and very appreciative of what we had done, and took off our hands all
+cares as to details. During lunch he told us that Mrs. Westenra had for
+some time expected sudden death from her heart, and had put her affairs
+in absolute order; he informed us that, with the exception of a certain
+entailed property of Lucy’s father’s which now, in default of direct
+issue, went back to a distant branch of the family, the whole estate,
+real and personal, was left absolutely to Arthur Holmwood. When he had
+told us so much he went on:--
+
+“Frankly we did our best to prevent such a testamentary disposition, and
+pointed out certain contingencies that might leave her daughter either
+penniless or not so free as she should be to act regarding a matrimonial
+alliance. Indeed, we pressed the matter so far that we almost came into
+collision, for she asked us if we were or were not prepared to carry out
+her wishes. Of course, we had then no alternative but to accept. We were
+right in principle, and ninety-nine times out of a hundred we should
+have proved, by the logic of events, the accuracy of our judgment.
+Frankly, however, I must admit that in this case any other form of
+disposition would have rendered impossible the carrying out of her
+wishes. For by her predeceasing her daughter the latter would have come
+into possession of the property, and, even had she only survived her
+mother by five minutes, her property would, in case there were no
+will--and a will was a practical impossibility in such a case--have been
+treated at her decease as under intestacy. In which case Lord Godalming,
+though so dear a friend, would have had no claim in the world; and the
+inheritors, being remote, would not be likely to abandon their just
+rights, for sentimental reasons regarding an entire stranger. I assure
+you, my dear sirs, I am rejoiced at the result, perfectly rejoiced.”
+
+He was a good fellow, but his rejoicing at the one little part--in which
+he was officially interested--of so great a tragedy, was an
+object-lesson in the limitations of sympathetic understanding.
+
+He did not remain long, but said he would look in later in the day and
+see Lord Godalming. His coming, however, had been a certain comfort to
+us, since it assured us that we should not have to dread hostile
+criticism as to any of our acts. Arthur was expected at five o’clock, so
+a little before that time we visited the death-chamber. It was so in
+very truth, for now both mother and daughter lay in it. The undertaker,
+true to his craft, had made the best display he could of his goods, and
+there was a mortuary air about the place that lowered our spirits at
+once. Van Helsing ordered the former arrangement to be adhered to,
+explaining that, as Lord Godalming was coming very soon, it would be
+less harrowing to his feelings to see all that was left of his _fiancée_
+quite alone. The undertaker seemed shocked at his own stupidity and
+exerted himself to restore things to the condition in which we left them
+the night before, so that when Arthur came such shocks to his feelings
+as we could avoid were saved.
+
+Poor fellow! He looked desperately sad and broken; even his stalwart
+manhood seemed to have shrunk somewhat under the strain of his
+much-tried emotions. He had, I knew, been very genuinely and devotedly
+attached to his father; and to lose him, and at such a time, was a
+bitter blow to him. With me he was warm as ever, and to Van Helsing he
+was sweetly courteous; but I could not help seeing that there was some
+constraint with him. The Professor noticed it, too, and motioned me to
+bring him upstairs. I did so, and left him at the door of the room, as I
+felt he would like to be quite alone with her, but he took my arm and
+led me in, saying huskily:--
+
+“You loved her too, old fellow; she told me all about it, and there was
+no friend had a closer place in her heart than you. I don’t know how to
+thank you for all you have done for her. I can’t think yet....”
+
+Here he suddenly broke down, and threw his arms round my shoulders and
+laid his head on my breast, crying:--
+
+“Oh, Jack! Jack! What shall I do! The whole of life seems gone from me
+all at once, and there is nothing in the wide world for me to live for.”
+
+I comforted him as well as I could. In such cases men do not need much
+expression. A grip of the hand, the tightening of an arm over the
+shoulder, a sob in unison, are expressions of sympathy dear to a man’s
+heart. I stood still and silent till his sobs died away, and then I said
+softly to him:--
+
+“Come and look at her.”
+
+Together we moved over to the bed, and I lifted the lawn from her face.
+God! how beautiful she was. Every hour seemed to be enhancing her
+loveliness. It frightened and amazed me somewhat; and as for Arthur, he
+fell a-trembling, and finally was shaken with doubt as with an ague. At
+last, after a long pause, he said to me in a faint whisper:--
+
+“Jack, is she really dead?”
+
+I assured him sadly that it was so, and went on to suggest--for I felt
+that such a horrible doubt should not have life for a moment longer than
+I could help--that it often happened that after death faces became
+softened and even resolved into their youthful beauty; that this was
+especially so when death had been preceded by any acute or prolonged
+suffering. It seemed to quite do away with any doubt, and, after
+kneeling beside the couch for a while and looking at her lovingly and
+long, he turned aside. I told him that that must be good-bye, as the
+coffin had to be prepared; so he went back and took her dead hand in his
+and kissed it, and bent over and kissed her forehead. He came away,
+fondly looking back over his shoulder at her as he came.
+
+I left him in the drawing-room, and told Van Helsing that he had said
+good-bye; so the latter went to the kitchen to tell the undertaker’s men
+to proceed with the preparations and to screw up the coffin. When he
+came out of the room again I told him of Arthur’s question, and he
+replied:--
+
+“I am not surprised. Just now I doubted for a moment myself!”
+
+We all dined together, and I could see that poor Art was trying to make
+the best of things. Van Helsing had been silent all dinner-time; but
+when we had lit our cigars he said--
+
+“Lord----”; but Arthur interrupted him:--
+
+“No, no, not that, for God’s sake! not yet at any rate. Forgive me, sir:
+I did not mean to speak offensively; it is only because my loss is so
+recent.”
+
+The Professor answered very sweetly:--
+
+“I only used that name because I was in doubt. I must not call you
+‘Mr.,’ and I have grown to love you--yes, my dear boy, to love you--as
+Arthur.”
+
+Arthur held out his hand, and took the old man’s warmly.
+
+“Call me what you will,” he said. “I hope I may always have the title of
+a friend. And let me say that I am at a loss for words to thank you for
+your goodness to my poor dear.” He paused a moment, and went on: “I know
+that she understood your goodness even better than I do; and if I was
+rude or in any way wanting at that time you acted so--you remember”--the
+Professor nodded--“you must forgive me.”
+
+He answered with a grave kindness:--
+
+“I know it was hard for you to quite trust me then, for to trust such
+violence needs to understand; and I take it that you do not--that you
+cannot--trust me now, for you do not yet understand. And there may be
+more times when I shall want you to trust when you cannot--and may
+not--and must not yet understand. But the time will come when your trust
+shall be whole and complete in me, and when you shall understand as
+though the sunlight himself shone through. Then you shall bless me from
+first to last for your own sake, and for the sake of others and for her
+dear sake to whom I swore to protect.”
+
+“And, indeed, indeed, sir,” said Arthur warmly, “I shall in all ways
+trust you. I know and believe you have a very noble heart, and you are
+Jack’s friend, and you were hers. You shall do what you like.”
+
+The Professor cleared his throat a couple of times, as though about to
+speak, and finally said:--
+
+“May I ask you something now?”
+
+“Certainly.”
+
+“You know that Mrs. Westenra left you all her property?”
+
+“No, poor dear; I never thought of it.”
+
+“And as it is all yours, you have a right to deal with it as you will. I
+want you to give me permission to read all Miss Lucy’s papers and
+letters. Believe me, it is no idle curiosity. I have a motive of which,
+be sure, she would have approved. I have them all here. I took them
+before we knew that all was yours, so that no strange hand might touch
+them--no strange eye look through words into her soul. I shall keep
+them, if I may; even you may not see them yet, but I shall keep them
+safe. No word shall be lost; and in the good time I shall give them back
+to you. It’s a hard thing I ask, but you will do it, will you not, for
+Lucy’s sake?”
+
+Arthur spoke out heartily, like his old self:--
+
+“Dr. Van Helsing, you may do what you will. I feel that in saying this I
+am doing what my dear one would have approved. I shall not trouble you
+with questions till the time comes.”
+
+The old Professor stood up as he said solemnly:--
+
+“And you are right. There will be pain for us all; but it will not be
+all pain, nor will this pain be the last. We and you too--you most of
+all, my dear boy--will have to pass through the bitter water before we
+reach the sweet. But we must be brave of heart and unselfish, and do our
+duty, and all will be well!”
+
+I slept on a sofa in Arthur’s room that night. Van Helsing did not go to
+bed at all. He went to and fro, as if patrolling the house, and was
+never out of sight of the room where Lucy lay in her coffin, strewn with
+the wild garlic flowers, which sent, through the odour of lily and rose,
+a heavy, overpowering smell into the night.
+
+
+_Mina Harker’s Journal._
+
+_22 September._--In the train to Exeter. Jonathan sleeping.
+
+It seems only yesterday that the last entry was made, and yet how much
+between then, in Whitby and all the world before me, Jonathan away and
+no news of him; and now, married to Jonathan, Jonathan a solicitor, a
+partner, rich, master of his business, Mr. Hawkins dead and buried, and
+Jonathan with another attack that may harm him. Some day he may ask me
+about it. Down it all goes. I am rusty in my shorthand--see what
+unexpected prosperity does for us--so it may be as well to freshen it up
+again with an exercise anyhow....
+
+The service was very simple and very solemn. There were only ourselves
+and the servants there, one or two old friends of his from Exeter, his
+London agent, and a gentleman representing Sir John Paxton, the
+President of the Incorporated Law Society. Jonathan and I stood hand in
+hand, and we felt that our best and dearest friend was gone from us....
+
+We came back to town quietly, taking a ’bus to Hyde Park Corner.
+Jonathan thought it would interest me to go into the Row for a while, so
+we sat down; but there were very few people there, and it was
+sad-looking and desolate to see so many empty chairs. It made us think
+of the empty chair at home; so we got up and walked down Piccadilly.
+Jonathan was holding me by the arm, the way he used to in old days
+before I went to school. I felt it very improper, for you can’t go on
+for some years teaching etiquette and decorum to other girls without the
+pedantry of it biting into yourself a bit; but it was Jonathan, and he
+was my husband, and we didn’t know anybody who saw us--and we didn’t
+care if they did--so on we walked. I was looking at a very beautiful
+girl, in a big cart-wheel hat, sitting in a victoria outside Guiliano’s,
+when I felt Jonathan clutch my arm so tight that he hurt me, and he said
+under his breath: “My God!” I am always anxious about Jonathan, for I
+fear that some nervous fit may upset him again; so I turned to him
+quickly, and asked him what it was that disturbed him.
+
+He was very pale, and his eyes seemed bulging out as, half in terror and
+half in amazement, he gazed at a tall, thin man, with a beaky nose and
+black moustache and pointed beard, who was also observing the pretty
+girl. He was looking at her so hard that he did not see either of us,
+and so I had a good view of him. His face was not a good face; it was
+hard, and cruel, and sensual, and his big white teeth, that looked all
+the whiter because his lips were so red, were pointed like an animal’s.
+Jonathan kept staring at him, till I was afraid he would notice. I
+feared he might take it ill, he looked so fierce and nasty. I asked
+Jonathan why he was disturbed, and he answered, evidently thinking that
+I knew as much about it as he did: “Do you see who it is?”
+
+“No, dear,” I said; “I don’t know him; who is it?” His answer seemed to
+shock and thrill me, for it was said as if he did not know that it was
+to me, Mina, to whom he was speaking:--
+
+“It is the man himself!”
+
+The poor dear was evidently terrified at something--very greatly
+terrified; I do believe that if he had not had me to lean on and to
+support him he would have sunk down. He kept staring; a man came out of
+the shop with a small parcel, and gave it to the lady, who then drove
+off. The dark man kept his eyes fixed on her, and when the carriage
+moved up Piccadilly he followed in the same direction, and hailed a
+hansom. Jonathan kept looking after him, and said, as if to himself:--
+
+“I believe it is the Count, but he has grown young. My God, if this be
+so! Oh, my God! my God! If I only knew! if I only knew!” He was
+distressing himself so much that I feared to keep his mind on the
+subject by asking him any questions, so I remained silent. I drew him
+away quietly, and he, holding my arm, came easily. We walked a little
+further, and then went in and sat for a while in the Green Park. It was
+a hot day for autumn, and there was a comfortable seat in a shady place.
+After a few minutes’ staring at nothing, Jonathan’s eyes closed, and he
+went quietly into a sleep, with his head on my shoulder. I thought it
+was the best thing for him, so did not disturb him. In about twenty
+minutes he woke up, and said to me quite cheerfully:--
+
+“Why, Mina, have I been asleep! Oh, do forgive me for being so rude.
+Come, and we’ll have a cup of tea somewhere.” He had evidently forgotten
+all about the dark stranger, as in his illness he had forgotten all that
+this episode had reminded him of. I don’t like this lapsing into
+forgetfulness; it may make or continue some injury to the brain. I must
+not ask him, for fear I shall do more harm than good; but I must somehow
+learn the facts of his journey abroad. The time is come, I fear, when I
+must open that parcel, and know what is written. Oh, Jonathan, you will,
+I know, forgive me if I do wrong, but it is for your own dear sake.
+
+       *       *       *       *       *
+
+_Later._--A sad home-coming in every way--the house empty of the dear
+soul who was so good to us; Jonathan still pale and dizzy under a slight
+relapse of his malady; and now a telegram from Van Helsing, whoever he
+may be:--
+
+“You will be grieved to hear that Mrs. Westenra died five days ago, and
+that Lucy died the day before yesterday. They were both buried to-day.”
+
+Oh, what a wealth of sorrow in a few words! Poor Mrs. Westenra! poor
+Lucy! Gone, gone, never to return to us! And poor, poor Arthur, to have
+lost such sweetness out of his life! God help us all to bear our
+troubles.
+
+
+_Dr. Seward’s Diary._
+
+_22 September._--It is all over. Arthur has gone back to Ring, and has
+taken Quincey Morris with him. What a fine fellow is Quincey! I believe
+in my heart of hearts that he suffered as much about Lucy’s death as any
+of us; but he bore himself through it like a moral Viking. If America
+can go on breeding men like that, she will be a power in the world
+indeed. Van Helsing is lying down, having a rest preparatory to his
+journey. He goes over to Amsterdam to-night, but says he returns
+to-morrow night; that he only wants to make some arrangements which can
+only be made personally. He is to stop with me then, if he can; he says
+he has work to do in London which may take him some time. Poor old
+fellow! I fear that the strain of the past week has broken down even his
+iron strength. All the time of the burial he was, I could see, putting
+some terrible restraint on himself. When it was all over, we were
+standing beside Arthur, who, poor fellow, was speaking of his part in
+the operation where his blood had been transfused to his Lucy’s veins; I
+could see Van Helsing’s face grow white and purple by turns. Arthur was
+saying that he felt since then as if they two had been really married
+and that she was his wife in the sight of God. None of us said a word of
+the other operations, and none of us ever shall. Arthur and Quincey went
+away together to the station, and Van Helsing and I came on here. The
+moment we were alone in the carriage he gave way to a regular fit of
+hysterics. He has denied to me since that it was hysterics, and insisted
+that it was only his sense of humour asserting itself under very
+terrible conditions. He laughed till he cried, and I had to draw down
+the blinds lest any one should see us and misjudge; and then he cried,
+till he laughed again; and laughed and cried together, just as a woman
+does. I tried to be stern with him, as one is to a woman under the
+circumstances; but it had no effect. Men and women are so different in
+manifestations of nervous strength or weakness! Then when his face grew
+grave and stern again I asked him why his mirth, and why at such a time.
+His reply was in a way characteristic of him, for it was logical and
+forceful and mysterious. He said:--
+
+“Ah, you don’t comprehend, friend John. Do not think that I am not sad,
+though I laugh. See, I have cried even when the laugh did choke me. But
+no more think that I am all sorry when I cry, for the laugh he come
+just the same. Keep it always with you that laughter who knock at your
+door and say, ‘May I come in?’ is not the true laughter. No! he is a
+king, and he come when and how he like. He ask no person; he choose no
+time of suitability. He say, ‘I am here.’ Behold, in example I grieve my
+heart out for that so sweet young girl; I give my blood for her, though
+I am old and worn; I give my time, my skill, my sleep; I let my other
+sufferers want that so she may have all. And yet I can laugh at her very
+grave--laugh when the clay from the spade of the sexton drop upon her
+coffin and say ‘Thud! thud!’ to my heart, till it send back the blood
+from my cheek. My heart bleed for that poor boy--that dear boy, so of
+the age of mine own boy had I been so blessed that he live, and with his
+hair and eyes the same. There, you know now why I love him so. And yet
+when he say things that touch my husband-heart to the quick, and make my
+father-heart yearn to him as to no other man--not even to you, friend
+John, for we are more level in experiences than father and son--yet even
+at such moment King Laugh he come to me and shout and bellow in my ear,
+‘Here I am! here I am!’ till the blood come dance back and bring some of
+the sunshine that he carry with him to my cheek. Oh, friend John, it is
+a strange world, a sad world, a world full of miseries, and woes, and
+troubles; and yet when King Laugh come he make them all dance to the
+tune he play. Bleeding hearts, and dry bones of the churchyard, and
+tears that burn as they fall--all dance together to the music that he
+make with that smileless mouth of him. And believe me, friend John, that
+he is good to come, and kind. Ah, we men and women are like ropes drawn
+tight with strain that pull us different ways. Then tears come; and,
+like the rain on the ropes, they brace us up, until perhaps the strain
+become too great, and we break. But King Laugh he come like the
+sunshine, and he ease off the strain again; and we bear to go on with
+our labour, what it may be.”
+
+I did not like to wound him by pretending not to see his idea; but, as I
+did not yet understand the cause of his laughter, I asked him. As he
+answered me his face grew stern, and he said in quite a different
+tone:--
+
+“Oh, it was the grim irony of it all--this so lovely lady garlanded with
+flowers, that looked so fair as life, till one by one we wondered if she
+were truly dead; she laid in that so fine marble house in that lonely
+churchyard, where rest so many of her kin, laid there with the mother
+who loved her, and whom she loved; and that sacred bell going ‘Toll!
+toll! toll!’ so sad and slow; and those holy men, with the white
+garments of the angel, pretending to read books, and yet all the time
+their eyes never on the page; and all of us with the bowed head. And all
+for what? She is dead; so! Is it not?”
+
+“Well, for the life of me, Professor,” I said, “I can’t see anything to
+laugh at in all that. Why, your explanation makes it a harder puzzle
+than before. But even if the burial service was comic, what about poor
+Art and his trouble? Why, his heart was simply breaking.”
+
+“Just so. Said he not that the transfusion of his blood to her veins had
+made her truly his bride?”
+
+“Yes, and it was a sweet and comforting idea for him.”
+
+“Quite so. But there was a difficulty, friend John. If so that, then
+what about the others? Ho, ho! Then this so sweet maid is a polyandrist,
+and me, with my poor wife dead to me, but alive by Church’s law, though
+no wits, all gone--even I, who am faithful husband to this now-no-wife,
+am bigamist.”
+
+“I don’t see where the joke comes in there either!” I said; and I did
+not feel particularly pleased with him for saying such things. He laid
+his hand on my arm, and said:--
+
+“Friend John, forgive me if I pain. I showed not my feeling to others
+when it would wound, but only to you, my old friend, whom I can trust.
+If you could have looked into my very heart then when I want to laugh;
+if you could have done so when the laugh arrived; if you could do so
+now, when King Laugh have pack up his crown, and all that is to him--for
+he go far, far away from me, and for a long, long time--maybe you would
+perhaps pity me the most of all.”
+
+I was touched by the tenderness of his tone, and asked why.
+
+“Because I know!”
+
+And now we are all scattered; and for many a long day loneliness will
+sit over our roofs with brooding wings. Lucy lies in the tomb of her
+kin, a lordly death-house in a lonely churchyard, away from teeming
+London; where the air is fresh, and the sun rises over Hampstead Hill,
+and where wild flowers grow of their own accord.
+
+So I can finish this diary; and God only knows if I shall ever begin
+another. If I do, or if I even open this again, it will be to deal with
+different people and different themes; for here at the end, where the
+romance of my life is told, ere I go back to take up the thread of my
+life-work, I say sadly and without hope,
+
+                        “FINIS.”
+
+
+_“The Westminster Gazette,” 25 September._
+
+                          A HAMPSTEAD MYSTERY.
+
+
+The neighbourhood of Hampstead is just at present exercised with a
+series of events which seem to run on lines parallel to those of what
+was known to the writers of headlines as “The Kensington Horror,” or
+“The Stabbing Woman,” or “The Woman in Black.” During the past two or
+three days several cases have occurred of young children straying from
+home or neglecting to return from their playing on the Heath. In all
+these cases the children were too young to give any properly
+intelligible account of themselves, but the consensus of their excuses
+is that they had been with a “bloofer lady.” It has always been late in
+the evening when they have been missed, and on two occasions the
+children have not been found until early in the following morning. It is
+generally supposed in the neighbourhood that, as the first child missed
+gave as his reason for being away that a “bloofer lady” had asked him to
+come for a walk, the others had picked up the phrase and used it as
+occasion served. This is the more natural as the favourite game of the
+little ones at present is luring each other away by wiles. A
+correspondent writes us that to see some of the tiny tots pretending to
+be the “bloofer lady” is supremely funny. Some of our caricaturists
+might, he says, take a lesson in the irony of grotesque by comparing the
+reality and the picture. It is only in accordance with general
+principles of human nature that the “bloofer lady” should be the popular
+rôle at these _al fresco_ performances. Our correspondent naïvely says
+that even Ellen Terry could not be so winningly attractive as some of
+these grubby-faced little children pretend--and even imagine
+themselves--to be.
+
+There is, however, possibly a serious side to the question, for some of
+the children, indeed all who have been missed at night, have been
+slightly torn or wounded in the throat. The wounds seem such as might be
+made by a rat or a small dog, and although of not much importance
+individually, would tend to show that whatever animal inflicts them has
+a system or method of its own. The police of the division have been
+instructed to keep a sharp look-out for straying children, especially
+when very young, in and around Hampstead Heath, and for any stray dog
+which may be about.
+
+
+               _“The Westminster Gazette,” 25 September._
+
+                            _Extra Special._
+
+                         THE HAMPSTEAD HORROR.
+
+                         ANOTHER CHILD INJURED.
+
+                         _The “Bloofer Lady.”_
+
+We have just received intelligence that another child, missed last
+night, was only discovered late in the morning under a furze bush at the
+Shooter’s Hill side of Hampstead Heath, which is, perhaps, less
+frequented than the other parts. It has the same tiny wound in the
+throat as has been noticed in other cases. It was terribly weak, and
+looked quite emaciated. It too, when partially restored, had the common
+story to tell of being lured away by the “bloofer lady.”
