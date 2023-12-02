@@ -7,6 +7,7 @@
 import os
 import sys
 import re
+from tqdm import tqdm
 
 # Markers for the start and end of Project Gutenberg headers/footers
 TEXT_START_MARKERS = frozenset((
@@ -159,6 +160,7 @@ def split_book_by_chapter(cleaned_text, book_title):
     # and save each chapter in a separate file
     pattern = r'\b(?:CHAPTER|Chapter|Letter)\s+(?:[A-Z0-9]+|[0-9]+)\.?\n+'
     chapters = re.split(pattern, cleaned_text)[1:]
+    length = len(chapters)
     
     chapter_number = 0
     for chapter in chapters:
@@ -168,6 +170,9 @@ def split_book_by_chapter(cleaned_text, book_title):
             filename = os.path.join(book_title, "Chapters", f"chapter_{chapter_number}.txt")
             with open(filename, "w") as file:
                 file.write(chapter.strip())
+    
+    for _ in tqdm(range(length), total = length, colour = "#1E90FF", desc = "Splitting into chapters..."):
+        pass
     
     print("Splitting into chapters Successful!")
 
@@ -214,6 +219,9 @@ def main():
         # 3. Save the cleaned text in the book title folder
         with open(dir_clean, "w") as dir:
             dir.write(cleaned_text)
+    
+    for _ in tqdm(range(len(cleaned_text)), colour = "#1E90FF", desc = "Cleaning up..."):
+        pass
     
     print("Cleanup Successful!")
     print("Cleaned text saved in: " + dir_clean + "\n")
