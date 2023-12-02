@@ -13,8 +13,17 @@ import json
 
 def json_conversion(data):
     """
-    Create a function to convert the data to a json string here"""
-    pass
+    Create a function to convert the data to a json string here
+    """
+    
+    results = {}
+    
+    with open("data.txt", "r") as file:
+        for line in file:
+            cmd, desc = line.strip().split(None, 1)
+            results[cmd] = desc.strip()
+    
+    return results
 
 
 def write_as_json(data, file_path):
@@ -22,6 +31,8 @@ def write_as_json(data, file_path):
     Create a function to write your json string to a file here.
     Think about a naming convention for the output files.
     """
+    with open(file_path, "w") as file:
+        json.dump(json_conversion(data), file, indent = 4)
     pass
 
 
