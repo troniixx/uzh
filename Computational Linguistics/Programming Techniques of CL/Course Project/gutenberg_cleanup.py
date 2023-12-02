@@ -148,7 +148,7 @@ def strip_headers(text):
 
 #### MODIFY HERE ####
 
-#TODO: Implement the function split_book_by_chapter
+#DONE: Implement the function split_book_by_chapter
 
 def split_book_by_chapter(cleaned_text, book_title):
     """
