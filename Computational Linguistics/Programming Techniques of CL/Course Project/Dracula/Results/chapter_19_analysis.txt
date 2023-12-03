@@ -1,19 +1,15 @@
 Named Entities:
-  21 The
+  19 The
   14 We
   14 Jonathan
   14 It
   11 Dr
    9 Seward
-   9 Professor
    9 He
-   8 Then
-   7 Van
-   7 Helsing
-   6 Mina
-   6 Lord
-   6 John
-   6 Godalming
+   7 Then
+   7 Professor
+   6 Van Helsing
+   6 Lord Godalming
    6 Count
    6 But
    6 And
@@ -24,19 +20,18 @@ Named Entities:
    4 This
    4 They
    4 Renfield
-   4 Mr
    4 If
    3 That
-   3 So
    3 She
    3 Not
    3 My
    3 Mrs
-   3 Madam
-   3 Lucy
+   3 Mr
+   3 Madam Mina
    3 Last
+   3 John
    3 Good
-   3 Friend
+   3 Friend John
    3 After
    2 Your
    2 You
@@ -44,12 +39,15 @@ Named Entities:
    2 Whitby
    2 Well
    2 Things
+   2 The Professor
    2 Such
+   2 So
    2 Quincey
    2 Poor
    2 Our
    2 Morris
-   2 Miss
+   2 Mina
+   2 Lucy
    2 God
    2 All
    1 Why
@@ -57,7 +55,6 @@ Named Entities:
    1 Which
    1 Whether
    1 What
-   1 Westenra
    1 Was
    1 Wafer
    1 Under
@@ -69,11 +66,13 @@ Named Entities:
    1 Thomas
    1 These
    1 Therefore
+   1 Then Mr
    1 Suddenly
    1 St
    1 Somewhere
    1 Somehow
    1 Some
+   1 So Van Helsing
    1 Snelling
    1 Say
    1 Sacred
@@ -91,6 +90,8 @@ Named Entities:
    1 No
    1 Never
    1 More
+   1 Miss Westenra
+   1 Miss Lucy
    1 May
    1 Mary
    1 London
@@ -108,7 +109,7 @@ Named Entities:
    1 Excuse
    1 Everything
    1 Every
-   1 Even
+   1 Even Mina
    1 Each
    1 Dutchmen
    1 Don
@@ -124,3 +125,13 @@ Named Entities:
    1 Art
 
 Sentiment Expressions:
+   1 wonderful
+   1 successful
+   1 love
+   1 happy
+   1 content
+   1 cheerful
+   2 upset
+   2 sad
+   1 miserable
+   1 distressed

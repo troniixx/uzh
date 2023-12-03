@@ -1,55 +1,57 @@
 Named Entities:
-  29 The
+  23 The
   23 He
-  21 Mina
-  20 Professor
-  19 Harker
+  18 Harker
   17 We
-  15 God
-  14 Van
-  14 Helsing
+  15 Mina
+  14 Professor
+  12 Van Helsing
   11 There
   11 It
+  11 God
   10 She
   10 Oh
-   9 Quincey
    9 Count
-   8 Godalming
    7 You
    7 Then
-   7 Morris
-   7 Madam
    7 His
-   7 But
    7 As
    6 What
-   6 Jonathan
+   6 The Professor
+   6 Quincey
+   6 Madam Mina
+   6 But
    5 When
    5 This
    5 Mrs
+   5 Jonathan
+   5 Godalming
    5 For
    5 Dr
    5 Do
    4 With
    4 That
-   4 Lord
+   4 Morris
    4 In
-   4 Arthur
    4 All
    3 Why
    3 Vampire
    3 So
    3 See
+   3 Quincey Morris
    3 October
    3 Now
    3 Mr
+   3 Lord Godalming
    3 Just
    3 If
    3 Hush
    3 Carfax
+   3 Arthur
    3 And
    2 Where
    2 Well
+   2 Van
    2 To
    2 They
    2 Seward
@@ -59,6 +61,7 @@ Named Entities:
    2 Is
    2 Instinctively
    2 However
+   2 Helsing
    2 Have
    2 Go
    2 By
@@ -74,9 +77,9 @@ Named Entities:
    1 Time
    1 Through
    1 Think
-   1 Thank
-   1 Tally
-   1 Surely
+   1 Thank God
+   1 Tally Ho
+   1 Surely God
    1 Suddenly
    1 Stay
    1 South
@@ -95,9 +98,11 @@ Named Entities:
    1 Notwithstanding
    1 No
    1 My
-   1 Mile
-   1 May
+   1 Mile End
+   1 May God
    1 March
+   1 Madam
+   1 Lord Arthur
    1 Looking
    1 Look
    1 Life
@@ -105,19 +110,19 @@ Named Entities:
    1 Last
    1 Kukri
    1 Journal
+   1 Jonathan Harker
    1 John
    1 How
-   1 Ho
    1 Her
    1 Hell
    1 Hear
    1 Gradually
-   1 End
    1 Don
    1 Devil
    1 Destroyed
    1 Death
    1 Crucifix
+   1 But God
    1 Buda
    1 Bermondsey
    1 Believe
@@ -132,3 +137,11 @@ Named Entities:
    1 About
 
 Sentiment Expressions:
+   3 love
+   1 wonderful
+   1 positive
+   1 joy
+   1 happy
+   1 content
+   2 sad
+   1 miserable

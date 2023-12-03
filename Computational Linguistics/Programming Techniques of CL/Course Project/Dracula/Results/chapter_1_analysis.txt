@@ -1,16 +1,14 @@
 Named Entities:
-  28 The
+  24 The
   11 Then
   11 It
    9 This
-   8 Pass
    8 He
-   8 Count
    7 When
    7 They
    7 There
    6 She
-   6 Herr
+   6 Pass
    6 Carpathians
    6 Bukovina
    6 At
@@ -18,10 +16,9 @@ Named Entities:
    5 May
    5 Here
    5 German
+   5 Count
    5 Bistritz
    4 In
-   4 Dracula
-   4 Borgo
    3 We
    3 Transylvania
    3 Sometimes
@@ -30,25 +27,23 @@ Named Entities:
    3 On
    3 Mina
    3 London
+   3 Herr
    3 For
-   3 English
    3 Do
+   3 Count Dracula
    2 You
    2 West
    2 Suddenly
    2 Once
    2 Oh
-   2 Mittel
+   2 Mittel Land
    2 Magyars
-   2 Land
    2 Just
    2 Huns
-   2 Hotel
-   2 Golden
    2 East
    2 Cszeks
-   2 Castle
    2 By
+   2 Borgo Pass
    2 All
    1 Your
    1 Yes
@@ -65,9 +60,12 @@ Named Entities:
    1 Towards
    1 Todten
    1 Though
+   1 The Herr Englishman
+   1 The Herr
+   1 The English Herr
+   1 The Castle
    1 That
    1 Szekelys
-   1 Survey
    1 St
    1 South
    1 Soon
@@ -77,57 +75,55 @@ Named Entities:
    1 Servian
    1 Saxons
    1 Satan
-   1 Royale
    1 Right
-   1 Prund
    1 Pesth
    1 Oriental
    1 Ordog
-   1 Ordnance
+   1 Ordnance Survey
    1 Of
    1 Now
    1 North
    1 No
-   1 My
+   1 My Friend
    1 Must
-   1 Museum
-   1 Munich
    1 Moldavia
-   1 Mediasch
    1 Look
    1 Lenore
-   1 Left
-   1 Krone
+   1 Left Munich
    1 Klausenburgh
-   1 Jonathan
+   1 Jonathan Harker
    1 Isten
    1 If
    1 However
    1 How
+   1 Hotel Royale
    1 Hospadars
    1 Having
-   1 Harker
+   1 Golden Mediasch
+   1 Golden Krone Hotel
    1 God
    1 Give
    1 Germany
    1 George
-   1 Friend
    1 France
    1 Finally
    1 Fifty
    1 Europe
-   1 Englishman
+   1 English Churchman
+   1 English
    1 Each
    1 Denn
    1 Day
    1 Danube
    1 Dacians
-   1 Churchman
    1 China
+   1 Castle Dracula
    1 Carpathian
    1 Burger
    1 Buda
-   1 British
+   1 British Museum
+   1 Borgo Prund
+   1 Borgo
    1 Beyond
    1 Being
    1 Before
@@ -135,3 +131,7 @@ Named Entities:
    1 An
 
 Sentiment Expressions:
+   1 wonderful
+   1 happy
+   1 exciting
+   1 sorrowful

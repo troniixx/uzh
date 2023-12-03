@@ -1,19 +1,17 @@
 Named Entities:
-  26 King
-  20 Hatter
+  24 King
+  19 Hatter
   16 Alice
   13 Dormouse
-  11 The
-   9 Queen
-   8 Rabbit
-   7 White
+   8 Queen
+   7 White Rabbit
    6 You
-   6 March
-   5 Hare
-   4 Majesty
+   6 The
+   5 March Hare
    4 And
    3 They
    3 She
+   3 Majesty
    3 It
    3 Here
    3 Hearts
@@ -23,29 +21,32 @@ Named Entities:
    2 Well
    2 This
    2 There
+   2 The King
    2 That
-   2 Knave
    2 He
    2 Gryphon
    2 But
    2 All
-   1 Your
+   1 Your Majesty
    1 Yes
    1 Write
-   1 Who
+   1 Who Stole
    1 When
    1 Turn
    1 Treacle
    1 Then
+   1 The Queen
+   1 The Knave
+   1 The Hatter
    1 Tarts
    1 Take
    1 Suppress
    1 Stupid
-   1 Stole
    1 Sixteenth
    1 Silence
    1 Shan
    1 Really
+   1 Rabbit
    1 Pinch
    1 Pepper
    1 One
@@ -55,7 +56,9 @@ Named Entities:
    1 Now
    1 Not
    1 Never
+   1 March
    1 Lizard
+   1 Knave
    1 Just
    1 In
    1 Imagine
@@ -80,3 +83,6 @@ Named Entities:
    1 After
 
 Sentiment Expressions:
+   1 proud
+   1 pleased
+   1 miserable

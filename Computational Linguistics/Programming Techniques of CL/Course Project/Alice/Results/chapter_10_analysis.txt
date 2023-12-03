@@ -1,20 +1,16 @@
 Named Entities:
   31 Gryphon
-  30 Alice
-  28 Turtle
-  28 Mock
-  11 Soup
-   9 The
+  29 Alice
+  24 Mock Turtle
+   8 Soup
    7 Soo
-   6 So
    5 Will
-   5 Lobster
+   5 The
+   5 So
    5 It
-   5 Beautiful
    4 You
    4 What
    4 They
-   4 Quadrille
    4 No
    4 Come
    4 But
@@ -25,24 +21,30 @@ Named Entities:
    3 Who
    3 When
    3 That
-   3 Panther
    3 Owl
    3 Oh
    3 How
+   3 Beautiful
    2 Yes
    2 While
+   2 Turtle
    2 There
    2 Then
+   2 The Mock Turtle
    2 Thank
    2 Tell
    2 She
+   2 Panther
    2 Of
+   2 Mock
+   2 Lobster Quadrille
+   2 Lobster
    2 He
    2 Go
+   2 Beautiful Soup
    1 Wouldn
    1 With
-   1 William
-   1 White
+   1 White Rabbit
    1 Which
    1 Well
    1 We
@@ -54,9 +56,12 @@ Named Entities:
    1 Trims
    1 Too
    1 Tis
+   1 The Panther
+   1 The Lobster Quadrille
    1 Swim
    1 Stand
    1 Soles
+   1 So Alice
    1 Sing
    1 Shark
    1 Shall
@@ -64,7 +69,7 @@ Named Entities:
    1 Seals
    1 Same
    1 Said
-   1 Rabbit
+   1 Quadrille
    1 Pennyworth
    1 Or
    1 Now

@@ -1,18 +1,18 @@
 Named Entities:
   52 Alice
-  28 Turtle
-  26 Mock
-  20 Gryphon
-  19 Duchess
+  22 Mock Turtle
+  18 Gryphon
+  18 Duchess
   14 Queen
    9 What
-   9 The
    7 You
    7 And
    6 It
+   4 The
    4 Come
    3 Yes
    3 Well
+   3 Turtle
    3 Tortoise
    3 That
    3 So
@@ -26,8 +26,9 @@ Named Entities:
    2 This
    2 They
    2 Then
+   2 The Mock Turtle
+   2 The Gryphon
    2 Take
-   2 Soup
    2 She
    2 Off
    2 Of
@@ -47,10 +48,12 @@ Named Entities:
    1 Those
    1 Thinking
    1 These
+   1 The Duchess
    1 Thank
    1 Ten
    1 Stretching
    1 Story
+   1 Soup
    1 Somebody
    1 Shall
    1 Seaography
@@ -61,6 +64,8 @@ Named Entities:
    1 Only
    1 Once
    1 No
+   1 Mock Turtle Soup
+   1 Mock
    1 Maybe
    1 Majesty
    1 Let
@@ -93,3 +98,8 @@ Named Entities:
    1 All
 
 Sentiment Expressions:
+   2 pleased
+   2 love
+   1 proud
+   1 unhappy
+   1 sad

@@ -1,64 +1,67 @@
 Named Entities:
-  82 Project
-  82 Gutenberg
-  24 Foundation
-  23 Alice
-  22 King
-  21 The
+  57 Project Gutenberg
+  22 Alice
+  21 King
   20 If
   15 You
-  13 United
-  13 States
-  13 Literary
-  13 Archive
+  15 Project
+  12 The
+  11 Gutenberg
+  10 United States
   10 Queen
-   9 License
    9 It
-   8 White
-   8 Rabbit
+   8 License
    7 Section
+   7 Foundation
+   6 White Rabbit
    5 There
-   5 Information
    4 To
+   4 The Foundation
    4 Nothing
    4 Majesty
    4 Lizard
+   4 Information
    4 He
+   4 Gutenberg Literary Archive Foundation
    4 Do
    3 Why
    3 What
+   3 United
    3 They
    3 Then
    3 That
-   3 Knave
-   3 General
+   3 States
+   3 Project Gutenberg Literary
    3 But
+   3 Archive Foundation
    2 Wonderland
    2 Who
    2 We
-   2 Vanilla
    2 Use
    2 Turtle
    2 This
-   2 Terms
+   2 The Project Gutenberg Literary Archive Foundation
    2 Some
-   2 So
    2 She
    2 See
    2 Royalty
+   2 Project Gutenberg Literary Archive Foundation
    2 Please
-   2 Plain
    2 Oh
    2 No
    2 Nearly
    2 Mock
+   2 Literary Archive Foundation
+   2 Knave
    2 Gryphon
+   2 General Terms
    2 For
    2 Except
    2 Donations
    2 At
    2 And
    2 Adventures
+   1 White
    1 While
    1 Which
    1 Where
@@ -66,31 +69,39 @@ Named Entities:
    1 Well
    1 Wake
    1 Volunteers
+   1 Vanilla
    1 Updated
    1 Unless
    1 Thus
    1 Though
    1 These
+   1 The White Rabbit
+   1 The Knave
+   1 The King
    1 Stuff
    1 Special
+   1 So Alice
+   1 So
    1 Silence
-   1 Service
    1 Sentence
    1 Sections
-   1 Salt
+   1 Salt Lake City
    1 Rule
    1 Right
-   1 Revenue
+   1 Revenue Service
    1 Replacement
    1 Refund
    1 Redistribution
-   1 Redistributing
+   1 Redistributing Project Gutenberg
    1 Read
-   1 Professor
-   1 One
+   1 Rabbit
+   1 Project Gutenberg License
+   1 Professor Michael
+   1 Plain Vanilla
+   1 Plain
    1 Off
    1 Of
-   1 Number
+   1 Number One
    1 North
    1 Nobody
    1 Never
@@ -99,12 +110,10 @@ Named Entities:
    1 Most
    1 Mississippi
    1 Mission
-   1 Michael
-   1 March
+   1 March Hare
    1 Many
    1 Let
    1 Lastly
-   1 Lake
    1 Involved
    1 International
    1 Internal
@@ -114,7 +123,7 @@ Named Entities:
    1 Him
    1 Here
    1 Hart
-   1 Hare
+   1 General Information About Project Gutenberg
    1 Full
    1 Forty
    1 First
@@ -133,7 +142,6 @@ Named Entities:
    1 Contact
    1 Consider
    1 Compliance
-   1 City
    1 By
    1 Bill
    1 Between
@@ -145,6 +153,9 @@ Named Entities:
    1 An
    1 All
    1 Additional
-   1 About
 
 Sentiment Expressions:
+   2 wonderful
+   1 happy
+   2 upset
+   1 miserable

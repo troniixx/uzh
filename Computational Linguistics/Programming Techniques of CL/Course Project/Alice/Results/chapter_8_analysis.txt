@@ -1,32 +1,35 @@
 Named Entities:
   39 Alice
-  35 Queen
-  21 The
-  11 King
-   9 Cat
+  26 Queen
+   9 The Queen
+   9 King
+   7 The
    7 She
    7 It
    7 Five
    6 What
-   6 Rabbit
    6 Off
    5 Seven
    4 Two
    4 So
-   4 Knave
+   4 Rabbit
+   4 Cat
    3 You
    3 That
    3 Majesty
+   3 Knave
    3 How
    3 Duchess
-   3 Cheshire
+   3 Cheshire Cat
    3 And
    2 Yes
    2 Why
    2 Who
-   2 White
+   2 White Rabbit
    2 When
    2 Well
+   2 The King
+   2 The Cat
    2 My
    2 Miss
    2 Hush
@@ -41,6 +44,7 @@ Named Entities:
    1 There
    1 Then
    1 Their
+   1 The Knave
    1 Queens
    1 On
    1 Oh
@@ -69,3 +73,4 @@ Named Entities:
    1 After
 
 Sentiment Expressions:
+   1 furious

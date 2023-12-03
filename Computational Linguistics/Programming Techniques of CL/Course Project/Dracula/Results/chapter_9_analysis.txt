@@ -1,62 +1,59 @@
 Named Entities:
   30 He
   19 The
-  15 Lucy
   14 It
+  13 Lucy
   12 She
-  11 Westenra
-  11 Then
+  10 Then
   10 Seward
    9 We
-   9 Van
    9 September
    9 My
-   9 Helsing
-   9 Arthur
-   8 When
    7 You
+   7 When
+   7 Van Helsing
    7 August
    7 And
-   6 Miss
    6 Jonathan
    6 But
    5 This
+   5 Miss Westenra
    5 London
-   5 Holmwood
    5 As
    5 Amsterdam
+   4 Westenra
    4 So
-   4 Mina
    4 Dr
    4 At
+   4 Arthur Holmwood
    4 Another
    3 Whitby
    3 Well
-   3 Tell
-   3 Sister
-   3 Mrs
+   3 Sister Agatha
    3 In
-   3 God
    3 For
-   3 Diary
+   3 Arthur
    3 Art
    3 Am
    3 All
-   3 Agatha
    2 With
    2 Wilhelmina
    2 To
    2 They
    2 There
+   2 Tell
    2 Renfield
    2 Patient
    2 No
+   2 Mrs
    2 Mother
+   2 Mina Harker
+   2 Mina
+   2 Lucy Westenra
    2 How
-   2 Hotel
    2 Hillingham
-   2 Harker
    2 Good
+   2 Diary
    2 By
    2 Are
    1 Zoöphagous
@@ -66,20 +63,22 @@ Named Entities:
    1 Write
    1 Without
    1 Wire
+   1 When Arthur
    1 Were
    1 Till
    1 Three
+   1 Then Mrs
    1 That
    1 Terrible
-   1 Telegraph
+   1 Tell Arthur
    1 Take
    1 Superior
    1 Stores
    1 Stop
    1 Ring
-   1 Professor
+   1 Professor Van Helsing
    1 Pouf
-   1 Please
+   1 Please God
    1 Ph
    1 Pesth
    1 Perhaps
@@ -88,8 +87,8 @@ Named Entities:
    1 Oceans
    1 Now
    1 Nay
-   1 Murray
    1 More
+   1 Miss Murray
    1 Lit
    1 Last
    1 Just
@@ -97,7 +96,9 @@ Named Entities:
    1 Jack
    1 Indeed
    1 Hull
+   1 Hotel
    1 Hon
+   1 Holmwood
    1 His
    1 Here
    1 Her
@@ -105,25 +106,39 @@ Named Entities:
    1 Hark
    1 Happy
    1 Hamburg
-   1 Great
+   1 Great Eastern Hotel
+   1 God
    1 Friend
    1 Fortunately
    1 Fancy
    1 Even
    1 English
-   1 Eastern
-   1 East
+   1 East Cliff
    1 Doctor
    1 Do
    1 Disraeli
    1 Daily
    1 Come
-   1 Cliff
    1 Can
    1 Bats
-   1 Almighty
+   1 Almighty God
    1 Again
    1 After
-   1 Abraham
+   1 Abraham Van Helsing
 
 Sentiment Expressions:
+   7 love
+   7 happy
+   3 satisfied
+   3 cheerful
+   2 wonderful
+   1 proud
+   1 joy
+   1 Happy
+   1 upset
+   1 unhappy
+   1 troubled
+   1 sad
+   1 miserable
+   1 furious
+   1 angry

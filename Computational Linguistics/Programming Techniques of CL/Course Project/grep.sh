@@ -1,7 +1,7 @@
 # Chapter Directory of each book
 #chapter_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Chapters"
 #chapter_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Chapters"
-chapter_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Chapters"
+chapter_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Chapters"
 
 # Results Directory of each book
 #results_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results"
@@ -22,11 +22,18 @@ for file in "$chapter_dir"/*; do
 
     # Grep for capitalized words (potential named entities)
     echo "Named Entities:" > "$output_file"
-    grep -oE '\b[A-Z][a-z]+' "$file" | sort | uniq -c | sort -nr >> "$output_file"
+    grep -oE '\b[A-Z][a-z]+(?:\s[A-Z][a-z]+)*(?:\s(City|Town|Village|Country|Province|State))?\b' "$file" | sort | uniq -c | sort -nr >> "$output_file"
     
     # Grep for basic sentiment words
     echo -e "\nSentiment Expressions:" >> "$output_file"
-    grep -owiE 'happy|joy|sorrow|sad|love|hate|excited|angry|afraid|peaceful|regret|doubt|adore|depressed|' "$file" | sort | uniq -c | sort -nr >> "$output_file"
+    grep -owiE '\b(happy|joy|love|pleased|delighted|ecstatic|optimistic|satisfied|content|grateful|positive|successful|peaceful|enthusiastic|proud|thrilled|joyful|cheerful|amazing|fantastic|incredible|wonderful|exciting)\b' "$file" | sort | uniq -c | sort -nr >> "$output_file"
+    grep -owiE '\b(sad|angry|frustrated|disappointed|depressed|unhappy|miserable|gloomy|hopeless|dismayed|discouraged|pessimistic|annoyed|upset|distressed|troubled|sorrowful|agitated|furious|resentful|displeased)\b' "$file" | sort | uniq -c | sort -nr >> "$output_file"
 done
 
 echo "Analysis complete. Results saved in $results_dir"
+
+
+# -o: print only the match
+# -w: match only whole words
+# -i: ignore case
+# -E: extended regex

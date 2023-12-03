@@ -1,14 +1,14 @@
 Named Entities:
   51 Alice
-  33 Hatter
-  27 Dormouse
-  22 March
-  21 Hare
-  13 The
+  28 Hatter
+  22 Dormouse
+  20 March Hare
   10 It
    7 You
    6 Then
    5 Why
+   5 The Hatter
+   5 The Dormouse
    5 But
    5 And
    4 What
@@ -22,6 +22,7 @@ Named Entities:
    3 Not
    2 Twinkle
    2 This
+   2 The
    2 That
    2 Queen
    2 Once
@@ -43,8 +44,8 @@ Named Entities:
    1 Two
    1 Treacle
    1 Tillie
+   1 The March Hare
    1 Tell
-   1 Tea
    1 Take
    1 Suppose
    1 So
@@ -56,7 +57,8 @@ Named Entities:
    1 Off
    1 Nor
    1 Nobody
-   1 Mad
+   1 March
+   1 Mad Tea
    1 Like
    1 Lacie
    1 Just
@@ -74,3 +76,4 @@ Named Entities:
    1 Ah
 
 Sentiment Expressions:
+   1 upset

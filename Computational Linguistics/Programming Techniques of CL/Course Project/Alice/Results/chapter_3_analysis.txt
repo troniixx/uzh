@@ -1,14 +1,14 @@
 Named Entities:
   23 Alice
-  18 Mouse
+  16 Mouse
   12 Dodo
    7 And
-   6 The
    6 Lory
    5 What
    5 Dinah
    5 But
    4 You
+   4 The
    3 William
    3 Why
    3 This
@@ -16,6 +16,7 @@ Named Entities:
    2 We
    2 They
    2 There
+   2 The Mouse
    2 Said
    2 Prizes
    2 Oh
@@ -28,7 +29,6 @@ Named Entities:
    2 However
    2 Fury
    2 Found
-   2 English
    2 Edwin
    2 Eaglet
    2 Duck
@@ -40,10 +40,9 @@ Named Entities:
    1 Ugh
    1 Then
    1 That
-   1 Tale
    1 Such
    1 Stigand
-   1 Speak
+   1 Speak English
    1 Some
    1 Sit
    1 Silence
@@ -61,21 +60,22 @@ Named Entities:
    1 Mine
    1 Magpie
    1 Ma
-   1 Long
+   1 Long Tale
    1 Indeed
    1 How
    1 Hold
    1 Hand
    1 For
    1 First
-   1 Edgar
+   1 English
+   1 Edgar Atheling
    1 Did
    1 Conqueror
    1 Canterbury
    1 Canary
-   1 Atheling
    1 As
    1 Ahem
    1 Ah
 
 Sentiment Expressions:
+   2 sad

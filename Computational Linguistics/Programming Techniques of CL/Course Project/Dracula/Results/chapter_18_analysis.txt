@@ -1,36 +1,31 @@
 Named Entities:
-  32 He
+  31 He
   21 Dr
   19 We
   18 Harker
   17 Seward
-  16 The
-  16 Professor
   15 You
   14 Mrs
   13 Mr
-  12 Van
-  12 Helsing
-  10 Morris
+  10 Van Helsing
+  10 The
   10 Jonathan
   10 It
    9 When
-   9 Godalming
+   9 Professor
    9 But
-   8 Lord
    7 Then
    7 She
    7 Renfield
+   7 Morris
+   7 Lord Godalming
    7 For
    7 And
    6 There
-   6 Quincey
-   6 Mina
    6 If
+   5 The Professor
    5 So
-   5 Madam
-   5 Lucy
-   5 John
+   5 Madam Mina
    5 His
    5 Good
    5 As
@@ -40,15 +35,18 @@ Named Entities:
    4 Oh
    4 My
    4 Let
+   4 John
    4 In
    4 Even
-   4 Dracula
    4 All
    3 Thus
    3 These
-   3 May
+   3 Quincey Morris
+   3 Quincey
+   3 Lucy
    3 How
    3 God
+   3 Dracula
    3 Come
    3 Can
    3 Ah
@@ -59,13 +57,15 @@ Named Entities:
    2 They
    2 Take
    2 September
+   2 Professor Van Helsing
    2 Not
    2 Nay
-   2 Miss
+   2 Miss Lucy
+   2 May
    2 Here
+   2 Godalming
    2 Carfax
    2 By
-   2 Art
    2 Arminius
    1 Your
    1 Yet
@@ -75,8 +75,7 @@ Named Entities:
    1 Windham
    1 Will
    1 Were
-   1 Voivode
-   1 University
+   1 Voivode Dracula
    1 Union
    1 Turkey
    1 Turk
@@ -84,6 +83,7 @@ Named Entities:
    1 Treaty
    1 To
    1 Though
+   1 The Draculas
    1 That
    1 Texas
    1 Stripes
@@ -100,20 +100,22 @@ Named Entities:
    1 Saxon
    1 Satan
    1 Rome
-   1 Poor
+   1 Poor Art
    1 Pole
-   1 Pesth
+   1 Pesth University
    1 Outside
    1 Opposite
    1 Only
-   1 One
    1 October
    1 Now
    1 Must
    1 Monroe
+   1 Mina
    1 Me
+   1 May He
    1 Manlike
    1 Magyar
+   1 Lord
    1 Looking
    1 Life
    1 Lake
@@ -134,10 +136,9 @@ Named Entities:
    1 Greece
    1 Get
    1 Germany
-   1 Friend
+   1 Friend John
    1 France
-   1 Evil
-   1 Draculas
+   1 Evil One
    1 Don
    1 Does
    1 Do
@@ -153,8 +154,18 @@ Named Entities:
    1 Be
    1 At
    1 Arthur
+   1 Art
    1 Almighty
    1 Alas
    1 Again
 
 Sentiment Expressions:
+   7 love
+   2 wonderful
+   2 satisfied
+   1 successful
+   1 proud
+   1 positive
+   1 content
+   1 cheerful
+   2 unhappy

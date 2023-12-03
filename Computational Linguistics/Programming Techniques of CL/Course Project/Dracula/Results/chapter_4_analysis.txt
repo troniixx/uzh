@@ -1,6 +1,6 @@
 Named Entities:
-  35 Count
-  24 The
+  32 Count
+  20 The
   16 There
   14 It
   13 He
@@ -9,11 +9,11 @@ Named Entities:
   10 As
    9 With
    9 They
-   9 Szgany
    8 To
    8 June
    8 But
    7 At
+   6 Szgany
    5 This
    5 Slovaks
    5 Mina
@@ -22,23 +22,24 @@ Named Entities:
    4 God
    4 And
    3 Last
-   3 Hawkins
    3 Bistritz
-   2 You
    2 Why
-   2 These
+   2 The Szgany
+   2 The Count
    2 Suddenly
    2 Something
    2 She
    2 My
    2 In
    2 If
+   2 Hawkins
    2 Hark
    2 Good
-   2 Dracula
    2 Despair
    2 Come
    2 Before
+   1 You English
+   1 You
    1 Yes
    1 Without
    1 Will
@@ -50,6 +51,8 @@ Named Entities:
    1 Unless
    1 Turkish
    1 Transylvania
+   1 These Szgany
+   1 These
    1 Suspiciously
    1 Somewhere
    1 So
@@ -64,8 +67,7 @@ Named Entities:
    1 Regaining
    1 Quicker
    1 Pit
-   1 Peter
-   1 Pass
+   1 Peter Hawkins
    1 Of
    1 Now
    1 Not
@@ -93,16 +95,17 @@ Named Entities:
    1 Faugh
    1 Every
    1 Even
-   1 English
    1 England
+   1 Dracula
    1 Death
+   1 Count Dracula
    1 Close
    1 Castle
    1 Can
    1 By
    1 Bukovina
    1 British
-   1 Borgo
+   1 Borgo Pass
    1 Because
    1 Back
    1 Austrian
@@ -111,3 +114,8 @@ Named Entities:
    1 Action
 
 Sentiment Expressions:
+   1 proud
+   1 joy
+   1 upset
+   1 sad
+   1 distressed

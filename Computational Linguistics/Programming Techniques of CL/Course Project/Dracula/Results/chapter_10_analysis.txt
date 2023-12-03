@@ -1,28 +1,27 @@
 Named Entities:
-  33 Lucy
-  28 Van
-  28 Helsing
+  30 Lucy
   27 You
-  21 Arthur
-  18 The
+  25 Van Helsing
   18 It
   18 He
-  15 Professor
-  14 When
+  17 Arthur
+  14 The
   13 There
-  12 Then
+  12 When
+  11 Then
+  11 Professor
   10 She
    9 We
-   9 My
-   9 John
-   8 If
+   8 My
+   8 John
    8 As
    8 And
-   7 September
    7 Oh
+   7 If
    7 Dr
    6 What
    6 Seward
+   6 September
    6 Now
    6 No
    5 Westenra
@@ -31,19 +30,18 @@ Named Entities:
    4 Well
    4 To
    4 This
+   4 The Professor
    4 So
-   4 Nature
    4 In
    4 Good
-   4 God
    4 For
    4 Diary
    4 All
    3 Why
    3 Take
    3 See
+   3 Nature
    3 Mrs
-   3 Miss
    3 Hillingham
    3 Her
    3 Do
@@ -51,14 +49,16 @@ Named Entities:
    2 Yes
    2 These
    2 That
-   2 Thank
    2 Remember
    2 Perhaps
    2 Nay
+   2 Miss Lucy
    2 Later
    2 Is
    2 How
    2 Here
+   2 Helsing
+   2 God
    2 Even
    2 By
    2 Art
@@ -68,11 +68,16 @@ Named Entities:
    1 Young
    1 Without
    1 Whilst
+   1 When Van Helsing
+   1 When Arthur
    1 Vanderpool
+   1 Van
    1 They
+   1 Then Lucy
+   1 Thank God
+   1 Thank
    1 Tell
-   1 Street
-   1 Somehow
+   1 Somehow Arthur
    1 Sir
    1 Shortly
    1 Shall
@@ -82,18 +87,20 @@ Named Entities:
    1 Presently
    1 Our
    1 Nothing
+   1 My God
+   1 Miss
    1 Mind
    1 May
    1 Make
    1 Madame
    1 Love
    1 Look
-   1 Liverpool
+   1 Liverpool Street
    1 Lethe
    1 Just
    1 Jack
+   1 If Arthur
    1 Hon
-   1 Holmwood
    1 Hold
    1 Ho
    1 Himmel
@@ -102,18 +109,28 @@ Named Entities:
    1 Haarlem
    1 Gott
    1 Go
-   1 Friend
-   1 Found
+   1 Friend John
+   1 Found Van
    1 Floridas
    1 First
    1 Drink
-   1 Dame
+   1 Dame Nature
    1 Conquistadores
    1 Bring
    1 Better
    1 At
+   1 Arthur Holmwood
    1 Already
    1 Aha
    1 Afraid
 
 Sentiment Expressions:
+   3 love
+   3 happy
+   1 successful
+   1 satisfied
+   1 joy
+   1 cheerful
+   1 Love
+   1 sad
+   1 angry

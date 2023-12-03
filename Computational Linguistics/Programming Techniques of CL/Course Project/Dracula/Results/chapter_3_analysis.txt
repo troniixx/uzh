@@ -1,6 +1,6 @@
 Named Entities:
-  24 Count
-  22 The
+  21 Count
+  19 The
   11 When
   11 It
   10 He
@@ -17,23 +17,23 @@ Named Entities:
    5 But
    4 Mr
    4 Here
-   4 Hawkins
-   4 God
    3 You
    3 Turk
-   3 Szekelys
+   3 The Count
    3 Now
    3 May
    3 Let
    3 Hungarian
    3 How
+   3 Hawkins
+   3 God
    3 At
    3 As
    2 Who
    2 Turkey
    2 To
+   2 Szekelys
    2 So
-   2 Peter
    2 On
    2 Of
    2 My
@@ -56,7 +56,7 @@ Named Entities:
    1 Where
    1 Whenever
    1 Well
-   1 We
+   1 We Szekelys
    1 Was
    1 Wallach
    1 Voivode
@@ -79,13 +79,13 @@ Named Entities:
    1 Samuel
    1 Safety
    1 Romanoffs
+   1 Peter Hawkins
+   1 Peter
    1 Pesth
    1 Once
    1 No
-   1 Nights
    1 Newcastle
    1 Never
-   1 Nations
    1 Morning
    1 Mohács
    1 Magyars
@@ -93,23 +93,21 @@ Named Entities:
    1 Looking
    1 Lombard
    1 Lincoln
-   1 Leutner
    1 Last
-   1 Klopstock
    1 King
    1 Inn
    1 Iceland
    1 Huns
    1 Honfoglalas
-   1 Herren
-   1 Herr
+   1 Herren Klopstock
+   1 Herr Leutner
    1 Have
    1 Harwich
    1 Hapsburgs
-   1 Great
+   1 Great God
    1 Go
    1 From
-   1 Four
+   1 Four Nations
    1 Fools
    1 First
    1 Exeter
@@ -140,7 +138,7 @@ Named Entities:
    1 Asia
    1 Arpad
    1 Are
-   1 Arabian
+   1 Arabian Nights
    1 All
    1 Ah
    1 Again
@@ -148,3 +146,8 @@ Named Entities:
    1 Africa
 
 Sentiment Expressions:
+   3 wonderful
+   3 love
+   2 proud
+   1 satisfied
+   1 sad

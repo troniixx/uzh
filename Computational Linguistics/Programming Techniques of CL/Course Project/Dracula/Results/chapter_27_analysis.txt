@@ -1,102 +1,103 @@
 Named Entities:
-  82 Project
-  82 Gutenberg
-  46 The
-  30 Mina
-  27 Madam
+  57 Project Gutenberg
+  36 The
   26 It
+  25 Madam Mina
   24 We
-  24 Foundation
   23 Jonathan
   16 Then
   16 If
-  15 God
-  13 United
-  13 States
-  13 Literary
+  15 Project
   13 He
   13 At
-  13 Archive
   12 When
-  12 Van
   12 She
-  12 Helsing
-  12 But
+  12 God
   11 You
   11 In
+  11 Gutenberg
+  11 But
+  10 Van Helsing
+  10 United States
   10 They
    9 November
-   9 License
    8 There
-   8 Seward
-   8 Professor
-   8 Morris
+   8 License
    8 Dr
    8 And
    7 Vampire
    7 Un
    7 This
+   7 Seward
    7 Section
+   7 Morris
    7 Look
+   7 Foundation
    7 Dead
    7 All
    6 To
    6 See
+   6 Professor
    6 Mr
    6 His
    5 So
-   5 Information
-   5 Godalming
+   5 Mina
    5 For
    5 Come
    5 By
-   4 Quincey
-   4 Pass
+   4 The Foundation
    4 Oh
-   4 John
+   4 Information
    4 Holy
+   4 Gutenberg Literary Archive Foundation
    4 Do
    4 Count
    4 As
    3 With
-   3 Szgany
+   3 United
+   3 States
+   3 Quincey
+   3 Project Gutenberg Literary
    3 One
-   3 Lord
+   3 Lord Godalming
+   3 John
    3 However
    3 Had
-   3 General
    3 Dracula
+   3 Archive Foundation
    2 Winchester
    2 Why
    2 Well
    2 Wafer
    2 Veresti
-   2 Vanilla
    2 Use
-   2 Terms
+   2 The Project Gutenberg Literary Archive Foundation
+   2 Szgany
    2 Seeing
    2 Royalty
-   2 Plain
+   2 Project Gutenberg Literary Archive Foundation
+   2 Pass
    2 On
    2 Of
-   2 Now
    2 No
    2 More
    2 Many
+   2 Madam
+   2 Literary Archive Foundation
    2 Let
    2 Journal
    2 Instinctively
    2 Her
    2 Harker
-   2 Grosset
    2 Good
-   2 Fiction
+   2 Godalming
+   2 General Terms
    2 Except
    2 Every
    2 Even
    2 Dunlap
    2 Donations
-   2 Borgo
+   2 Borgo Pass
    2 Bistritz
    2 Before
    1 Yes
@@ -106,6 +107,8 @@ Named Entities:
    1 While
    1 West
    1 Volunteers
+   1 Vanilla
+   1 Van
    1 Value
    1 Updated
    1 Unless
@@ -115,7 +118,11 @@ Named Entities:
    1 Though
    1 Those
    1 Thing
-   1 Thank
+   1 The Szgany
+   1 The Professor
+   1 The Grosset
+   1 The Castle
+   1 Thank God
    1 Taking
    1 Take
    1 Sweeping
@@ -127,27 +134,32 @@ Named Entities:
    1 Special
    1 Something
    1 Some
-   1 Side
    1 Seven
-   1 Service
    1 Sections
-   1 Salt
+   1 Salt Lake City
    1 Round
    1 Right
-   1 Revenue
+   1 Revenue Service
    1 Replacement
    1 Refund
    1 Redistribution
-   1 Redistributing
+   1 Redistributing Project Gutenberg
+   1 Quincey Morris
    1 Purfleet
+   1 Project Gutenberg License
+   1 Professor Michael
    1 Presently
-   1 Popular
+   1 Popular Copyrighted
    1 Poor
    1 Please
+   1 Plain Vanilla
+   1 Plain
    1 Outlined
-   1 Other
+   1 Other Side
    1 Only
    1 Once
+   1 Now God
+   1 Now
    1 Nothing
    1 North
    1 None
@@ -158,16 +170,13 @@ Named Entities:
    1 Most
    1 Mississippi
    1 Mission
-   1 Miss
-   1 Michael
+   1 Miss Lucy
    1 Memorandum
    1 May
-   1 Lucy
    1 London
-   1 List
-   1 Lake
    1 Kukri
    1 King
+   1 John Seward
    1 Its
    1 Issue
    1 International
@@ -175,12 +184,16 @@ Named Entities:
    1 Index
    1 How
    1 Here
+   1 Helsing
    1 Have
    1 Hart
    1 Halt
+   1 Grosset
+   1 General Information About Project Gutenberg
    1 Full
    1 From
    1 Follow
+   1 Fiction
    1 Fear
    1 Far
    1 Ever
@@ -193,19 +206,17 @@ Named Entities:
    1 Defects
    1 Defect
    1 Creating
-   1 Copyrighted
    1 Copyright
    1 Contributions
    1 Contact
    1 Compliance
    1 Complete
    1 Closer
-   1 City
    1 Certain
-   1 Castle
    1 Carpathians
    1 Carpathian
    1 Carfax
+   1 But God
    1 Bukovina
    1 Authors
    1 Ask
@@ -213,12 +224,18 @@ Named Entities:
    1 An
    1 Amen
    1 Already
-   1 Alphabetical
+   1 Alphabetical List
    1 Alas
    1 Ah
    1 Again
    1 Additional
-   1 Abraham
-   1 About
+   1 Abraham Van Helsing
 
 Sentiment Expressions:
+   2 wonderful
+   2 love
+   2 joy
+   1 successful
+   1 incredible
+   1 happy
+   1 sad

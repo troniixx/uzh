@@ -1,9 +1,9 @@
 Named Entities:
   28 Alice
    6 There
-   6 Rabbit
    5 She
    5 Dinah
+   4 Rabbit
    4 Oh
    4 Do
    4 And
@@ -11,9 +11,8 @@ Named Entities:
    3 How
    3 Down
    2 Why
-   2 White
+   2 White Rabbit
    2 Well
-   2 The
    2 So
    2 No
    2 Longitude
@@ -21,15 +20,16 @@ Named Entities:
    2 However
    2 First
    2 But
-   1 Zealand
    1 Would
    1 What
+   1 The Antipathies
+   1 The
    1 Suddenly
    1 Soon
    1 Presently
    1 Please
    1 Now
-   1 New
+   1 New Zealand
    1 Ma
    1 Let
    1 It
@@ -40,7 +40,6 @@ Named Entities:
    1 Drink
    1 Come
    1 Australia
-   1 Antipathies
    1 After
 
 Sentiment Expressions:

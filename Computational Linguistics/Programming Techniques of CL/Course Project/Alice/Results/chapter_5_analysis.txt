@@ -1,6 +1,6 @@
 Named Entities:
   35 Alice
-  26 Caterpillar
+  24 Caterpillar
   11 Pigeon
   10 And
    8 You
@@ -10,16 +10,14 @@ Named Entities:
    4 This
    4 In
    3 Yet
-   3 William
    3 Why
-   3 The
    3 She
    3 Serpent
-   3 Father
    3 Come
    3 But
    3 As
    2 Who
+   2 The Caterpillar
    2 That
    2 So
    2 Pray
@@ -29,12 +27,14 @@ Named Entities:
    2 However
    2 How
    2 For
+   2 Father William
    2 Do
    1 Whoever
    1 Which
    1 Ugh
    1 There
    1 Then
+   1 The
    1 Said
    1 Repeat
    1 Oh
@@ -45,6 +45,7 @@ Named Entities:
    1 Here
    1 Her
    1 Has
+   1 Father
    1 Explain
    1 Can
    1 By
@@ -55,3 +56,6 @@ Named Entities:
    1 Advice
 
 Sentiment Expressions:
+   1 delighted
+   1 content
+   1 annoyed
