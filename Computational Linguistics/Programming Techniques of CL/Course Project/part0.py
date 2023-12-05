@@ -10,7 +10,6 @@ import re
 import json
 # --- Don't add other imports here ---
 
-
 def json_conversion(data):
     """
     Create a function to convert the data to a json string here
@@ -123,7 +122,7 @@ def json_ner(txt_files_ner, output_dir_ner):
             
             data = extractor_named(file_path) # extracting the data from the txt file (more details in the extractor function)
             write_as_json(data, output_path) # writing the data to the json file (more details in the write_as_json function)
-
+            
 def main():
     # ****** IMPORTANT ******
     # input directory of the txt files with the NER and Sentiment Expressions
@@ -140,15 +139,6 @@ def main():
                     "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Results/named"
                     ]
     
-    #txt_files_sent = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results/sentiment"
-    #txt_files_ner = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results/named"
-    
-    #txt_files_sent = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Results/sentiment"
-    #txt_files_ner = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Results/named"
-    
-    #txt_files_sent = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Results/sentiment"
-    #txt_files_sent = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Results/named"
-    
     # ****** IMPORTANT ******
     # output directory of the json files to be outputted
     # before running it, change the directories to fit your system
@@ -164,21 +154,10 @@ def main():
                     "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/json/named"
                     ]
     
-    #output_dir_sent = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/json/sentiment"
-    #output_dir_ner = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/json/named"
-    
-    #output_dir_sent = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/json/sentiment"
-    #output_dir_named = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/json/named"
-    
-    #output_dir_sent = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/json/sentiment"
-    #output_dir_ner = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/json/ner"
-    
     for i in range(len(txt_files_sent)):
         json_sent(txt_files_sent[i], output_dir_sent[i])
         json_ner(txt_files_ner[i], output_dir_ner[i])
-        
-        
-
+    
 # This is the standard boilerplate that calls the main() function when the program is executed.
 if __name__ == '__main__':
     main()
