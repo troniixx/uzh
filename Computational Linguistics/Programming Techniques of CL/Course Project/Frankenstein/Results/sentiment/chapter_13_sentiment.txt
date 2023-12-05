@@ -6,11 +6,3 @@ Sentiment Expressions:
    1 joy
    3 miserable
    1 sad
-
-Sentiment Expressions:
-   5 love
-   2 happy
-   1 wonderful
-   1 joy
-   3 miserable
-   1 sad

@@ -8,13 +8,3 @@ Sentiment Expressions:
    2 miserable
    1 sad
    1 hopeless
-
-Sentiment Expressions:
-   2 love
-   2 joy
-   2 happy
-   2 delighted
-   2 unhappy
-   2 miserable
-   1 sad
-   1 hopeless

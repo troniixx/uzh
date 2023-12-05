@@ -6,11 +6,3 @@ Sentiment Expressions:
    1 happy
    1 unhappy
    1 Unhappy
-
-Sentiment Expressions:
-   2 wonderful
-   1 satisfied
-   1 love
-   1 happy
-   1 unhappy
-   1 Unhappy

@@ -10,15 +10,3 @@ Sentiment Expressions:
    1 sorrowful
    1 furious
    1 depressed
-
-Sentiment Expressions:
-   4 joy
-   2 happy
-   1 wonderful
-   1 satisfied
-   1 love
-   5 miserable
-   2 troubled
-   1 sorrowful
-   1 furious
-   1 depressed

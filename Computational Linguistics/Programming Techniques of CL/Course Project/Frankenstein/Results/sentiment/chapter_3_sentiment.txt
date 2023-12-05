@@ -1,6 +1,3 @@
 
 Sentiment Expressions:
    1 content
-
-Sentiment Expressions:
-   1 content

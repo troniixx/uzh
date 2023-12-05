@@ -4,9 +4,3 @@ Sentiment Expressions:
    1 enthusiastic
    1 delighted
    2 miserable
-
-Sentiment Expressions:
-   1 wonderful
-   1 enthusiastic
-   1 delighted
-   2 miserable
