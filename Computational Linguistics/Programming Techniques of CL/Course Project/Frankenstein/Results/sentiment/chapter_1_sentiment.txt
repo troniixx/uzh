@@ -4,3 +4,9 @@ Sentiment Expressions:
    1 love
    1 joy
    1 depressed
+
+Sentiment Expressions:
+   1 proud
+   1 love
+   1 joy
+   1 depressed

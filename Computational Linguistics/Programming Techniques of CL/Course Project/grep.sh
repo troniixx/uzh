@@ -48,7 +48,7 @@ for file in "$chapter_dir"/*; do
     grep -owiE '\b(sad|angry|frustrated|disappointed|depressed|unhappy|miserable|gloomy|hopeless|dismayed|discouraged|pessimistic|annoyed|upset|distressed|troubled|sorrowful|agitated|furious|resentful|displeased)\b' "$file" | sort | uniq -c | sort -nr >> "$output_file"
 done
 
-echo "Analysis complete. Results saved in $results_dir_sent and $results_dir_ner"
+echo "Analysis complete. Results saved in ${results_dir_sent#*/Course Project/} and ${results_dir_ner#*/Course Project/}"
 
 # ggrep didnt work for some reason so i just used grep -E
 # -o: print only the match

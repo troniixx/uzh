@@ -5,3 +5,10 @@ Sentiment Expressions:
    1 peaceful
    1 grateful
    1 exciting
+
+Sentiment Expressions:
+   4 love
+   2 happy
+   1 peaceful
+   1 grateful
+   1 exciting

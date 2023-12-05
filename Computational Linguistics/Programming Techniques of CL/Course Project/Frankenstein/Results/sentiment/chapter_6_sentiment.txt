@@ -8,3 +8,13 @@ Sentiment Expressions:
    1 delighted
    1 sad
    1 gloomy
+
+Sentiment Expressions:
+   2 wonderful
+   2 love
+   1 satisfied
+   1 peaceful
+   1 joy
+   1 delighted
+   1 sad
+   1 gloomy

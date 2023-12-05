@@ -11,3 +11,16 @@ Sentiment Expressions:
    1 sorrowful
    1 gloomy
    1 Miserable
+
+Sentiment Expressions:
+   3 joy
+   2 wonderful
+   2 happy
+   1 satisfied
+   1 love
+   1 ecstatic
+   1 cheerful
+   1 unhappy
+   1 sorrowful
+   1 gloomy
+   1 Miserable
