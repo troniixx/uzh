@@ -1,92 +1,56 @@
 {
     "Named Entities": [
         [
-            35,
-            "Alice"
+            7,
+            "The"
         ],
         [
-            24,
-            "Caterpillar"
-        ],
-        [
-            11,
-            "Pigeon"
-        ],
-        [
-            10,
-            "And"
-        ],
-        [
-            8,
-            "You"
+            7,
+            "He"
         ],
         [
             6,
-            "Well"
+            "Her"
         ],
         [
             5,
-            "It"
-        ],
-        [
-            4,
-            "What"
-        ],
-        [
-            4,
-            "This"
-        ],
-        [
-            4,
-            "In"
-        ],
-        [
-            3,
-            "Yet"
-        ],
-        [
-            3,
-            "Why"
-        ],
-        [
-            3,
             "She"
         ],
         [
-            3,
-            "Serpent"
+            5,
+            "Beaufort"
+        ],
+        [
+            4,
+            "My"
         ],
         [
             3,
-            "Come"
+            "This"
         ],
         [
             3,
-            "But"
+            "They"
         ],
         [
             3,
-            "As"
+            "There"
+        ],
+        [
+            3,
+            "Italy"
+        ],
+        [
+            3,
+            "Elizabeth"
         ],
         [
             2,
-            "Who"
+            "With"
         ],
         [
             2,
-            "The Caterpillar"
-        ],
-        [
-            2,
-            "That"
-        ],
-        [
-            2,
-            "So"
-        ],
-        [
-            2,
-            "Pray"
+            "When"
         ],
         [
             2,
@@ -94,145 +58,181 @@
         ],
         [
             2,
-            "Not"
+            "Milan"
         ],
         [
             2,
+            "His"
+        ],
+        [
+            2,
+            "During"
+        ],
+        [
+            1,
+            "Whether"
+        ],
+        [
+            1,
+            "We"
+        ],
+        [
+            1,
+            "Victor"
+        ],
+        [
+            1,
+            "Two"
+        ],
+        [
+            1,
+            "Their"
+        ],
+        [
+            1,
+            "Several"
+        ],
+        [
+            1,
+            "Reuss"
+        ],
+        [
+            1,
+            "Providence"
+        ],
+        [
+            1,
+            "Perhaps"
+        ],
+        [
+            1,
+            "Overjoyed"
+        ],
+        [
+            1,
+            "On"
+        ],
+        [
+            1,
             "No"
         ],
         [
-            2,
-            "However"
+            1,
+            "Naples"
         ],
         [
-            2,
-            "How"
+            1,
+            "Much"
         ],
         [
-            2,
+            1,
+            "Milanese"
+        ],
+        [
+            1,
+            "Lucerne"
+        ],
+        [
+            1,
+            "Lake"
+        ],
+        [
+            1,
+            "Italians"
+        ],
+        [
+            1,
+            "Heaven"
+        ],
+        [
+            1,
+            "Having"
+        ],
+        [
+            1,
+            "Germany"
+        ],
+        [
+            1,
+            "German"
+        ],
+        [
+            1,
+            "Genevese"
+        ],
+        [
+            1,
+            "Geneva"
+        ],
+        [
+            1,
+            "From Italy"
+        ],
+        [
+            1,
+            "France"
+        ],
+        [
+            1,
             "For"
         ],
         [
-            2,
-            "Father William"
-        ],
-        [
-            2,
-            "Do"
+            1,
+            "Everything"
         ],
         [
             1,
-            "Whoever"
+            "Everyone"
         ],
         [
             1,
-            "Which"
+            "Elizabeth Lavenza"
         ],
         [
             1,
-            "Ugh"
+            "Como"
         ],
         [
             1,
-            "There"
+            "Caroline"
         ],
         [
             1,
-            "Then"
+            "But Caroline Beaufort"
         ],
         [
             1,
-            "The"
+            "But"
         ],
         [
             1,
-            "Said"
+            "Austria"
         ],
         [
             1,
-            "Repeat"
+            "As"
         ],
         [
             1,
-            "Oh"
+            "And"
         ],
         [
             1,
-            "Of"
+            "Among"
         ],
         [
             1,
-            "Let"
-        ],
-        [
-            1,
-            "Keep"
-        ],
-        [
-            1,
-            "Is"
-        ],
-        [
-            1,
-            "Here"
-        ],
-        [
-            1,
-            "Her"
-        ],
-        [
-            1,
-            "Has"
-        ],
-        [
-            1,
-            "Father"
-        ],
-        [
-            1,
-            "Explain"
-        ],
-        [
-            1,
-            "Can"
-        ],
-        [
-            1,
-            "By"
-        ],
-        [
-            1,
-            "Be"
-        ],
-        [
-            1,
-            "Are"
-        ],
-        [
-            1,
-            "Allow"
-        ],
-        [
-            1,
-            "After"
-        ],
-        [
-            1,
-            "Advice"
+            "All"
         ]
     ],
     "Sentiment Expressions": [
         [
-            1,
-            "delighted"
+            3,
+            "love"
         ],
         [
             1,
-            "content"
-        ],
-        [
-            1,
-            "annoyed"
+            "proud"
         ]
     ]
 }

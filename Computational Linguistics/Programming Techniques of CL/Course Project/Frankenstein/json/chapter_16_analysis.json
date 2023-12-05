@@ -1,173 +1,170 @@
 {
     "Named Entities": [
         [
-            28,
-            "Alice"
+            12,
+            "The"
         ],
         [
             6,
-            "There"
+            "Felix"
         ],
         [
             5,
-            "She"
-        ],
-        [
-            5,
-            "Dinah"
+            "This"
         ],
         [
             4,
-            "Rabbit"
+            "They"
         ],
         [
             4,
-            "Oh"
+            "My"
         ],
         [
             4,
-            "Do"
-        ],
-        [
-            4,
-            "And"
+            "Agatha"
         ],
         [
             3,
-            "Which"
+            "When"
         ],
         [
             3,
-            "How"
-        ],
-        [
-            3,
-            "Down"
+            "Their"
         ],
         [
             2,
-            "Why"
+            "What"
         ],
         [
             2,
-            "White Rabbit"
+            "It"
         ],
         [
             2,
-            "Well"
+            "In"
         ],
         [
             2,
-            "So"
+            "He"
         ],
         [
             2,
-            "No"
-        ],
-        [
-            2,
-            "Longitude"
-        ],
-        [
-            2,
-            "Latitude"
-        ],
-        [
-            2,
-            "However"
-        ],
-        [
-            2,
-            "First"
+            "By"
         ],
         [
             2,
             "But"
         ],
         [
-            1,
-            "Would"
+            2,
+            "At"
         ],
         [
             1,
-            "What"
+            "Yet"
         ],
         [
             1,
-            "The Antipathies"
+            "These"
         ],
         [
             1,
-            "The"
+            "She"
         ],
         [
             1,
-            "Suddenly"
+            "Several"
         ],
         [
             1,
-            "Soon"
+            "Nothing"
         ],
         [
             1,
-            "Presently"
+            "Men"
         ],
         [
             1,
-            "Please"
+            "If"
         ],
         [
             1,
-            "Now"
+            "Happy"
         ],
         [
             1,
-            "New Zealand"
+            "From"
         ],
         [
             1,
-            "Ma"
+            "Fit"
         ],
         [
             1,
-            "Let"
+            "Early"
         ],
         [
             1,
-            "It"
+            "During"
         ],
         [
             1,
-            "In"
+            "Did"
         ],
         [
             1,
-            "Hole"
+            "As"
         ],
         [
             1,
-            "For"
-        ],
-        [
-            1,
-            "Either"
-        ],
-        [
-            1,
-            "Drink"
-        ],
-        [
-            1,
-            "Come"
-        ],
-        [
-            1,
-            "Australia"
-        ],
-        [
-            1,
-            "After"
+            "Alas"
         ]
     ],
-    "Sentiment Expressions": []
+    "Sentiment Expressions": [
+        [
+            4,
+            "cheerful"
+        ],
+        [
+            2,
+            "love"
+        ],
+        [
+            2,
+            "happy"
+        ],
+        [
+            1,
+            "satisfied"
+        ],
+        [
+            1,
+            "joy"
+        ],
+        [
+            1,
+            "Happy"
+        ],
+        [
+            3,
+            "unhappy"
+        ],
+        [
+            3,
+            "miserable"
+        ],
+        [
+            1,
+            "sorrowful"
+        ],
+        [
+            1,
+            "sad"
+        ],
+        [
+            1,
+            "depressed"
+        ]
+    ]
 }

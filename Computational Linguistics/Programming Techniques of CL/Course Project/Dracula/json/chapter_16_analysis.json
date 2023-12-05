@@ -1,76 +1,132 @@
 {
     "Named Entities": [
         [
-            24,
-            "King"
+            32,
+            "Arthur"
         ],
         [
-            19,
-            "Hatter"
+            22,
+            "Van Helsing"
         ],
         [
             16,
-            "Alice"
-        ],
-        [
-            13,
-            "Dormouse"
-        ],
-        [
-            8,
-            "Queen"
-        ],
-        [
-            7,
-            "White Rabbit"
-        ],
-        [
-            6,
-            "You"
-        ],
-        [
-            6,
             "The"
         ],
         [
-            5,
-            "March Hare"
+            15,
+            "We"
         ],
         [
-            4,
-            "And"
+            12,
+            "Lucy"
         ],
         [
-            3,
-            "They"
+            12,
+            "He"
         ],
         [
-            3,
-            "She"
+            11,
+            "When"
         ],
         [
-            3,
-            "Majesty"
+            11,
+            "Un"
         ],
         [
-            3,
+            11,
+            "Professor"
+        ],
+        [
+            11,
             "It"
         ],
         [
-            3,
-            "Here"
+            10,
+            "Dead"
+        ],
+        [
+            10,
+            "And"
+        ],
+        [
+            8,
+            "There"
+        ],
+        [
+            8,
+            "Then"
+        ],
+        [
+            8,
+            "Quincey"
+        ],
+        [
+            8,
+            "But"
+        ],
+        [
+            6,
+            "God"
+        ],
+        [
+            5,
+            "She"
+        ],
+        [
+            4,
+            "My"
+        ],
+        [
+            4,
+            "Come"
+        ],
+        [
+            4,
+            "As"
         ],
         [
             3,
-            "Hearts"
+            "You"
         ],
         [
             3,
-            "Give"
+            "To"
         ],
         [
             3,
-            "Call"
+            "This"
+        ],
+        [
+            3,
+            "Thing"
+        ],
+        [
+            3,
+            "Tell"
+        ],
+        [
+            3,
+            "So"
+        ],
+        [
+            3,
+            "One"
+        ],
+        [
+            3,
+            "Is"
+        ],
+        [
+            3,
+            "For"
+        ],
+        [
+            2,
+            "Yes"
+        ],
+        [
+            2,
+            "With"
         ],
         [
             2,
@@ -78,87 +134,103 @@
         ],
         [
             2,
-            "Well"
+            "Two"
         ],
         [
             2,
-            "This"
+            "The Professor"
         ],
         [
             2,
-            "There"
+            "Quincey Morris"
         ],
         [
             2,
-            "The King"
+            "Oh"
         ],
         [
             2,
+            "Never"
+        ],
+        [
+            2,
+            "Lucy Westenra"
+        ],
+        [
+            2,
+            "John"
+        ],
+        [
+            2,
+            "First"
+        ],
+        [
+            2,
+            "Each"
+        ],
+        [
+            2,
+            "Before"
+        ],
+        [
+            2,
+            "Amsterdam"
+        ],
+        [
+            1,
+            "Your"
+        ],
+        [
+            1,
+            "Yesterday"
+        ],
+        [
+            1,
+            "Will"
+        ],
+        [
+            1,
+            "When Lucy"
+        ],
+        [
+            1,
+            "Was"
+        ],
+        [
+            1,
+            "Wait"
+        ],
+        [
+            1,
+            "True"
+        ],
+        [
+            1,
+            "Till"
+        ],
+        [
+            1,
+            "Those"
+        ],
+        [
+            1,
+            "Thor"
+        ],
+        [
+            1,
+            "They"
+        ],
+        [
+            1,
+            "The Thing"
+        ],
+        [
+            1,
+            "The Host"
+        ],
+        [
+            1,
             "That"
-        ],
-        [
-            2,
-            "He"
-        ],
-        [
-            2,
-            "Gryphon"
-        ],
-        [
-            2,
-            "But"
-        ],
-        [
-            2,
-            "All"
-        ],
-        [
-            1,
-            "Your Majesty"
-        ],
-        [
-            1,
-            "Yes"
-        ],
-        [
-            1,
-            "Write"
-        ],
-        [
-            1,
-            "Who Stole"
-        ],
-        [
-            1,
-            "When"
-        ],
-        [
-            1,
-            "Turn"
-        ],
-        [
-            1,
-            "Treacle"
-        ],
-        [
-            1,
-            "Then"
-        ],
-        [
-            1,
-            "The Queen"
-        ],
-        [
-            1,
-            "The Knave"
-        ],
-        [
-            1,
-            "The Hatter"
-        ],
-        [
-            1,
-            "Tarts"
         ],
         [
             1,
@@ -166,51 +238,27 @@
         ],
         [
             1,
-            "Suppress"
+            "Shall"
         ],
         [
             1,
-            "Stupid"
+            "Seward"
         ],
         [
             1,
-            "Sixteenth"
+            "September"
         ],
         [
             1,
-            "Silence"
+            "Presently"
         ],
         [
             1,
-            "Shan"
+            "Outside"
         ],
         [
             1,
-            "Really"
-        ],
-        [
-            1,
-            "Rabbit"
-        ],
-        [
-            1,
-            "Pinch"
-        ],
-        [
-            1,
-            "Pepper"
-        ],
-        [
-            1,
-            "One"
-        ],
-        [
-            1,
-            "On"
-        ],
-        [
-            1,
-            "Off"
+            "Only"
         ],
         [
             1,
@@ -226,23 +274,43 @@
         ],
         [
             1,
-            "Never"
+            "No"
         ],
         [
             1,
-            "March"
+            "Morris"
         ],
         [
             1,
-            "Lizard"
+            "Miss Lucy"
         ],
         [
             1,
-            "Knave"
+            "Medusa"
         ],
         [
             1,
-            "Just"
+            "Leave"
+        ],
+        [
+            1,
+            "Last"
+        ],
+        [
+            1,
+            "Kiss"
+        ],
+        [
+            1,
+            "Japanese"
+        ],
+        [
+            1,
+            "Instead"
+        ],
+        [
+            1,
+            "Indulgence"
         ],
         [
             1,
@@ -250,19 +318,27 @@
         ],
         [
             1,
-            "Imagine"
-        ],
-        [
-            1,
             "If"
         ],
         [
             1,
-            "However"
+            "How"
         ],
         [
             1,
-            "Herald"
+            "His"
+        ],
+        [
+            1,
+            "Him"
+        ],
+        [
+            1,
+            "Greeks"
+        ],
+        [
+            1,
+            "Great Scott"
         ],
         [
             1,
@@ -270,27 +346,23 @@
         ],
         [
             1,
-            "Fourteenth"
+            "Friend John"
         ],
         [
             1,
-            "For"
+            "Friend Arthur"
         ],
         [
             1,
-            "First"
+            "Forgiven"
         ],
         [
             1,
-            "Fifteenth"
+            "Finally"
         ],
         [
             1,
-            "Duchess"
-        ],
-        [
-            1,
-            "Don"
+            "Eastern Europe"
         ],
         [
             1,
@@ -298,49 +370,69 @@
         ],
         [
             1,
-            "Consider"
+            "Did"
         ],
         [
             1,
-            "Come"
+            "Deads"
         ],
         [
             1,
-            "Collar"
+            "Coming"
         ],
         [
             1,
-            "Bring"
+            "By"
         ],
         [
             1,
-            "Bill"
+            "But Arthur"
         ],
         [
             1,
-            "Behead"
+            "Brave"
         ],
         [
             1,
-            "As"
+            "At"
         ],
         [
             1,
-            "After"
+            "Answer"
+        ],
+        [
+            1,
+            "Angels"
+        ],
+        [
+            1,
+            "Am"
         ]
     ],
     "Sentiment Expressions": [
         [
-            1,
-            "proud"
+            4,
+            "love"
+        ],
+        [
+            2,
+            "joy"
         ],
         [
             1,
-            "pleased"
+            "upset"
         ],
         [
             1,
-            "miserable"
+            "unhappy"
+        ],
+        [
+            1,
+            "sorrowful"
+        ],
+        [
+            1,
+            "angry"
         ]
     ]
 }

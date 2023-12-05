@@ -1,148 +1,124 @@
 {
     "Named Entities": [
         [
-            57,
-            "Project Gutenberg"
-        ],
-        [
-            22,
-            "Alice"
-        ],
-        [
             21,
-            "King"
+            "Count"
         ],
         [
-            20,
-            "If"
-        ],
-        [
-            15,
-            "You"
-        ],
-        [
-            15,
-            "Project"
-        ],
-        [
-            12,
+            19,
             "The"
         ],
         [
             11,
-            "Gutenberg"
+            "When"
         ],
         [
-            10,
-            "United States"
-        ],
-        [
-            10,
-            "Queen"
-        ],
-        [
-            9,
+            11,
             "It"
         ],
         [
-            8,
-            "License"
+            10,
+            "He"
         ],
         [
             7,
-            "Section"
+            "This"
         ],
         [
             7,
-            "Foundation"
+            "Is"
         ],
         [
             6,
-            "White Rabbit"
+            "They"
+        ],
+        [
+            6,
+            "Then"
+        ],
+        [
+            6,
+            "In"
+        ],
+        [
+            6,
+            "Dracula"
+        ],
+        [
+            5,
+            "What"
         ],
         [
             5,
             "There"
         ],
         [
-            4,
-            "To"
+            5,
+            "One"
         ],
         [
-            4,
-            "The Foundation"
+            5,
+            "London"
         ],
         [
-            4,
-            "Nothing"
-        ],
-        [
-            4,
-            "Majesty"
-        ],
-        [
-            4,
-            "Lizard"
-        ],
-        [
-            4,
-            "Information"
-        ],
-        [
-            4,
-            "He"
-        ],
-        [
-            4,
-            "Gutenberg Literary Archive Foundation"
-        ],
-        [
-            4,
-            "Do"
-        ],
-        [
-            3,
-            "Why"
-        ],
-        [
-            3,
-            "What"
-        ],
-        [
-            3,
-            "United"
-        ],
-        [
-            3,
-            "They"
-        ],
-        [
-            3,
-            "Then"
-        ],
-        [
-            3,
-            "That"
-        ],
-        [
-            3,
-            "States"
-        ],
-        [
-            3,
-            "Project Gutenberg Literary"
-        ],
-        [
-            3,
+            5,
             "But"
         ],
         [
-            3,
-            "Archive Foundation"
+            4,
+            "Mr"
         ],
         [
-            2,
-            "Wonderland"
+            4,
+            "Here"
+        ],
+        [
+            3,
+            "You"
+        ],
+        [
+            3,
+            "Turk"
+        ],
+        [
+            3,
+            "The Count"
+        ],
+        [
+            3,
+            "Now"
+        ],
+        [
+            3,
+            "May"
+        ],
+        [
+            3,
+            "Let"
+        ],
+        [
+            3,
+            "Hungarian"
+        ],
+        [
+            3,
+            "How"
+        ],
+        [
+            3,
+            "Hawkins"
+        ],
+        [
+            3,
+            "God"
+        ],
+        [
+            3,
+            "At"
+        ],
+        [
+            3,
+            "As"
         ],
         [
             2,
@@ -150,79 +126,55 @@
         ],
         [
             2,
-            "We"
+            "Turkey"
         ],
         [
             2,
-            "Use"
+            "To"
         ],
         [
             2,
-            "Turtle"
+            "Szekelys"
         ],
         [
             2,
-            "This"
+            "So"
         ],
         [
             2,
-            "The Project Gutenberg Literary Archive Foundation"
+            "On"
         ],
         [
             2,
-            "Some"
+            "Of"
         ],
         [
             2,
-            "She"
+            "My"
         ],
         [
             2,
-            "See"
+            "Mina"
         ],
         [
             2,
-            "Royalty"
+            "Magyar"
         ],
         [
             2,
-            "Project Gutenberg Literary Archive Foundation"
+            "If"
         ],
         [
             2,
-            "Please"
+            "His"
         ],
         [
             2,
-            "Oh"
+            "Hamlet"
         ],
         [
             2,
-            "No"
-        ],
-        [
-            2,
-            "Nearly"
-        ],
-        [
-            2,
-            "Mock"
-        ],
-        [
-            2,
-            "Literary Archive Foundation"
-        ],
-        [
-            2,
-            "Knave"
-        ],
-        [
-            2,
-            "Gryphon"
-        ],
-        [
-            2,
-            "General Terms"
+            "Good"
         ],
         [
             2,
@@ -230,35 +182,39 @@
         ],
         [
             2,
-            "Except"
-        ],
-        [
-            2,
-            "Donations"
-        ],
-        [
-            2,
-            "At"
+            "Crescent"
         ],
         [
             2,
             "And"
         ],
         [
-            2,
-            "Adventures"
+            1,
+            "Your"
         ],
         [
             1,
-            "White"
+            "Yes"
         ],
         [
             1,
-            "While"
+            "Woe"
         ],
         [
             1,
-            "Which"
+            "Wodin"
+        ],
+        [
+            1,
+            "With"
+        ],
+        [
+            1,
+            "Whitby"
+        ],
+        [
+            1,
+            "Whilst"
         ],
         [
             1,
@@ -266,7 +222,7 @@
         ],
         [
             1,
-            "West"
+            "Whenever"
         ],
         [
             1,
@@ -274,151 +230,119 @@
         ],
         [
             1,
-            "Wake"
+            "We Szekelys"
         ],
         [
             1,
-            "Volunteers"
+            "Was"
         ],
         [
             1,
-            "Vanilla"
+            "Wallach"
         ],
         [
             1,
-            "Updated"
+            "Voivode"
         ],
         [
             1,
-            "Unless"
+            "Varna"
         ],
         [
             1,
-            "Thus"
+            "Up"
         ],
         [
             1,
-            "Though"
+            "Ugric"
         ],
         [
             1,
-            "These"
+            "Two"
         ],
         [
             1,
-            "The White Rabbit"
+            "Turks"
         ],
         [
             1,
-            "The Knave"
+            "Transylvania"
         ],
         [
             1,
-            "The King"
+            "Tis"
         ],
         [
             1,
-            "Stuff"
+            "Thor"
         ],
         [
             1,
-            "Special"
+            "That"
         ],
         [
             1,
-            "So Alice"
+            "Sweet"
         ],
         [
             1,
-            "So"
+            "Still"
         ],
         [
             1,
-            "Silence"
+            "South"
         ],
         [
             1,
-            "Sentence"
+            "Some"
         ],
         [
             1,
-            "Sections"
+            "Should"
         ],
         [
             1,
-            "Salt Lake City"
+            "Shakespeare"
         ],
         [
             1,
-            "Rule"
+            "Scythia"
         ],
         [
             1,
-            "Right"
+            "Samuel"
         ],
         [
             1,
-            "Revenue Service"
+            "Safety"
         ],
         [
             1,
-            "Replacement"
+            "Romanoffs"
         ],
         [
             1,
-            "Refund"
+            "Peter Hawkins"
         ],
         [
             1,
-            "Redistribution"
+            "Peter"
         ],
         [
             1,
-            "Redistributing Project Gutenberg"
+            "Pesth"
         ],
         [
             1,
-            "Read"
+            "Once"
         ],
         [
             1,
-            "Rabbit"
+            "No"
         ],
         [
             1,
-            "Project Gutenberg License"
-        ],
-        [
-            1,
-            "Professor Michael"
-        ],
-        [
-            1,
-            "Plain Vanilla"
-        ],
-        [
-            1,
-            "Plain"
-        ],
-        [
-            1,
-            "Off"
-        ],
-        [
-            1,
-            "Of"
-        ],
-        [
-            1,
-            "Number One"
-        ],
-        [
-            1,
-            "North"
-        ],
-        [
-            1,
-            "Nobody"
+            "Newcastle"
         ],
         [
             1,
@@ -426,87 +350,95 @@
         ],
         [
             1,
-            "My"
+            "Morning"
         ],
         [
             1,
-            "Mouse"
+            "Moh\u00e1cs"
         ],
         [
             1,
-            "Most"
+            "Magyars"
         ],
         [
             1,
-            "Mississippi"
+            "Lower"
         ],
         [
             1,
-            "Mission"
+            "Looking"
         ],
         [
             1,
-            "March Hare"
+            "Lombard"
         ],
         [
             1,
-            "Many"
+            "Lincoln"
         ],
         [
             1,
-            "Let"
+            "Last"
         ],
         [
             1,
-            "Lastly"
+            "King"
         ],
         [
             1,
-            "Involved"
+            "Inn"
         ],
         [
             1,
-            "International"
+            "Iceland"
         ],
         [
             1,
-            "Internal"
+            "Huns"
         ],
         [
             1,
-            "In"
+            "Honfoglalas"
         ],
         [
             1,
-            "However"
+            "Herren Klopstock"
         ],
         [
             1,
-            "Hold"
+            "Herr Leutner"
         ],
         [
             1,
-            "Him"
+            "Have"
         ],
         [
             1,
-            "Here"
+            "Harwich"
         ],
         [
             1,
-            "Hart"
+            "Hapsburgs"
         ],
         [
             1,
-            "General Information About Project Gutenberg"
+            "Great God"
         ],
         [
             1,
-            "Full"
+            "Go"
         ],
         [
             1,
-            "Forty"
+            "From"
+        ],
+        [
+            1,
+            "Four Nations"
+        ],
+        [
+            1,
+            "Fools"
         ],
         [
             1,
@@ -514,87 +446,111 @@
         ],
         [
             1,
-            "Exactly"
+            "Exeter"
         ],
         [
             1,
-            "Evidence"
+            "European"
         ],
         [
             1,
-            "Everybody"
+            "Europe"
         ],
         [
             1,
-            "Email"
+            "England"
         ],
         [
             1,
-            "Duchess"
+            "Durham"
         ],
         [
             1,
-            "Don"
+            "Dover"
         ],
         [
             1,
-            "Despite"
+            "Do"
         ],
         [
             1,
-            "Defects"
+            "Danube"
         ],
         [
             1,
-            "Defect"
+            "Coutts"
         ],
         [
             1,
-            "Creating"
+            "Co"
         ],
         [
             1,
-            "Copyright"
+            "Cassova"
         ],
         [
             1,
-            "Contributions"
+            "Bulgar"
         ],
         [
             1,
-            "Contact"
+            "Buda"
         ],
         [
             1,
-            "Consider"
+            "Blood"
         ],
         [
             1,
-            "Compliance"
+            "Bless"
         ],
         [
             1,
-            "By"
+            "Bistritz"
         ],
         [
             1,
-            "Bill"
+            "Billreuth"
         ],
         [
             1,
-            "Between"
+            "Billington"
         ],
         [
             1,
-            "Begin"
+            "Beware"
         ],
         [
             1,
-            "Before"
+            "Berserkers"
         ],
         [
             1,
-            "As"
+            "Be"
+        ],
+        [
+            1,
+            "Bah"
+        ],
+        [
+            1,
+            "Back"
+        ],
+        [
+            1,
+            "Avar"
+        ],
+        [
+            1,
+            "Attila"
+        ],
+        [
+            1,
+            "Asia"
+        ],
+        [
+            1,
+            "Arpad"
         ],
         [
             1,
@@ -602,11 +558,7 @@
         ],
         [
             1,
-            "Any"
-        ],
-        [
-            1,
-            "An"
+            "Arabian Nights"
         ],
         [
             1,
@@ -614,25 +566,41 @@
         ],
         [
             1,
-            "Additional"
+            "Ah"
+        ],
+        [
+            1,
+            "Again"
+        ],
+        [
+            1,
+            "After"
+        ],
+        [
+            1,
+            "Africa"
         ]
     ],
     "Sentiment Expressions": [
         [
-            2,
+            3,
             "wonderful"
         ],
         [
-            1,
-            "happy"
+            3,
+            "love"
         ],
         [
             2,
-            "upset"
+            "proud"
         ],
         [
             1,
-            "miserable"
+            "satisfied"
+        ],
+        [
+            1,
+            "sad"
         ]
     ]
 }

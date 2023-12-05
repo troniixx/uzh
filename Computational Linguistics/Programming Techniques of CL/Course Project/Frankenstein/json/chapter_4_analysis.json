@@ -1,56 +1,40 @@
 {
     "Named Entities": [
         [
-            24,
-            "Alice"
+            10,
+            "He"
         ],
         [
-            9,
-            "And"
+            7,
+            "You"
         ],
         [
-            8,
-            "Mouse"
-        ],
-        [
-            5,
-            "Oh"
-        ],
-        [
-            5,
-            "How"
+            7,
+            "We"
         ],
         [
             4,
-            "Mabel"
-        ],
-        [
-            4,
-            "Let"
-        ],
-        [
-            4,
-            "It"
+            "This"
         ],
         [
             3,
-            "The Mouse"
+            "When"
         ],
         [
             3,
-            "So"
+            "The"
         ],
         [
             3,
-            "Rabbit"
+            "Such"
         ],
         [
             3,
-            "However"
+            "But"
         ],
         [
             3,
-            "English"
+            "August"
         ],
         [
             3,
@@ -58,115 +42,99 @@
         ],
         [
             2,
-            "Would"
+            "Yet"
         ],
         [
             2,
-            "Who"
+            "Soon"
         ],
         [
             2,
-            "We"
+            "Margaret"
         ],
         [
             2,
-            "That"
+            "His"
         ],
         [
             2,
-            "She"
+            "Even"
         ],
         [
             2,
-            "Rome"
+            "And"
         ],
         [
             2,
-            "Paris"
-        ],
-        [
-            2,
-            "Just"
-        ],
-        [
-            2,
-            "French"
-        ],
-        [
-            2,
-            "For"
-        ],
-        [
-            2,
-            "Duchess"
-        ],
-        [
-            2,
-            "But"
+            "About"
         ],
         [
             1,
-            "You"
+            "Yesterday"
         ],
         [
             1,
-            "With"
+            "Yes"
         ],
         [
             1,
-            "William"
+            "Will"
         ],
         [
             1,
-            "White"
+            "Were"
         ],
         [
             1,
-            "When"
+            "Walton"
         ],
         [
             1,
-            "Well"
+            "Upon"
         ],
         [
             1,
-            "They"
+            "Unhappy"
         ],
         [
             1,
-            "There"
+            "Two"
         ],
         [
             1,
-            "The Rabbit"
+            "To"
         ],
         [
             1,
-            "The Pool"
+            "Then"
         ],
         [
             1,
-            "Tell"
+            "Strange"
         ],
         [
             1,
-            "Tears"
+            "Sometimes"
         ],
         [
             1,
-            "Stop"
+            "Some"
         ],
         [
             1,
-            "Right Foot"
+            "So"
         ],
         [
             1,
-            "Poor Alice"
+            "Shut"
         ],
         [
             1,
-            "Perhaps"
+            "Saville"
+        ],
+        [
+            1,
+            "Prepare"
         ],
         [
             1,
@@ -174,7 +142,15 @@
         ],
         [
             1,
-            "O\u00f9"
+            "Only"
+        ],
+        [
+            1,
+            "One"
+        ],
+        [
+            1,
+            "Once"
         ],
         [
             1,
@@ -182,35 +158,27 @@
         ],
         [
             1,
-            "Not"
+            "My"
         ],
         [
             1,
-            "No"
+            "Mrs"
         ],
         [
             1,
-            "Nile"
+            "Last Monday"
         ],
         [
             1,
-            "Multiplication Table"
+            "July"
         ],
         [
             1,
-            "Lory"
+            "It"
         ],
         [
             1,
-            "London"
-        ],
-        [
-            1,
-            "Latin Grammar"
-        ],
-        [
-            1,
-            "Improve"
+            "In"
         ],
         [
             1,
@@ -218,51 +186,47 @@
         ],
         [
             1,
-            "Her"
+            "How"
         ],
         [
             1,
-            "Hearthrug"
+            "Here"
         ],
         [
             1,
-            "He"
+            "Hear"
         ],
         [
             1,
-            "Good"
+            "Having"
         ],
         [
             1,
-            "Geography"
+            "Have"
         ],
         [
             1,
-            "Fender"
+            "Good God"
         ],
         [
             1,
-            "Everything"
+            "From"
         ],
         [
             1,
-            "Esq"
+            "For"
         ],
         [
             1,
-            "Eaglet"
+            "European"
         ],
         [
             1,
-            "Duck"
+            "English"
         ],
         [
             1,
-            "Don"
-        ],
-        [
-            1,
-            "Dodo"
+            "England"
         ],
         [
             1,
@@ -270,61 +234,49 @@
         ],
         [
             1,
-            "Dinah"
+            "Certainly"
         ],
         [
             1,
-            "Dear"
+            "Captain"
         ],
         [
             1,
-            "Curiouser"
+            "By"
         ],
         [
             1,
-            "Conqueror"
+            "Before"
         ],
         [
             1,
-            "Come"
-        ],
-        [
-            1,
-            "Christmas"
-        ],
-        [
-            1,
-            "Besides"
-        ],
-        [
-            1,
-            "Are"
-        ],
-        [
-            1,
-            "Ah"
-        ],
-        [
-            1,
-            "After"
-        ],
-        [
-            1,
-            "Ada"
+            "At"
         ]
     ],
     "Sentiment Expressions": [
         [
-            1,
-            "sorrowful"
+            2,
+            "wonderful"
         ],
         [
             1,
-            "hopeless"
+            "satisfied"
         ],
         [
             1,
-            "angry"
+            "love"
+        ],
+        [
+            1,
+            "happy"
+        ],
+        [
+            1,
+            "unhappy"
+        ],
+        [
+            1,
+            "Unhappy"
         ]
     ]
 }

@@ -1,64 +1,124 @@
 {
     "Named Entities": [
         [
-            52,
-            "Alice"
-        ],
-        [
-            22,
-            "Mock Turtle"
-        ],
-        [
-            18,
-            "Gryphon"
-        ],
-        [
-            18,
-            "Duchess"
-        ],
-        [
-            14,
-            "Queen"
-        ],
-        [
-            9,
-            "What"
-        ],
-        [
-            7,
-            "You"
-        ],
-        [
-            7,
-            "And"
-        ],
-        [
-            6,
-            "It"
-        ],
-        [
-            4,
+            21,
             "The"
         ],
         [
-            4,
-            "Come"
+            16,
+            "He"
         ],
         [
-            3,
-            "Yes"
+            14,
+            "Van Helsing"
         ],
         [
-            3,
+            9,
+            "Dr"
+        ],
+        [
+            8,
             "Well"
         ],
         [
-            3,
-            "Turtle"
+            8,
+            "There"
+        ],
+        [
+            8,
+            "September"
+        ],
+        [
+            8,
+            "Lucy"
+        ],
+        [
+            8,
+            "Bersicker"
+        ],
+        [
+            7,
+            "This"
+        ],
+        [
+            7,
+            "My"
+        ],
+        [
+            7,
+            "God"
+        ],
+        [
+            7,
+            "But"
+        ],
+        [
+            6,
+            "You"
+        ],
+        [
+            6,
+            "Then"
+        ],
+        [
+            6,
+            "She"
+        ],
+        [
+            5,
+            "What"
+        ],
+        [
+            5,
+            "Seward"
+        ],
+        [
+            5,
+            "It"
+        ],
+        [
+            5,
+            "If"
+        ],
+        [
+            5,
+            "How"
+        ],
+        [
+            5,
+            "Diary"
+        ],
+        [
+            4,
+            "Westenra"
+        ],
+        [
+            4,
+            "They"
+        ],
+        [
+            4,
+            "Bilder"
+        ],
+        [
+            4,
+            "As"
+        ],
+        [
+            4,
+            "After"
         ],
         [
             3,
-            "Tortoise"
+            "Without"
+        ],
+        [
+            3,
+            "When"
+        ],
+        [
+            3,
+            "Thomas"
         ],
         [
             3,
@@ -66,7 +126,11 @@
         ],
         [
             3,
-            "So"
+            "Professor"
+        ],
+        [
+            3,
+            "Park"
         ],
         [
             3,
@@ -74,155 +138,159 @@
         ],
         [
             3,
-            "Drawling"
-        ],
-        [
-            3,
-            "But"
-        ],
-        [
-            2,
-            "Why"
-        ],
-        [
-            2,
-            "When"
-        ],
-        [
-            2,
-            "We"
-        ],
-        [
-            2,
-            "Uglification"
-        ],
-        [
-            2,
-            "This"
-        ],
-        [
-            2,
-            "They"
-        ],
-        [
-            2,
-            "Then"
-        ],
-        [
-            2,
-            "The Mock Turtle"
-        ],
-        [
-            2,
-            "The Gryphon"
-        ],
-        [
-            2,
-            "Take"
-        ],
-        [
-            2,
-            "She"
-        ],
-        [
-            2,
-            "Off"
-        ],
-        [
-            2,
-            "Of"
-        ],
-        [
-            2,
             "Now"
         ],
         [
-            2,
-            "Never"
+            3,
+            "Mrs"
+        ],
+        [
+            3,
+            "Mr"
+        ],
+        [
+            3,
+            "Just"
+        ],
+        [
+            3,
+            "And"
         ],
         [
             2,
-            "Mystery"
+            "Zo\u00f6logical Gardens"
         ],
         [
             2,
-            "King"
+            "To"
         ],
         [
             2,
-            "He"
+            "Superintendent"
         ],
         [
             2,
-            "French"
+            "Suddenly"
         ],
         [
             2,
-            "Ah"
+            "Presently"
+        ],
+        [
+            2,
+            "Once"
+        ],
+        [
+            2,
+            "No"
+        ],
+        [
+            2,
+            "Lor"
+        ],
+        [
+            2,
+            "London"
+        ],
+        [
+            2,
+            "Keeper"
+        ],
+        [
+            2,
+            "Is"
+        ],
+        [
+            2,
+            "Hillingham"
+        ],
+        [
+            2,
+            "Here"
+        ],
+        [
+            2,
+            "Good"
+        ],
+        [
+            2,
+            "Come"
+        ],
+        [
+            2,
+            "Carfax"
+        ],
+        [
+            2,
+            "Arthur"
         ],
         [
             1,
-            "Writhing"
+            "Zoo"
         ],
         [
             1,
-            "With"
+            "Ye"
         ],
         [
             1,
-            "Very"
+            "Wolves"
         ],
         [
             1,
-            "Up"
+            "Whitby"
         ],
         [
             1,
-            "Tut"
+            "Van"
         ],
         [
             1,
-            "Tis"
+            "Tyke"
         ],
         [
             1,
-            "Those"
+            "Tom"
         ],
         [
             1,
-            "Thinking"
+            "Thomas Bilder"
         ],
         [
             1,
-            "These"
+            "The Professor"
         ],
         [
             1,
-            "The Duchess"
+            "The Pall Mall Gazette"
         ],
         [
             1,
-            "Thank"
+            "Thank God"
         ],
         [
             1,
-            "Ten"
+            "Sussex"
         ],
         [
             1,
-            "Stretching"
+            "Surely"
         ],
         [
             1,
-            "Story"
+            "Somewhere"
         ],
         [
             1,
-            "Soup"
+            "Somehow"
         ],
         [
             1,
-            "Somebody"
+            "So"
+        ],
+        [
+            1,
+            "Since"
         ],
         [
             1,
@@ -230,7 +298,7 @@
         ],
         [
             1,
-            "Seaography"
+            "Sent"
         ],
         [
             1,
@@ -238,35 +306,67 @@
         ],
         [
             1,
-            "Reeling"
+            "Red Riding Hood"
         ],
         [
             1,
-            "Pray"
+            "Perversely"
         ],
         [
             1,
-            "Perhaps"
+            "Pall Mall Gazette"
         ],
         [
             1,
-            "Only"
+            "Ow"
         ],
         [
             1,
-            "Once"
+            "Ophelia"
         ],
         [
             1,
-            "No"
+            "One"
         ],
         [
             1,
-            "Mock Turtle Soup"
+            "Old Bilder"
         ],
         [
             1,
-            "Mock"
+            "Old Bersicker"
+        ],
+        [
+            1,
+            "Of"
+        ],
+        [
+            1,
+            "Not"
+        ],
+        [
+            1,
+            "Norway"
+        ],
+        [
+            1,
+            "Night"
+        ],
+        [
+            1,
+            "Never"
+        ],
+        [
+            1,
+            "Mother"
+        ],
+        [
+            1,
+            "Mind"
+        ],
+        [
+            1,
+            "Mina"
         ],
         [
             1,
@@ -274,7 +374,7 @@
         ],
         [
             1,
-            "Majesty"
+            "Lucy Westenra"
         ],
         [
             1,
@@ -282,55 +382,39 @@
         ],
         [
             1,
-            "Laughing"
+            "Jamrach"
         ],
         [
             1,
-            "Just"
+            "Ittin"
         ],
         [
             1,
-            "If"
+            "Helsing"
         ],
         [
             1,
-            "However"
+            "Happily Van Helsing"
         ],
         [
             1,
-            "How"
+            "Haarlem"
         ],
         [
             1,
-            "Hold"
+            "From"
         ],
         [
             1,
-            "Hjckrrh"
+            "Four"
         ],
         [
             1,
-            "Have"
+            "For"
         ],
         [
             1,
-            "Hadn"
-        ],
-        [
-            1,
-            "Grief"
-        ],
-        [
-            1,
-            "Fainting"
-        ],
-        [
-            1,
-            "Everything"
-        ],
-        [
-            1,
-            "Everybody"
+            "Exactly"
         ],
         [
             1,
@@ -342,19 +426,15 @@
         ],
         [
             1,
-            "Distraction"
+            "Do"
         ],
         [
             1,
-            "Derision"
+            "Did"
         ],
         [
             1,
-            "Coils"
-        ],
-        [
-            1,
-            "Classics"
+            "Devils"
         ],
         [
             1,
@@ -362,11 +442,15 @@
         ],
         [
             1,
-            "Birds"
+            "Called"
         ],
         [
             1,
-            "Be"
+            "Berkeley"
+        ],
+        [
+            1,
+            "Before"
         ],
         [
             1,
@@ -374,25 +458,45 @@
         ],
         [
             1,
-            "As"
+            "Are"
         ],
         [
             1,
-            "Arithmetic"
+            "Antwerp"
         ],
         [
             1,
-            "Ambition"
+            "An"
+        ],
+        [
+            1,
+            "Amsterdam"
+        ],
+        [
+            1,
+            "Amongst"
+        ],
+        [
+            1,
+            "Alone"
         ],
         [
             1,
             "All"
+        ],
+        [
+            1,
+            "Aha"
+        ],
+        [
+            1,
+            "Again"
         ]
     ],
     "Sentiment Expressions": [
         [
-            2,
-            "pleased"
+            3,
+            "satisfied"
         ],
         [
             2,
@@ -400,15 +504,19 @@
         ],
         [
             1,
-            "proud"
+            "pleased"
         ],
         [
             1,
-            "unhappy"
+            "peaceful"
         ],
         [
             1,
-            "sad"
+            "upset"
+        ],
+        [
+            1,
+            "angry"
         ]
     ]
 }

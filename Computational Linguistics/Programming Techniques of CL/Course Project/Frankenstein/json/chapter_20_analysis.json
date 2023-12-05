@@ -1,136 +1,124 @@
 {
     "Named Entities": [
         [
-            24,
-            "Alice"
+            17,
+            "The"
         ],
         [
-            9,
-            "And"
+            7,
+            "My"
         ],
         [
-            8,
-            "Mouse"
+            7,
+            "But"
+        ],
+        [
+            6,
+            "Felix"
         ],
         [
             5,
-            "Oh"
+            "You"
         ],
         [
             5,
-            "How"
-        ],
-        [
-            4,
-            "Mabel"
-        ],
-        [
-            4,
-            "Let"
+            "As"
         ],
         [
             4,
             "It"
         ],
         [
-            3,
-            "The Mouse"
-        ],
-        [
-            3,
-            "So"
-        ],
-        [
-            3,
-            "Rabbit"
-        ],
-        [
-            3,
-            "However"
-        ],
-        [
-            3,
-            "English"
-        ],
-        [
-            3,
-            "As"
-        ],
-        [
-            2,
-            "Would"
-        ],
-        [
-            2,
-            "Who"
-        ],
-        [
-            2,
-            "We"
-        ],
-        [
-            2,
-            "That"
-        ],
-        [
-            2,
-            "She"
-        ],
-        [
-            2,
-            "Rome"
-        ],
-        [
-            2,
-            "Paris"
-        ],
-        [
-            2,
-            "Just"
-        ],
-        [
-            2,
-            "French"
-        ],
-        [
-            2,
+            4,
             "For"
         ],
         [
-            2,
-            "Duchess"
-        ],
-        [
-            2,
-            "But"
-        ],
-        [
-            1,
-            "You"
-        ],
-        [
-            1,
-            "With"
-        ],
-        [
-            1,
-            "William"
-        ],
-        [
-            1,
-            "White"
-        ],
-        [
-            1,
+            3,
             "When"
         ],
         [
-            1,
-            "Well"
+            3,
+            "She"
+        ],
+        [
+            3,
+            "Let"
+        ],
+        [
+            3,
+            "De Lacey"
+        ],
+        [
+            3,
+            "At"
+        ],
+        [
+            2,
+            "Why"
+        ],
+        [
+            2,
+            "This"
+        ],
+        [
+            2,
+            "Oh"
+        ],
+        [
+            2,
+            "Here"
+        ],
+        [
+            2,
+            "He"
+        ],
+        [
+            2,
+            "Geneva"
+        ],
+        [
+            2,
+            "Frankenstein"
+        ],
+        [
+            2,
+            "And"
+        ],
+        [
+            2,
+            "All"
         ],
         [
             1,
-            "They"
+            "While"
+        ],
+        [
+            1,
+            "What"
+        ],
+        [
+            1,
+            "We"
+        ],
+        [
+            1,
+            "Urged"
+        ],
+        [
+            1,
+            "Unfeeling"
+        ],
+        [
+            1,
+            "Ugly"
+        ],
+        [
+            1,
+            "Thus"
+        ],
+        [
+            1,
+            "These"
         ],
         [
             1,
@@ -138,43 +126,51 @@
         ],
         [
             1,
-            "The Rabbit"
+            "That"
         ],
         [
             1,
-            "The Pool"
+            "Thanks"
         ],
         [
             1,
-            "Tell"
+            "Take"
         ],
         [
             1,
-            "Tears"
+            "Switzerland"
         ],
         [
             1,
-            "Stop"
+            "Suddenly"
         ],
         [
             1,
-            "Right Foot"
+            "Soon"
         ],
         [
             1,
-            "Poor Alice"
+            "Soft"
         ],
         [
             1,
-            "Perhaps"
+            "Snow"
         ],
         [
             1,
-            "Our"
+            "Should"
         ],
         [
             1,
-            "O\u00f9"
+            "Safie"
+        ],
+        [
+            1,
+            "Presently"
+        ],
+        [
+            1,
+            "One"
         ],
         [
             1,
@@ -182,35 +178,23 @@
         ],
         [
             1,
-            "Not"
-        ],
-        [
-            1,
             "No"
         ],
         [
             1,
-            "Nile"
+            "Nature"
         ],
         [
             1,
-            "Multiplication Table"
+            "Jura"
         ],
         [
             1,
-            "Lory"
+            "Inflamed"
         ],
         [
             1,
-            "London"
-        ],
-        [
-            1,
-            "Latin Grammar"
-        ],
-        [
-            1,
-            "Improve"
+            "In"
         ],
         [
             1,
@@ -218,51 +202,19 @@
         ],
         [
             1,
-            "Her"
+            "How"
         ],
         [
             1,
-            "Hearthrug"
+            "Hideous"
         ],
         [
             1,
-            "He"
+            "Half"
         ],
         [
             1,
-            "Good"
-        ],
-        [
-            1,
-            "Geography"
-        ],
-        [
-            1,
-            "Fender"
-        ],
-        [
-            1,
-            "Everything"
-        ],
-        [
-            1,
-            "Esq"
-        ],
-        [
-            1,
-            "Eaglet"
-        ],
-        [
-            1,
-            "Duck"
-        ],
-        [
-            1,
-            "Don"
-        ],
-        [
-            1,
-            "Dodo"
+            "From"
         ],
         [
             1,
@@ -270,39 +222,35 @@
         ],
         [
             1,
-            "Dinah"
+            "Cursed"
         ],
         [
             1,
-            "Dear"
+            "Child"
         ],
         [
             1,
-            "Curiouser"
+            "Can"
         ],
         [
             1,
-            "Conqueror"
+            "Boy"
         ],
         [
             1,
-            "Come"
+            "Awake"
         ],
         [
             1,
-            "Christmas"
+            "Arabian"
         ],
         [
             1,
-            "Besides"
+            "Among"
         ],
         [
             1,
-            "Are"
-        ],
-        [
-            1,
-            "Ah"
+            "Agatha"
         ],
         [
             1,
@@ -310,21 +258,29 @@
         ],
         [
             1,
-            "Ada"
+            "Accordingly"
         ]
     ],
     "Sentiment Expressions": [
         [
-            1,
-            "sorrowful"
+            3,
+            "joy"
         ],
         [
             1,
-            "hopeless"
+            "peaceful"
         ],
         [
             1,
-            "angry"
+            "happy"
+        ],
+        [
+            4,
+            "miserable"
+        ],
+        [
+            1,
+            "unhappy"
         ]
     ]
 }

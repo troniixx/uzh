@@ -1,96 +1,76 @@
 {
     "Named Entities": [
         [
-            24,
-            "Alice"
-        ],
-        [
-            9,
-            "And"
-        ],
-        [
-            8,
-            "Mouse"
+            10,
+            "The"
         ],
         [
             5,
-            "Oh"
+            "My"
         ],
         [
             5,
-            "How"
+            "But"
         ],
         [
             4,
-            "Mabel"
+            "This"
         ],
         [
             4,
-            "Let"
+            "Justine"
         ],
         [
-            4,
+            3,
+            "When"
+        ],
+        [
+            3,
+            "Mont Blanc"
+        ],
+        [
+            3,
+            "Elizabeth"
+        ],
+        [
+            3,
+            "Chamounix"
+        ],
+        [
+            3,
+            "Arve"
+        ],
+        [
+            2,
+            "Yet"
+        ],
+        [
+            2,
+            "William"
+        ],
+        [
+            2,
+            "Victor"
+        ],
+        [
+            2,
+            "There"
+        ],
+        [
+            2,
+            "Then"
+        ],
+        [
+            2,
+            "Sometimes"
+        ],
+        [
+            2,
+            "Now"
+        ],
+        [
+            2,
             "It"
-        ],
-        [
-            3,
-            "The Mouse"
-        ],
-        [
-            3,
-            "So"
-        ],
-        [
-            3,
-            "Rabbit"
-        ],
-        [
-            3,
-            "However"
-        ],
-        [
-            3,
-            "English"
-        ],
-        [
-            3,
-            "As"
-        ],
-        [
-            2,
-            "Would"
-        ],
-        [
-            2,
-            "Who"
-        ],
-        [
-            2,
-            "We"
-        ],
-        [
-            2,
-            "That"
-        ],
-        [
-            2,
-            "She"
-        ],
-        [
-            2,
-            "Rome"
-        ],
-        [
-            2,
-            "Paris"
-        ],
-        [
-            2,
-            "Just"
-        ],
-        [
-            2,
-            "French"
         ],
         [
             2,
@@ -98,75 +78,63 @@
         ],
         [
             2,
-            "Duchess"
-        ],
-        [
-            2,
-            "But"
+            "At"
         ],
         [
             1,
-            "You"
+            "While"
         ],
         [
             1,
-            "With"
+            "Thus"
         ],
         [
             1,
-            "William"
+            "These"
         ],
         [
             1,
-            "White"
+            "Still"
         ],
         [
             1,
-            "When"
+            "Soon"
         ],
         [
             1,
-            "Well"
+            "Some"
         ],
         [
             1,
-            "They"
+            "Sleep"
         ],
         [
             1,
-            "There"
+            "Six"
         ],
         [
             1,
-            "The Rabbit"
+            "She"
         ],
         [
             1,
-            "The Pool"
+            "Servox"
         ],
         [
             1,
-            "Tell"
+            "Ruined"
         ],
         [
             1,
-            "Tears"
+            "Remorse"
         ],
         [
             1,
-            "Stop"
+            "Remember"
         ],
         [
             1,
-            "Right Foot"
-        ],
-        [
-            1,
-            "Poor Alice"
-        ],
-        [
-            1,
-            "Perhaps"
+            "P\u00e9lissier"
         ],
         [
             1,
@@ -174,15 +142,15 @@
         ],
         [
             1,
-            "O\u00f9"
+            "Omnipotence"
         ],
         [
             1,
-            "On"
+            "Often"
         ],
         [
             1,
-            "Not"
+            "Nothing"
         ],
         [
             1,
@@ -190,79 +158,39 @@
         ],
         [
             1,
-            "Nile"
+            "Nature"
         ],
         [
             1,
-            "Multiplication Table"
+            "Justine Moritz"
         ],
         [
             1,
-            "Lory"
+            "Immense"
         ],
         [
             1,
-            "London"
+            "Have"
         ],
         [
             1,
-            "Latin Grammar"
+            "God"
         ],
         [
             1,
-            "Improve"
+            "Geneva"
         ],
         [
             1,
-            "If"
+            "Exhaustion"
         ],
         [
             1,
-            "Her"
+            "Everybody"
         ],
         [
             1,
-            "Hearthrug"
-        ],
-        [
-            1,
-            "He"
-        ],
-        [
-            1,
-            "Good"
-        ],
-        [
-            1,
-            "Geography"
-        ],
-        [
-            1,
-            "Fender"
-        ],
-        [
-            1,
-            "Everything"
-        ],
-        [
-            1,
-            "Esq"
-        ],
-        [
-            1,
-            "Eaglet"
-        ],
-        [
-            1,
-            "Duck"
-        ],
-        [
-            1,
-            "Don"
-        ],
-        [
-            1,
-            "Dodo"
+            "Even"
         ],
         [
             1,
@@ -270,35 +198,39 @@
         ],
         [
             1,
-            "Dinah"
+            "Dear Victor"
         ],
         [
             1,
-            "Dear"
+            "Belrive"
         ],
         [
             1,
-            "Curiouser"
+            "Before"
         ],
         [
             1,
-            "Conqueror"
+            "August"
         ],
         [
             1,
-            "Come"
+            "Andes"
         ],
         [
             1,
-            "Christmas"
+            "And"
         ],
         [
             1,
-            "Besides"
+            "Alps"
         ],
         [
             1,
-            "Are"
+            "Alpine"
+        ],
+        [
+            1,
+            "Alas"
         ],
         [
             1,
@@ -306,25 +238,33 @@
         ],
         [
             1,
-            "After"
-        ],
-        [
-            1,
-            "Ada"
+            "About"
         ]
     ],
     "Sentiment Expressions": [
         [
-            1,
-            "sorrowful"
+            5,
+            "love"
+        ],
+        [
+            2,
+            "happy"
         ],
         [
             1,
-            "hopeless"
+            "wonderful"
         ],
         [
             1,
-            "angry"
+            "joy"
+        ],
+        [
+            3,
+            "miserable"
+        ],
+        [
+            1,
+            "sad"
         ]
     ]
 }

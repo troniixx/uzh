@@ -1,84 +1,100 @@
 {
     "Named Entities": [
         [
-            52,
-            "Alice"
+            32,
+            "Count"
         ],
         [
-            22,
-            "Mock Turtle"
-        ],
-        [
-            18,
-            "Gryphon"
-        ],
-        [
-            18,
-            "Duchess"
-        ],
-        [
-            14,
-            "Queen"
-        ],
-        [
-            9,
-            "What"
-        ],
-        [
-            7,
-            "You"
-        ],
-        [
-            7,
-            "And"
-        ],
-        [
-            6,
-            "It"
-        ],
-        [
-            4,
+            20,
             "The"
         ],
         [
-            4,
-            "Come"
+            16,
+            "There"
         ],
         [
-            3,
-            "Yes"
+            14,
+            "It"
         ],
         [
-            3,
-            "Well"
+            13,
+            "He"
         ],
         [
-            3,
-            "Turtle"
+            10,
+            "When"
         ],
         [
-            3,
-            "Tortoise"
+            10,
+            "Then"
         ],
         [
-            3,
-            "That"
+            10,
+            "As"
         ],
         [
-            3,
-            "So"
+            9,
+            "With"
         ],
         [
-            3,
-            "Oh"
+            9,
+            "They"
         ],
         [
-            3,
-            "Drawling"
+            8,
+            "To"
         ],
         [
-            3,
+            8,
+            "June"
+        ],
+        [
+            8,
             "But"
+        ],
+        [
+            7,
+            "At"
+        ],
+        [
+            6,
+            "Szgany"
+        ],
+        [
+            5,
+            "This"
+        ],
+        [
+            5,
+            "Slovaks"
+        ],
+        [
+            5,
+            "Mina"
+        ],
+        [
+            4,
+            "Your"
+        ],
+        [
+            4,
+            "May"
+        ],
+        [
+            4,
+            "God"
+        ],
+        [
+            4,
+            "And"
+        ],
+        [
+            3,
+            "Last"
+        ],
+        [
+            3,
+            "Bistritz"
         ],
         [
             2,
@@ -86,39 +102,19 @@
         ],
         [
             2,
-            "When"
+            "The Szgany"
         ],
         [
             2,
-            "We"
+            "The Count"
         ],
         [
             2,
-            "Uglification"
+            "Suddenly"
         ],
         [
             2,
-            "This"
-        ],
-        [
-            2,
-            "They"
-        ],
-        [
-            2,
-            "Then"
-        ],
-        [
-            2,
-            "The Mock Turtle"
-        ],
-        [
-            2,
-            "The Gryphon"
-        ],
-        [
-            2,
-            "Take"
+            "Something"
         ],
         [
             2,
@@ -126,71 +122,95 @@
         ],
         [
             2,
-            "Off"
+            "My"
         ],
         [
             2,
-            "Of"
+            "In"
         ],
         [
             2,
-            "Now"
+            "If"
         ],
         [
             2,
-            "Never"
+            "Hawkins"
         ],
         [
             2,
-            "Mystery"
+            "Hark"
         ],
         [
             2,
-            "King"
+            "Good"
         ],
         [
             2,
-            "He"
+            "Despair"
         ],
         [
             2,
-            "French"
+            "Come"
         ],
         [
             2,
-            "Ah"
+            "Before"
         ],
         [
             1,
-            "Writhing"
+            "You English"
         ],
         [
             1,
-            "With"
+            "You"
         ],
         [
             1,
-            "Very"
+            "Yes"
         ],
         [
             1,
-            "Up"
+            "Without"
         ],
         [
             1,
-            "Tut"
+            "Will"
         ],
         [
             1,
-            "Tis"
+            "Where"
         ],
         [
             1,
-            "Those"
+            "What"
         ],
         [
             1,
-            "Thinking"
+            "Well"
+        ],
+        [
+            1,
+            "Welcome"
+        ],
+        [
+            1,
+            "Wait"
+        ],
+        [
+            1,
+            "Unless"
+        ],
+        [
+            1,
+            "Turkish"
+        ],
+        [
+            1,
+            "Transylvania"
+        ],
+        [
+            1,
+            "These Szgany"
         ],
         [
             1,
@@ -198,63 +218,79 @@
         ],
         [
             1,
-            "The Duchess"
+            "Suspiciously"
         ],
         [
             1,
-            "Thank"
+            "Somewhere"
         ],
         [
             1,
-            "Ten"
+            "So"
         ],
         [
             1,
-            "Stretching"
+            "Slovak"
         ],
         [
             1,
-            "Story"
+            "Sincerity"
         ],
         [
             1,
-            "Soup"
+            "Shut"
         ],
         [
             1,
-            "Somebody"
+            "Should"
         ],
         [
             1,
-            "Shall"
+            "Shortly"
         ],
         [
             1,
-            "Seaography"
+            "See"
         ],
         [
             1,
-            "Right"
+            "Romany"
         ],
         [
             1,
-            "Reeling"
+            "Roman"
         ],
         [
             1,
-            "Pray"
+            "Regaining"
         ],
         [
             1,
-            "Perhaps"
+            "Quicker"
         ],
         [
             1,
-            "Only"
+            "Pit"
         ],
         [
             1,
-            "Once"
+            "Peter Hawkins"
+        ],
+        [
+            1,
+            "Of"
+        ],
+        [
+            1,
+            "Now"
+        ],
+        [
+            1,
+            "Not"
+        ],
+        [
+            1,
+            "None"
         ],
         [
             1,
@@ -262,19 +298,27 @@
         ],
         [
             1,
-            "Mock Turtle Soup"
+            "Mr"
         ],
         [
             1,
-            "Mock"
+            "More"
         ],
         [
             1,
-            "Maybe"
+            "Monster"
         ],
         [
             1,
-            "Majesty"
+            "Louder"
+        ],
+        [
+            1,
+            "Lord"
+        ],
+        [
+            1,
+            "London"
         ],
         [
             1,
@@ -282,19 +326,19 @@
         ],
         [
             1,
-            "Laughing"
+            "Judas"
         ],
         [
             1,
-            "Just"
+            "Into"
         ],
         [
             1,
-            "If"
+            "Hungary"
         ],
         [
             1,
-            "However"
+            "Hungarian"
         ],
         [
             1,
@@ -302,11 +346,15 @@
         ],
         [
             1,
-            "Hold"
+            "His"
         ],
         [
             1,
-            "Hjckrrh"
+            "Hereafter"
+        ],
+        [
+            1,
+            "Henceforth"
         ],
         [
             1,
@@ -314,101 +362,117 @@
         ],
         [
             1,
-            "Hadn"
+            "Greek"
         ],
         [
             1,
-            "Grief"
+            "Get"
         ],
         [
             1,
-            "Fainting"
+            "Finally"
         ],
         [
             1,
-            "Everything"
+            "Faugh"
         ],
         [
             1,
-            "Everybody"
+            "Every"
         ],
         [
             1,
-            "Drive"
+            "Even"
         ],
         [
             1,
-            "Don"
+            "England"
         ],
         [
             1,
-            "Distraction"
+            "Dracula"
         ],
         [
             1,
-            "Derision"
+            "Death"
         ],
         [
             1,
-            "Coils"
+            "Count Dracula"
         ],
         [
             1,
-            "Classics"
+            "Close"
         ],
         [
             1,
-            "Certainly"
+            "Castle"
         ],
         [
             1,
-            "Birds"
+            "Can"
         ],
         [
             1,
-            "Be"
+            "By"
         ],
         [
             1,
-            "At"
+            "Bukovina"
         ],
         [
             1,
-            "As"
+            "British"
         ],
         [
             1,
-            "Arithmetic"
+            "Borgo Pass"
         ],
         [
             1,
-            "Ambition"
+            "Because"
         ],
         [
             1,
-            "All"
+            "Back"
+        ],
+        [
+            1,
+            "Austrian"
+        ],
+        [
+            1,
+            "Again"
+        ],
+        [
+            1,
+            "After"
+        ],
+        [
+            1,
+            "Action"
         ]
     ],
     "Sentiment Expressions": [
-        [
-            2,
-            "pleased"
-        ],
-        [
-            2,
-            "love"
-        ],
         [
             1,
             "proud"
         ],
         [
             1,
-            "unhappy"
+            "joy"
+        ],
+        [
+            1,
+            "upset"
         ],
         [
             1,
             "sad"
+        ],
+        [
+            1,
+            "distressed"
         ]
     ]
 }

@@ -1,200 +1,184 @@
 {
     "Named Entities": [
         [
-            35,
-            "Alice"
-        ],
-        [
-            24,
-            "Caterpillar"
-        ],
-        [
-            11,
-            "Pigeon"
-        ],
-        [
-            10,
-            "And"
-        ],
-        [
-            8,
-            "You"
-        ],
-        [
-            6,
-            "Well"
-        ],
-        [
-            5,
+            9,
             "It"
         ],
         [
-            4,
-            "What"
+            7,
+            "He"
+        ],
+        [
+            6,
+            "When"
+        ],
+        [
+            6,
+            "The"
+        ],
+        [
+            5,
+            "My"
         ],
         [
             4,
-            "This"
+            "We"
         ],
         [
-            4,
+            3,
             "In"
         ],
         [
             3,
-            "Yet"
+            "Geneva"
         ],
         [
             3,
-            "Why"
+            "Cornelius Agrippa"
         ],
         [
             3,
+            "Clerval"
+        ],
+        [
+            2,
             "She"
         ],
         [
-            3,
-            "Serpent"
-        ],
-        [
-            3,
-            "Come"
-        ],
-        [
-            3,
-            "But"
-        ],
-        [
-            3,
-            "As"
+            2,
+            "Paracelsus"
         ],
         [
             2,
-            "Who"
+            "On"
         ],
         [
             2,
-            "The Caterpillar"
-        ],
-        [
-            2,
-            "That"
-        ],
-        [
-            2,
-            "So"
-        ],
-        [
-            2,
-            "Pray"
-        ],
-        [
-            2,
-            "One"
-        ],
-        [
-            2,
-            "Not"
-        ],
-        [
-            2,
-            "No"
-        ],
-        [
-            2,
-            "However"
-        ],
-        [
-            2,
-            "How"
-        ],
-        [
-            2,
-            "For"
-        ],
-        [
-            2,
-            "Father William"
-        ],
-        [
-            2,
-            "Do"
-        ],
-        [
-            1,
-            "Whoever"
-        ],
-        [
-            1,
-            "Which"
-        ],
-        [
-            1,
-            "Ugh"
-        ],
-        [
-            1,
-            "There"
-        ],
-        [
-            1,
-            "Then"
-        ],
-        [
-            1,
-            "The"
-        ],
-        [
-            1,
-            "Said"
-        ],
-        [
-            1,
-            "Repeat"
-        ],
-        [
-            1,
-            "Oh"
-        ],
-        [
-            1,
-            "Of"
-        ],
-        [
-            1,
-            "Let"
-        ],
-        [
-            1,
-            "Keep"
-        ],
-        [
-            1,
-            "Is"
-        ],
-        [
-            1,
-            "Here"
-        ],
-        [
-            1,
             "Her"
         ],
         [
-            1,
-            "Has"
+            2,
+            "Elizabeth"
+        ],
+        [
+            2,
+            "But"
+        ],
+        [
+            2,
+            "Belrive"
+        ],
+        [
+            2,
+            "And"
+        ],
+        [
+            2,
+            "All"
+        ],
+        [
+            2,
+            "Albertus Magnus"
+        ],
+        [
+            2,
+            "Agrippa"
         ],
         [
             1,
-            "Father"
+            "Yet"
         ],
         [
             1,
-            "Explain"
+            "While"
         ],
         [
             1,
-            "Can"
+            "Wealth"
+        ],
+        [
+            1,
+            "Victor"
+        ],
+        [
+            1,
+            "Under"
+        ],
+        [
+            1,
+            "Thus"
+        ],
+        [
+            1,
+            "Those"
+        ],
+        [
+            1,
+            "Thonon"
+        ],
+        [
+            1,
+            "Swiss"
+        ],
+        [
+            1,
+            "Sir Isaac Newton"
+        ],
+        [
+            1,
+            "Round Table"
+        ],
+        [
+            1,
+            "Roncesvalles"
+        ],
+        [
+            1,
+            "Nor"
+        ],
+        [
+            1,
+            "No"
+        ],
+        [
+            1,
+            "Nature"
+        ],
+        [
+            1,
+            "Natural"
+        ],
+        [
+            1,
+            "Meanwhile Clerval"
+        ],
+        [
+            1,
+            "King Arthur"
+        ],
+        [
+            1,
+            "Jura"
+        ],
+        [
+            1,
+            "If"
+        ],
+        [
+            1,
+            "Henry"
+        ],
+        [
+            1,
+            "Harmony"
+        ],
+        [
+            1,
+            "Destiny"
+        ],
+        [
+            1,
+            "Curiosity"
         ],
         [
             1,
@@ -202,37 +186,57 @@
         ],
         [
             1,
-            "Be"
+            "Besides"
         ],
         [
             1,
-            "Are"
+            "Before"
         ],
         [
             1,
-            "Allow"
+            "As"
         ],
         [
             1,
-            "After"
+            "Alpine"
         ],
         [
             1,
-            "Advice"
+            "Ah"
         ]
     ],
     "Sentiment Expressions": [
+        [
+            2,
+            "wonderful"
+        ],
+        [
+            2,
+            "love"
+        ],
+        [
+            1,
+            "satisfied"
+        ],
+        [
+            1,
+            "peaceful"
+        ],
+        [
+            1,
+            "joy"
+        ],
         [
             1,
             "delighted"
         ],
         [
             1,
-            "content"
+            "sad"
         ],
         [
             1,
-            "annoyed"
+            "gloomy"
         ]
     ]
 }

@@ -1,92 +1,56 @@
 {
     "Named Entities": [
         [
-            28,
-            "Alice"
+            8,
+            "You"
+        ],
+        [
+            7,
+            "My"
         ],
         [
             6,
-            "There"
-        ],
-        [
-            5,
-            "She"
-        ],
-        [
-            5,
-            "Dinah"
+            "The"
         ],
         [
             4,
-            "Rabbit"
+            "His"
         ],
         [
             4,
-            "Oh"
-        ],
-        [
-            4,
-            "Do"
-        ],
-        [
-            4,
-            "And"
+            "But"
         ],
         [
             3,
-            "Which"
+            "This"
+        ],
+        [
+            3,
+            "If"
         ],
         [
             3,
             "How"
         ],
         [
-            3,
-            "Down"
+            2,
+            "Yet"
         ],
         [
             2,
-            "Why"
+            "Shall"
         ],
         [
             2,
-            "White Rabbit"
+            "Oh"
         ],
         [
             2,
-            "Well"
+            "Let"
         ],
         [
             2,
-            "So"
-        ],
-        [
-            2,
-            "No"
-        ],
-        [
-            2,
-            "Longitude"
-        ],
-        [
-            2,
-            "Latitude"
-        ],
-        [
-            2,
-            "However"
-        ],
-        [
-            2,
-            "First"
-        ],
-        [
-            2,
-            "But"
-        ],
-        [
-            1,
-            "Would"
+            "He"
         ],
         [
             1,
@@ -94,43 +58,47 @@
         ],
         [
             1,
-            "The Antipathies"
+            "We"
         ],
         [
             1,
-            "The"
+            "Turning"
         ],
         [
             1,
-            "Suddenly"
+            "Thus"
         ],
         [
             1,
-            "Soon"
+            "These"
         ],
         [
             1,
-            "Presently"
+            "South America"
         ],
         [
             1,
-            "Please"
+            "Saying"
         ],
         [
             1,
-            "Now"
+            "Pitiless"
         ],
         [
             1,
-            "New Zealand"
+            "Our"
         ],
         [
             1,
-            "Ma"
+            "Night"
         ],
         [
             1,
-            "Let"
+            "Morning"
+        ],
+        [
+            1,
+            "May"
         ],
         [
             1,
@@ -138,36 +106,65 @@
         ],
         [
             1,
-            "In"
+            "Have"
         ],
         [
             1,
-            "Hole"
+            "Geneva"
         ],
         [
             1,
-            "For"
+            "Even"
         ],
         [
             1,
-            "Either"
+            "Europe"
         ],
         [
             1,
-            "Drink"
+            "Depart"
         ],
         [
             1,
-            "Come"
+            "Chamounix"
         ],
         [
             1,
-            "Australia"
+            "Begone"
+        ],
+        [
+            1,
+            "Am"
         ],
         [
             1,
             "After"
         ]
     ],
-    "Sentiment Expressions": []
+    "Sentiment Expressions": [
+        [
+            4,
+            "love"
+        ],
+        [
+            3,
+            "content"
+        ],
+        [
+            2,
+            "peaceful"
+        ],
+        [
+            2,
+            "happy"
+        ],
+        [
+            1,
+            "wonderful"
+        ],
+        [
+            3,
+            "miserable"
+        ]
+    ]
 }

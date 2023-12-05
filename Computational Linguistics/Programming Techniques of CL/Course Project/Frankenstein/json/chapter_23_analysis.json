@@ -1,112 +1,120 @@
 {
     "Named Entities": [
         [
-            24,
-            "Alice"
+            10,
+            "The"
         ],
         [
             9,
-            "And"
-        ],
-        [
-            8,
-            "Mouse"
-        ],
-        [
-            5,
-            "Oh"
-        ],
-        [
-            5,
-            "How"
-        ],
-        [
-            4,
-            "Mabel"
-        ],
-        [
-            4,
-            "Let"
-        ],
-        [
-            4,
-            "It"
-        ],
-        [
-            3,
-            "The Mouse"
-        ],
-        [
-            3,
-            "So"
-        ],
-        [
-            3,
-            "Rabbit"
-        ],
-        [
-            3,
-            "However"
-        ],
-        [
-            3,
-            "English"
-        ],
-        [
-            3,
-            "As"
-        ],
-        [
-            2,
-            "Would"
-        ],
-        [
-            2,
-            "Who"
-        ],
-        [
-            2,
             "We"
         ],
         [
-            2,
-            "That"
-        ],
-        [
-            2,
-            "She"
-        ],
-        [
-            2,
-            "Rome"
-        ],
-        [
-            2,
-            "Paris"
-        ],
-        [
-            2,
-            "Just"
-        ],
-        [
-            2,
-            "French"
-        ],
-        [
-            2,
-            "For"
-        ],
-        [
-            2,
-            "Duchess"
-        ],
-        [
-            2,
+            9,
             "But"
         ],
         [
-            1,
-            "You"
+            6,
+            "Clerval"
+        ],
+        [
+            5,
+            "Oxford"
+        ],
+        [
+            5,
+            "It"
+        ],
+        [
+            5,
+            "He"
+        ],
+        [
+            4,
+            "This"
+        ],
+        [
+            4,
+            "Switzerland"
+        ],
+        [
+            4,
+            "Scotland"
+        ],
+        [
+            4,
+            "In"
+        ],
+        [
+            4,
+            "Henry"
+        ],
+        [
+            4,
+            "Edinburgh"
+        ],
+        [
+            3,
+            "Sometimes"
+        ],
+        [
+            3,
+            "Matlock"
+        ],
+        [
+            3,
+            "London"
+        ],
+        [
+            3,
+            "For"
+        ],
+        [
+            3,
+            "Cumberland"
+        ],
+        [
+            2,
+            "Windsor"
+        ],
+        [
+            2,
+            "Westmorland"
+        ],
+        [
+            2,
+            "St"
+        ],
+        [
+            2,
+            "Scotch"
+        ],
+        [
+            2,
+            "Perth"
+        ],
+        [
+            2,
+            "Its"
+        ],
+        [
+            2,
+            "If"
+        ],
+        [
+            2,
+            "His"
+        ],
+        [
+            2,
+            "Every"
+        ],
+        [
+            2,
+            "During"
+        ],
+        [
+            2,
+            "As"
         ],
         [
             1,
@@ -118,10 +126,6 @@
         ],
         [
             1,
-            "White"
-        ],
-        [
-            1,
             "When"
         ],
         [
@@ -130,43 +134,39 @@
         ],
         [
             1,
-            "They"
+            "Vegetables"
         ],
         [
             1,
-            "There"
+            "Thus"
         ],
         [
             1,
-            "The Rabbit"
+            "Tay"
         ],
         [
             1,
-            "The Pool"
+            "Swiss"
         ],
         [
             1,
-            "Tell"
+            "Servox"
         ],
         [
             1,
-            "Tears"
+            "Seat"
         ],
         [
             1,
-            "Stop"
+            "Rhine"
         ],
         [
             1,
-            "Right Foot"
+            "Pentland Hills"
         ],
         [
             1,
-            "Poor Alice"
-        ],
-        [
-            1,
-            "Perhaps"
+            "Parliament"
         ],
         [
             1,
@@ -174,7 +174,7 @@
         ],
         [
             1,
-            "O\u00f9"
+            "Orkneys"
         ],
         [
             1,
@@ -182,87 +182,87 @@
         ],
         [
             1,
-            "Not"
+            "October"
         ],
         [
             1,
-            "No"
+            "Nature"
         ],
         [
             1,
-            "Nile"
+            "March"
         ],
         [
             1,
-            "Multiplication Table"
+            "Justine"
         ],
         [
             1,
-            "Lory"
+            "July"
         ],
         [
             1,
-            "London"
+            "Isis"
         ],
         [
             1,
-            "Latin Grammar"
+            "India"
         ],
         [
             1,
-            "Improve"
+            "In Britain"
         ],
         [
             1,
-            "If"
+            "Here"
         ],
         [
             1,
-            "Her"
+            "Having"
         ],
         [
             1,
-            "Hearthrug"
+            "Hampden"
         ],
         [
             1,
-            "He"
+            "Goring"
         ],
         [
             1,
-            "Good"
+            "Geneva"
         ],
         [
             1,
-            "Geography"
+            "From Derby"
         ],
         [
             1,
-            "Fender"
+            "From"
         ],
         [
             1,
-            "Everything"
+            "February"
         ],
         [
             1,
-            "Esq"
+            "Falkland"
         ],
         [
             1,
-            "Eaglet"
+            "European"
         ],
         [
             1,
-            "Duck"
+            "English"
         ],
         [
             1,
-            "Don"
+            "England"
         ],
         [
             1,
-            "Dodo"
+            "Elizabeth"
         ],
         [
             1,
@@ -270,50 +270,66 @@
         ],
         [
             1,
-            "Dinah"
+            "Coupar"
         ],
         [
             1,
-            "Dear"
+            "Company"
         ],
         [
             1,
-            "Curiouser"
+            "Charles"
         ],
         [
             1,
-            "Conqueror"
+            "Chamounix"
         ],
         [
             1,
-            "Come"
+            "Bernard"
         ],
         [
             1,
-            "Christmas"
+            "Arthur"
         ],
         [
             1,
-            "Besides"
+            "Andrew"
         ],
         [
             1,
-            "Are"
-        ],
-        [
-            1,
-            "Ah"
+            "Alps"
         ],
         [
             1,
             "After"
-        ],
-        [
-            1,
-            "Ada"
         ]
     ],
     "Sentiment Expressions": [
+        [
+            1,
+            "wonderful"
+        ],
+        [
+            1,
+            "peaceful"
+        ],
+        [
+            1,
+            "enthusiastic"
+        ],
+        [
+            1,
+            "delighted"
+        ],
+        [
+            8,
+            "miserable"
+        ],
+        [
+            1,
+            "troubled"
+        ],
         [
             1,
             "sorrowful"
@@ -321,10 +337,6 @@
         [
             1,
             "hopeless"
-        ],
-        [
-            1,
-            "angry"
         ]
     ]
 }

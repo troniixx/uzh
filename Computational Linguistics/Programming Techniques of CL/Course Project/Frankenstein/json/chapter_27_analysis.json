@@ -1,36 +1,20 @@
 {
     "Named Entities": [
         [
-            35,
-            "Alice"
-        ],
-        [
-            24,
-            "Caterpillar"
-        ],
-        [
-            11,
-            "Pigeon"
-        ],
-        [
-            10,
-            "And"
-        ],
-        [
-            8,
-            "You"
+            12,
+            "The"
         ],
         [
             6,
-            "Well"
+            "Elizabeth"
+        ],
+        [
+            6,
+            "But"
         ],
         [
             5,
-            "It"
-        ],
-        [
-            4,
-            "What"
+            "My"
         ],
         [
             4,
@@ -38,15 +22,15 @@
         ],
         [
             4,
-            "In"
+            "It"
+        ],
+        [
+            4,
+            "He"
         ],
         [
             3,
-            "Yet"
-        ],
-        [
-            3,
-            "Why"
+            "What"
         ],
         [
             3,
@@ -54,59 +38,31 @@
         ],
         [
             3,
-            "Serpent"
-        ],
-        [
-            3,
-            "Come"
-        ],
-        [
-            3,
-            "But"
-        ],
-        [
-            3,
             "As"
         ],
         [
-            2,
-            "Who"
+            3,
+            "After"
         ],
         [
             2,
-            "The Caterpillar"
+            "You"
         ],
         [
             2,
-            "That"
+            "Why"
         ],
         [
             2,
-            "So"
+            "When"
         ],
         [
             2,
-            "Pray"
+            "There"
         ],
         [
             2,
-            "One"
-        ],
-        [
-            2,
-            "Not"
-        ],
-        [
-            2,
-            "No"
-        ],
-        [
-            2,
-            "However"
-        ],
-        [
-            2,
-            "How"
+            "Geneva"
         ],
         [
             2,
@@ -114,43 +70,43 @@
         ],
         [
             2,
-            "Father William"
-        ],
-        [
-            2,
-            "Do"
+            "Ernest"
         ],
         [
             1,
-            "Whoever"
+            "William"
         ],
         [
             1,
-            "Which"
+            "Who"
         ],
         [
             1,
-            "Ugh"
+            "While"
         ],
         [
             1,
-            "There"
+            "Victor"
         ],
         [
             1,
-            "Then"
+            "That"
         ],
         [
             1,
-            "The"
+            "Tears"
         ],
         [
             1,
-            "Said"
+            "Suddenly"
         ],
         [
             1,
-            "Repeat"
+            "Sometimes"
+        ],
+        [
+            1,
+            "Peace"
         ],
         [
             1,
@@ -158,47 +114,87 @@
         ],
         [
             1,
-            "Of"
+            "Nothing"
         ],
         [
             1,
-            "Let"
+            "Nor"
         ],
         [
             1,
-            "Keep"
+            "Mine"
         ],
         [
             1,
-            "Is"
+            "Melancholy"
         ],
         [
             1,
-            "Here"
+            "Man"
         ],
         [
             1,
-            "Her"
+            "Life"
         ],
         [
             1,
-            "Has"
+            "Liberty"
         ],
         [
             1,
-            "Father"
+            "Know"
         ],
         [
             1,
-            "Explain"
+            "Justine"
         ],
         [
             1,
-            "Can"
+            "In"
         ],
         [
             1,
-            "By"
+            "If"
+        ],
+        [
+            1,
+            "However"
+        ],
+        [
+            1,
+            "His"
+        ],
+        [
+            1,
+            "Great God"
+        ],
+        [
+            1,
+            "Genevan"
+        ],
+        [
+            1,
+            "Everywhere"
+        ],
+        [
+            1,
+            "Cursed"
+        ],
+        [
+            1,
+            "Could"
+        ],
+        [
+            1,
+            "Clerval"
+        ],
+        [
+            1,
+            "Cease"
+        ],
+        [
+            1,
+            "Besides"
         ],
         [
             1,
@@ -206,33 +202,41 @@
         ],
         [
             1,
-            "Are"
+            "Alps"
         ],
         [
             1,
-            "Allow"
-        ],
-        [
-            1,
-            "After"
-        ],
-        [
-            1,
-            "Advice"
+            "Alas"
         ]
     ],
     "Sentiment Expressions": [
         [
-            1,
-            "delighted"
+            2,
+            "love"
         ],
         [
             1,
-            "content"
+            "wonderful"
+        ],
+        [
+            2,
+            "miserable"
         ],
         [
             1,
-            "annoyed"
+            "sad"
+        ],
+        [
+            1,
+            "hopeless"
+        ],
+        [
+            1,
+            "gloomy"
+        ],
+        [
+            1,
+            "angry"
         ]
     ]
 }

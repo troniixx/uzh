@@ -2,15 +2,39 @@
     "Named Entities": [
         [
             24,
-            "Alice"
+            "He"
         ],
         [
-            9,
-            "And"
+            17,
+            "Mina"
         ],
         [
-            8,
-            "Mouse"
+            10,
+            "My"
+        ],
+        [
+            7,
+            "Mr"
+        ],
+        [
+            7,
+            "Morris"
+        ],
+        [
+            7,
+            "Jonathan"
+        ],
+        [
+            6,
+            "There"
+        ],
+        [
+            6,
+            "Arthur"
+        ],
+        [
+            5,
+            "Well"
         ],
         [
             5,
@@ -18,71 +42,87 @@
         ],
         [
             5,
-            "How"
-        ],
-        [
-            4,
-            "Mabel"
-        ],
-        [
-            4,
-            "Let"
-        ],
-        [
-            4,
             "It"
         ],
         [
-            3,
-            "The Mouse"
+            4,
+            "You"
         ],
         [
-            3,
-            "So"
-        ],
-        [
-            3,
-            "Rabbit"
-        ],
-        [
-            3,
-            "However"
-        ],
-        [
-            3,
-            "English"
-        ],
-        [
-            3,
-            "As"
-        ],
-        [
-            2,
-            "Would"
-        ],
-        [
-            2,
-            "Who"
-        ],
-        [
-            2,
+            4,
             "We"
         ],
         [
-            2,
+            4,
             "That"
         ],
         [
-            2,
-            "She"
+            4,
+            "May"
+        ],
+        [
+            4,
+            "Good"
+        ],
+        [
+            4,
+            "But"
+        ],
+        [
+            4,
+            "And"
+        ],
+        [
+            3,
+            "Won"
+        ],
+        [
+            3,
+            "Quincey"
+        ],
+        [
+            3,
+            "If"
         ],
         [
             2,
-            "Rome"
+            "When"
         ],
         [
             2,
-            "Paris"
+            "Three"
+        ],
+        [
+            2,
+            "Then"
+        ],
+        [
+            2,
+            "Tell"
+        ],
+        [
+            2,
+            "Some"
+        ],
+        [
+            2,
+            "Seward"
+        ],
+        [
+            2,
+            "No"
+        ],
+        [
+            2,
+            "Lucy Westenra"
+        ],
+        [
+            2,
+            "Lucy"
+        ],
+        [
+            2,
+            "Little"
         ],
         [
             2,
@@ -90,171 +130,211 @@
         ],
         [
             2,
-            "French"
+            "In"
         ],
         [
             2,
-            "For"
+            "Holmwood"
         ],
         [
             2,
-            "Duchess"
+            "Here"
         ],
         [
             2,
-            "But"
+            "God"
+        ],
+        [
+            2,
+            "Dr"
+        ],
+        [
+            2,
+            "Besides"
+        ],
+        [
+            2,
+            "As"
+        ],
+        [
+            2,
+            "Arthur Holmwood"
+        ],
+        [
+            2,
+            "American"
         ],
         [
             1,
-            "You"
+            "Yours"
         ],
         [
             1,
-            "With"
+            "Your"
         ],
         [
             1,
-            "William"
+            "Yes"
         ],
         [
             1,
-            "White"
+            "Why"
         ],
         [
             1,
-            "When"
+            "What"
         ],
         [
             1,
-            "Well"
+            "Two"
         ],
         [
             1,
-            "They"
+            "Transylvania"
         ],
         [
             1,
-            "There"
+            "Town"
         ],
         [
             1,
-            "The Rabbit"
+            "To"
         ],
         [
             1,
-            "The Pool"
+            "Titicaca"
         ],
         [
             1,
-            "Tell"
+            "The"
         ],
         [
             1,
-            "Tears"
+            "Thanks"
         ],
         [
             1,
-            "Stop"
+            "Thank"
         ],
         [
             1,
-            "Right Foot"
+            "Texas"
         ],
         [
             1,
-            "Poor Alice"
+            "Sunday"
         ],
         [
             1,
-            "Perhaps"
+            "Since"
         ],
         [
             1,
-            "Our"
+            "September"
         ],
         [
             1,
-            "O\u00f9"
+            "Sanguine"
         ],
         [
             1,
-            "On"
+            "Rom\u00e6"
         ],
         [
             1,
-            "Not"
+            "Renfield"
         ],
         [
             1,
-            "No"
+            "Pop"
         ],
         [
             1,
-            "Nile"
+            "One"
         ],
         [
             1,
-            "Multiplication Table"
+            "Miss Mina Murray"
         ],
         [
             1,
-            "Lory"
+            "Miss Lucy Westenra"
         ],
         [
             1,
-            "London"
+            "Miss Lucy"
         ],
         [
             1,
-            "Latin Grammar"
+            "Men"
         ],
         [
             1,
-            "Improve"
+            "Marquesas"
         ],
         [
             1,
-            "If"
+            "Let"
         ],
         [
             1,
-            "Her"
+            "Korea"
         ],
         [
             1,
-            "Hearthrug"
+            "Kingdom Come"
         ],
         [
             1,
-            "He"
+            "Kept"
         ],
         [
             1,
-            "Good"
+            "John Seward"
         ],
         [
             1,
-            "Geography"
+            "Jack Seward"
         ],
         [
             1,
-            "Fender"
+            "Isn"
         ],
         [
             1,
-            "Everything"
+            "However"
         ],
         [
             1,
-            "Esq"
+            "How"
         ],
         [
             1,
-            "Eaglet"
+            "Hon"
         ],
         [
             1,
-            "Duck"
+            "His"
+        ],
+        [
+            1,
+            "Hell"
+        ],
+        [
+            1,
+            "Forgive"
+        ],
+        [
+            1,
+            "Ever"
+        ],
+        [
+            1,
+            "Ebb"
+        ],
+        [
+            1,
+            "Dress"
         ],
         [
             1,
@@ -262,27 +342,19 @@
         ],
         [
             1,
-            "Dodo"
-        ],
-        [
-            1,
             "Do"
         ],
         [
             1,
-            "Dinah"
+            "Diary"
         ],
         [
             1,
-            "Dear"
+            "Desdemona"
         ],
         [
             1,
-            "Curiouser"
-        ],
-        [
-            1,
-            "Conqueror"
+            "Count"
         ],
         [
             1,
@@ -290,41 +362,53 @@
         ],
         [
             1,
-            "Christmas"
+            "Chatham"
         ],
         [
             1,
-            "Besides"
+            "Cannot"
         ],
         [
             1,
-            "Are"
+            "Bless"
         ],
         [
             1,
-            "Ah"
+            "Being"
         ],
         [
             1,
-            "After"
-        ],
-        [
-            1,
-            "Ada"
+            "Art"
         ]
     ],
     "Sentiment Expressions": [
         [
-            1,
-            "sorrowful"
+            9,
+            "love"
+        ],
+        [
+            7,
+            "happy"
         ],
         [
             1,
-            "hopeless"
+            "wonderful"
+        ],
+        [
+            2,
+            "unhappy"
         ],
         [
             1,
-            "angry"
+            "upset"
+        ],
+        [
+            1,
+            "sad"
+        ],
+        [
+            1,
+            "miserable"
         ]
     ]
 }

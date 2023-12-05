@@ -1,68 +1,64 @@
 {
     "Named Entities": [
         [
-            57,
-            "Project Gutenberg"
-        ],
-        [
-            22,
-            "Alice"
-        ],
-        [
-            21,
-            "King"
-        ],
-        [
-            20,
-            "If"
-        ],
-        [
-            15,
-            "You"
-        ],
-        [
-            15,
-            "Project"
-        ],
-        [
-            12,
+            36,
             "The"
         ],
         [
-            11,
-            "Gutenberg"
-        ],
-        [
-            10,
-            "United States"
-        ],
-        [
-            10,
-            "Queen"
-        ],
-        [
-            9,
+            25,
             "It"
         ],
         [
+            9,
+            "On"
+        ],
+        [
+            9,
+            "He"
+        ],
+        [
             8,
-            "License"
+            "There"
+        ],
+        [
+            8,
+            "Mate"
+        ],
+        [
+            8,
+            "July"
         ],
         [
             7,
-            "Section"
-        ],
-        [
-            7,
-            "Foundation"
+            "Men"
         ],
         [
             6,
-            "White Rabbit"
+            "Whitby"
+        ],
+        [
+            6,
+            "Tate Hill Pier"
+        ],
+        [
+            6,
+            "God"
+        ],
+        [
+            6,
+            "August"
         ],
         [
             5,
-            "There"
+            "She"
+        ],
+        [
+            5,
+            "Lucy"
+        ],
+        [
+            5,
+            "As"
         ],
         [
             4,
@@ -70,83 +66,59 @@
         ],
         [
             4,
-            "The Foundation"
-        ],
-        [
-            4,
-            "Nothing"
-        ],
-        [
-            4,
-            "Majesty"
-        ],
-        [
-            4,
-            "Lizard"
-        ],
-        [
-            4,
-            "Information"
-        ],
-        [
-            4,
-            "He"
-        ],
-        [
-            4,
-            "Gutenberg Literary Archive Foundation"
-        ],
-        [
-            4,
-            "Do"
-        ],
-        [
-            3,
-            "Why"
-        ],
-        [
-            3,
-            "What"
-        ],
-        [
-            3,
-            "United"
-        ],
-        [
-            3,
-            "They"
-        ],
-        [
-            3,
             "Then"
         ],
         [
-            3,
-            "That"
+            4,
+            "No"
         ],
         [
-            3,
-            "States"
-        ],
-        [
-            3,
-            "Project Gutenberg Literary"
-        ],
-        [
-            3,
+            4,
             "But"
         ],
         [
+            4,
+            "Before"
+        ],
+        [
+            4,
+            "At"
+        ],
+        [
+            4,
+            "Already"
+        ],
+        [
             3,
-            "Archive Foundation"
+            "When"
+        ],
+        [
+            3,
+            "Russian"
+        ],
+        [
+            3,
+            "One"
+        ],
+        [
+            3,
+            "If"
+        ],
+        [
+            3,
+            "East"
+        ],
+        [
+            3,
+            "Bay"
+        ],
+        [
+            3,
+            "All"
         ],
         [
             2,
-            "Wonderland"
-        ],
-        [
-            2,
-            "Who"
+            "You"
         ],
         [
             2,
@@ -154,11 +126,7 @@
         ],
         [
             2,
-            "Use"
-        ],
-        [
-            2,
-            "Turtle"
+            "Trade"
         ],
         [
             2,
@@ -166,87 +134,119 @@
         ],
         [
             2,
-            "The Project Gutenberg Literary Archive Foundation"
+            "They"
         ],
         [
             2,
-            "Some"
+            "Straits"
         ],
         [
             2,
-            "She"
+            "Robin Hood"
         ],
         [
             2,
-            "See"
+            "Of"
         ],
         [
             2,
-            "Royalty"
+            "Mr"
         ],
         [
             2,
-            "Project Gutenberg Literary Archive Foundation"
+            "Just"
         ],
         [
             2,
-            "Please"
+            "Journal"
         ],
         [
             2,
-            "Oh"
+            "His"
         ],
         [
             2,
-            "No"
+            "Him"
         ],
         [
             2,
-            "Nearly"
+            "Had"
         ],
         [
             2,
-            "Mock"
+            "First"
         ],
         [
             2,
-            "Literary Archive Foundation"
+            "Every"
         ],
         [
             2,
-            "Knave"
+            "East Pier"
         ],
         [
             2,
-            "Gryphon"
+            "East Cliff"
         ],
         [
             2,
-            "General Terms"
+            "Early"
         ],
         [
             2,
-            "For"
+            "Crew"
         ],
         [
             2,
-            "Except"
+            "Could"
         ],
         [
             2,
-            "Donations"
+            "Cliff"
         ],
         [
             2,
-            "At"
+            "By"
+        ],
+        [
+            2,
+            "Board"
+        ],
+        [
+            2,
+            "Between"
+        ],
+        [
+            2,
+            "Backsheesh"
         ],
         [
             2,
             "And"
         ],
         [
-            2,
-            "Adventures"
+            1,
+            "Yorkshire"
+        ],
+        [
+            1,
+            "Work"
+        ],
+        [
+            1,
+            "Woke"
+        ],
+        [
+            1,
+            "With"
+        ],
+        [
+            1,
+            "Wind"
+        ],
+        [
+            1,
+            "Will"
         ],
         [
             1,
@@ -254,11 +254,7 @@
         ],
         [
             1,
-            "While"
-        ],
-        [
-            1,
-            "Which"
+            "Whitby Harbour"
         ],
         [
             1,
@@ -266,31 +262,39 @@
         ],
         [
             1,
-            "West"
+            "West Cliff"
         ],
         [
             1,
-            "Well"
+            "Weather"
         ],
         [
             1,
-            "Wake"
+            "Want"
         ],
         [
             1,
-            "Volunteers"
+            "Viaduct"
         ],
         [
             1,
-            "Vanilla"
+            "Varna"
         ],
         [
             1,
-            "Updated"
+            "Under"
         ],
         [
             1,
-            "Unless"
+            "Two"
+        ],
+        [
+            1,
+            "Turkish Customs"
+        ],
+        [
+            1,
+            "Took"
         ],
         [
             1,
@@ -298,35 +302,47 @@
         ],
         [
             1,
-            "Though"
+            "Thorough"
         ],
         [
             1,
-            "These"
+            "The Russian"
         ],
         [
             1,
-            "The White Rabbit"
+            "The Crescent"
         ],
         [
             1,
-            "The Knave"
+            "Tells"
         ],
         [
             1,
-            "The King"
+            "Swales"
         ],
         [
             1,
-            "Stuff"
+            "Surgeon"
         ],
         [
             1,
-            "Special"
+            "Strangely"
         ],
         [
             1,
-            "So Alice"
+            "Still"
+        ],
+        [
+            1,
+            "Staithes"
+        ],
+        [
+            1,
+            "Somehow"
+        ],
+        [
+            1,
+            "Some"
         ],
         [
             1,
@@ -334,143 +350,171 @@
         ],
         [
             1,
-            "Silence"
+            "Shortly"
         ],
         [
             1,
-            "Sentence"
+            "Seemed"
         ],
         [
             1,
-            "Sections"
+            "Second"
         ],
         [
             1,
-            "Salt Lake City"
+            "Save"
         ],
         [
             1,
-            "Rule"
+            "Saturday"
         ],
         [
             1,
-            "Right"
+            "Rushed"
         ],
         [
             1,
-            "Revenue Service"
+            "Runswick"
         ],
         [
             1,
-            "Replacement"
+            "Roumanian"
         ],
         [
             1,
-            "Refund"
+            "Rough"
         ],
         [
             1,
-            "Redistribution"
+            "Rig Mill"
         ],
         [
             1,
-            "Redistributing Project Gutenberg"
+            "Retired"
         ],
         [
             1,
-            "Read"
+            "Rejoiced"
         ],
         [
             1,
-            "Rabbit"
+            "Raised"
         ],
         [
             1,
-            "Project Gutenberg License"
+            "Prelude"
         ],
         [
             1,
-            "Professor Michael"
+            "Praised"
         ],
         [
             1,
-            "Plain Vanilla"
+            "Poor Lucy"
         ],
         [
             1,
-            "Plain"
+            "Poor"
         ],
         [
             1,
-            "Off"
+            "Place"
         ],
         [
             1,
-            "Of"
+            "Petrofsky"
         ],
         [
             1,
-            "Number One"
+            "Perhaps"
         ],
         [
             1,
-            "North"
+            "Passed Gibralter"
         ],
         [
             1,
-            "Nobody"
+            "Only"
         ],
         [
             1,
-            "Never"
+            "Once"
         ],
         [
             1,
-            "My"
+            "Olgaren"
         ],
         [
             1,
-            "Mouse"
+            "Nothing"
         ],
         [
             1,
-            "Most"
+            "Not"
         ],
         [
             1,
-            "Mississippi"
+            "North Sea"
         ],
         [
             1,
-            "Mission"
+            "North Foreland"
         ],
         [
             1,
-            "March Hare"
+            "Murray"
         ],
         [
             1,
-            "Many"
+            "Mulgrave Woods"
         ],
         [
             1,
-            "Let"
+            "More Customs"
         ],
         [
             1,
-            "Lastly"
+            "More"
         ],
         [
             1,
-            "Involved"
+            "Mina Murray"
         ],
         [
             1,
-            "International"
+            "May"
         ],
         [
             1,
-            "Internal"
+            "Making"
+        ],
+        [
+            1,
+            "Lord"
+        ],
+        [
+            1,
+            "Like"
+        ],
+        [
+            1,
+            "Later"
+        ],
+        [
+            1,
+            "Last"
+        ],
+        [
+            1,
+            "Kettleness"
+        ],
+        [
+            1,
+            "Jonathan"
+        ],
+        [
+            1,
+            "Its"
         ],
         [
             1,
@@ -478,123 +522,131 @@
         ],
         [
             1,
+            "If He"
+        ],
+        [
+            1,
             "However"
         ],
         [
             1,
-            "Hold"
+            "How"
         ],
         [
             1,
-            "Him"
+            "Hardly"
         ],
         [
             1,
-            "Here"
+            "Great Storm"
         ],
         [
             1,
-            "Hart"
+            "From"
         ],
         [
             1,
-            "General Information About Project Gutenberg"
+            "French"
         ],
         [
             1,
-            "Full"
+            "Four"
         ],
         [
             1,
-            "Forty"
+            "Fortunately"
         ],
         [
             1,
-            "First"
+            "Finally"
         ],
         [
             1,
-            "Exactly"
+            "Fear"
         ],
         [
             1,
-            "Evidence"
+            "Expected"
         ],
         [
             1,
-            "Everybody"
+            "Esk"
         ],
         [
             1,
-            "Email"
+            "English Channel"
         ],
         [
             1,
-            "Duchess"
+            "England"
         ],
         [
             1,
-            "Don"
+            "East Elliot"
         ],
         [
             1,
-            "Despite"
+            "During"
         ],
         [
             1,
-            "Defects"
+            "Drawbridge"
         ],
         [
             1,
-            "Defect"
+            "Dover"
         ],
         [
             1,
-            "Creating"
+            "Death"
         ],
         [
             1,
-            "Copyright"
+            "Dare"
         ],
         [
             1,
-            "Contributions"
+            "Dardanelles"
         ],
         [
             1,
-            "Contact"
+            "Correspondent"
         ],
         [
             1,
-            "Consider"
+            "Casabianca"
         ],
         [
             1,
-            "Compliance"
+            "Cape Matapan"
         ],
         [
             1,
-            "By"
+            "Caffyn"
         ],
         [
             1,
-            "Bill"
+            "But It"
         ],
         [
             1,
-            "Between"
+            "Bosphorus"
         ],
         [
             1,
-            "Begin"
+            "Boarded"
         ],
         [
             1,
-            "Before"
+            "Blessed Virgin"
         ],
         [
             1,
-            "As"
+            "Biscay"
+        ],
+        [
+            1,
+            "Billington"
         ],
         [
             1,
@@ -602,29 +654,45 @@
         ],
         [
             1,
-            "Any"
+            "Archipelago"
         ],
         [
             1,
-            "An"
+            "Another"
         ],
         [
             1,
-            "All"
+            "After"
         ],
         [
             1,
-            "Additional"
+            "Admiralty Court"
+        ],
+        [
+            1,
+            "Accurate"
+        ],
+        [
+            1,
+            "Abramoff"
         ]
     ],
     "Sentiment Expressions": [
         [
-            2,
-            "wonderful"
+            1,
+            "joy"
         ],
         [
             1,
-            "happy"
+            "incredible"
+        ],
+        [
+            1,
+            "cheerful"
+        ],
+        [
+            4,
+            "angry"
         ],
         [
             2,
@@ -632,7 +700,7 @@
         ],
         [
             1,
-            "miserable"
+            "furious"
         ]
     ]
 }

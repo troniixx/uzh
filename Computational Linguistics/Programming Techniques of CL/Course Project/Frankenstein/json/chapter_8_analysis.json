@@ -1,64 +1,20 @@
 {
     "Named Entities": [
         [
-            35,
-            "Alice"
-        ],
-        [
-            24,
-            "Caterpillar"
-        ],
-        [
-            11,
-            "Pigeon"
-        ],
-        [
-            10,
-            "And"
-        ],
-        [
-            8,
-            "You"
+            6,
+            "The"
         ],
         [
             6,
-            "Well"
+            "My"
         ],
         [
             5,
-            "It"
-        ],
-        [
-            4,
-            "What"
-        ],
-        [
-            4,
-            "This"
-        ],
-        [
-            4,
             "In"
         ],
         [
-            3,
-            "Yet"
-        ],
-        [
-            3,
-            "Why"
-        ],
-        [
-            3,
-            "She"
-        ],
-        [
-            3,
-            "Serpent"
-        ],
-        [
-            3,
-            "Come"
+            4,
+            "It"
         ],
         [
             3,
@@ -66,27 +22,19 @@
         ],
         [
             3,
-            "As"
+            "After"
         ],
         [
             2,
-            "Who"
+            "When"
         ],
         [
             2,
-            "The Caterpillar"
+            "Waldman"
         ],
         [
             2,
-            "That"
-        ],
-        [
-            2,
-            "So"
-        ],
-        [
-            2,
-            "Pray"
+            "Sometimes"
         ],
         [
             2,
@@ -94,145 +42,177 @@
         ],
         [
             2,
-            "Not"
-        ],
-        [
-            2,
             "No"
         ],
         [
             2,
-            "However"
+            "If"
         ],
         [
             2,
-            "How"
-        ],
-        [
-            2,
-            "For"
-        ],
-        [
-            2,
-            "Father William"
-        ],
-        [
-            2,
-            "Do"
+            "As"
         ],
         [
             1,
-            "Whoever"
+            "You"
         ],
         [
             1,
-            "Which"
+            "Winter"
         ],
         [
             1,
-            "Ugh"
+            "Who"
         ],
         [
             1,
-            "There"
+            "Whence"
         ],
         [
             1,
-            "Then"
+            "What"
         ],
         [
             1,
-            "The"
+            "Unless"
         ],
         [
             1,
-            "Said"
+            "Two"
         ],
         [
             1,
-            "Repeat"
+            "To"
         ],
         [
             1,
-            "Oh"
+            "These"
         ],
         [
             1,
-            "Of"
+            "Some"
         ],
         [
             1,
-            "Let"
+            "Remember"
         ],
         [
             1,
-            "Keep"
+            "Pursuing"
         ],
         [
             1,
-            "Is"
+            "Professor Krempe"
         ],
         [
             1,
-            "Here"
+            "Peru"
         ],
         [
             1,
-            "Her"
+            "Now"
         ],
         [
             1,
-            "Has"
+            "Not"
         ],
         [
             1,
-            "Father"
+            "Nor"
         ],
         [
             1,
-            "Explain"
+            "None"
         ],
         [
             1,
-            "Can"
+            "Mexico"
         ],
         [
             1,
-            "By"
+            "Life"
         ],
         [
             1,
-            "Be"
+            "Learn"
         ],
         [
             1,
-            "Are"
+            "Krempe"
         ],
         [
             1,
-            "Allow"
+            "Ingolstadt"
         ],
         [
             1,
-            "After"
+            "His"
         ],
         [
             1,
-            "Advice"
+            "Greece"
+        ],
+        [
+            1,
+            "Geneva"
+        ],
+        [
+            1,
+            "From"
+        ],
+        [
+            1,
+            "Every"
+        ],
+        [
+            1,
+            "Darkness"
+        ],
+        [
+            1,
+            "Cornelius Agrippa"
+        ],
+        [
+            1,
+            "C\u00e6sar"
+        ],
+        [
+            1,
+            "Arabian"
+        ],
+        [
+            1,
+            "And"
+        ],
+        [
+            1,
+            "America"
+        ],
+        [
+            1,
+            "Although"
         ]
     ],
     "Sentiment Expressions": [
         [
             1,
-            "delighted"
+            "wonderful"
         ],
         [
             1,
-            "content"
+            "pleased"
         ],
         [
             1,
-            "annoyed"
+            "peaceful"
+        ],
+        [
+            1,
+            "incredible"
+        ],
+        [
+            1,
+            "happy"
         ]
     ]
 }

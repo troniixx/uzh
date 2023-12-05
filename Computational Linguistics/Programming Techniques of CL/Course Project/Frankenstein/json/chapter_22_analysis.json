@@ -1,96 +1,96 @@
 {
     "Named Entities": [
         [
-            24,
-            "Alice"
-        ],
-        [
-            9,
-            "And"
+            10,
+            "The"
         ],
         [
             8,
-            "Mouse"
+            "Elizabeth"
+        ],
+        [
+            7,
+            "But"
+        ],
+        [
+            6,
+            "We"
+        ],
+        [
+            6,
+            "My"
         ],
         [
             5,
-            "Oh"
+            "Rhine"
         ],
         [
             5,
-            "How"
+            "He"
+        ],
+        [
+            5,
+            "England"
+        ],
+        [
+            5,
+            "Clerval"
         ],
         [
             4,
-            "Mabel"
+            "This"
         ],
         [
             4,
-            "Let"
+            "Strasburgh"
         ],
         [
             4,
             "It"
         ],
         [
-            3,
-            "The Mouse"
+            4,
+            "And"
         ],
         [
             3,
-            "So"
+            "You"
         ],
         [
             3,
-            "Rabbit"
-        ],
-        [
-            3,
-            "However"
-        ],
-        [
-            3,
-            "English"
-        ],
-        [
-            3,
-            "As"
+            "Henry"
         ],
         [
             2,
-            "Would"
+            "Victor"
         ],
         [
             2,
-            "Who"
+            "Rotterdam"
         ],
         [
             2,
-            "We"
+            "Nay"
         ],
         [
             2,
-            "That"
+            "Mainz"
         ],
         [
             2,
-            "She"
+            "London"
         ],
         [
             2,
-            "Rome"
+            "In"
         ],
         [
             2,
-            "Paris"
+            "If"
         ],
         [
             2,
-            "Just"
-        ],
-        [
-            2,
-            "French"
+            "His"
         ],
         [
             2,
@@ -98,51 +98,87 @@
         ],
         [
             2,
-            "Duchess"
+            "Even"
         ],
         [
             2,
-            "But"
+            "English"
+        ],
+        [
+            2,
+            "During"
+        ],
+        [
+            2,
+            "At"
+        ],
+        [
+            2,
+            "Alas"
+        ],
+        [
+            2,
+            "After"
         ],
         [
             1,
-            "You"
+            "Wordsworth"
         ],
         [
             1,
-            "With"
+            "Woolwich"
         ],
         [
             1,
-            "William"
+            "Without"
         ],
         [
             1,
-            "White"
+            "Vaud"
         ],
         [
             1,
-            "When"
+            "Uri"
         ],
         [
             1,
-            "Well"
+            "Unborrow"
         ],
         [
             1,
-            "They"
+            "Tower"
         ],
         [
             1,
-            "There"
+            "To England"
         ],
         [
             1,
-            "The Rabbit"
+            "To"
         ],
         [
             1,
-            "The Pool"
+            "Tintern Abbey"
+        ],
+        [
+            1,
+            "Tilbury Fort"
+        ],
+        [
+            1,
+            "These"
+        ],
+        [
+            1,
+            "Their"
+        ],
+        [
+            1,
+            "That"
+        ],
+        [
+            1,
+            "Thames"
         ],
         [
             1,
@@ -150,23 +186,39 @@
         ],
         [
             1,
-            "Tears"
+            "Switzerland"
         ],
         [
             1,
-            "Stop"
+            "St"
         ],
         [
             1,
-            "Right Foot"
+            "Spanish"
         ],
         [
             1,
-            "Poor Alice"
+            "She"
         ],
         [
             1,
-            "Perhaps"
+            "September"
+        ],
+        [
+            1,
+            "Reserve"
+        ],
+        [
+            1,
+            "Pays"
+        ],
+        [
+            1,
+            "Paul"
+        ],
+        [
+            1,
+            "Pardon"
         ],
         [
             1,
@@ -174,15 +226,19 @@
         ],
         [
             1,
-            "O\u00f9"
+            "Or"
         ],
         [
             1,
-            "On"
+            "One"
         ],
         [
             1,
-            "Not"
+            "Once"
+        ],
+        [
+            1,
+            "Oh"
         ],
         [
             1,
@@ -190,79 +246,67 @@
         ],
         [
             1,
-            "Nile"
+            "Mannheim"
         ],
         [
             1,
-            "Multiplication Table"
+            "Lucerne"
         ],
         [
             1,
-            "Lory"
+            "Look"
         ],
         [
             1,
-            "London"
+            "La Valais"
         ],
         [
             1,
-            "Latin Grammar"
+            "Is"
         ],
         [
             1,
-            "Improve"
+            "Interpret"
         ],
         [
             1,
-            "If"
+            "Holland"
         ],
         [
             1,
-            "Her"
+            "Haunted"
         ],
         [
             1,
-            "Hearthrug"
+            "Has"
         ],
         [
             1,
-            "He"
+            "Greenwich"
         ],
         [
             1,
-            "Good"
+            "Gravesend"
         ],
         [
             1,
-            "Geography"
+            "Geneva"
         ],
         [
             1,
-            "Fender"
+            "Frankenstein"
         ],
         [
             1,
-            "Everything"
+            "Filled"
         ],
         [
             1,
-            "Esq"
+            "Fairy"
         ],
         [
             1,
-            "Eaglet"
-        ],
-        [
-            1,
-            "Duck"
-        ],
-        [
-            1,
-            "Don"
-        ],
-        [
-            1,
-            "Dodo"
+            "Does"
         ],
         [
             1,
@@ -270,61 +314,93 @@
         ],
         [
             1,
-            "Dinah"
+            "December"
         ],
         [
             1,
-            "Dear"
+            "Day"
         ],
         [
             1,
-            "Curiouser"
+            "Could"
         ],
         [
             1,
-            "Conqueror"
+            "By"
         ],
         [
             1,
-            "Come"
+            "Britain"
         ],
         [
             1,
-            "Christmas"
+            "Beyond Cologne"
         ],
         [
             1,
-            "Besides"
+            "Beloved"
         ],
         [
             1,
-            "Are"
+            "Armada"
         ],
         [
             1,
-            "Ah"
-        ],
-        [
-            1,
-            "After"
-        ],
-        [
-            1,
-            "Ada"
+            "An"
         ]
     ],
     "Sentiment Expressions": [
+        [
+            3,
+            "love"
+        ],
+        [
+            3,
+            "happy"
+        ],
+        [
+            1,
+            "pleased"
+        ],
+        [
+            1,
+            "joyful"
+        ],
+        [
+            1,
+            "enthusiastic"
+        ],
+        [
+            1,
+            "cheerful"
+        ],
+        [
+            4,
+            "gloomy"
+        ],
+        [
+            3,
+            "unhappy"
+        ],
+        [
+            2,
+            "miserable"
+        ],
+        [
+            2,
+            "agitated"
+        ],
         [
             1,
             "sorrowful"
         ],
         [
             1,
-            "hopeless"
+            "disappointed"
         ],
         [
             1,
-            "angry"
+            "depressed"
         ]
     ]
 }

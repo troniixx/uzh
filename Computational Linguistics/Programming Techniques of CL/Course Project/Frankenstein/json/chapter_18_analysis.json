@@ -1,136 +1,140 @@
 {
     "Named Entities": [
         [
-            28,
-            "Alice"
+            18,
+            "Felix"
+        ],
+        [
+            14,
+            "Safie"
+        ],
+        [
+            12,
+            "He"
+        ],
+        [
+            11,
+            "The"
+        ],
+        [
+            7,
+            "Paris"
         ],
         [
             6,
-            "There"
+            "Turk"
+        ],
+        [
+            6,
+            "Leghorn"
         ],
         [
             5,
             "She"
         ],
         [
-            5,
-            "Dinah"
+            4,
+            "De Lacey"
         ],
         [
             4,
-            "Rabbit"
+            "Arabian"
         ],
         [
             4,
-            "Oh"
-        ],
-        [
-            4,
-            "Do"
-        ],
-        [
-            4,
-            "And"
+            "Agatha"
         ],
         [
             3,
-            "Which"
+            "They"
         ],
         [
             3,
-            "How"
+            "The Turk"
         ],
         [
             3,
-            "Down"
+            "Italy"
+        ],
+        [
+            3,
+            "His"
+        ],
+        [
+            3,
+            "France"
         ],
         [
             2,
-            "Why"
+            "When"
         ],
         [
             2,
-            "White Rabbit"
+            "Turkish"
         ],
         [
             2,
-            "Well"
+            "Turkey"
         ],
         [
             2,
-            "So"
+            "This"
         ],
         [
             2,
-            "No"
+            "Germany"
         ],
         [
             2,
-            "Longitude"
+            "French"
         ],
         [
             2,
-            "Latitude"
+            "Constantinople"
         ],
         [
             2,
-            "However"
-        ],
-        [
-            2,
-            "First"
-        ],
-        [
-            2,
-            "But"
+            "Christian"
         ],
         [
             1,
-            "Would"
+            "Turks"
         ],
         [
             1,
-            "What"
+            "The Italian"
         ],
         [
             1,
-            "The Antipathies"
+            "Taking"
         ],
         [
             1,
-            "The"
+            "Such"
         ],
         [
             1,
-            "Suddenly"
+            "Some"
         ],
         [
             1,
-            "Soon"
+            "Muhammadan"
         ],
         [
             1,
-            "Presently"
+            "Muhammad"
         ],
         [
             1,
-            "Please"
+            "Mont"
         ],
         [
             1,
-            "Now"
+            "Lyons"
         ],
         [
             1,
-            "New Zealand"
-        ],
-        [
-            1,
-            "Ma"
-        ],
-        [
-            1,
-            "Let"
+            "Italian"
         ],
         [
             1,
@@ -138,36 +142,49 @@
         ],
         [
             1,
-            "In"
+            "During"
         ],
         [
             1,
-            "Hole"
+            "Christian Arab"
         ],
         [
             1,
-            "For"
+            "Cenis"
         ],
         [
             1,
-            "Either"
+            "By"
         ],
         [
             1,
-            "Drink"
+            "Before"
         ],
         [
             1,
-            "Come"
-        ],
-        [
-            1,
-            "Australia"
+            "Asia"
         ],
         [
             1,
             "After"
         ]
     ],
-    "Sentiment Expressions": []
+    "Sentiment Expressions": [
+        [
+            1,
+            "wonderful"
+        ],
+        [
+            1,
+            "enthusiastic"
+        ],
+        [
+            1,
+            "delighted"
+        ],
+        [
+            2,
+            "miserable"
+        ]
+    ]
 }

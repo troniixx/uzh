@@ -1,84 +1,76 @@
 {
     "Named Entities": [
         [
-            35,
-            "Alice"
-        ],
-        [
-            24,
-            "Caterpillar"
-        ],
-        [
             11,
-            "Pigeon"
-        ],
-        [
-            10,
-            "And"
+            "He"
         ],
         [
             8,
-            "You"
+            "The"
         ],
         [
-            6,
-            "Well"
+            8,
+            "She"
+        ],
+        [
+            7,
+            "My"
+        ],
+        [
+            7,
+            "Elizabeth"
         ],
         [
             5,
+            "Waldman"
+        ],
+        [
+            5,
+            "Krempe"
+        ],
+        [
+            4,
+            "They"
+        ],
+        [
+            4,
             "It"
         ],
         [
             4,
-            "What"
+            "Ingolstadt"
         ],
         [
-            4,
-            "This"
+            3,
+            "Such"
         ],
         [
-            4,
+            3,
+            "On"
+        ],
+        [
+            3,
             "In"
         ],
         [
             3,
-            "Yet"
+            "His"
         ],
         [
             3,
-            "Why"
-        ],
-        [
-            3,
-            "She"
-        ],
-        [
-            3,
-            "Serpent"
-        ],
-        [
-            3,
-            "Come"
-        ],
-        [
-            3,
-            "But"
-        ],
-        [
-            3,
-            "As"
+            "Clerval"
         ],
         [
             2,
-            "Who"
+            "We"
         ],
         [
             2,
-            "The Caterpillar"
+            "This"
         ],
         [
             2,
-            "That"
+            "These"
         ],
         [
             2,
@@ -86,51 +78,39 @@
         ],
         [
             2,
-            "Pray"
+            "Paracelsus"
         ],
         [
             2,
-            "One"
+            "But"
         ],
         [
             2,
-            "Not"
+            "As"
         ],
         [
             2,
-            "No"
-        ],
-        [
-            2,
-            "However"
-        ],
-        [
-            2,
-            "How"
-        ],
-        [
-            2,
-            "For"
-        ],
-        [
-            2,
-            "Father William"
-        ],
-        [
-            2,
-            "Do"
+            "And"
         ],
         [
             1,
-            "Whoever"
+            "You"
         ],
         [
             1,
-            "Which"
+            "Yet"
         ],
         [
             1,
-            "Ugh"
+            "With"
+        ],
+        [
+            1,
+            "When"
+        ],
+        [
+            1,
+            "Thus"
         ],
         [
             1,
@@ -138,63 +118,67 @@
         ],
         [
             1,
-            "Then"
+            "Partly"
         ],
         [
             1,
-            "The"
+            "Now"
         ],
         [
             1,
-            "Said"
+            "Never"
         ],
         [
             1,
-            "Repeat"
+            "If"
         ],
         [
             1,
-            "Oh"
+            "Henry"
         ],
         [
             1,
-            "Of"
+            "Have"
         ],
         [
             1,
-            "Let"
+            "Good God"
         ],
         [
             1,
-            "Keep"
+            "Geneva"
         ],
         [
             1,
-            "Is"
+            "Frankenstein"
         ],
         [
             1,
-            "Here"
+            "Farewell"
         ],
         [
             1,
-            "Her"
+            "Every"
         ],
         [
             1,
-            "Has"
+            "During"
         ],
         [
             1,
-            "Father"
+            "Destruction"
         ],
         [
             1,
-            "Explain"
+            "Cornelius"
         ],
         [
             1,
-            "Can"
+            "Chemistry"
+        ],
+        [
+            1,
+            "Chance"
         ],
         [
             1,
@@ -202,29 +186,45 @@
         ],
         [
             1,
-            "Be"
+            "Besides"
         ],
         [
             1,
-            "Are"
+            "At"
         ],
         [
             1,
-            "Allow"
+            "Angel"
+        ],
+        [
+            1,
+            "Albertus Magnus"
+        ],
+        [
+            1,
+            "Alas"
+        ],
+        [
+            1,
+            "Agrippa"
         ],
         [
             1,
             "After"
-        ],
-        [
-            1,
-            "Advice"
         ]
     ],
     "Sentiment Expressions": [
         [
+            2,
+            "happy"
+        ],
+        [
             1,
-            "delighted"
+            "pleased"
+        ],
+        [
+            1,
+            "love"
         ],
         [
             1,
@@ -232,7 +232,11 @@
         ],
         [
             1,
-            "annoyed"
+            "miserable"
+        ],
+        [
+            1,
+            "disappointed"
         ]
     ]
 }
