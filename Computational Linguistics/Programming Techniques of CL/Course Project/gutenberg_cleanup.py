@@ -2,7 +2,7 @@
 ##############################################################################################################
 ##### DO NOT MODIFY THIS CODE #####
 # This code is to be used as is.
-# author: Mert Erol
+# author: Mert Erol, Andrea Eva Scheck
 
 import os
 import sys
@@ -162,8 +162,9 @@ def split_book_by_chapter(cleaned_text, book_title):
     chapters = re.split(pattern, cleaned_text)[1:]
     length = len(chapters) # Get the length of the chapters list (used in my fancy progess bar :D)
     
-    # This block made me lose my sanity but the overall thing is that It created a new txt file with the corresponding
-    # chapter number and saved the chapter in it while ingoring the empty chapters, "chapters" with just the title in it
+    # created a new txt file with the corresponding
+    # chapter number and saved the chapter in it while ingoring the empty chapters, 
+    # "chapters" with just the title in it
     # and similar things
     chapter_number = 0
     for chapter in chapters:

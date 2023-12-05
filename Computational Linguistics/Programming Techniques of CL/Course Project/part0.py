@@ -1,7 +1,7 @@
 """
 PCL 1 Fall Semester 2023 - Course Project
 Part 0: Book Selection
-Students: <person 1>, <person 2>
+Students: Mert Erol, Andrea Eva Scheck
 """
 
 # --- Imports ---
@@ -64,7 +64,6 @@ def extractor(file_path):
         # removes whitespaces from the second part of our split
         sentiment_expressions = parts[1].strip()
         
-
         # creating two empty lists for the named entities and sentiment expressions
         named_list = []
         sentiment_list = []
