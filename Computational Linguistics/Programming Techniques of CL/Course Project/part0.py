@@ -139,11 +139,6 @@ def main():
                     "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Results/named"
                     ]
     
-    # ****** IMPORTANT ******
-    # output directory of the json files to be outputted
-    # before running it, change the directories to fit your system
-    # ****** IMPORTANT ******
-    
     output_dir_sent = ["/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/json/sentiment",
                     "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/json/sentiment",
                     "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/json/sentiment"
@@ -154,6 +149,7 @@ def main():
                     "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/json/named"
                     ]
     
+    # iterating through the txt files and creating the json files for each of them using the lists above
     for i in range(len(txt_files_sent)):
         json_sent(txt_files_sent[i], output_dir_sent[i])
         json_ner(txt_files_ner[i], output_dir_ner[i])
