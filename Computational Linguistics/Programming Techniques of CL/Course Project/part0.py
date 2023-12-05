@@ -87,6 +87,8 @@ def main():
     txt_files = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Results"
     
     # output directory of the json files to be outputted
+    # before running it, change the directories to fit your system
+    
     #output_dir = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/json"
     #output_dir = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/json"
     output_dir = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/json"
