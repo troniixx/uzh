@@ -49,7 +49,21 @@ def extractor(file_path):
 
         # splitting the text into two parts, one for the named entities and one for the sentiment expressions
         named_entities = parts[0].split("Named Entities:")[1].strip()
+        """
+        parts[0]: splits the named entities from the sentiment expressions
+        .split("Named Entities:"): splits the parts using "named entities" as the delimiter
+            e.g. "Named Entities: 12 Rabbit" -> ["", "12 Rabbit"]
+            
+        [1]: selects the second part of the split
+            e.g. ["", "12 Rabbit"] -> "12 Rabbit"
+            
+        .strip(): removes the whitespace from the beginning and end of the string
+            e.g. " 12 Rabbit " -> "12 Rabbit"
+        """
+        
+        # removes whitespaces from the second part of our split
         sentiment_expressions = parts[1].strip()
+        
 
         # creating two empty lists for the named entities and sentiment expressions
         named_list = []
@@ -79,15 +93,19 @@ def extractor(file_path):
 
 
 def main():
+    # ****** IMPORTANT ******
     # input directory of the txt files with the NER and Sentiment Expressions
     # before running it, change the directories to fit your system
+    # ****** IMPORTANT ******
     
     #txt_files = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results"
     #txt_files = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Results"
     txt_files = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Results"
     
+    # ****** IMPORTANT ******
     # output directory of the json files to be outputted
     # before running it, change the directories to fit your system
+    # ****** IMPORTANT ******
     
     #output_dir = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/json"
     #output_dir = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/json"
