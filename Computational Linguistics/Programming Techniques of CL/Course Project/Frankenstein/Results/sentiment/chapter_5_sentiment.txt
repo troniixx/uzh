@@ -1,0 +1,4 @@
+
+Sentiment Expressions:
+   3 love
+   1 proud

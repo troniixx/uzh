@@ -1,0 +1,12 @@
+
+Sentiment Expressions:
+   2 love
+   2 joy
+   2 delighted
+   1 satisfied
+   1 pleased
+   1 happy
+   1 cheerful
+   2 miserable
+   1 troubled
+   1 sad

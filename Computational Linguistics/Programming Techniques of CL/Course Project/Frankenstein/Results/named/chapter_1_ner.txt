@@ -1,0 +1,41 @@
+Named Entities:
+   4 These
+   3 You
+   3 This
+   3 Petersburgh
+   3 My
+   3 Margaret
+   2 There
+   2 St
+   2 If
+   2 But
+   1 Your
+   1 What
+   1 Walton
+   1 Uncle Thomas
+   1 Twice
+   1 They
+   1 The
+   1 Six
+   1 Shakespeare
+   1 Saville
+   1 Russia
+   1 Oh
+   1 North Sea
+   1 North Pacific Ocean
+   1 Mrs
+   1 London
+   1 June
+   1 Its
+   1 Inspirited
+   1 Homer
+   1 Heaven
+   1 Greenland
+   1 Farewell
+   1 English
+   1 England
+   1 Do
+   1 Dec
+   1 Archangel
+   1 And
+   1 Ah

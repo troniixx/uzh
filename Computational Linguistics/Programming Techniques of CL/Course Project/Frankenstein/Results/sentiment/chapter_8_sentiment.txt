@@ -1,0 +1,7 @@
+
+Sentiment Expressions:
+   1 wonderful
+   1 pleased
+   1 peaceful
+   1 incredible
+   1 happy

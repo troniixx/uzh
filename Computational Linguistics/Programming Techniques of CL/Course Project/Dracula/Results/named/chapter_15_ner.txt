@@ -1,0 +1,143 @@
+Named Entities:
+  28 He
+  21 Van Helsing
+  16 It
+  15 Un
+  15 Dead
+  14 Arthur
+  14 And
+  13 Professor
+  11 We
+  11 But
+  10 The
+  10 Lucy
+   9 There
+   8 If
+   6 This
+   6 Then
+   6 Miss Lucy
+   6 John
+   5 You
+   5 What
+   5 To
+   5 That
+   5 She
+   5 Dr
+   5 Are
+   4 Was
+   4 The Professor
+   4 So
+   4 September
+   4 Quincey
+   4 My
+   4 Is
+   4 For
+   4 Ah
+   3 When
+   3 Vincent
+   3 Therefore
+   3 Some
+   3 Oh
+   3 Not
+   3 In
+   3 God
+   3 Come
+   2 Yes
+   2 Would
+   2 With
+   2 These
+   2 Take
+   2 Piccadilly
+   2 No
+   2 Just
+   2 Heath
+   2 Do
+   2 Besides
+   2 Berkeley Hotel
+   2 Believe
+   2 At
+   2 As
+   2 All
+   1 Zoölogical Gardens
+   1 Yet
+   1 Yesterday
+   1 Will
+   1 Where
+   1 When Van Helsing
+   1 Westenra
+   1 Van
+   1 Usually
+   1 They
+   1 Then Arthur
+   1 Taking
+   1 Surely
+   1 Suddenly
+   1 Striking
+   1 Straightway
+   1 Spaniards
+   1 South
+   1 Shall
+   1 Seward
+   1 See
+   1 Scotland
+   1 Red Riding Hood
+   1 Quincey Morris
+   1 Presently
+   1 Perhaps
+   1 Pardon
+   1 Outrageous
+   1 Out
+   1 Our
+   1 Only
+   1 Once
+   1 Now
+   1 North Hospital
+   1 My Lord Godalming
+   1 Mr
+   1 Most
+   1 Morris
+   1 Moreover
+   1 Me
+   1 May
+   1 Madness
+   1 Lordship
+   1 Lord Godalming
+   1 London
+   1 Let
+   1 Later
+   1 Last
+   1 Kingstead
+   1 Jonathan
+   1 John Seward
+   1 Jack Straw
+   1 Indeed
+   1 How
+   1 Holding
+   1 His
+   1 Here
+   1 Helsing
+   1 Heavens
+   1 Has
+   1 Harker
+   1 Hampstead Heath
+   1 Good God
+   1 Friend John
+   1 Forgive
+   1 For Miss
+   1 Even
+   1 Don
+   1 Diary
+   1 Dare
+   1 Christian
+   1 Certainly
+   1 Castle
+   1 Byron
+   1 By
+   1 Behind
+   1 Another
+   1 Amsterdam
+   1 America
+   1 Agreed
+   1 Again
+   1 After
+   1 About

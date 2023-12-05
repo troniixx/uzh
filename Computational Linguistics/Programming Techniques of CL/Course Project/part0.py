@@ -30,7 +30,7 @@ def write_as_json(data, file_path):
 
 # With every hour of my sanity fading i somehow managed to create this thing
 # It works somehow so please so i guess i'm happy :D
-def extractor(file_path):
+def extractor_named(file_path):
     """
     Create a function to extract the named entities and sentiment expressions from the text here.
     The function should help return a json file with the following structure:
@@ -61,12 +61,8 @@ def extractor(file_path):
             e.g. " 12 Rabbit " -> "12 Rabbit"
         """
         
-        # removes whitespaces from the second part of our split
-        sentiment_expressions = parts[1].strip()
-        
         # creating two empty lists for the named entities and sentiment expressions
         named_list = []
-        sentiment_list = []
 
         # process each line in the Named Entities section we split out before
         for entity_line in named_entities.split("\n"):
@@ -76,20 +72,57 @@ def extractor(file_path):
                 if len(comp) == 2 and comp[0].isdigit(): #checking if the first part is a number and if there is one
                     named_list.append((int(comp[0]), comp[1].strip())) # adding the tuple to the list as (int, str)
 
-        # process each line in the Sentiment Expressions section we split out before
-        for expression_line in sentiment_expressions.split("\n"):
-            expression_line = expression_line.strip()
-            if expression_line:
-                comp = expression_line.split(" ", 1) #splitting e.g "12 Rabbit" into "12" and "Rabbit"
-                if len(comp) == 2 and comp[0].isdigit(): #checking if the first part is a number and if there is one
-                    sentiment_list.append((int(comp[0]), comp[1].strip())) # adding the tuple to the list as (int, str)
-
         return {
             "Named Entities": named_list,
-            "Sentiment Expressions": sentiment_list
         }
 
+def extractor_sentiment(file_path):
 
+        with open(file_path, "r", encoding="utf-8") as file:
+            text = file.read()
+            parts = text.split("Sentiment Expressions:")
+
+            # removes whitespaces from the second part of our split
+            sentiment_expressions = parts[1].strip()
+            sentiment_list = []
+            # process each line in the Sentiment Expressions section we split out before
+            for expression_line in sentiment_expressions.split("\n"):
+                expression_line = expression_line.strip()
+                if expression_line:
+                    comp = expression_line.split(" ", 1) #splitting e.g "12 Rabbit" into "12" and "Rabbit"
+                    if len(comp) == 2 and comp[0].isdigit(): #checking if the first part is a number and if there is one
+                        sentiment_list.append((int(comp[0]), comp[1].strip())) # adding the tuple to the list as (int, str)
+                    
+                    
+        return {"Sentiment Expressions": sentiment_list}
+
+def json_sent(txt_files_sent, output_dir_sent):
+    # checks if the output directory exists, if not it creates it
+    if not os.path.exists(output_dir_sent):
+        os.makedirs(output_dir_sent)
+        
+    for file in os.listdir(txt_files_sent):         
+        if file.endswith("_sentiment.txt"): # checking if the file is a txt file
+            file_path = os.path.join(txt_files_sent, file) # creating the
+            file_name = os.path.basename(file_path).replace(".txt", "") # getting the name of the file without the extension
+            output_path = os.path.join(output_dir_sent, file_name + ".json") # creating the output path for the json file and the json file
+            
+            data = extractor_sentiment(file_path) # extracting the data from the txt file (more details in the extractor function)
+            write_as_json(data, output_path) # writing the data to the json file (more details in the write_as_json function)
+
+def json_ner(txt_files_ner, output_dir_ner):
+    if not os.path.exists(output_dir_ner):
+        os.makedirs(output_dir_ner)
+        
+    # iterating through the files in the input directory and creating the json files for each of them    
+    for file in os.listdir(txt_files_ner):
+        if file.endswith("_ner.txt"): # checking if the file is a txt file
+            file_path = os.path.join(txt_files_ner, file) # creating the
+            file_name = os.path.basename(file_path).replace(".txt", "") # getting the name of the file without the extension
+            output_path = os.path.join(output_dir_ner, file_name + ".json") # creating the output path for the json file and the json file
+            
+            data = extractor_named(file_path) # extracting the data from the txt file (more details in the extractor function)
+            write_as_json(data, output_path) # writing the data to the json file (more details in the write_as_json function)
 
 def main():
     # ****** IMPORTANT ******
@@ -97,32 +130,52 @@ def main():
     # before running it, change the directories to fit your system
     # ****** IMPORTANT ******
     
-    #txt_files = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results"
-    #txt_files = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Results"
-    txt_files = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Results"
+    txt_files_sent = ["/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results/sentiment", 
+                    "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Results/sentiment",
+                    "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Results/sentiment"
+                    ]
+    
+    txt_files_ner = ["/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results/named",
+                    "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Results/named",
+                    "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Results/named"
+                    ]
+    
+    #txt_files_sent = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results/sentiment"
+    #txt_files_ner = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results/named"
+    
+    #txt_files_sent = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Results/sentiment"
+    #txt_files_ner = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Results/named"
+    
+    #txt_files_sent = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Results/sentiment"
+    #txt_files_sent = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Results/named"
     
     # ****** IMPORTANT ******
     # output directory of the json files to be outputted
     # before running it, change the directories to fit your system
     # ****** IMPORTANT ******
     
-    #output_dir = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/json"
-    #output_dir = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/json"
-    output_dir = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/json"
+    output_dir_sent = ["/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/json/sentiment",
+                    "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/json/sentiment",
+                    "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/json/sentiment"
+                    ]
     
-    # checks if the output directory exists, if not it creates it
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
+    output_dir_ner = ["/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/json/named",
+                    "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/json/named",
+                    "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/json/named"
+                    ]
     
-    # iterating through the files in the input directory and creating the json files for each of them    
-    for file in os.listdir(txt_files):
-        if file.endswith(".txt"): # checking if the file is a txt file
-            file_path = os.path.join(txt_files, file) # creating the
-            file_name = os.path.basename(file_path).replace(".txt", "") # getting the name of the file without the extension
-            output_path = os.path.join(output_dir, file_name + ".json") # creating the output path for the json file and the json file
-            
-            data = extractor(file_path) # extracting the data from the txt file (more details in the extractor function)
-            write_as_json(data, output_path) # writing the data to the json file (more details in the write_as_json function)
+    #output_dir_sent = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/json/sentiment"
+    #output_dir_ner = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/json/named"
+    
+    #output_dir_sent = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/json/sentiment"
+    #output_dir_named = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/json/named"
+    
+    #output_dir_sent = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/json/sentiment"
+    #output_dir_ner = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/json/ner"
+    
+    for i in range(len(txt_files_sent)):
+        json_sent(txt_files_sent[i], output_dir_sent[i])
+        json_ner(txt_files_ner[i], output_dir_ner[i])
         
         
 

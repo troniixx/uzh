@@ -1,0 +1,200 @@
+Named Entities:
+  57 Project Gutenberg
+  30 The
+  21 You
+  21 If
+  21 But
+  17 My
+  15 Project
+  15 He
+  12 Yet
+  12 Frankenstein
+  11 Gutenberg
+  10 United States
+  10 Oh
+   9 When
+   9 They
+   9 It
+   8 What
+   8 This
+   8 License
+   8 Do
+   8 And
+   7 Section
+   7 His
+   7 Foundation
+   6 Sometimes
+   6 In
+   6 England
+   6 Elizabeth
+   6 Clerval
+   5 Walton
+   5 To
+   5 September
+   4 We
+   4 There
+   4 The Foundation
+   4 Information
+   4 How
+   4 Gutenberg Literary Archive Foundation
+   4 For
+   4 Farewell
+   4 Even
+   3 Why
+   3 United
+   3 Thus
+   3 States
+   3 Some
+   3 Project Gutenberg Literary
+   3 Once
+   3 Often
+   3 No
+   3 Margaret
+   3 Heaven
+   3 By
+   3 At
+   3 As
+   3 Archive Foundation
+   3 Alas
+   2 Your
+   2 With
+   2 William
+   2 Use
+   2 Urged
+   2 Think
+   2 The Project Gutenberg Literary Archive Foundation
+   2 That
+   2 See
+   2 Royalty
+   2 Project Gutenberg Literary Archive Foundation
+   2 On
+   2 Not
+   2 Never
+   2 Nay
+   2 Mediterranean
+   2 Literary Archive Foundation
+   2 Geneva
+   2 General Terms
+   2 Felix
+   2 Except
+   2 During
+   2 Donations
+   2 Be
+   2 Are
+   2 All
+   2 Again
+   2 After
+   1 Yes
+   1 Years
+   1 Wretch
+   1 Would
+   1 While
+   1 West
+   1 Was
+   1 Warm
+   1 Volunteers
+   1 Victor
+   1 Vanilla
+   1 Updated
+   1 Unless
+   1 Turning
+   1 These
+   1 The Greeks
+   1 Tartary
+   1 Switzerland
+   1 Surely
+   1 Suddenly
+   1 Such
+   1 Special
+   1 Soon
+   1 Sister
+   1 Since
+   1 Seek
+   1 Sections
+   1 Scoffing
+   1 Saying
+   1 Salt Lake City
+   1 Safie
+   1 Russia
+   1 Right
+   1 Rhone
+   1 Revenue Service
+   1 Return
+   1 Replacement
+   1 Refund
+   1 Redistribution
+   1 Redistributing Project Gutenberg
+   1 Project Gutenberg License
+   1 Professor Michael
+   1 Prepare
+   1 Polluted
+   1 Please
+   1 Plain Vanilla
+   1 Plain
+   1 Peace
+   1 Over
+   1 Our
+   1 Or
+   1 One
+   1 Of
+   1 North
+   1 Night
+   1 Neither
+   1 Nearly
+   1 Must
+   1 Most
+   1 Mississippi
+   1 Mission
+   1 Miserable
+   1 Many
+   1 Light
+   1 Let
+   1 Learn
+   1 Justine
+   1 International
+   1 Internal
+   1 Immense
+   1 Hypocritical
+   1 However
+   1 Hear
+   1 Hart
+   1 Guided
+   1 Great God
+   1 Good
+   1 God
+   1 Generous
+   1 General Information About Project Gutenberg
+   1 Full
+   1 Frozen Ocean
+   1 From
+   1 Follow
+   1 Fear
+   1 Evil
+   1 Everything
+   1 Email
+   1 Did
+   1 Despondency
+   1 Despite
+   1 Despair
+   1 Deprived
+   1 Defects
+   1 Defect
+   1 Creating
+   1 Covered
+   1 Copyright
+   1 Contributions
+   1 Contact
+   1 Compliance
+   1 Come
+   1 Cold
+   1 Can
+   1 Blasted
+   1 Black Sea
+   1 Behold
+   1 August
+   1 Asia
+   1 Any
+   1 Amidst
+   1 Am
+   1 Additional
+   1 About

@@ -1,0 +1,94 @@
+Named Entities:
+  14 The
+  12 William
+   9 She
+   8 Victor
+   8 My
+   8 Elizabeth
+   8 But
+   7 Justine
+   7 It
+   6 We
+   6 He
+   6 Ernest
+   5 This
+   4 Your
+   4 You
+   4 No
+   4 Geneva
+   4 Clerval
+   4 Alas
+   3 What
+   3 Poor
+   3 Plainpalais
+   3 If
+   3 How
+   3 During
+   3 At
+   2 Who
+   2 While
+   2 To
+   2 Tears
+   2 On
+   2 Mont Salêve
+   2 May
+   2 Justine Moritz
+   2 Jura
+   2 Henry
+   2 Good God
+   2 God
+   2 Come
+   2 As
+   2 And
+   1 Yet
+   1 When
+   1 Welcome
+   1 Two
+   1 Time
+   1 These
+   1 There
+   1 Thank God
+   1 Switzerland
+   1 Six
+   1 Secheron
+   1 Savoy
+   1 Salêve
+   1 Presently Ernest
+   1 Poor William
+   1 Our
+   1 One
+   1 Nothing
+   1 Night
+   1 Mont Blanc
+   1 Mont
+   1 Môle
+   1 Lausanne
+   1 Last Thursday
+   1 Juras
+   1 Is
+   1 Ingolstadt
+   1 Indeed
+   1 Her
+   1 Frankenstein
+   1 Fear
+   1 Enter
+   1 Did
+   1 Dearest
+   1 Dear
+   1 Day
+   1 Could
+   1 Copêt
+   1 Caroline Beaufort
+   1 By
+   1 Blanc
+   1 Besides
+   1 Belrive
+   1 Below
+   1 Beloved
+   1 Before
+   1 Another
+   1 Alps
+   1 Alphonse Frankenstein
+   1 Ah
+   1 Absence
+   1 About

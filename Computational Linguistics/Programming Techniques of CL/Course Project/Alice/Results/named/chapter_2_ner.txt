@@ -1,0 +1,79 @@
+Named Entities:
+  24 Alice
+   9 And
+   8 Mouse
+   5 Oh
+   5 How
+   4 Mabel
+   4 Let
+   4 It
+   3 The Mouse
+   3 So
+   3 Rabbit
+   3 However
+   3 English
+   3 As
+   2 Would
+   2 Who
+   2 We
+   2 That
+   2 She
+   2 Rome
+   2 Paris
+   2 Just
+   2 French
+   2 For
+   2 Duchess
+   2 But
+   1 You
+   1 With
+   1 William
+   1 White
+   1 When
+   1 Well
+   1 They
+   1 There
+   1 The Rabbit
+   1 The Pool
+   1 Tell
+   1 Tears
+   1 Stop
+   1 Right Foot
+   1 Poor Alice
+   1 Perhaps
+   1 Our
+   1 Où
+   1 On
+   1 Not
+   1 No
+   1 Nile
+   1 Multiplication Table
+   1 Lory
+   1 London
+   1 Latin Grammar
+   1 Improve
+   1 If
+   1 Her
+   1 Hearthrug
+   1 He
+   1 Good
+   1 Geography
+   1 Fender
+   1 Everything
+   1 Esq
+   1 Eaglet
+   1 Duck
+   1 Don
+   1 Dodo
+   1 Do
+   1 Dinah
+   1 Dear
+   1 Curiouser
+   1 Conqueror
+   1 Come
+   1 Christmas
+   1 Besides
+   1 Are
+   1 Ah
+   1 After
+   1 Ada

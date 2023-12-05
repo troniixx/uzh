@@ -1,0 +1,142 @@
+Named Entities:
+  30 He
+  17 Van Helsing
+  17 Mina
+  17 It
+  16 We
+  12 The
+  12 Harker
+  12 But
+  11 Madam Mina
+  11 Count
+  10 This
+   9 God
+   8 You
+   8 When
+   8 Varna
+   8 There
+   8 Then
+   8 Dr
+   7 She
+   7 For
+   6 In
+   5 October
+   5 Mrs
+   5 As
+   5 And
+   4 What
+   4 Professor
+   4 Our
+   4 Oh
+   4 Let
+   4 Jonathan
+   3 With
+   3 To
+   3 That
+   3 Seward
+   3 Quincey
+   3 Now
+   3 No
+   3 Nay
+   3 My
+   3 Mr
+   3 Morris
+   3 Miss Lucy
+   3 Lord Godalming
+   3 Journal
+   3 His
+   3 Danube
+   3 Black Sea
+   3 All
+   3 After
+   2 Winchesters
+   2 Wharf
+   2 Un
+   2 Transylvania
+   2 Thus
+   2 They
+   2 These
+   2 The Professor
+   2 Thank God
+   2 So
+   2 Perhaps
+   2 Of
+   2 If
+   2 Her
+   2 Helsing
+   2 Good
+   2 Even
+   2 Doolittle
+   2 Dead
+   1 Your
+   1 Yes
+   1 Winchester
+   1 Whilst
+   1 Whereupon
+   1 When Dr
+   1 Were
+   1 Well
+   1 Van
+   1 Vampire
+   1 Under
+   1 Turkey
+   1 Tobolsk
+   1 Therefore
+   1 Thames
+   1 Take
+   1 Somehow
+   1 Some
+   1 Soh
+   1 Since
+   1 Sea
+   1 Ristics
+   1 Recording Angel
+   1 Quincey Morris
+   1 Quick
+   1 Promise
+   1 Professor Van
+   1 Present
+   1 Plan
+   1 One
+   1 Not
+   1 More
+   1 Mina Harker
+   1 Look
+   1 London
+   1 Lloyd
+   1 Like
+   1 Later
+   1 Jonathan Harker
+   1 John
+   1 India
+   1 Indeed
+   1 However
+   1 How
+   1 His Son
+   1 Him
+   1 Here Quincey Morris
+   1 Here
+   1 From
+   1 Friend John
+   1 Frenchmen
+   1 Final
+   1 Even Mrs
+   1 England
+   1 Doubtless
+   1 Do
+   1 Diary
+   1 Devil
+   1 Cross
+   1 Count Dracula
+   1 Castle Dracula
+   1 Castle
+   1 Campaign
+   1 Brave
+   1 Black
+   1 Besides
+   1 At
+   1 Art
+   1 Another
+   1 Already
+   1 Alas
+   1 Aha
