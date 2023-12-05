@@ -32,7 +32,7 @@ done
 
 echo "Analysis complete. Results saved in $results_dir"
 
-
+# ggrep didnt work for some reason so i just used grep -E
 # -o: print only the match
 # -w: match only whole words
 # -i: ignore case
