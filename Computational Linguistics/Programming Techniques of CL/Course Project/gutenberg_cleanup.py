@@ -156,16 +156,14 @@ def split_book_by_chapter(cleaned_text, book_title):
     Implement a function that splits the book into chapters and saves 
     each chapter in a separate file in a folder named after the book title.
     """
-    # Add your code here to split the cleaned_text into chapters
-    # and save each chapter in a separate file
+    # Add your code here to split the cleaned_text into chapters and save each chapter in a separate file
     pattern = r'\b(?:CHAPTER|Chapter|Letter)\s+(?:[A-Z0-9]+|[0-9]+)\.?\n+' # Regex pattern to split the text into chapters
     chapters = re.split(pattern, cleaned_text)[1:]
     length = len(chapters) # Get the length of the chapters list (used in my fancy progess bar :D)
     
-    # created a new txt file with the corresponding
-    # chapter number and saved the chapter in it while ingoring the empty chapters, 
+    # create a new txt file with the corresponding chapter number and 
+    # save the chapter in it while ingoring the empty chapters &
     # "chapters" with just the title in it
-    # and similar things
     chapter_number = 0
     for chapter in chapters:
         # Check if the chapter is not just whitespace
@@ -216,14 +214,12 @@ def main():
     os.makedirs(dir_book) # create a folder named after the book title
     os.makedirs(os.path.join(dir_book, "Chapters")) # create a folder named 'Chapters' inside the book title folder
     
-    # 1. Read the text file
+    # read the text file
     with open(file_path, "r", encoding = "utf-8") as file:
         text = file.read()
-
-        # 2. Clean the text
+        # clean the text
         cleaned_text = strip_headers(text)
-        
-        # 3. Save the cleaned text in the book title folder
+        # save the cleaned text in the book title folder
         with open(dir_clean, "w") as dir:
             dir.write(cleaned_text)
     
@@ -233,8 +229,7 @@ def main():
     
     print("Cleanup Successful!")
     print("Cleaned text saved in: " + dir_clean + "\n")
-    
-    # 4. Split the text into chapters and save them in the book title folder under a subfolder named 'chapters'
+
     split_book_by_chapter(cleaned_text, dir_book)
 
 # standard main function
