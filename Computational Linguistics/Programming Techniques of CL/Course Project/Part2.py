@@ -10,7 +10,7 @@ import json
 import spacy
 import nltk
 # --- You may add other imports here ---
-
+from nrclex import NRCLex
 
 # Feel free to add more functions as needed!
 
