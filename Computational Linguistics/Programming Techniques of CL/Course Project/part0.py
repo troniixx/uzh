@@ -37,9 +37,6 @@ def extractor_named(file_path):
         "Named Entities": [
             [int, str], ....
             ]
-        "Sentiment Expressions": [
-            [int, str], ....
-            ]
             """
             
     with open(file_path, "r", encoding="utf-8") as file:
@@ -76,6 +73,15 @@ def extractor_named(file_path):
         }
 
 def extractor_sentiment(file_path):
+        """
+        Create a function to extract the named entities and sentiment expressions from the text here.
+        The function should help return a json file with the following structure:
+        {
+        "Sentiment Expressions": [
+            [int, str], ....
+            ]
+        }
+        """
 
         with open(file_path, "r", encoding="utf-8") as file:
             text = file.read()
