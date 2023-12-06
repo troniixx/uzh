@@ -11,10 +11,21 @@ import spacy
 import nltk
 # --- You may add other imports here ---
 
-# TODO: Load the spaCy model
-spacy_model = spacy.load("en_core_web_sm")
+# ****** IMPORTANT: Change paths to fit your system ******
+PATH_ALICE = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/alice_cleaned.txt"
+PATH_DRACULA = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/dracula_cleaned.txt"
+PATH_FRANKY = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/franky_cleaned.txt"
+# ****** IMPORTANT: Change paths to fit your system ******
 
-# TODO: Load the book text
+# DONE: Load the spaCy model
+SPACY_MODEL = spacy.load("en_core_web_sm")
+
+# set of gutenberg strings that would be considered as named entities and were not filtered by gutenberg_cleanup.py 
+# these are not relevant to our analysis
+# i used a set because it has faster lookup times than a normal list
+GUTENBERG_BS = set(["Gutenberg", "Project Gutenberg", "Project\nGutenberg", "LIMITED WARANTY", "LIMITED WARRANTY", "Gutenberg eBooks", "Michael S. Hart"])
+
+# DONE: Load the book text
 def load_book(file_path):
     # open the file and read its contents
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -29,12 +40,12 @@ def load_book(file_path):
 def perform_ner(text, spacy_model):
     # TODO: Process the text using the provided model and return the entities
     ent_list = []
-    gutenberg_bs = ["Gutenberg", "Project Gutenberg", "Project\nGutenberg", "LIMITED WARANTY", "LIMITED WARRANTY", "Gutenberg eBooks", "Michael S. Hart"]
     doc = spacy_model(text)
 
     for ent in doc.ents:
-        if ent.label_ == "PERSON" and ent.text not in gutenberg_bs:
+        if ent.label_ == "PERSON" and ent.text not in GUTENBERG_BS:
             ent_list.append(ent.text)
+
 
     return ent_list
 
@@ -49,21 +60,41 @@ def extract_entity_info(entities):
 
 # Function to save data to JSON file
 def save_to_json(data, filename):
+    """ should look something like this:
+
+    {
+    "main_characters": [
+            {
+                "name": "CharacterName1",
+                "aliases": ["Alias1", "Alias2"],
+                "occurrences": [
+                {
+                    "sentence": "Context of mention.",
+                    "chapter": "Chapter number",
+                    "position": {"start": startIndex, "end": endIndex}
+                },
+                // More occurrences
+            ]
+        },
+        // More main characters
+        ]
+    }
+
+    """
+
     # TODO: Save the data to a JSON file
     pass
 
 
 # Main Function
 def main():
-    path_alice = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/alice_cleaned.txt"
-    path_dracula = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/dracula_cleaned.txt"
-    path_franky = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/franky_cleaned.txt"
+
 
     # TODO: Load your book text here
-    book_text = load_book(path_alice)
+    book_text = load_book(PATH_ALICE)
 
     # Perform NER on the text
-    entities = perform_ner(book_text, spacy_model)
+    entities = perform_ner(book_text, SPACY_MODEL)
     print(entities)
     # Extract information from entities
     # entity_info = extract_entity_info(entities)
