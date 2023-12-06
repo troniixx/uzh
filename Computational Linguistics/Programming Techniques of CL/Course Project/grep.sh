@@ -50,7 +50,7 @@ done
 
 echo "Analysis complete. Results saved in ${results_dir_sent#*/Course Project/} and ${results_dir_ner#*/Course Project/}"
 
-# ggrep didnt work for some reason so i just used grep -E
+# ggrep -P didnt work for some reason so i just used normal grep
 # -o: print only the match
 # -w: match only whole words
 # -i: ignore case
