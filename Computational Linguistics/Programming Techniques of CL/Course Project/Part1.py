@@ -12,9 +12,9 @@ import nltk
 # --- You may add other imports here ---
 
 # ****** IMPORTANT: Change paths to fit your system ******
-PATH_ALICE = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/alice_cleaned.txt"
-PATH_DRACULA = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/dracula_cleaned.txt"
-PATH_FRANKY = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/franky_cleaned.txt"
+PATH_ALICE = "Computational Linguistics/Programming Techniques of CL/Course Project/Alice/alice_cleaned.txt"
+PATH_DRACULA = "Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/dracula_cleaned.txt"
+PATH_FRANKY = "Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/franky_cleaned.txt"
 # ****** IMPORTANT: Change paths to fit your system ******
 
 # DONE: Load the spaCy model
@@ -39,26 +39,35 @@ def load_book(file_path):
 # Function to process the text and perform NER
 def perform_ner(text, spacy_model):
     # TODO: Process the text using the provided model and return the entities
+
     ent_list = []
     doc = spacy_model(text)
 
     for ent in doc.ents:
-        if ent.label_ == "PERSON" and ent.text not in GUTENBERG_BS:
+        if ent.label_ == "PERSON" and ent.text not in GUTENBERG_BS and "\n" not in ent.text:
             ent_list.append(ent.text)
-
 
     return ent_list
 
 
-# Function to extract and structure entity information
+# TODO: Function to extract and structure entity information
 def extract_entity_info(entities):
     entity_data = []
-    # TODO: Iterate over entities and extract necessary information
-    # Append the extracted info to entity_data
+    doc = load_book(PATH_ALICE)
+    
+    for ent in entities:
+        # Extract context (3 tokens before and after the entity)
+        start = max(ent.lefts - 3)
+        end = min(ent.rights + 3)
+        context = doc[start:end].text
+        # Add entity and its context to the list
+        entity_data.append({"name": ent.text, "context": context})
+    
     return entity_data
 
 
-# Function to save data to JSON file
+
+# TODO: Function to save data to JSON file
 def save_to_json(data, filename):
     """ should look something like this:
 
@@ -89,16 +98,19 @@ def save_to_json(data, filename):
 # Main Function
 def main():
 
-
     # TODO: Load your book text here
+    
     book_text = load_book(PATH_ALICE)
 
     # Perform NER on the text
+    print("Entities")
     entities = perform_ner(book_text, SPACY_MODEL)
-    print(entities)
+    #print(entities)
     # Extract information from entities
-    # entity_info = extract_entity_info(entities)
-
+    print("Entity info:")
+    entity_info = extract_entity_info(entities)
+    print(entity_info)
+    
     # Save the results to a JSON file
     # save_to_json(entity_info, 'BookTitle_NER.json')
 
