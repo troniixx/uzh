@@ -10,6 +10,10 @@
 * Choose specific characters to look for in the texts
 * Change grep statements for sentiment analysis to include more words
 
+## grep result cleanup
+
+* get the most common names
+
 ## part0.py
 
 * Make sure json file is formatted correctly
