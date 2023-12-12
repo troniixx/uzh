@@ -1,39 +1,33 @@
-# Load necessary libraries
 library(tidyverse)
-library(cluster)
 
-# Load the data
-data <- read.csv("/Users/merterol/uzh/Computational Linguistics/Computational Processing of Speech Rhythm/Assignment 2/CV_measures_2.csv", sep = ";")
+# ----- Analyze Intensity Variability Dataset -----
+# Load the Intensity Variability data
+intensityData <- read.csv("/path/to/intensityVariability_csv.csv")
 
-# Selecting relevant columns for clustering
-clustering_data <- data %>%
-  select(percentV_tier3, deltaConLn_tier2, deltaVLn_tier3, nPVI_V_tier3, rPVI_Con_tier2, varcoCV_tier3) %>%
-  na.omit()
-
-# Normalizing data
-clustering_data <- scale(clustering_data)
-
-# Applying k-means clustering with k=2
-set.seed(123) # for reproducibility
-km_result <- kmeans(clustering_data, centers = 2)
-
-# Adding the cluster results to the original data
-data$age_group <- as.factor(km_result$cluster)
-
-# Defining the list of metrics for visualization
-metrics <- c("percentV_tier3", "deltaConLn_tier2", "deltaVLn_tier3", "nPVI_V_tier3", "rPVI_Con_tier2", "varcoCV_tier3")
-
-# Opening a new PDF device to save all plots
-pdf("cluster_analysis_plots.pdf", width = 10, height = 6)
-
-for (metric in metrics) {
-  plot_title <- paste("Comparison of", metric, "between Clusters")
-  p <- ggplot(data, aes_string(x = "age_group", y = metric, fill = "age_group")) +
+# Visualization for Intensity Data - Standard Deviation and Variability Coefficient
+ggplot(intensityData, aes(x = agegroup, y = stdev)) + 
     geom_boxplot() +
-    theme_minimal() +
-    labs(title = plot_title, x = "Cluster Group", y = metric)
-  print(p)
-}
+    labs(title = "Boxplot of Standard Deviation by Age Group", x = "Age Group", y = "Standard Deviation")
 
-# Closing the PDF device
-dev.off()
+ggplot(intensityData, aes(x = agegroup, y = varco)) + 
+    geom_boxplot() +
+    labs(title = "Boxplot of Variability Coefficient by Age Group", x = "Age Group", y = "Variability Coefficient")
+
+# Save the plot to a file
+ggsave("intensity_boxplots.png", width = 10, height = 6)
+
+# ----- Analyze CV Measures Dataset -----
+# Load the CV Measures data
+cvData <- read.csv("/path/to/CV_measures_2.csv", sep = ";") # Adjust the separator if needed
+
+# Visualization for CV Data - Pairwise Variability Index
+ggplot(cvData, aes(x = agegroup, y = rPVI)) + 
+    geom_boxplot() +
+    labs(title = "Boxplot of rPVI by Age Group", x = "Age Group", y = "rPVI")
+
+ggplot(cvData, aes(x = agegroup, y = nPVI)) + 
+    geom_boxplot() +
+    labs(title = "Boxplot of nPVI by Age Group", x = "Age Group", y = "nPVI")
+
+# Save the plot to a file
+ggsave("cv_boxplots.pdf", width = 10, height = 6)
