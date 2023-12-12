@@ -1,0 +1,30 @@
+Call:
+lda(agegroup ~ ., data = intensity_data)
+
+Prior probabilities of groups:
+       o_        y_ 
+0.3842207 0.6157793 
+
+Group means:
+   subjectID   sexm_re   sexw_re      sd_1       sd_2   stdevM   varcoM
+o_  5.801336 0.4991653 0.5008347 0.4507513 0.06677796 5.632287 9.337112
+y_  0.875000 0.5000000 0.0000000 0.4500000 0.06666667 5.471332 8.480798
+      rPVIm    nPVIm   stdevP   varcoP    rPVIp    nPVIp
+o_ 6.267401 10.45485 3.955973 5.773147 3.620283 5.337925
+y_ 6.106909  9.49656 4.882424 6.841312 4.580274 6.455141
+
+Coefficients of linear discriminants:
+                  LD1
+subjectID -1.96182032
+sexm_re    1.16052829
+sexw_re    1.42711455
+sd_1       0.03545101
+sd_2       0.02239588
+stdevM     0.66740210
+varcoM    -0.43872745
+rPVIm     -0.15709728
+nPVIm      0.10497048
+stdevP     0.15431569
+varcoP    -0.08523060
+rPVIp      0.68855977
+nPVIp     -0.43481248

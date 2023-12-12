@@ -1,0 +1,92 @@
+Call:
+lda(speaker ~ ., data = CV_data)
+
+Prior probabilities of groups:
+  f   m 
+0.5 0.5 
+
+Group means:
+      file gender        s nSeg_tier1 rateSeg_tier1 meanSeg_tier1 nCon_tier2
+f 30.53846 104.45 26.48974   11.87099    0.08648484      15.83462   13.00984
+m 33.46154 104.45 26.31538   12.42957    0.08311360      15.79103   13.69792
+  rateCon_tier2 meanCon_tier2 meanConLn_tier2 deltaCon_tier2 deltaConLn_tier2
+f    0.07848325     -2.649755      0.03485098      0.4477571        0.4415806
+m    0.07465756     -2.697807      0.03280214      0.4404022        0.4374695
+  varcoCon_tier2 rPVI_Con_tier2 nPVI_Con_tier2 nVof_tier2 rateVof_tier2
+f       3.943680       49.53805      10.092308   10.81693    0.09707154
+m       3.670831       48.50307       9.967949   11.27922    0.09410728
+  meanVof_tier2 meanVofLn_tier2 deltaVof_tier2 deltaVofLn_tier2 varcoVof_tier2
+f     -2.464812      0.04684501      0.4868026        0.4794444       5.752259
+m     -2.504325      0.04609217      0.4939994        0.4862399       5.675971
+  rPVI_Vof_tier2 nPVI_Vof_tier2 nC_tier3 rateC_tier3 meanC_tier3 meanCLn_tier3
+f       57.67591       9.650000 8.151412   0.1280920   -2.199993    0.06500075
+m       58.42085       9.542308 8.511151   0.1227723   -2.247067    0.06321862
+  deltaC_tier3 deltaCLn_tier3 varcoC_tier3 rPVI_C_tier3 nPVI_C_tier3 nV_tier3
+f    0.5229171      0.5067841     7.221217     55.96902     9.611538 10.37136
+m    0.5361839      0.5151735     7.043489     57.22225     9.501282 10.82392
+  rateV_tier3 meanV_tier3 meanVLn_tier3 deltaV_tier3 deltaVLn_tier3
+f  0.10248899   -2.431828    0.05451502    0.5131129      0.5183258
+m  0.09909603   -2.472906    0.05281691    0.5235353      0.5225637
+  varcoV_tier3 rPVI_V_tier3 percentV_tier3 nCV_tier3 rateCV_tier3 meanCV_tier3
+f     6.582797     60.51718       44.21058  19.26154     8.966474    0.1153127
+m     6.435482     61.54342       44.33741  19.04359     9.357174    0.1109502
+  meanCVLn_tier3 deltaCV_tier3 deltaCVLn_tier3 varcoCV_tier3 rPVI_CV_tier3
+f      -2.315909    0.06349050       0.5409666     0.5476562      6.908963
+m      -2.359893    0.06121216       0.5513322     0.5498425      6.660742
+  nPVI_CV_tier3
+f      57.33459
+m      57.79153
+
+Coefficients of linear discriminants:
+                           LD1
+file              3.650224e-02
+gender            1.737652e-03
+s                -4.902617e-01
+nSeg_tier1        1.023809e+00
+rateSeg_tier1     2.164125e+02
+meanSeg_tier1     6.318910e-01
+nCon_tier2        7.397693e-02
+rateCon_tier2    -1.667851e+02
+meanCon_tier2     9.058641e+00
+meanConLn_tier2   8.810891e+01
+deltaCon_tier2   -5.142238e+00
+deltaConLn_tier2  6.876705e-01
+varcoCon_tier2   -1.218698e+00
+rPVI_Con_tier2    8.266168e-02
+nPVI_Con_tier2    7.074688e-01
+nVof_tier2       -1.223452e+00
+rateVof_tier2     1.778847e+02
+meanVof_tier2    -3.221811e+01
+meanVofLn_tier2   1.551370e+00
+deltaVof_tier2   -1.296361e+01
+deltaVofLn_tier2 -3.175098e+00
+varcoVof_tier2   -3.516448e-02
+rPVI_Vof_tier2    1.757669e-02
+nPVI_Vof_tier2   -2.783712e-01
+nC_tier3          4.455056e-01
+rateC_tier3       1.252683e+02
+meanC_tier3      -6.752983e+00
+meanCLn_tier3    -1.007023e+02
+deltaC_tier3      9.460745e+00
+deltaCLn_tier3    6.850762e+00
+varcoC_tier3      1.425394e-01
+rPVI_C_tier3     -4.114358e-03
+nPVI_C_tier3     -5.362116e-02
+nV_tier3          7.943604e-01
+rateV_tier3       8.237273e+01
+meanV_tier3       6.061218e+00
+meanVLn_tier3    -1.423740e+02
+deltaV_tier3      1.799161e+01
+deltaVLn_tier3    1.118583e+01
+varcoV_tier3      3.819873e-01
+rPVI_V_tier3     -6.160311e-02
+percentV_tier3   -1.208318e-01
+nCV_tier3        -8.341510e-02
+rateCV_tier3      1.047833e+00
+meanCV_tier3     -4.387876e+02
+meanCVLn_tier3    4.701142e+01
+deltaCV_tier3     1.309321e+02
+deltaCVLn_tier3   9.538726e-01
+varcoCV_tier3    -6.041087e+00
+rPVI_CV_tier3    -2.232701e-02
+nPVI_CV_tier3    -1.089367e-02
