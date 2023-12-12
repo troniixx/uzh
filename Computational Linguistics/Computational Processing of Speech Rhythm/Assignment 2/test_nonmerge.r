@@ -3,7 +3,7 @@ library(tidyverse)
 
 # ----- Analyze Intensity Variability Dataset -----
 # Load the Intensity Variability data
-intensityData <- read.csv("/Users/merterol/uzh/Computational Linguistics/Computational Processing of Speech Rhythm/Assignment 2/intensityVariability_csv.csv")
+intensityData <- read.csv("path/to/intensityVariability_csv.csv")
 
 # Basic exploration of Intensity Data
 summary(intensityData)
@@ -21,7 +21,7 @@ ggplot(intensityData, aes(x = agegroup, y = varcoM)) +
 
 # ----- Analyze CV Measures Dataset -----
 # Load the CV Measures data
-cvData <- read.csv("/Users/merterol/uzh/Computational Linguistics/Computational Processing of Speech Rhythm/Assignment 2/CV_measures_2.csv", sep = ";") # Adjust the separator if needed
+cvData <- read.csv("path/to/CV_measures_2.csv", sep = ";") # Adjust the separator if needed
 
 # Basic exploration of CV Data
 summary(cvData)
