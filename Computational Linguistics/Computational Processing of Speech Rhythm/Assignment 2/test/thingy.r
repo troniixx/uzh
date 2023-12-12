@@ -3,8 +3,8 @@ library(tidyverse)
 library(cluster)
 
 # Load the data
-data <- read.csv("/Users/merterol/uzh/Computational Linguistics/Computational Processing of Speech Rhythm/Assignment 2/CV_measures_2.csv", sep = ";")
-data2 <- read.csv("/Users/merterol/uzh/Computational Linguistics/Computational Processing of Speech Rhythm/Assignment 2/intensityVariability_csv.csv")
+data <- read.csv("path/to/CV_measures_2.csv", sep = ";")
+data2 <- read.csv("/path/to/intensityVariability_csv.csv")
 
 # Selecting relevant columns for clustering
 clustering_data <- data %>%
