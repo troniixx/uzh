@@ -1,0 +1,10 @@
+Named Entities:
+  22 Mina
+  13 Van Helsing
+  13 Count
+   5 Seward
+   5 Quincey
+   3 Renfield
+   2 Jonathan
+   1 Lucy
+   1 Arthur

@@ -1,0 +1,13 @@
+
+Sentiment Expressions:
+   4 happy
+   3 grateful
+   2 wonderful
+   1 successful
+   1 proud
+   1 love
+   5 fear
+   2 sad
+   1 troubled
+   1 scared
+   1 displeased

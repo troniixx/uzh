@@ -1,0 +1,32 @@
+{
+    "Named Entities": [
+        [
+            23,
+            "Alice"
+        ],
+        [
+            22,
+            "King"
+        ],
+        [
+            10,
+            "Queen"
+        ],
+        [
+            8,
+            "Rabbit"
+        ],
+        [
+            2,
+            "Gryphon"
+        ],
+        [
+            1,
+            "Mouse"
+        ],
+        [
+            1,
+            "Duchess"
+        ]
+    ]
+}

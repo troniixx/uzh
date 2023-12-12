@@ -1,0 +1,44 @@
+{
+    "Sentiment Expressions": [
+        [
+            4,
+            "satisfied"
+        ],
+        [
+            3,
+            "love"
+        ],
+        [
+            2,
+            "wonderful"
+        ],
+        [
+            1,
+            "cheerful"
+        ],
+        [
+            2,
+            "sad"
+        ],
+        [
+            2,
+            "miserable"
+        ],
+        [
+            2,
+            "angry"
+        ],
+        [
+            1,
+            "upset"
+        ],
+        [
+            1,
+            "unhappy"
+        ],
+        [
+            1,
+            "fear"
+        ]
+    ]
+}

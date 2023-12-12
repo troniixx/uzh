@@ -1,0 +1,7 @@
+
+Sentiment Expressions:
+   2 pleased
+   2 love
+   1 proud
+   1 unhappy
+   1 sad

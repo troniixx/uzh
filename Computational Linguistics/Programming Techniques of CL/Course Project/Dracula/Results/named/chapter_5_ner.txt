@@ -1,0 +1,9 @@
+Named Entities:
+  18 Mina
+   8 Arthur
+   7 Jonathan
+   6 Lucy
+   4 Seward
+   3 Quincey
+   1 Renfield
+   1 Count

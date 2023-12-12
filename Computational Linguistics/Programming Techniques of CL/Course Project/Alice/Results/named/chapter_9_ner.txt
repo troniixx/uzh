@@ -1,0 +1,7 @@
+Named Entities:
+  52 Alice
+  25 Mock Turtle
+  20 Gryphon
+  19 Duchess
+  14 Queen
+   2 King

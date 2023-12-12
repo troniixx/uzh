@@ -1,0 +1,3 @@
+Named Entities:
+  35 Count
+   5 Mina

@@ -1,0 +1,8 @@
+
+Sentiment Expressions:
+   3 love
+   1 successful
+   1 happy
+   1 content
+   4 fear
+   1 gloomy

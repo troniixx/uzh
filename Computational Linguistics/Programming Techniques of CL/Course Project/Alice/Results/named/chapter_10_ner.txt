@@ -1,0 +1,5 @@
+Named Entities:
+  31 Gryphon
+  30 Alice
+  26 Mock Turtle
+   1 Rabbit

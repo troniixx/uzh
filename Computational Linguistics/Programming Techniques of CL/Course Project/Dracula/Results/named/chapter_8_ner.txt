@@ -1,0 +1,8 @@
+Named Entities:
+  43 Lucy
+  10 Jonathan
+   4 Renfield
+   4 Arthur
+   3 King
+   1 Seward
+   1 Agatha

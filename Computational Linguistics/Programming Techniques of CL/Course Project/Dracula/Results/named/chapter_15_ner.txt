@@ -1,0 +1,7 @@
+Named Entities:
+  22 Van Helsing
+  16 Lucy
+  15 Arthur
+   5 Quincey
+   2 Seward
+   1 Jonathan

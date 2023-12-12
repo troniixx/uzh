@@ -1,0 +1,5 @@
+Named Entities:
+  51 Alice
+  33 Hatter
+  27 Dormouse
+   2 Queen

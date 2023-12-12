@@ -1,0 +1,6 @@
+Named Entities:
+  39 Alice
+  35 Queen
+  11 King
+   6 Rabbit
+   3 Duchess

@@ -1,0 +1,9 @@
+
+Sentiment Expressions:
+   9 love
+   7 happy
+   1 wonderful
+   2 unhappy
+   1 upset
+   1 sad
+   1 miserable

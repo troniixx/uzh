@@ -1,0 +1,5 @@
+
+Sentiment Expressions:
+   4 pleased
+   2 angry
+   1 fear

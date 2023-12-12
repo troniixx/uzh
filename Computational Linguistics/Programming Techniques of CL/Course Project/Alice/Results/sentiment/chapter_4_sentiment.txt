@@ -1,0 +1,7 @@
+
+Sentiment Expressions:
+   1 delighted
+   2 angry
+   1 unhappy
+   1 sorrowful
+   1 fear

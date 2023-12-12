@@ -1,0 +1,8 @@
+
+Sentiment Expressions:
+   1 proud
+   1 joy
+   6 fear
+   1 upset
+   1 sad
+   1 distressed

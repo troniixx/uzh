@@ -1,0 +1,4 @@
+Named Entities:
+  25 Count
+   2 Jonathan
+   1 Mina

@@ -1,0 +1,4 @@
+Named Entities:
+   6 Lucy
+   1 Mina
+   1 Jonathan

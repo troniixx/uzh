@@ -1,0 +1,5 @@
+Named Entities:
+  33 Lucy
+  26 Van Helsing
+  21 Arthur
+   6 Seward

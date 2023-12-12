@@ -1,0 +1,13 @@
+
+Sentiment Expressions:
+   1 wonderful
+   1 successful
+   1 love
+   1 happy
+   1 content
+   1 cheerful
+   6 fear
+   2 upset
+   2 sad
+   1 miserable
+   1 distressed
