@@ -18,9 +18,13 @@ The main function reads the original file, applies the strip_header function giv
 * We created a python module which can search the entire cleaned text with the grep pattern: r'\b[A-Z][a-z]+(?:\s[A-Z][a-z]+)*\b' and count the number of matches
 * We analyzed the found most common capitalized words and defined the most common names. Picking out the most common names was simple for Alice in Wonderland, but more difficult for Frankenstein and Dracula because several characters had first names, last names and titles. We decided to only use the one most common name per person.
 * We then let added these specific names to the grep script alongside the sentiment words we had already defined:
-        names_pattern = r'\b(Alice|Queen|King|Gryphon|Hatter|Mock Turtle|Duchess|Dormouse|Mouse|Rabbit|Elizabeth|Clerval|Justine|Felix|Victor|Safie|Henry|William|Agatha|Kirwin|Van Helsing|Lucy|Jonathan|Count|Arthur|Seward|Mina|Quincey|Renfield)\b'
-        good_sentiment_pattern = r'\b(happy|joy|love|pleased|delighted|ecstatic|optimistic|satisfied|content|grateful|positive|successful|peaceful|enthusiastic|proud|thrilled|joyful|cheerful|amazing|fantastic|incredible|wonderful|exciting)\b'
-        bad_sentiment_pattern = r'\b(sad|angry|frustrated|disappointed|depressed|unhappy|miserable|gloomy|hopeless|dismayed|discouraged|pessimistic|annoyed|upset|distressed|troubled|sorrowful|agitated|furious|resentful|displeased|fear|scared)\b'
+        ```python names_pattern = r'\b(Alice|Queen|King|Gryphon|Hatter|Mock Turtle|Duchess|Dormouse|Mouse|Rabbit|Elizabeth|Clerval|Justine|Felix|Victor|Safie|Henry|William|Agatha|Kirwin|Van Helsing|Lucy|Jonathan Count|Arthur|Seward|Mina|Quincey|Renfield)\b' ```
+
+        ```python
+        good_sentiment_pattern = r'\b(happy|joy|love|pleased|delighted|ecstatic|optimistic|satisfied|content|grateful|positive|successful|peaceful|enthusiastic|proud|thrilled|joyful|cheerful|amazing|fantastic|incredible|wonderful|exciting)\b' ```
+        ```python
+        bad_sentiment_pattern = r'\b(sad|angry|frustrated|disappointed|depressed|unhappy|miserable|gloomy|hopeless|dismayed|discouraged|pessimistic|annoyed|upset|distressed|troubled|sorrowful|agitated|furious|resentful|displeased|fear|scared)\b' ```
+        ```
 * We made the script write the findings for all 3 categories per chapter into a txt-file
 
 ### D. Converting grep Results to JSON:
