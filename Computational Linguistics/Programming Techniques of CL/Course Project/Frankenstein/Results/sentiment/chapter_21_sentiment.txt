@@ -1,8 +1,0 @@
-
-Sentiment Expressions:
-   4 love
-   3 content
-   2 peaceful
-   2 happy
-   1 wonderful
-   3 miserable

@@ -1,9 +1,0 @@
-
-Sentiment Expressions:
-   2 wonderful
-   2 love
-   2 joy
-   1 successful
-   1 incredible
-   1 happy
-   1 sad

@@ -1,6 +1,0 @@
-
-Sentiment Expressions:
-   2 wonderful
-   1 happy
-   2 upset
-   1 miserable

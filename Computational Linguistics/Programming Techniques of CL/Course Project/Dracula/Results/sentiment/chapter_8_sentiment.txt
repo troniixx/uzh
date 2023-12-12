@@ -1,9 +1,0 @@
-
-Sentiment Expressions:
-   8 happy
-   4 joy
-   3 love
-   1 Joy
-   2 sad
-   1 disappointed
-   1 agitated
