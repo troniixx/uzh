@@ -36,8 +36,3 @@ ggplot(cvData, aes(x = gender, y = rateCV_tier3)) +
 ggplot(cvData, aes(x = gender, y = varcoCV_tier3)) + 
     geom_boxplot() +
     labs(title = "Variability Coefficient of CV by Gender", x = "Gender", y = "varcoCV_tier3")
-
-# Note:
-# - Replace "/path/to/yourfile.csv" with the actual file paths.
-# - The specific metrics (stdevM, varcoM, rateCV_tier3, varcoCV_tier3) have been chosen based on the data structure.
-# - Ensure that the chosen metrics are relevant to your analysis.
