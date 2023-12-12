@@ -62,8 +62,3 @@ print(cor_test_result)
 
 # Save the combined data to a new CSV file
 write.csv(combinedData, "/Users/merterol/uzh/Computational Linguistics/Computational Processing of Speech Rhythm/Assignment 2", row.names = FALSE)
-
-# Note:
-# - Replace "/path/to/yourfile.csv" with the actual file paths.
-# - Replace 'stdevM' and 'rateCV_tier3' with actual metrics from your datasets if different.
-# - Ensure 'subjectID' and 's' are the correct common columns for merging.
