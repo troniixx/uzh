@@ -25,11 +25,17 @@ The main function reads the original file, applies the strip_header function giv
 
     bad_sentiment_pattern = r'\b(sad|angry|frustrated|disappointed|depressed|unhappy|miserable|gloomy|hopeless|dismayed|discouraged|pessimistic|annoyed|upset|distressed|troubled|sorrowful|agitated|furious|resentful|displeased|fear|scared)\b'
 
-* We made the script write the findings for all 3 categories per chapter into a txt-file
+* We made the script write the findings for all 3 categories per chapter into one singular txt-file
 
 ### D. Converting grep Results to JSON:
 * We defined a function to convert the data to a json string. It takes a folder path as input, iterates over the files containing the names & sentiments and reads them.
-*The function creates a dictionary for each category (name, good sentiments, bad sentiments)
+* The function creates a dictionary for each category (name, good sentiments, bad sentiments)
 * It then goes through every line and if it is not a specific string (title), it splits the line. If the resulting split is exactly 2 elements we know that it's the count of the word's occurence + the word itself. In this case, the content is added to the appropriate dictionary.
 * We then defined the second function that takes the processed data and puts it into 3 different files in a defined file path. It names the files using the original file name as a basis.
 * In the main function, we define the folders and call the 2 functions.
+
+Submitting:
+* gutenberg_cleanup_incl_footer.py: contains functions for stripping the header, the footer and splitting the cleaned text into chapters
+* grep_for_specific_names.py: contains our full grep and the definition how files should be saved
+* part0.py: contains the functions to convert .txt files to JSON and write the result.
+* Folder containing subfolders for each book, with chapter files, grep results and JSON files for entities and sentiments per chapter.
