@@ -73,33 +73,41 @@ def extractor_named(file_path):
         }
 
 def extractor_sentiment(file_path):
-        """
-        Create a function to extract the named entities and sentiment expressions from the text here.
-        The function should help return a json file with the following structure:
-        {
-        "Sentiment Expressions": [
-            [int, str], ....
-            ]
-        }
-        """
+    """
+    Modified function to extract and categorize sentiment expressions into positive and negative.
+    """
+    with open(file_path, "r", encoding="utf-8") as file:
+        text = file.read()
 
-        with open(file_path, "r", encoding="utf-8") as file:
-            text = file.read()
-            parts = text.split("Sentiment Expressions:")
+    # Splitting the text to separate positive and negative sentiments
+    parts = text.split("Negative Sentiments:")
+    positive_part = parts[0].split("Positive Sentiments:")[1].strip()
+    negative_part = parts[1].strip()
 
-            # removes whitespaces from the second part of our split
-            sentiment_expressions = parts[1].strip()
-            sentiment_list = []
-            # process each line in the Sentiment Expressions section we split out before
-            for expression_line in sentiment_expressions.split("\n"):
-                expression_line = expression_line.strip()
-                if expression_line:
-                    comp = expression_line.split(" ", 1) #splitting e.g "12 Rabbit" into "12" and "Rabbit"
-                    if len(comp) == 2 and comp[0].isdigit(): #checking if the first part is a number and if there is one
-                        sentiment_list.append((int(comp[0]), comp[1].strip())) # adding the tuple to the list as (int, str)
-                    
-                    
-        return {"Sentiment Expressions": sentiment_list}
+    positive_list = []
+    negative_list = []
+
+    # Process positive sentiments
+    for line in positive_part.split("\n"):
+        line = line.strip()
+        if line:
+            comp = line.split(" ", 1)
+            if len(comp) == 2 and comp[0].isdigit():
+                positive_list.append((int(comp[0]), comp[1].strip()))
+
+    # Process negative sentiments
+    for line in negative_part.split("\n"):
+        line = line.strip()
+        if line:
+            comp = line.split(" ", 1)
+            if len(comp) == 2 and comp[0].isdigit():
+                negative_list.append((int(comp[0]), comp[1].strip()))
+
+    return {
+        "Positive Sentiments": positive_list,
+        "Negative Sentiments": negative_list
+    }
+
 
 def json_sent(txt_files_sent, output_dir_sent):
     # checks if the output directory exists, if not it creates it

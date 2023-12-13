@@ -1,5 +1,5 @@
 {
-    "Sentiment Expressions": [
+    "Positive Sentiments": [
         [
             4,
             "cheerful"
@@ -23,7 +23,9 @@
         [
             1,
             "Happy"
-        ],
+        ]
+    ],
+    "Negative Sentiments": [
         [
             3,
             "unhappy"
