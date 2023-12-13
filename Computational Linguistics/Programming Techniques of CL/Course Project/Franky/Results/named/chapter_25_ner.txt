@@ -1,0 +1,7 @@
+Named Entities:
+  10 Kirwin
+   7 Clerval
+   4 Henry
+   2 Justine
+   2 Elizabeth
+   1 William

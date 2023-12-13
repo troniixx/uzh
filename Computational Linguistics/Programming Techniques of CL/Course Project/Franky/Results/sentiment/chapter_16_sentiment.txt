@@ -1,0 +1,17 @@
+Sentiment Expressions:
+Positive Sentiments:
+
+   4 cheerful
+   2 love
+   2 happy
+   1 satisfied
+   1 joy
+   1 Happy
+
+Negative Sentiments:
+
+   3 unhappy
+   3 miserable
+   1 sorrowful
+   1 sad
+   1 depressed

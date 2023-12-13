@@ -1,0 +1,10 @@
+Sentiment Expressions:
+Positive Sentiments:
+
+   1 wonderful
+   1 enthusiastic
+   1 delighted
+
+Negative Sentiments:
+
+   2 miserable

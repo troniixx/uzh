@@ -1,0 +1,5 @@
+Named Entities:
+   8 Clerval
+   5 Henry
+   4 Elizabeth
+   1 Victor

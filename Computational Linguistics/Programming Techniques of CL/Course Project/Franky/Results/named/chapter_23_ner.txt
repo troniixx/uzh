@@ -1,0 +1,7 @@
+Named Entities:
+   6 Clerval
+   4 Henry
+   1 William
+   1 Justine
+   1 Elizabeth
+   1 Arthur

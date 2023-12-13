@@ -1,17 +1,17 @@
 # Chapter Directory of each book
-chapter_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Chapters"
+#chapter_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Chapters"
 #chapter_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Chapters"
-#chapter_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Chapters"
+chapter_dir="/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Franky/Chapters"
 
 # Results Directory of each book
-results_dir_ner="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results/named"
-results_dir_sent="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results/sentiment"
+#results_dir_ner="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results/named"
+#results_dir_sent="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results/sentiment"
 
 #results_dir_ner="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Results/named"
 #results_dir_sent="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Results/sentiment"
 
-#results_dir_ner="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Results/named"
-#results_dir_sent="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Results/sentiment"
+results_dir_ner="/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Franky/Results/named"
+results_dir_sent="/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Franky/Results/sentiment"
 
 # Create the results directory if it doesn't exist
 mkdir -p "$results_dir_ner"
@@ -43,8 +43,10 @@ for file in "$chapter_dir"/*; do
 
     echo "Sentiment Analysis for $file..."
 # Grep for basic sentiment words
-    echo -e "\nSentiment Expressions:" >> "$output_file"
+    echo -e "Sentiment Expressions:" >> "$output_file"
+    echo -e "Positive Sentiments:\n" >> "$output_file"
     grep -owiE "\b(happy|joy|love|pleased|delighted|ecstatic|optimistic|satisfied|content|grateful|positive|successful|peaceful|enthusiastic|proud|thrilled|joyful|cheerful|amazing|fantastic|incredible|wonderful|exciting)\b" "$file" | sort | uniq -c | sort -nr >> "$output_file"
+    echo -e "\nNegative Sentiments:\n" >> "$output_file"
     grep -owiE "\b(sad|angry|frustrated|disappointed|depressed|unhappy|miserable|gloomy|hopeless|dismayed|discouraged|pessimistic|annoyed|upset|distressed|troubled|sorrowful|agitated|furious|resentful|displeased|fear|scared)\b" "$file" | sort | uniq -c | sort -nr >> "$output_file"
 done
 

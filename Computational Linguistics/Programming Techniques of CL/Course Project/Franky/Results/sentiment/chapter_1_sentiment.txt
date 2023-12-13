@@ -1,0 +1,11 @@
+Sentiment Expressions:
+Positive Sentiments:
+
+   1 proud
+   1 love
+   1 joy
+
+Negative Sentiments:
+
+   1 fear
+   1 depressed

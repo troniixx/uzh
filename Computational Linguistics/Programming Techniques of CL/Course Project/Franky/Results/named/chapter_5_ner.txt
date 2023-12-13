@@ -1,0 +1,3 @@
+Named Entities:
+   4 Elizabeth
+   1 Victor
