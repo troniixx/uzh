@@ -15,6 +15,10 @@ import nltk
 PATH_ALICE = "Computational Linguistics/Programming Techniques of CL/Course Project/Alice/alice_cleaned.txt"
 PATH_DRACULA = "Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/dracula_cleaned.txt"
 PATH_FRANKY = "Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/franky_cleaned.txt"
+
+PATH_ALICE_NMSG = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/alice_cleaned.txt"
+PATH_DRACULA_NMSG = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/dracula_cleaned.txt"
+PATH_FRANKY_NMSG = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Franky/franky_cleaned.txt"
 # ****** IMPORTANT: Change paths to fit your system ******
 
 # DONE: Load the spaCy model
