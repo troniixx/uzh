@@ -1,9 +1,11 @@
 {
-    "Sentiment Expressions": [
+    "Positive Sentiments": [
         [
             4,
             "pleased"
-        ],
+        ]
+    ],
+    "Negative Sentiments": [
         [
             2,
             "angry"

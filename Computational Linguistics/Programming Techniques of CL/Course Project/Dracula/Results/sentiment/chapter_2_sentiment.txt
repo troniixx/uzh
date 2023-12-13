@@ -1,8 +1,12 @@
-
 Sentiment Expressions:
+Positive Sentiments:
+
    3 love
    1 successful
    1 happy
    1 content
+
+Negative Sentiments:
+
    4 fear
    1 gloomy

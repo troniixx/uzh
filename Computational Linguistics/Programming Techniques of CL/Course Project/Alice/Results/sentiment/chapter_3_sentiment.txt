@@ -1,3 +1,7 @@
-
 Sentiment Expressions:
+Positive Sentiments:
+
+
+Negative Sentiments:
+
    2 sad

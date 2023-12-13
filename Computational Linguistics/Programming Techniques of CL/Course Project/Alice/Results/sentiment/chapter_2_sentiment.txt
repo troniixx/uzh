@@ -1,5 +1,9 @@
-
 Sentiment Expressions:
+Positive Sentiments:
+
+
+Negative Sentiments:
+
    1 sorrowful
    1 hopeless
    1 angry

@@ -1,5 +1,6 @@
-
 Sentiment Expressions:
+Positive Sentiments:
+
    4 love
    4 grateful
    3 satisfied
@@ -8,6 +9,9 @@ Sentiment Expressions:
    1 proud
    1 pleased
    1 Love
+
+Negative Sentiments:
+
    8 upset
    4 fear
    2 sad

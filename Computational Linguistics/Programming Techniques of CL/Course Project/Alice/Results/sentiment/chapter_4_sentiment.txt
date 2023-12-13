@@ -1,6 +1,10 @@
-
 Sentiment Expressions:
+Positive Sentiments:
+
    1 delighted
+
+Negative Sentiments:
+
    2 angry
    1 unhappy
    1 sorrowful

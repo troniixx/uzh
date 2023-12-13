@@ -1,17 +1,17 @@
 # Chapter Directory of each book
-#chapter_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Chapters"
-#chapter_dir="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Chapters"
-chapter_dir="/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Franky/Chapters"
+chapter_dir="/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Chapters"
+#chapter_dir="/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Chapters"
+#chapter_dir="/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Franky/Chapters"
 
 # Results Directory of each book
-#results_dir_ner="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results/named"
-#results_dir_sent="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results/sentiment"
+results_dir_ner="/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results/named"
+results_dir_sent="/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Results/sentiment"
 
-#results_dir_ner="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Results/named"
-#results_dir_sent="/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Results/sentiment"
+#results_dir_ner="/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Results/named"
+#results_dir_sent="/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Results/sentiment"
 
-results_dir_ner="/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Franky/Results/named"
-results_dir_sent="/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Franky/Results/sentiment"
+#results_dir_ner="/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Franky/Results/named"
+#results_dir_sent="/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Franky/Results/sentiment"
 
 # Create the results directory if it doesn't exist
 mkdir -p "$results_dir_ner"
