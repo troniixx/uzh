@@ -10,6 +10,7 @@ import json
 import spacy
 import nltk
 # --- You may add other imports here ---
+import tqdm
 
 # ****** IMPORTANT: Change paths to fit your system ******
 PATH_ALICE = "Computational Linguistics/Programming Techniques of CL/Course Project/Alice/alice_cleaned.txt"
