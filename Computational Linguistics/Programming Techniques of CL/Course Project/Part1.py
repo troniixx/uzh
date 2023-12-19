@@ -29,16 +29,26 @@ SPACY_MODEL = spacy.load("en_core_web_sm")
 # these are not relevant to our analysis
 # i used a set because it has faster lookup times than a normal list
 GUTENBERG_BS = set(["Gutenberg", "Project Gutenberg", "Project\nGutenberg", "LIMITED WARANTY", "LIMITED WARRANTY", "Gutenberg eBooks", "Michael S. Hart"])
+LIST_NAMES = set(["Alice", "Queen", "King", "Gryphon", "Hatter", "Mock Turtle", "Duchess", "Dormouse", "Mouse", "Rabbit", "Elizabeth", "Clerval",
+            "Justine", "Felix", "Victor", "Safie", "Henry", "William", "Agatha", "Kirwin", "Van Helsing", 
+            "Lucy", "Jonathan", "Count", "Arthur","Seward", "Mina", "Quincey", "Renfield"])
 
 # DONE: Load the book text
-def load_book(file_path):
-    # open the file and read its contents
-    with open(file_path, 'r', encoding='utf-8') as file:
-        text = file.read()
-
-    return text
+def load_books_by_chapter(folder_path):
+    chapters = []
+    # Sorting files to ensure they are in order
+    for filename in sorted(os.listdir(folder_path)):
+        if filename.endswith('.txt'):
+            with open(os.path.join(folder_path, filename), 'r', encoding='utf-8') as file:
+                chapters.append(file.read())
+    return chapters
 
 # Feel free to add more functions as needed!
+def rem_puc(text):
+    text = re.sub(r"[^\w\s]")
+    text = re.sub(r'\n', ' ', text)  # Replace newlines with space
+    return text
+
 
 
 # Function to process the text and perform NER
@@ -54,21 +64,47 @@ def perform_ner(text, spacy_model):
 
     return ent_list
 
+def get_chapter_number(sentence):
+    
 
 # TODO: Function to extract and structure entity information
-def extract_entity_info(entities):
-    entity_data = []
-    doc = load_book(PATH_ALICE)
-    
-    for ent in entities:
-        # Extract context (3 tokens before and after the entity)
-        start = max(ent.lefts - 3)
-        end = min(ent.rights + 3)
-        context = doc[start:end].text
-        # Add entity and its context to the list
-        entity_data.append({"name": ent.text, "context": context})
-    
-    return entity_data
+def extract_entity_info(text):
+    # Clean the text
+    text_clean = rem_puc(text)
+    doc = SPACY_MODEL(text_clean)
+
+    # Initialize data structure
+    main_characters = []
+
+    # Iterate over the list of character names
+    for character in LIST_NAMES:
+        character_info = {
+            "name": character,
+            "aliases": [],  # Add aliases if you have them
+            "occurrences": []
+        }
+
+        # Iterate over the entities in the document
+        for ent in doc.ents:
+            if ent.text == character:
+                start_idx = ent.start_char
+                end_idx = ent.end_char
+                sentence = ent.sent.text if ent.sent else "No sentence found"
+                chapter_number = get_chapter_number(ent.sent)  # TODO implement this function
+
+                occurrence = {
+                    "sentence": sentence,
+                    "chapter": chapter_number,
+                    "position": {"start": start_idx, "end": end_idx}
+                }
+
+                character_info["occurrences"].append(occurrence)
+
+        if character_info["occurrences"]:
+            main_characters.append(character_info)
+
+    return {"main_characters": main_characters}
+
 
 
 
@@ -108,16 +144,16 @@ def main():
     book_text = load_book(PATH_ALICE)
 
     # Perform NER on the text
-    print("Entities")
-    entities = perform_ner(book_text, SPACY_MODEL)
+    #print("Entities")
+    #entities = perform_ner(book_text, SPACY_MODEL)
     #print(entities)
     # Extract information from entities
     print("Entity info:")
-    entity_info = extract_entity_info(entities)
+    entity_info = extract_entity_info(book_text)
     print(entity_info)
     
     # Save the results to a JSON file
-    # save_to_json(entity_info, 'BookTitle_NER.json')
+    # save_to_json(entity_info, "BookTitle_NER.json")
 
 
 # Run the main function
