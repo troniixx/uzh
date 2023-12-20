@@ -38,8 +38,8 @@ def load_books_by_chapter(folder_path):
     chapters = []
     # Sorting files to ensure they are in order
     for filename in sorted(os.listdir(folder_path)):
-        if filename.endswith('.txt'):
-            with open(os.path.join(folder_path, filename), 'r', encoding='utf-8') as file:
+        if filename.endswith(".txt"):
+            with open(os.path.join(folder_path, filename), "r", encoding="utf-8") as file:
                 chapters.append(file.read())
     return chapters
 
@@ -58,14 +58,14 @@ def perform_ner(text, spacy_model):
 
 # function to remove punctuation and newlines (got the regex from chatgpt)
 def rem_puc(text):
-    text = re.sub(r'[!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~]', '', text) # remove punctuation
-    text = re.sub(r'\n', ' ', text) # replace newlines with space
+    text = re.sub(r'[!"#$%&\"()*+,-./:;<=>?@[\\]^_`{|}~]', "", text) # remove punctuation
+    text = re.sub(r"\n", " ", text) # replace newlines with space
     return text
 
 # function to extract chapter number from filename (got this from chatgpt)
 def extract_chapter_number(filename):
     # extract digits from filename and convert to int
-    chapter_num = int(re.search(r'\d+', filename).group())
+    chapter_num = int(re.search(r"\d+", filename).group())
     return chapter_num
 
 # Function to extract and structure entity information from chapters
@@ -78,9 +78,9 @@ def extract_entity_info(folder_path, spacy_model, character_list):
 
     # iterate over sorted chapter files
     for filename in sorted(os.listdir(folder_path)):
-        if filename.endswith('.txt'):
+        if filename.endswith(".txt"):
             chapter_path = os.path.join(folder_path, filename)
-            with open(chapter_path, 'r', encoding='utf-8') as file:
+            with open(chapter_path, "r", encoding="utf-8") as file:
                 chapter_text = file.read()
 
             # clean the chapter text
@@ -119,7 +119,7 @@ def extract_entity_info(folder_path, spacy_model, character_list):
     return all_chapters_info
 
 
-# TODO: function to save data to JSON file
+# TODO: function to save data to JSON file using extract_entitiy_info
 def save_to_json(data, filename):
     """ should look something like this:
 
@@ -161,7 +161,7 @@ def main():
     entity_info = extract_entity_info(PATH_ALICE_NMSG, SPACY_MODEL, LIST_NAMES)
     print(entity_info)
     
-    # Save the results to a JSON file
+    # TODO: Save the results to a JSON file
     # save_to_json(entity_info, "BookTitle_NER.json")
 
 
