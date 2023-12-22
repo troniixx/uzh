@@ -122,21 +122,21 @@ def save_to_json(data, file_path, file_name):
 
 # Main Function
 def main():
-
-    # TODO: Load your book text here
-
-    # Perform NER on the text
-    #print("Entities")
-    #entities = perform_ner(book_text, SPACY_MODEL)
-    #print(entities)
-    # Extract information from entities
-    print("Entity info:")
-    char_list = perform_ner("/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/alice_cleaned.txt", SPACY_MODEL)
-    entity_info = extract_entity_info(PATH_ALICE, SPACY_MODEL, char_list)
-    #print(entity_info)
     
-    # TODO: Save the results to a JSON file
-    save_to_json(entity_info, JSON_PATH, "Alice_part1")
+    # DONE: Add command line arguments
+    if len(argv) != 5:
+        print("Usage: python3 part1.py <book_text> <book_path> <json_save_folder> <json_name>")
+        print("Example: python3 part1.py Franky/franky_cleaned.txt Franky/Chapters JSON_part1 Franky_json")
+    
+    print("Starting NER and entity extraction... This might take a while.")
+    char_list = perform_ner(argv[1], SPACY_MODEL)
+    entity_info = extract_entity_info(argv[2], SPACY_MODEL, char_list)
+    json_path = argv[3]
+    json_name = argv[4]
+    
+    # DONE: Save the results to a JSON file
+    save_to_json(entity_info, json_path, json_name)
+    print("Done! JSON file saved to: " + json_path + "/" + json_name + ".json")
 
 
 # Run the main function
