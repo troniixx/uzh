@@ -13,18 +13,7 @@ import nltk
 from tqdm import tqdm
 from sys import argv
 
-# TODO: add argv stuff
-# ****** IMPORTANT: Change paths to fit your system ******
-PATH_ALICE = "Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Chapters"
-PATH_DRACULA = "Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Chapters"
-PATH_FRANKY = "Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Chapters"
-
-JSON_PATH = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/JSON_part1"
-
-PATH_ALICE_NMSG = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Chapters"
-PATH_DRACULA_NMSG = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Chapters"
-PATH_FRANKY_NMSG = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Franky/Chapters"
-# ****** IMPORTANT: Change paths to fit your system ******
+# --- GLOBAL VARIABLES ---
 
 # DONE: Load the spaCy model
 SPACY_MODEL = spacy.load("en_core_web_sm")
@@ -34,6 +23,8 @@ SPACY_MODEL = spacy.load("en_core_web_sm")
 LIST_NAMES = set(["Alice", "Queen", "King", "Gryphon", "Hatter", "Mock Turtle", "Duchess", "Dormouse", "Mouse", "Rabbit", "Elizabeth", "Clerval",
             "Justine", "Felix", "Victor", "Safie", "Henry", "William", "Agatha", "Kirwin", "Van Helsing", 
             "Lucy", "Jonathan", "Count", "Arthur","Seward", "Mina", "Quincey", "Renfield"])
+
+# --- END GLOBAL VARIABLES ---
 
 # DONE: Load the book text
 def load_books_by_chapter(folder_path):
@@ -47,11 +38,11 @@ def load_books_by_chapter(folder_path):
 
 # function to process the text and perform NER
 def perform_ner(file_path, spacy_model):
-    # Open the file and read its contents
+    # open the file and read its contents
     with open(file_path, "r", encoding="utf-8") as file:
         text = file.read()
 
-    # Process the text with spaCy and extract entities
+    # process the text with spacy and extract entities
     ent_list = []
     doc = spacy_model(text)
 
@@ -110,7 +101,7 @@ def extract_entity_info(folder_path, spacy_model, character_list):
 
 
 
-# TODO: function to save data to JSON file using extract_entitiy_info
+# DONE: function to save data to JSON file using extract_entitiy_info
 def save_to_json(data, file_path, file_name):
     # construct the full file path
     full_path = os.path.join(file_path, file_name + ".json")
@@ -128,7 +119,7 @@ def main():
         print("Usage: python3 part1.py <book_text> <book_path> <json_save_folder> <json_name>")
         print("Example: python3 part1.py Franky/franky_cleaned.txt Franky/Chapters JSON_part1 Franky_json")
     
-    print("Starting NER and entity extraction... This might take a while.")
+    print("Starting NER and entity extraction... This might take a while.\n")
     char_list = perform_ner(argv[1], SPACY_MODEL)
     entity_info = extract_entity_info(argv[2], SPACY_MODEL, char_list)
     json_path = argv[3]
@@ -136,32 +127,9 @@ def main():
     
     # DONE: Save the results to a JSON file
     save_to_json(entity_info, json_path, json_name)
-    print("Done! JSON file saved to: " + json_path + "/" + json_name + ".json")
+    print("\nDone! JSON file saved to: " + json_path + "/" + json_name + ".json")
 
 
 # Run the main function
 if __name__ == "__main__":
     main()
-
-
-    """ should look something like this:
-
-    {
-    "main_characters": [
-            {
-                "name": "CharacterName1",
-                "aliases": ["Alias1", "Alias2"],
-                "occurrences": [
-                {
-                    "sentence": "Context of mention.",
-                    "chapter": "Chapter number",
-                    "position": {"start": startIndex, "end": endIndex}
-                },
-                More occurrences
-            ]
-        },
-        More main characters
-        ]
-    }
-
-    """
