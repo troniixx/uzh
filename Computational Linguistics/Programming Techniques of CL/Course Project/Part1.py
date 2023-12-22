@@ -37,6 +37,8 @@ def load_books_by_chapter(folder_path):
     return chapters
 
 # function to process the text and perform NER
+# returns a list of entities that is used in the extract_entity_info function to get the
+# main characters for the correct book
 def perform_ner(file_path, spacy_model):
     # open the file and read its contents
     with open(file_path, "r", encoding="utf-8") as file:
@@ -59,7 +61,7 @@ def rem_puc(text):
     text = re.sub(r"\n", " ", text) # replace newlines with space
     return text
 
-# function to extract chapter number from filename (got this from chatgpt)
+# function to extract chapter number from filename
 def extract_chapter_number(filename):
     # extract digits from filename and convert to int
     chapter_num = int(re.search(r"\d+", filename).group())
@@ -86,7 +88,7 @@ def extract_entity_info(folder_path, spacy_model, character_list):
         # iterate over the list of character names
         for ent in doc.ents:
             if ent.text in character_list:
-                # Update character information
+                # update character information
                 occurrence = {
                     "sentence": ent.sent.text if ent.sent else "No sentence found",
                     "chapter": chapter_number,
@@ -108,11 +110,27 @@ def save_to_json(data, file_path, file_name):
 
     # save the data to a JSON file
     with open(full_path, "w", encoding="utf-8") as file:
-        json.dump(data, file, indent=4)
+        json.dump(data, file, ensure_ascii = False, indent=4)
 
 
 # Main Function
 def main():
+    """
+    Main function of the program. Uses the functions defined above to perform NER and extract entity information
+    from the book chapters. Saves the results to a JSON file.
+    
+    Parameters: 
+        - argv[1]: path to the book text file
+        - argv[2]: path to the book chapters
+        - argv[3]: path to the folder where the JSON file will be saved
+        - argv[4]: name of the JSON file
+        
+    Example Usage:
+        python3 part1.py Franky/franky_cleaned.txt Franky/Chapters JSON_part1 Franky_json
+        
+    Returns:
+        - json file with the extracted entity information in the specified path
+    """
     
     # DONE: Add command line arguments
     if len(argv) != 5:
@@ -133,3 +151,15 @@ def main():
 # Run the main function
 if __name__ == "__main__":
     main()
+
+    """
+    Challenges: 
+        - Sometimes i realized i coded things that were already done by a different function.
+        This lead me to refactor the code multiple times to make sure i am not doing redundant work and 
+        still keeping the code clean and readable.
+        - The json files outputted had some weird characters in them. It took a long time to figure out 
+        how to remove them.
+        - Finding aliases for characters was a pain. I tried to use a spacy model but then it also considered corefs inside the
+        sentece as aliases which lead to "She" being an aliases for all female characters.
+        -> In the end i decided to look up all aliasas manually and add them to the list.
+    """
