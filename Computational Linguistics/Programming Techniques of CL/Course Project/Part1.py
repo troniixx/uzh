@@ -1,7 +1,7 @@
 """
 PCL 1 Fall Semester 2023 - Course Project
 Part 0: Book Selection
-Students: <person 1>, <person 2>
+Students: Mert Erol, Andrea Scheck
 """
 # --- Imports ---
 import os
@@ -10,7 +10,7 @@ import json
 import spacy
 import nltk
 # --- You may add other imports here ---
-import tqdm
+from tqdm import tqdm
 from sys import argv
 
 # TODO: add argv stuff
@@ -18,6 +18,8 @@ from sys import argv
 PATH_ALICE = "Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Chapters"
 PATH_DRACULA = "Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Chapters"
 PATH_FRANKY = "Computational Linguistics/Programming Techniques of CL/Course Project/Frankenstein/Chapters"
+
+JSON_PATH = "/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/JSON_part1"
 
 PATH_ALICE_NMSG = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/Chapters"
 PATH_DRACULA_NMSG = "/Users/merterol/Desktop/VSCode/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Dracula/Chapters"
@@ -44,9 +46,12 @@ def load_books_by_chapter(folder_path):
     return chapters
 
 # function to process the text and perform NER
-def perform_ner(text, spacy_model):
-    # DONE: Process the text using the provided model and return the entities
+def perform_ner(file_path, spacy_model):
+    # Open the file and read its contents
+    with open(file_path, "r", encoding="utf-8") as file:
+        text = file.read()
 
+    # Process the text with spaCy and extract entities
     ent_list = []
     doc = spacy_model(text)
 
@@ -55,6 +60,7 @@ def perform_ner(text, spacy_model):
             ent_list.append(ent.text)
 
     return ent_list
+
 
 # function to remove punctuation and newlines (got the regex from chatgpt)
 def rem_puc(text):
@@ -71,80 +77,47 @@ def extract_chapter_number(filename):
 # Function to extract and structure entity information from chapters
 def extract_entity_info(folder_path, spacy_model, character_list):
     # initialize data structure
-    all_chapters_info = {"main_characters": []}
+    all_characters_info = {character: {"name": character, "aliases": [], "occurrences": []} for character in character_list}
 
+    # load the chapters
+    chapters = load_books_by_chapter(folder_path)
+    
     # load the spaCy model
     nlp = spacy_model
 
-    # iterate over sorted chapter files
-    for filename in sorted(os.listdir(folder_path)):
-        if filename.endswith(".txt"):
-            chapter_path = os.path.join(folder_path, filename)
-            with open(chapter_path, "r", encoding="utf-8") as file:
-                chapter_text = file.read()
+    # iterate over each chapter and of course my fancy progress bar :)
+    for chapter_number, chapter_text in tqdm(enumerate(chapters, start=1), total=len(chapters), desc="Processing chapters", colour = "#1E90FF"):
 
-            # clean the chapter text
-            text_clean = rem_puc(chapter_text)
-            doc = nlp(text_clean)
+        # clean the chapter text
+        text_clean = rem_puc(chapter_text)
+        doc = nlp(text_clean)
 
-            # extract chapter number from filename
-            chapter_number = extract_chapter_number(filename)
-
-            # iterate over the list of character names
-            for character in character_list:
-                character_info = {
-                    "name": character,
-                    "aliases": [],  # TODO: add aliases here
-                    "occurrences": []
+        # iterate over the list of character names
+        for ent in doc.ents:
+            if ent.text in character_list:
+                # Update character information
+                occurrence = {
+                    "sentence": ent.sent.text if ent.sent else "No sentence found",
+                    "chapter": chapter_number,
+                    "position": {"start": ent.start_char, "end": ent.end_char}
                 }
+                all_characters_info[ent.text]["occurrences"].append(occurrence)
 
-                # iterate over the entities in the document
-                for ent in doc.ents:
-                    if ent.text == character:
-                        start_idx = ent.start_char
-                        end_idx = ent.end_char
-                        sentence = ent.sent.text if ent.sent else "No sentence found"
+    # convert the dictionary to the required list format
+    main_characters = list(all_characters_info.values())
 
-                        occurrence = {
-                            "sentence": sentence,
-                            "chapter": chapter_number,
-                            "position": {"start": start_idx, "end": end_idx}
-                        }
+    return {"main_characters": main_characters}
 
-                        character_info["occurrences"].append(occurrence)
-
-                if character_info["occurrences"]:
-                    all_chapters_info["main_characters"].append(character_info)
-
-    return all_chapters_info
 
 
 # TODO: function to save data to JSON file using extract_entitiy_info
-def save_to_json(data, filename):
-    """ should look something like this:
+def save_to_json(data, file_path, file_name):
+    # construct the full file path
+    full_path = os.path.join(file_path, file_name + ".json")
 
-    {
-    "main_characters": [
-            {
-                "name": "CharacterName1",
-                "aliases": ["Alias1", "Alias2"],
-                "occurrences": [
-                {
-                    "sentence": "Context of mention.",
-                    "chapter": "Chapter number",
-                    "position": {"start": startIndex, "end": endIndex}
-                },
-                // More occurrences
-            ]
-        },
-        // More main characters
-        ]
-    }
-
-    """
-
-    # TODO: Save the data to a JSON file
-    pass
+    # save the data to a JSON file
+    with open(full_path, "w", encoding="utf-8") as file:
+        json.dump(data, file, indent=4)
 
 
 # Main Function
@@ -158,13 +131,37 @@ def main():
     #print(entities)
     # Extract information from entities
     print("Entity info:")
-    entity_info = extract_entity_info(PATH_ALICE_NMSG, SPACY_MODEL, LIST_NAMES)
-    print(entity_info)
+    char_list = perform_ner("/Users/merterol/uzh/Computational Linguistics/Programming Techniques of CL/Course Project/Alice/alice_cleaned.txt", SPACY_MODEL)
+    entity_info = extract_entity_info(PATH_ALICE, SPACY_MODEL, char_list)
+    #print(entity_info)
     
     # TODO: Save the results to a JSON file
-    # save_to_json(entity_info, "BookTitle_NER.json")
+    save_to_json(entity_info, JSON_PATH, "Alice_part1")
 
 
 # Run the main function
 if __name__ == "__main__":
     main()
+
+
+    """ should look something like this:
+
+    {
+    "main_characters": [
+            {
+                "name": "CharacterName1",
+                "aliases": ["Alias1", "Alias2"],
+                "occurrences": [
+                {
+                    "sentence": "Context of mention.",
+                    "chapter": "Chapter number",
+                    "position": {"start": startIndex, "end": endIndex}
+                },
+                More occurrences
+            ]
+        },
+        More main characters
+        ]
+    }
+
+    """
