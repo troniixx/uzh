@@ -1,5 +1,28 @@
 Alice in Wonderland:
+    - Alice: Occurs 390 times, indicating she is the central character.
+    - Mouse: Appears 28 times, suggesting a supporting role.
+    - William: Mentioned 8 times, likely a minor character.
+    - Queen: Has 58 occurrences, implying a significant role.
+    - Hatter: Appears 55 times, indicating a prominent supporting character.
+    - Gryphon: Occurs 51 times, another key supporting character.
 
 Dracula:
+    - Lucy: Occurs 268 times, suggesting a major role.
+    - Van Helsing: Mentioned 283 times, indicating a primary character.
+    - Mina: Appears 182 times, signifying a central role.
+    - Jonathan: Has 168 occurrences, a main character.
+    - Arthur: Appears 133 times, a significant character.
+    - Seward: Mentioned 77 times, a notable character.
+    - Renfield: Occurs 46 times, a supporting character.
+    - Quincey: Appears 53 times, another supporting character.
 
 Frankenstein:
+    - Elizabeth: Occurs 89 times, suggesting a key role.
+    - Victor: Mentioned 24 times, surprisingly low for a central character.
+    - Clerval: Appears 41 times, a supporting character.
+    - Henry: Has 21 mentions, likely a minor character.
+    - Justine: Occurs 50 times, a significant character in the story.
+    - William: Mentioned 24 times, a character of interest.
+    - Agatha: Appears 21 times, a minor character.
+    - Felix: Has 39 occurrences, a supporting role.
+    - Kirwin: Occurs 13 times, a minor role.
