@@ -2,6 +2,7 @@ import os
 import json
 import matplotlib.pyplot as plt
 from sys import argv
+from tqdm import tqdm
 
 def count_sentiments(file_path):
     """
@@ -29,10 +30,10 @@ def plot_sentiments(positive_sentiments, negative_sentiments, output_folder_path
     plt.legend()
     plt.grid(True)
 
-    # Save the plot in the specified output folder with the specified file name
+    # save the plot in the specified output folder with the specified file name
     output_file_path = os.path.join(output_folder_path, output_file_name)
     plt.savefig(output_file_path)
-    plt.close()  # Close the plot to free up memory
+    plt.close()  # close the plot to free up memory
 
 def main(input_folder_path, output_folder_path, output_file_name):
     """
@@ -41,13 +42,15 @@ def main(input_folder_path, output_folder_path, output_file_name):
     positive_sentiment_counts = []
     negative_sentiment_counts = []
 
-    # Iterate through each file in the folder
-    for file_name in sorted(os.listdir(input_folder_path)):
-        if file_name.endswith('.json'):
-            file_path = os.path.join(input_folder_path, file_name)
-            positive_count, negative_count = count_sentiments(file_path)
-            positive_sentiment_counts.append(positive_count)
-            negative_sentiment_counts.append(negative_count)
+    # retrieve all JSON files in the folder
+    json_files = [f for f in sorted(os.listdir(input_folder_path)) if f.endswith('.json')]
+
+    # iterate through each file in the folder with a tqdm progress bar
+    for file_name in tqdm(json_files, desc="Processing files", colour = "#1E90FF"):
+        file_path = os.path.join(input_folder_path, file_name)
+        positive_count, negative_count = count_sentiments(file_path)
+        positive_sentiment_counts.append(positive_count)
+        negative_sentiment_counts.append(negative_count)
 
     plot_sentiments(positive_sentiment_counts, negative_sentiment_counts, output_folder_path, output_file_name)
     
