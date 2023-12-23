@@ -8,11 +8,11 @@ def count_sentiments(file_path):
     """
     Count the positive and negative sentiments in a given file.
     """
-    with open(file_path, 'r') as file:
+    with open(file_path, "r") as file:
         data = json.load(file)
     
-    positive_count = len(data.get('Positive Sentiments', []))
-    negative_count = len(data.get('Negative Sentiments', []))
+    positive_count = len(data.get("Positive Sentiments", []))
+    negative_count = len(data.get("Negative Sentiments", []))
     return positive_count, negative_count
 
 def plot_sentiments(positive_sentiments, negative_sentiments, output_folder_path, output_file_name):
@@ -21,11 +21,11 @@ def plot_sentiments(positive_sentiments, negative_sentiments, output_folder_path
     """
     chapters = range(1, len(positive_sentiments) + 1)
     plt.figure(figsize=(10, 6))
-    plt.plot(chapters, positive_sentiments, color='green', marker='o', linestyle='-', label='Positive Sentiments')
-    plt.plot(chapters, negative_sentiments, color='red', marker='o', linestyle='-', label='Negative Sentiments')
-    plt.xlabel('Chapter')
-    plt.ylabel('Number of Sentiments')
-    plt.title('Sentiments per Chapter')
+    plt.plot(chapters, positive_sentiments, color="green", marker="o", linestyle="-", label="Positive Sentiments")
+    plt.plot(chapters, negative_sentiments, color="red", marker="o", linestyle="-", label="Negative Sentiments")
+    plt.xlabel("Chapter")
+    plt.ylabel("Number of Sentiments")
+    plt.title("Sentiments per Chapter")
     plt.xticks(chapters)
     plt.legend()
     plt.grid(True)
@@ -43,7 +43,7 @@ def main(input_folder_path, output_folder_path, output_file_name):
     negative_sentiment_counts = []
 
     # retrieve all JSON files in the folder
-    json_files = [f for f in sorted(os.listdir(input_folder_path)) if f.endswith('.json')]
+    json_files = [f for f in sorted(os.listdir(input_folder_path)) if f.endswith(".json")]
 
     # iterate through each file in the folder with a tqdm progress bar
     for file_name in tqdm(json_files, desc="Processing files", colour = "#1E90FF"):
@@ -54,9 +54,9 @@ def main(input_folder_path, output_folder_path, output_file_name):
 
     plot_sentiments(positive_sentiment_counts, negative_sentiment_counts, output_folder_path, output_file_name)
     
-if __name__ == '__main__':
+if __name__ == "__main__":
     if len(argv) != 4:
-        print('Usage: python3 script_name.py <input_folder_path> <output_folder_path> <output_file_name>')
+        print("Usage: python3 script_name.py <input_folder_path> <output_folder_path> <output_file_name>")
         exit(1)
     
     input_folder_path = argv[1]
