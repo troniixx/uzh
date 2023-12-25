@@ -11,6 +11,8 @@ def count_sentiments(file_path):
     with open(file_path, "r") as file:
         data = json.load(file)
     
+    #.get method gets the value of the specified key, if the key does not exist, it returns the default value
+    # in this case, it gets the len of the list of the specified key, if the key does not exist, it returns 0
     positive_count = len(data.get("Positive Sentiments", []))
     negative_count = len(data.get("Negative Sentiments", []))
     return positive_count, negative_count
