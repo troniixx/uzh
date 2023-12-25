@@ -2,7 +2,7 @@
 
 ## Automatic Plot Analysis
 
-###### Group: Mert Erol, Andrea Scheck
+##### Group: Mert Erol, Andrea Scheck
 
 ## Part 0
 
