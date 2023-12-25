@@ -138,23 +138,26 @@ Our learning experience, project insights, and real-world applicability.
 a. Learning and Challenges
 
 * Comparing the results of grep and the more in-depth NLP analysis, what are the key insights?
-The grep for part 0 probably was much better at capturing all occurences, as it was simpler. The more context we had to add (to capture entire sentences with the main character names, the
+
+> The grep for part 0 probably was much better at capturing all occurences, as it was simpler. The more context we had to add (to capture entire sentences with the main character names, the
 
 * You were asked to visualise both methods. How do they differ?
 
 * Summarize key learnings, focusing on technical skills and literary insights.
-We learned how to use grep and how to use NLP tools to analyze text. We also learned how to use python to create visualizations. We also learned how to use command line arguments to make our code more dynamic. WE also learned alot about the os library which will be very useful in the future.
+
+> We learned how to use grep and how to use NLP tools to analyze text. We also learned how to use python to create visualizations. We also learned how to use command line arguments to make our code more dynamic. WE also learned alot about the os library which will be very useful in the future.
 
 * Briefly discuss major challenges and how you addressed them, particularly moving from basic grep searches to advanced NLP.
 
 b. Analysis Insights and Real-World Applicability
 
 * Describe significant insights from the book analysis and how advanced NLP tools enhanced your initial grep findings.
-When using NLP tools we didnt have to think as much what we want to grep for. We could just use the tools to find the sentiment of the sentences and then just filter out the sentences that contain the names of the characters we are interested in. This way we could get more accurate results. Also we could get more context about the sentences that contain the names of the characters we are interested in which helped us to understand the emotions of the characters better and in which situations they were in.
+
+> When using NLP tools we didnt have to think as much what we want to grep for. We could just use the tools to find the sentiment of the sentences and then just filter out the sentences that contain the names of the characters we are interested in. This way we could get more accurate results. Also we could get more context about the sentences that contain the names of the characters we are interested in which helped us to understand the emotions of the characters better and in which situations they were in.
 
 * Reflect on how these techniques and insights could apply in real-world contexts, like social media analysis or other literary works.
 
-We could imagine that these techniques could be used to analyze the emotions of people on social media. For example we could use the same techniques to analyze the emotions of people on twitter. We could then use the results to see how people feel about a certain topic. For example we could analyze the emotions of people on twitter about the corona virus and see how people feel about it. We could then use the results to see if people are more positive or negative about the corona virus and then use the results to make decisions about the way we handle corona virus related topics/posts.
+> We could imagine that these techniques could be used to analyze the emotions of people on social media. For example we could use the same techniques to analyze the emotions of people on twitter. We could then use the results to see how people feel about a certain topic. For example we could analyze the emotions of people on twitter about the corona virus and see how people feel about it. We could then use the results to see if people are more positive or negative about the corona virus and then use the results to make decisions about the way we handle corona virus related topics/posts.
 
 ## --- Feedback ---
 
