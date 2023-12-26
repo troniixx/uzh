@@ -1,11 +1,12 @@
 
 # read in the file
 # then split the file into two lists: source_lang and target_lang
+PATH = "/Users/merterol/uzh/Computational Linguistics/Intro to CL1/Exercise 06/ro_en.txt"
 
 source_lang = []
 target_lang = []
 
-with open('ro_en.txt', 'r', encoding="utf-8") as f:
+with open(PATH, 'r', encoding="utf-8") as f:
     lines = f.readlines()
 
     for line in lines:
