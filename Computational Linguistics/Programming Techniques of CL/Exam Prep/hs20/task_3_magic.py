@@ -10,20 +10,23 @@
 # IMPORTANT: Please write a short comment BEFORE EACH LINE that explains what the next line does.
 
 ### YOUR Python comments and code start here ###
-
-
-r = random.sample(dice, 1)
-g = int(input("Guess which number the dice rolled: "))
-print(f"Amazing! The dice indeed rolled a {g}! You are a 🧙‍! ")
-if r[0] == g:
-while True:
-except Exception:
-print("You know nothing, Jon Snow...")
-break
-else:
-dice = [1, 2, 3, 4, 5, 6]
-try:
+# import the random module to generate random sample
 import random
-pass
+
+#start while loop that runs until the correct number is guessed
+while True:
+    #get user input and convert it to integer
+    try:
+        g = int(input("Guess which number the dice rolled: "))            
+    except Exception:
+        continue # cathcing the exception and continue the loop --> this is to make sure that the script does not crash if the user enters a non-integer
+    else:
+        dice = [1, 2, 3, 4, 5, 6] # numbers of a 6 sided dice
+        r = random.sample(dice, 1) # randomly sample one number from the dice
+        if r[0] == g: # check if the randomly sampled number is equal to the user input
+            print(f"Amazing! The dice indeed rolled a {g}! You are a 🧙‍! ") # congrats message
+            break # break the loop and terminate
+        else: # if the user input is not equal to the randomly sampled number
+            print("You know nothing, Jon Snow...") # print this message
 
 ### YOUR Python comments and code end here ###
