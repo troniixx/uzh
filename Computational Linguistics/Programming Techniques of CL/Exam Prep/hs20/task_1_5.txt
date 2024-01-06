@@ -1,0 +1,10 @@
+   4  Johannes
+   4  Daniel
+   4  Christoph
+   3  Thomas
+   3  Philipp
+   3  Peter
+   3  Martin
+   3  Klaus
+   3  Katharina
+   3  Elisabeth

@@ -1,0 +1,16 @@
+Bickel, Balthasar	Allgemeine Sprachwissenschaft	OP	IVS
+Cardelle, Carmen	Lateinische Philologie des Mittelalters und der Neuzeit sowie Historische Hilfswissenschaften	OP	SGLP
+Eigler, Ulrich	Klassische Philologie, insbesondere Latein	OP	SGLP
+Emeliantseva Koller, Katharina	Projekt «Late Soviet Village: People, Institutions, and Things between the socialist cult of urbanity and ruralisation of urban life styles»	SNF	HIST
+Hausendorf, Heiko	Deutsche Sprachwissenschaften	OP	DSZ
+Hervais-Adelman, Alexis	Projekt «Exploring audio-motor integration: a novel approach to overcoming hearing impairment»	SNF	PSYCH
+Leemann, Lucas	Vergleichende Politikwissenschaft mit Schwerpunkt empirische Demokratieforschung	APTT	IPZ
+Loporcaro, Michele	Romanische Sprachwissenschaft, insbesondere historische Sprachwissenschaft des Italienischen	OP	RoSe
+Martin, Mike	Gerontopsychologie	OP	PSYCH
+Merten, Marie-Luis	Digitalisierte Kommunikationsräume	AP	DSZ
+Reichenbach, Roland	Erziehungswissenschaft mit dem Schwerpunkt Allgemeine Erziehungswissenschaft	OP	IfE
+Sasse, Sylvia	Slavische Literaturwissenschaft	OP	SLAV
+Schneider, Sabine	Neuere deutsche Literatur	OP	DSZ
+Scholz, Sebastian	Allgemeine Geschichte des Mittelalters	OP	HIST
+Stoll, Sabine	Psycholinguistik	AOP	IVS
+Wirth, Werner	Publizistikwissenschaft, Schwerpunkt Empirische Kommunikations- und Medienforschung	OP	IKMZ

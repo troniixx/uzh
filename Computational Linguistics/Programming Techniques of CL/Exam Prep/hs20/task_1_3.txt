@@ -1,0 +1,39 @@
+Bähler, Ursula	Französische Literaturwissenschaft und Geschichte der Romanischen Philologie	AOP	RoSe
+Burger, Kaspar	SNF-Eccellenza-Professur	SNF	SUZ
+Davidov, Eldad	Soziologie	AOP	SUZ
+Dellwo, Volker	Phonetik	AOP	CL
+Dusinberre, Martin	Global History (18. bis 20. Jahrhundert)	AOP	HIST
+Emeliantseva Koller, Katharina	Projekt «Late Soviet Village: People, Institutions, and Things between the socialist cult of urbanity and ruralisation of urban life styles»	SNF	HIST
+Flückiger, Christoph	Projekt «Design development in randomized clinical trials – Psychological treatment in generalized anxiety»	SNF	PSYCH
+Frank, Michael Clemens	Literaturen in englischer Sprache des 19. und 20. Jahrhunderts	AOP	ES
+Friemel, Thomas N.	Publizistik- und Kommunikationswissenschaft mit dem Schwerpunkt Mediennutzung und Medienwirkung	AOP	IKMZ
+Früholz, Sascha	Projekt «Neurocognitive Mechanisms of Auditory Perception – Challenging The Human Auditory System at The Limits of Hearing»	SNF	PSYCH
+Gomez, Liliana	Projekt «Contested Amnesia and Dissonant Narratives in the Global South. Post- conflict in Literature, Art, and Emergent Archives»	SNF	KHIS
+Heite, Catrin	Erziehungswissenschaft mit dem Schwerpunkt Sozialpädagogik	AOP	IfE
+Hervais-Adelman, Alexis	Projekt «Exploring audio-motor integration: a novel approach to overcoming hearing impairment»	SNF	PSYCH
+Höfler, Stefan	Projekt «Handlungsformen der Gesetzessprache: Untersuchungen zur Text und Satzpragmatik der Gesetzesredaktion am Beispiel von Gesetzestexten des schweizerischen Bundesrechts»	SNF	DSZ
+Jäger, Lena Ann	Digitale Sprachwissenschaft	AOP	CL
+Joniak-Lüthi, Agnieszka	Projekt «Roadwork: An Anthropology of lnfrastructure at China's lnner Asian Borders»	SNF	ISEK
+Küster, Bärbel	Moderne und zeitgenössische Kunst	AOP	KHIS
+Landolt, Markus Andreas	Gesundheitspsychologie des Kindes- und Jugendalters	AOP	PSYCH
+Leimgruber, Matthieu	Allgemeine und Schweizer Geschichte der neueren und neuesten Zeit	AOP	HIST
+Lenggenhager, Bigna	Projekt «Plasticity of the bodily self in a life span approach»	SNF	PSYCH
+Liptay, Fabienne	Filmwissenschaft	AOP	FiWi
+Lopez-Labourdette, Adriana	Iberoromanische Literaturwissenschaft mit besonderer Berücksichtigung der Literaturen ausserhalb Europas	AOP	RoSe
+Löschke, Jörg	Projekt «Value-Based Non-Consequentialism»	SNF	PHILO
+Nax, Heinrich	SNF-Eccellenza-Professur	SNF	SUZ
+Niebert, Kai	Fachdidaktik Naturwissenschaften	AOP	IfE
+Praetorius, Anna-Katharina	Erziehungswissenschaft mit Schwerpunkt pädagogisch-psychologische Lehr-Lernforschung und Didaktik	AOP	IfE
+Reuter, Kevin	SNF-Eccellenza-Professur	SNF	PHILO
+Sennrich, Rico	Projekt «Multi-Task Learning with Multilingual Resources for Better Natural Language Understanding»	SNF	CL
+Shanahan, Lilly	Klinische Entwicklungspsychologie	AOP	PSYCH
+Sonnenhauser, Barbara	Slavische Sprachwissenschaft	AOP	SLAV
+Stoll, Sabine	Psycholinguistik	AOP	IVS
+Süss, Daniel	Publizistikwissenschaft mit dem Schwerpunkt Mediensozialisation und Medienkompetenz	AOP	IKMZ
+Timofeeva, Olga	Historische Englische Sprachwissenschaft	AOP	ES
+Townsend, Simon William	Projekt «Combinatoriality in animal vocal communication»	SNF	IVS
+Valär, Rico Franc	Rätoromanische Literatur und Kultur	AOP	RoSe
+Widmer, Paul	Vergleichende Indogermanische Sprachwissenschaft	AOP	IVS
+Widmer, Thomas	Politikwissenschaft, besonders Evaluation	AOP	IPZ
+Zanetti, Sandro	Allgemeine und Vergleichende Literaturwissenschaft	AOP	RoSe
+Zaugg, Roberto	Projekt «Atlantic Italies: Economic and Cultural Entanglements (15th–19th Centuries)»	SNF	HIST

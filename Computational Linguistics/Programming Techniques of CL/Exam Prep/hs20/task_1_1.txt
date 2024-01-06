@@ -1,0 +1,119 @@
+Bartuschat, Johannes	Italienische Literatur	OP	RoSe
+Behr, Wolfgang	Sinologie mit dem Schwerpunkt traditionelles China	OP	AOI
+Berndt, Frauke	Neuere deutsche Literaturwissenschaft	OP	DSZ
+Bickel, Balthasar	Allgemeine Sprachwissenschaft	OP	IVS
+Bodenmann, Guy	Klinische Psychologie	OP	PSYCH
+Boškovska Leimgruber, Nada	Osteuropäische Geschichte	OP	HIST
+Brandstätter-Morawietz, Veronika	Allgemeine Psychologie	OP	PSYCH
+Bronfen, Elisabeth	Englische und amerikanische Literatur	OP	ES
+Caramani, Daniele	Vergleichende Politik	OP	IPZ
+Cardelle, Carmen	Lateinische Philologie des Mittelalters und der Neuzeit sowie Historische Hilfswissenschaften	OP	SGLP
+Cheneval, Francis	Politische Philosophie	OP	PHILO
+Chiavacci, David	Sozialwissenschaftliche Japanologie	OP	AOI
+Criblez, Lucien	Pädagogik mit Schwerpunkt historische Bildungsforschung und Steuerung des Bildungssystems	OP	IfE
+Crivelli, Tatiana	Italienische Literaturwissenschaft	OP	RoSe
+Daum, Moritz	Entwicklungspsychologie	OP	PSYCH
+Della Casa, Philippe	Ur- und Frühgeschichte	OP	ARCH
+Dennerlein, Bettina	Gender Studies und Islamwissenschaften	OP	AOI
+Dommann, Monika	Geschichte der Neuzeit	OP	HIST
+Dürscheid, Christa	Deutsche Sprache, insbesondere Gegenwartssprache	OP	DSZ
+Ehlert, Ulrike	Klinische Psychologie	OP	PSYCH
+Eigler, Ulrich	Klassische Philologie, insbesondere Latein	OP	SGLP
+Eisenegger, Mark	Publizistikwissenschaft mit dem Schwerpunkt «Öffentlichkeit und Gesellschaft»	OP	IKMZ
+Eisner, Manuel	Lebenslauf und Kriminalität	OP	SUZ
+Esser, Frank	Publizistikwissenschaft mit Schwerpunkt Vergleichende Medienforschung	OP	IKMZ
+Finke, Peter	Allgemeine Ethnologie	OP	ISEK
+Flitsch, Mareile	Ethnologie	OP	ISEK
+Flückiger, Barbara	Filmwissenschaft	OP	FiWi
+Freund, Alexandra	Entwicklungspsychologie: Erwachsenenalter	OP	PSYCH
+Ganz, David	Kunstgeschichte des Mittelalters	OP	KHIS
+Gilardi, Fabrizio	Policy Analyse	OP	IPZ
+Giuriato, Davide	Neuere deutsche Literaturwissenschaft	OP	DSZ
+Glessgen, Martin-Dietrich	Romanische Philologie unter besonderer Berücksichtigung der französischen Sprachwissenschaft	OP	RoSe
+Glock, Hans-Johann	Philosophie mit besonderer Berücksichtigung der Theoretischen Philosophie	OP	PHILO
+Gockel, Bettina	Geschichte der bildenden Kunst	OP	KHIS
+Goltermann, Svenja	Geschichte der Neuzeit	OP	HIST
+Gonon, Philipp	Berufsbildung	OP	IfE
+Groote, Inga Mai	Musikwissenschaft	OP	MWI
+Halbig, Christoph	Allgemeine Ethik	OP	PHILO
+Hargittai, Eszter	Publizistik- und Kommunikationswissenschaft mit dem Schwerpunkt «Mediennutzung und Medienrealität»	OP	IKMZ
+Hausendorf, Heiko	Deutsche Sprachwissenschaften	OP	DSZ
+Häusermann, Silja	Schweizer Politik und vergleichend politische Ökonomie	OP	IPZ
+Hedderich, Ingeborg	Sonderpädagogik mit Schwerpunkt Gesellschaft, Partizipation und Behinderung	OP	IfE
+Hundt, Marianne	Englische Sprachwissenschaft	OP	ES
+Jäggi, Carola	Kunstgeschichte des Mittelalters und der Archäologie der frühchristlicheund hoch- und spätmittelalterlichen Zeit	OP	KHIS
+Jäncke, Lutz	Neuropsychologie	OP	PSYCH
+Jonas, Klaus	Sozialpsychologie	OP	PSYCH
+Jucker, Andreas H.	Englische Sprachwissenschaft	OP	ES
+Just, Natascha Katharina	Publizistik- und Kommunikationswissenschaft mit dem Schwerpunkt Medienpolitik / Media und Internet Governance	OP	IKMZ
+Kabatek, Johannes	Romanische Philologie mit besonderer Berücksichtigung der iberoromanischen Sprachwissenschaft	OP	RoSe
+Karremann, Isabel	Literaturen in Englischer Sprache der Frühen Neuzeit	OP	ES
+Kiening, Christian	Deutsche Literaturwissenschaft (von den Anfängen bis 1700)	OP	DSZ
+Kleim, Birgit	Experimentelle Psychopathologie und Psychotherapie	OP	PSYCH
+Kleinmann, Martin	Professor für Arbeits- und Organisationspsychologie	OP	PSYCH
+Klinkert, Thomas	Französische Literaturwissenschaft (1500 bis Gegenwart)	OP	RoSe
+Köbele, Susanne	Ältere Deutsche Literaturwissenschaft	OP	DSZ
+Kolb, Anne	Alte Geschichte	OP	HIST
+Krüger, Gesine	Allgemeine Geschichte der Neuzeit	OP	HIST
+Kübler, Daniel	Demokratieforschung und Public Governance	OP	IPZ
+Latzer, Michael	Publizistik- und Kommunikationswissenschaft mit dem Schwerpunkt Medienwandel	OP	IKMZ
+Loetz, Francisca	Allgemeine Geschichte der Neuzeit	OP	HIST
+Lopez Guil, Itziar	Iberoromanische Literaturwissenschaft	OP	RoSe
+Loporcaro, Michele	Romanische Sprachwissenschaft, insbesondere historische Sprachwissenschaft des Italienischen	OP	RoSe
+Lütteken, Laurenz	Musikwissenschaft	OP	MWI
+Maag Merki, Katharina	Pädagogik mit dem Schwerpunkt «Theorie und Empirie schulischer Bildungsprozesse»	OP	IfE
+Maerker, Andreas	Psychopathologie	OP	PSYCH
+Malinar, Angelika	Indologie	OP	AOI
+Martin, Mike	Gerontopsychologie	OP	PSYCH
+Michaelowa, Katharina	Politische Ökonomie der Entwicklungs- und Schwellenländer	OP	IPZ
+Moser Opitz, Elisabeth	Sonderpädagogik mit Schwerpunkt «Bildung und Integration»	OP	IfE
+Müller Nielaba, Daniel	Neuere deutsche Literatur	OP	DSZ
+Müller-Wille, Klaus	Nordische Philologie	OP	DSZ
+Näf, Beat	Alte Geschichte	OP	HIST
+Oberauer, Klaus	Allgemeine Psychologie mit dem Schwerpunkt Kognitive Psychologie	OP	PSYCH
+Petko, Dominik	Allgemeine Didaktik und Mediendidaktik	OP	IfE
+Rauhut, Heiko	Sozialtheorie und quantitative Methoden	OP	SUZ
+Reichenbach, Roland	Erziehungswissenschaft mit dem Schwerpunkt Allgemeine Erziehungswissenschaft	OP	IfE
+Reusser, Christoph	Klassische Archäologie	OP	ARCH
+Riedweg, Christoph	Klassische Philologie / Gräzistik	OP	SGLP
+Rieker, Peter	Pädagogik mit dem Schwerpunkt «Ausserschulische Bildung und Erziehung»	OP	IfE
+Riemenschnitter, Andrea	Moderne Chinesische Spache und Literatur	OP	AOI
+Rohrbach, Lena	Nordische Philologie	OP	DSZ
+Rössel, Jörg	Soziologie	OP	SUZ
+Rost, Katja	Soziologie	OP	SUZ
+Ruch, Willibald	Empirische Persönlichkeitspsychologie und Psychologische Diagnostik	OP	PSYCH
+Rudolph, Ulrich	Islamwissenschaft	OP	AOI
+Saporiti, Katia	Philosophie mit Berücksichtigung der Geschichte der Philosophie	OP	PHILO
+Sarasin, Philipp	Allgemeine und Schweizer Geschichte der Neuzeit	OP	HIST
+Sasse, Sylvia	Slavische Literaturwissenschaft	OP	SLAV
+Schaber, Peter	Ethik mit Schwerpunkt in angewandter Ethik	OP	PHILO
+Schäfer, Mike S.	Publizistik- und Kommunikationswissenschaft mit dem Schwerpunkt Wissenschafts-, Krisen- und Risikokommunikation	OP	IKMZ
+Schneider, Sabine	Neuere deutsche Literatur	OP	DSZ
+Mireille, Schnyder	Ältere Deutsche Literaturwissenschaft	OP	DSZ
+Scholz, Urte	Angewandte Sozialpsychologie	OP	PSYCH
+Scholz, Sebastian	Allgemeine Geschichte des Mittelalters	OP	HIST
+Schreier, Daniel	Englische Sprachwissenschaft	OP	ES
+Seiler, Guido	Germanische Philologie	OP	DSZ
+Shanahan, Michael	Soziologie der Entwicklung von Kindern und Jugendlichen	OP	SUZ
+Siegert, Gabriele	Publizistikwissenschaft mit Schwerpunkt Medienökonomie	OP	IKMZ
+Slapin, Jonathan B.	Politische Institutionen und Europäische Politik	OP	IPZ
+Stark, Elisabeth	Philologie unter besonderer Berücksichtigung der Französischen Sprachwissenschaft	OP	RoSe
+Staub, Fritz	Gymnasialpädagogik sowie Lehr- und Lernforschung	OP	IfE
+Steenbergen, Marco	Professor für Methoden der Politikwissenschaft	OP	IPZ
+Steineck, Raji C.	Japanologie	OP	AOI
+Strobl, Carolin	Psychologische Methodenlehre, Evaluation und Statistik	OP	PSYCH
+Szydlik, Marc	Soziologie	OP	SUZ
+Teuscher, Simon	Allgemeine Geschichte des Mittelalters	OP	HIST
+Theisohn, Philipp	Neuere deutsche Literaturwissenschaft	OP	DSZ
+Thomsen, Hans B.	Kunstgeschichte Ostasiens	OP	KHIS
+Trachsler, Richard	Romanische Philologie - Französische Literatur des Mittelalters	OP	RoSe
+Tröhler, Margrit	Filmwissenschaft	OP	FiWi
+Tschofen, Berhhard	Populäre Kulturen mit dem Schwerpunkt Kulturwissenschaftliche Raumforschung	OP	ISEK
+Ullrich, Johannes	Sozialpsychologie	OP	PSYCH
+Volk, Martin	Computerlinguistik	OP	CL
+Walter, Stefanie	Internationale Beziehungen und Politische Ökonomie	OP	IPZ
+Watzke, Birgit	Klinische Psychologie mit dem Schwerpunkt Psychotherapieforschung	OP	PSYCH
+Weddigen, Tristan	Kunstgeschichte der Neuzeit	OP	KHIS
+Wirth, Werner	Publizistikwissenschaft, Schwerpunkt Empirische Kommunikations- und Medienforschung	OP	IKMZ
+Zey, Claudia	Allgemeine Geschichte des Mittelalters	OP	HIST
+Zimmermann, Harm-Peer	Populäre Kulturen mit dem Schwerpunkt Populäre Literaturen und Medien	OP	ISEK
