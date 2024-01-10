@@ -1,0 +1,1 @@
+{"dictionary" : {"apple" : 5, "banana" : 2, "cherry" : 10}, "threshold" : 3}
