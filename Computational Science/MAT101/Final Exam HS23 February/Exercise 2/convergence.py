@@ -9,11 +9,15 @@ def partial_sum(x):
     
     return sol
 
-def convergence_vector(l):
+def convergence_vector(v):
+    max_index = max(v)
+    partial_sum = 0
     output = []
-    
-    for element in l:
-        output.append(partial_sum(element))
+
+    for i in range(max_index + 1):
+        partial_sum += (-1)**i / (2*i + 1)
+        if i in v:
+            output.append(partial_sum)
 
     return output
 
@@ -34,9 +38,25 @@ def plotter(l):
     plt.savefig("Computational Science/MAT101/Final Exam HS23 February/Exercise 2/plot_convergence.pdf")
 
 def convergence_up_to_tolerance(t, m):
-    pass
+    prev = 0
+
+    for n in range(1, m+1):
+        curr = prev + (-1)**(n-1) / ((2*n - 1) + 1)
+
+        if abs(curr - prev) <= t:
+            return n
+        
+        prev = curr
+    
+    return "Condition not met for n <= m"
 
 
 if __name__ == '__main__':
     p = [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
-    plotter(p)
+    #convergence_vector(p)
+
+    #plotter(p)
+
+    epsilon = 0.01
+    m = 1000
+    print(convergence_up_to_tolerance(epsilon, m))
