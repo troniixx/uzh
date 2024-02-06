@@ -38,10 +38,35 @@ def plot_convergence_limit(N):
     plt.show()
 
 def convergence_even_odd(q, m, s):
-    pass
+    if s not in ['even', 'odd']:
+        raise ValueError("The string s must be either 'even' or 'odd'.")
+
+    # Initialize the first partial sum
+    partial_sums = [1] 
+
+    # Calculate partial sums up to m
+    for n in range(1, m + 1):
+        partial_sums.append(partial_sums[-1] + q**n)
+
+    # Filter even or odd indices
+    if s == 'even':
+        return [partial_sums[i] for i in range(len(partial_sums)) if i % 2 == 0]
+    else:
+        return [partial_sums[i] for i in range(len(partial_sums)) if i % 2 != 0]
 
 def convergene_up_to_tolerance(q, t, m):
-    pass
+    if abs(q) >= 1:  # Check if the series does not converge
+        return False
+
+    S_q = 1 / (1 - q)
+    partial_sum = 1 
+
+    for n in range(1, m + 1):
+        partial_sum += q**n
+        if abs(partial_sum - S_q) <= t:
+            return True
+
+    return False
 
 if __name__ == "__main__":
     v = [0.5, -0.5, 2, -2, 0, 1, -1]
