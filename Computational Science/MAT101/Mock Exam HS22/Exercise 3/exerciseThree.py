@@ -46,5 +46,5 @@ def reproduce(n):
 
     
 if __name__ == "__main__":
-    #plotter()
+    plotter()
     reproduce(5)
