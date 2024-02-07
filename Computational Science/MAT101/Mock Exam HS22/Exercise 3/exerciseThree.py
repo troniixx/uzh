@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 def plotter():
     N = 5
-    fig, ax = plt.subplots()
+    _, ax = plt.subplots()
     Q = 100
     x = np.linspace(0, 1, Q)
     function_values = np.zeros((Q, N))
@@ -29,7 +29,7 @@ def plotter():
     
 def reproduce(N):
     data = np.loadtxt("Computational Science/MAT101/Mock Exam HS22/Exercise 3/my_columns.dat", delimiter=",", skiprows=1)  # skip the header row
-    fig, ax = plt.subplots()
+    _, ax = plt.subplots()
     Q = 100
     x = np.linspace(0, 1, Q)
     
