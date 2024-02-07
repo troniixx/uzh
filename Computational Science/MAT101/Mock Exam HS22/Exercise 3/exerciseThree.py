@@ -27,13 +27,13 @@ def plotter():
 
     print("Plot and data saved.")
     
-def reproduce(N):
+def reproduce(n):
     data = np.loadtxt("Computational Science/MAT101/Mock Exam HS22/Exercise 3/my_columns.dat", delimiter=",", skiprows=1)  # skip the header row
     _, ax = plt.subplots()
     Q = 100
     x = np.linspace(0, 1, Q)
     
-    for j in range(1, N+1):
+    for j in range(1, n+1):
         ax.plot(x, data[:, j-1], label=f"x^{j}")
 
     ax.set_title("Functions x^j for j=1,...,N")
