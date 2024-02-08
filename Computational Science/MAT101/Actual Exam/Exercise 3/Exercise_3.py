@@ -13,20 +13,20 @@ def partial_wallis(n):
 
 def plotter(n):
     # Create the values of n
-    k_values = np.arange(1, n+1)
-    n_values = 2**k_values
+    xrange = np.arange(1, n+1)
+    x_1 = 2**xrange
     
     # Calculate the partial products
-    partial_products = [partial_wallis(n) for n in n_values]
-    partial_products[0] = 1.425
+    pp = [partial_wallis(n) for n in x_1]
+    
     # Plot the partial products
-    plt.plot(n_values, partial_products, "|", color = "red", label="W_n", linestyle = "solid")
+    plt.plot(x_1, pp, "|", color = "red", label="W_n", linestyle = "solid")
     # Plot the pi/2 line
     plt.axhline((np.pi)/2, color="blue", label="pi/2", linestyle="dashed")
     
     # Addinf ruther information to the plot as documented in Figure 1
     plt.ylim(1.4, 1.6)
-    plt.legend()
+    plt.legend(loc = "lower right")
     plt.grid(True)
     plt.xscale("log")
     plt.xlabel("n")
