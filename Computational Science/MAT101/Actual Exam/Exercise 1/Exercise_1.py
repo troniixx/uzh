@@ -43,7 +43,7 @@ if __name__ == "__main__":
     print(equal_texts(["v", "i", "s", "a"], ["v", "a", "i", "s"])) # should return False --> OK
     
     print(distance(["v", "i", "s", "a"], ["v", "a", "i", "s"])) # should return 3 --> OK
-    print(distance(["a", "v", "i", "s"], ["v", "i", "s", "a"])) # shoudl return 4 --> OK
+    print(distance(["a", "v", "i", "s"], ["v", "i", "s", "a"])) # should return 4 --> OK
     
     print(no_common_character(["a", "v", "i", "s"], ["v", "i", "s", "a"])) # should return False --> OK
     print(no_common_character(["a", "v", "i", "s"], ["u", "r", "n", "e"])) # should return True --> OK

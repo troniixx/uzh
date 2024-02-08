@@ -12,7 +12,7 @@ def divisors(n):
             
     return divisors
 
-def GCD(a, b):
+def gcd(a, b):
     #everthing is a divisor of 0
     if (a == 0):
         return b
@@ -23,8 +23,8 @@ def GCD(a, b):
         return a
     # a is greater
     if (a > b):
-        return GCD(a-b, b)
-    return GCD(a, b-a)
+        return gcd(a-b, b)
+    return gcd(a, b-a)
     
 class Fraction():
     # initialize the class with the numerator and the denominator
@@ -42,8 +42,8 @@ class Fraction():
     
     # reduce the fraction by dividing the numerator and the denominator by their greatest common divisor
     def reduce(self):
-        gcd = GCD(self.numerator, self.denominator)
-        return Fraction(self.numerator // gcd, self.denominator // gcd)
+        greatest_common_div = gcd(self.numerator, self.denominator)
+        return Fraction(self.numerator // greatest_common_div, self.denominator // greatest_common_div)
     
     # add two fractions by overriding the __add__ method
     def __add__(self, other):
@@ -69,11 +69,11 @@ if __name__ == "__main__":
     (one.inverse()).print() # should return 2/1 --> OK: inverse() works
     (three.reduce()).print() # should return 1/2 --> OK: reduce() works
     
-    # testing the divisors and GCD functions
+    # testing the divisors and gcd functions
     print(divisors(10)) # should return [1, 2, 5, 10] --> OK
     print(divisors(0)) # should return "The number must be greater than 0" --> OK
-    print(GCD(100, 60)) # should return 20 --> OK
-    print(GCD(0, 0)) # should return 0 --> OK
-    print(GCD(0, 10)) # should return 10 --> OK
-    print(GCD(10, 0)) # should return 10 --> OK
-    print(GCD(278, 147)) # should return 1 --> OK
+    print(gcd(100, 60)) # should return 20 --> OK
+    print(gcd(0, 0)) # should return 0 --> OK
+    print(gcd(0, 10)) # should return 10 --> OK
+    print(gcd(10, 0)) # should return 10 --> OK
+    print(gcd(278, 147)) # should return 1 --> OK
