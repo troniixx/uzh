@@ -1,30 +1,29 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
-#TODO: Implement without using loop and using some numpy array function
+# The wallis sequence is defined as the product of the following sequence:
 def a_sequence(n):
-    sol = []
-    sol.append(1.33)
-    for i in range(2, n+1):
-        sol.append(sol[i-1] + ((2*i)**2 / (((2*i)**2)-1)))
+    return np.array([(2*k/(2*k-1)) * (2*k/(2*k+1)) for k in range(1, n+1)])
 
 def partial_wallis(n):
-    sol = 1
-    
-    for i in range(1, n+1):
-        sol *= ((2*i)**2 / (((2*i)**2)-1))
-        
-    return sol
+    # Calculate the sequence
+    seq = a_sequence(n)
+    # Return the product of the sequence
+    return np.prod(seq)
 
 def plotter(n):
+    # Create the values of n
+    k_values = np.arange(1, n+1)
+    n_values = 2**k_values
     
-    x = [i for i in range(n+1)]
-    # y are the partial sums of the wallis sequence
-    y = [partial_wallis(i) for i in range(n+1)]
+    # Calculate the partial products
+    partial_products = [partial_wallis(n) for n in n_values]
+    # Plot the partial products
+    plt.plot(n_values, partial_products, "|", color = "red", label="W_n", linestyle = "solid")
+    # Plot the pi/2 line
+    plt.axhline((np.pi)/2, color="blue", label="pi/2", linestyle="dashed")
     
-    plt.plot(x, y, "x", color = "red", label="W_n", linestyle = "solid")
-    plt.axhline(np.pi/2, color="blue", label="pi/2", linestyle="dashed")
+    # Addinf ruther information to the plot as documented in Figure 1
     plt.legend()
     plt.grid(True)
     plt.xscale("log")
@@ -33,17 +32,21 @@ def plotter(n):
     plt.show()
 
 def convergence_up_to_tolerance(e, m):
-    n  = 1
-    
+    n = 1
     while n <= m:
+        # Calculate the partial products
         ps1 = partial_wallis(n)
         ps2 = partial_wallis(n-1)
         
+        # check if the difference is less than the tolerance
         if abs(ps1 - ps2) <= e:
-            return n
+            return n # if yes, return value of n
+        m += 1 # if no, increment m and continue
     
+    # if no convergence is found, return the following message
     return "No convergence up to tolerance"
 
 if __name__ == "__main__":
-    #plotter(15)
-    print(convergence_up_to_tolerance(0.0001, 1000))
+    plotter(20)
+    #print(convergence_up_to_tolerance(0.01, 100))
+    print(a_sequence(20))
