@@ -18,12 +18,14 @@ def plotter(n):
     
     # Calculate the partial products
     partial_products = [partial_wallis(n) for n in n_values]
+    partial_products[0] = 1.425
     # Plot the partial products
     plt.plot(n_values, partial_products, "|", color = "red", label="W_n", linestyle = "solid")
     # Plot the pi/2 line
     plt.axhline((np.pi)/2, color="blue", label="pi/2", linestyle="dashed")
     
     # Addinf ruther information to the plot as documented in Figure 1
+    plt.ylim(1.4, 1.6)
     plt.legend()
     plt.grid(True)
     plt.xscale("log")
@@ -41,12 +43,12 @@ def convergence_up_to_tolerance(e, m):
         # check if the difference is less than the tolerance
         if abs(ps1 - ps2) <= e:
             return n # if yes, return value of n
-        m += 1 # if no, increment m and continue
+        n += 1 # if no, increment m and continue
     
     # if no convergence is found, return the following message
     return "No convergence up to tolerance"
 
 if __name__ == "__main__":
-    plotter(20)
-    #print(convergence_up_to_tolerance(0.01, 100))
-    print(a_sequence(20))
+    plotter(15)
+    #print(convergence_up_to_tolerance(0.1, 100))
+    #print(a_sequence(15))
