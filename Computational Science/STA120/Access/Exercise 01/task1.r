@@ -1,6 +1,3 @@
-# Exercise 1: 
-
-```r
 png(file = "solution.png")
 require( ... ) # Or library(fields) 
 ... ( ... ) # Check out the plot in your R-Studio
@@ -8,4 +5,3 @@ require( ... ) # Or library(fields)
 
 max_height <- ... 
 dev.off()
-```
