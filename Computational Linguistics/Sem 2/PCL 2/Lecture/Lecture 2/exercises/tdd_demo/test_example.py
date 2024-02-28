@@ -14,10 +14,10 @@ def test_key_error() -> None:
         foo(dict(b=2))
 
 
-# def test_esszett_upper() -> None:
-#     test_input = "STRAẞE"
-#     expected = "STRASSE"
-#     assert normalize_swiss_german(test_input) == expected
+def test_esszett_upper() -> None:
+    test_input = "STRAẞE"
+    expected = "STRASSE"
+    assert normalize_swiss_german(test_input) == expected
 
 
 
