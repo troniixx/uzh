@@ -5,7 +5,11 @@ def normalize_swiss_german(sentence: str) -> str:
     """Replace German Esszett 'ß' with 'ss' in input sentence
     and return normalized sentence.
     """
-    return re.sub("ß", "ss", sentence)
+    if sentence.isupper():
+        normalized_sentence = re.sub("[ßẞ]", "SS", sentence)
+    else:
+        normalized_sentence = re.sub("[ßẞ]", "ss", sentence)
+    return normalized_sentence
 
 
 def foo(d: dict) -> None:

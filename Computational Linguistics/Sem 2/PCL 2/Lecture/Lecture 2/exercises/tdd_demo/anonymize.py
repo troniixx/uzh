@@ -5,11 +5,7 @@ def anonymize_numbers(sms: str) -> str:
     """Find all sequences of numbers of lenght 3 or longer
     and replace each digit with an 'N'.
     """
-    for c in sms:
-        if c.isdigit():
-            sms = sms.replace(c, 'N')
-    
-    return sms
+    return re.sub(r"\d{3,}", lambda x: 'N' * len(x.group()), sms)
 
 def anonymize_email_address(email: str) -> str:
     """Anonymize email addresses in input:
@@ -27,8 +23,3 @@ def anonymize_email_address(email: str) -> str:
     anonymized_domain = 'y' * len(domain)
     # Combine everything back together
     return f"{anonymized_local}@{anonymized_domain}.{top_level_domain}"
-    
-    
-if __name__ == "__main__":
-    print(anonymize_numbers("I have 2 dogs and 3 cats."))
-    print(anonymize_email_address("mert.erol@uzh.ch"))
