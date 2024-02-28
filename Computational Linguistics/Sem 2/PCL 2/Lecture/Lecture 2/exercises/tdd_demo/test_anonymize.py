@@ -8,7 +8,7 @@ PHONE_TESTCASES = [("I have 2 dogs and 3 cats.", "I have N dogs and N cats."),
                 ]
 @pytest.mark.parametrize("test_input,expected", PHONE_TESTCASES)
 def test_anonymize_phone_number(test_input, expected) -> None:
-    assert anonymize_email_address(test_input) == expected
+    assert anonymize_numbers(test_input) == expected
 
 
 
