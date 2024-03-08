@@ -9,32 +9,32 @@ class TextAnalyzer(ABC):
         pass
     
 class TokenCounter(TextAnalyzer):
-    def __init__(self, text):
-        super().__init__(text)
-    
     def analyze(self):
         return len(self.text.split())
 
 class VowelCounter(TextAnalyzer):
-    def __init__(self, text):
-        super().__init__(text)
-    
     def analyze(self):
         return sum([1 for x in self.text if x in "aeiou"])
 
 class UpperCaseConverter(TextAnalyzer):
-    def __init__(self, text):
-        super().__init__(text)
-        
     def analyze(self):
         return self.text.upper()
+
+def process_text(texts):
+    results = []
+    count = 0
+    
+    for text in texts:
+        results.append([])
+        results[count].append(TokenCounter(text).analyze())
+        results[count].append(VowelCounter(text).analyze())
+        results[count].append(UpperCaseConverter(text).analyze())
+        count += 1
+
+    return results
     
 if __name__ == "__main__":
-    tc = TokenCounter("This is a test string")
-    print(tc.analyze())
+    texts = ["This is a test string", "This is another test string", "This is a third test string",
+            "This is a fourth test string", "This is a fifth test string", "This is a sixth test string"]
     
-    vc = VowelCounter("This is a test string")
-    print(vc.analyze())
-    
-    uc = UpperCaseConverter("This is a test string")
-    print(uc.analyze())
+    print(process_text(texts))
