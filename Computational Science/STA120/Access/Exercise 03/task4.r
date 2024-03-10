@@ -1,15 +1,15 @@
 png(file="solution.png")
 
 set.seed(100)
-n <- ...
+n <- 100
 
 # What would be the best way to sample something once, but to have 500 samples?
 # Generate a matrix with dimensions 500 rows by 'n' columns, 
 # where each element is drawn from an exponential distribution with a rate parameter of 2.
-artificial <- ... ( ... , 500, n)
+artificial <- matrix(rexp(100*500, rate = 2) , 500, n)
 
 # Find the minimum of each sample. You can use the function apply().
-rowmins <- ...
+rowmins <- apply(artificial, 1, min)
 
 par(mfrow = c(1, 2))
 hist(rowmins, prob = TRUE, xlab = "Sample minima", ylim = c(0, n*2),
@@ -17,10 +17,10 @@ hist(rowmins, prob = TRUE, xlab = "Sample minima", ylim = c(0, n*2),
 rug(rowmins) # in case `breaks` are not optimal 
 
 # Compare it  with theoretical density using curve() function
-curve( ... , col = "red", add = TRUE) # theoretical density like in the previous task
+curve(dexp(x, rate = 100*2) , col = "red", add = TRUE) # theoretical density like in the previous task
 
 ### Additionaly plot the  QQ-plot against theoretical quantile fucntion.
-qqplot( ... , rowmins, xlab = "Exp(2n)")
-qqline( ... , distribution = function(p){qexp(p, rate = 2*n)} )
+qqplot( qexp(ppoints(100), rate = 2*n) , rowmins, xlab = "Exp(2n)")
+qqline( rowmins , distribution = function(p){qexp(p, rate = 2*n)} )
 
 dev.off()
