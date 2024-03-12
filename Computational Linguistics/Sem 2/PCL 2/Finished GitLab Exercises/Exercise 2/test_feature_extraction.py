@@ -43,35 +43,29 @@ def test_feature_extractor():
         'alpha_ratio': 904 / 1118,
         'unique_chars_count': 39,
     }
-
-###### Additional tests for FeatureExtractor class
-
-# Tests for EnglishFeatureExtractor
-def test_english_extractor_cap_word_count():
-    doc = Document("test.txt")
-    doc.text = "This is a Test. Another Test." 
-    extractor = EnglishFeatureExtractor()
-    extractor.text = doc.text
-    assert extractor.cap_word_count() == 4
-
-def test_english_extractor_article_count():
-    doc = Document("test.txt")
-    doc.text = "An apple a day keeps the doctor away. The end."
-    extractor = EnglishFeatureExtractor()
-    extractor.text = doc.text
-    assert extractor.article_count() == 4
-
-# Tests for GermanFeatureExtractor
-def test_german_extractor_umlaut_count():
-    doc = Document("test.txt")
-    doc.text = "Füsse über kühle Möwen ässen Öl. Daecher und Bruecken."
+    
+def test_german_feature_extractor():
+    doc = Document('test.txt')
+    doc.text = "Hallo, können wir uns morgen treffen? ä ü  ae ue ö"
     extractor = GermanFeatureExtractor()
-    extractor.text = doc.text
-    assert extractor.umlaut_count() == 8 
-
-def test_german_extractor_modal_count():
-    doc = Document("test.txt")
-    doc.text = "Wir können dort müssen und wollen dürfen. Sie mögen es."
-    extractor = GermanFeatureExtractor()
-    extractor.text = doc.text
-    assert extractor.modal_count() == 5
+    features = extractor.extract_features(doc)
+    assert features == {
+        'char_count': 50,
+        'alpha_ratio': 37 / 50,
+        'unique_chars_count': 22,
+        'umlaut_count': 6,
+        'modal_count': 1
+    }
+    
+def test_english_feature_extractor():
+    doc = Document('test.txt')
+    doc.text = "Hello, can we meet tomorrow?"
+    extractor = EnglishFeatureExtractor()
+    features = extractor.extract_features(doc)
+    assert features == {
+        'char_count': 28,
+        'alpha_ratio': 22 / 28,
+        'unique_chars_count': 14,
+        'Cap_word_count': 1,
+        'article_count': 0
+    }

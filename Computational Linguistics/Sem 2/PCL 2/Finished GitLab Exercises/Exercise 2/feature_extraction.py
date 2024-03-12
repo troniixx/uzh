@@ -117,33 +117,47 @@ class FeatureExtractor:
 
 ###### DONE: YOUR FEATURE EXTRACTOR IMPLEMENTATIONS HERE ######
 class GermanFeatureExtractor(FeatureExtractor):
-    def umlaut_count(self) -> int:
+    def extract_features(self, document: Document) -> dict[str, float]:
+        features = super().extract_features(document)
+        features["umlaut_count"] = self.umlaut_count(document.text)
+        features["modal_count"] = self.modal_count(document.text)
+        
+        return features
+    
+    def umlaut_count(self, doctext) -> int:
         #list comprehensions didnt work so i did it the usual way
         count = 0
         uml = ["ä", "ö", "ü", "ae", "oe", "ue"]
         
         #iterate through the umlauts and count them in the text
         for u in uml:
-            count += self.text.lower().count(u)
+            count += doctext.lower().count(u)
         
         #return the count
         return count
         
-    def modal_count(self) -> int:
+    def modal_count(self, doctext) -> int:
         #remove punctuation to make it easier to count the modals
-        text = ''.join(char for char in self.text if char not in string.punctuation)
+        text = ''.join(char for char in doctext if char not in string.punctuation)
         #count the modals
         return len([word for word in text.split() if word.lower() in ["können", "müssen", "sollen", "wollen", "dürfen", "mögen"]])
 
 class EnglishFeatureExtractor(FeatureExtractor):
-    def cap_word_count(self) -> int:
+    def extract_features(self, document: Document) -> dict[str, float]:
+        features = super().extract_features(document)
+        features["Cap_word_count"] = self.cap_word_count(document.text)
+        features["article_count"] = self.article_count(document.text)
+        
+        return features
+    
+    def cap_word_count(self, doctext) -> int:
         #remove punctuation
-        text = ''.join(char for char in self.text if char not in string.punctuation)
+        text = ''.join(char for char in doctext if char not in string.punctuation)
         #count the words that start with a capital letter and are longer than 1 character
         return len([word for word in text.split() if word[0].isupper() and len(word) > 1])
     
-    def article_count(self) -> int:
+    def article_count(self, doctext) -> int:
         #remove punctuation
-        text = ''.join(char for char in self.text if char not in string.punctuation)
+        text = ''.join(char for char in doctext if char not in string.punctuation)
         #count the articles
         return len([word for word in text.split() if word.lower() in ["a", "an", "the"]])
