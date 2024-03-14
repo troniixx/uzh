@@ -4,6 +4,9 @@ data(Oral)
 n <- 544
 set.seed(3) 
 
-... # Room for creativity!
+bootstrap <- function(n.repl){
 
-sol <- quantile( ... , ... ) 
+}
+# Room for creativity!
+
+sol <- quantile(bootstrap(10000), c(0.025, 0.975)) 
