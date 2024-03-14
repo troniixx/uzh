@@ -17,7 +17,7 @@ async def get_comments_top_posts(reddit, subreddit_name, limit=5, comments_limit
     subreddit = await reddit.subreddit(subreddit_name)
     comments = {}
 
-    async for post in subreddit.top(limit=limit):
+    async for post in subreddit.new(limit=limit):
         post_title = post.title
         comments[post_title] = []
 
