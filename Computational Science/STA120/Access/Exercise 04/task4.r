@@ -1,15 +1,14 @@
-require( spam )
-data( Oral )
-str(Oral)
+require(spam)
+data(Oral)
 
 smry <- summary(Oral)
-maximum <- max(Oral)
+maximum <- which.max(Oral$E)
 
 mean_SMR <- mean(Oral$SMR)
 n <- 544 
-S2 <- sum((Oral$SMR - mean_SMR)^2)/(n-1)
+S2 <- 1/(n-1)*sum((Oral$SMR-mean_SMR)^2)
 S <- sqrt(S2)
-ci <- mean(Oral$SMR) + c(-1, 1) * qt(0.975, n-1, lower = TRUE) * S/sqrt(n)
+ci <- mean_SMR + c(-1, 1) * qt(0.975, n-1, lower = TRUE) * S/sqrt(n)
 
 
 sol <- list(smry, maximum, mean_SMR, ci)
