@@ -1,9 +1,10 @@
 require(MASS)
-data(anorexia)
+data("anorexia")
 
-tt <- t.test(anorexia$Prewt, anorexia$Postwt, paired = TRUE)
+cbt <- anorexia[anorexia$Treat == "CBT",]
 
-p_value <- tt$p.value
+tt <- t.test(cbt$Prewt, cbt$Postwt, paired = TRUE)
+p_value = tt$p.value
 ci <- tt$conf.int
 alt_hyp <- tt$alternative
 
