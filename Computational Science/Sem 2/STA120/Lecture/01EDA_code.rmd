@@ -1,0 +1,211 @@
+---
+title: "01 EDA"
+subtitle: "STA120: Introduction to Statistics
+         Spring semester 2024
+         IMath, University of Zurich, Switzerland"
+author: "Reinhard Furrer with contributions of various others"
+date: "February 17, 2024"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+### R-Code: 
+### Loading the lemanHg dataset in R. (Lecture I)
+```{r}
+Hg.frame <- read.csv('http://user.math.uzh.ch/furrer/download/intro2stat/lemanHg.csv') 
+#View(Hg.frame)
+str( Hg.frame)      # dataframe with 1 numeric column and 293 observations
+head( Hg.frame, 3)  # column name is 'Hg'
+Hg <- Hg.frame$Hg   # equivalent to 'Hg.frame[,1]' or `Hg.frame[,"Hg"]`
+str( Hg) # now we have a vector
+ is.na( Hg)
+which( is.na( Hg))    # check if there are NAs, alt: 'any( is.na( Hg))' 
+
+# str( read.csv('data/lemanHg.csv', header=FALSE))
+            # Wrong way to import data. Result is a 'factor' not 'numeric'!
+```
+
+### R-Code (not in the script):
+### Working with a vector 
+```{r}
+my.data <- c(2, 3, 5, 7,1)
+my.data[1]
+my.data[3]
+my.data[my.data > 4]
+```
+
+
+### R-Code: 
+### Example of creating ordinal and interval scales in R.
+### (Lecture II)
+```{r}
+ordinal <- factor( c("male","female"))
+ordinal[1] == ordinal[2]
+#ordinal[1] > ordinal[2]  # warning ">" not meaningful for factors
+interval <- c(2, 3)
+interval[1] > interval[2] 
+```
+
+
+### R-Code: 
+### A quantitative EDA of the lemanHg dataset. (Lecture III)
+```{r}
+mean( Hg)
+mean( Hg, trim=0.1)
+median( Hg)
+
+
+c( mean=mean( Hg), tr.mean=mean( Hg, trim=0.1), median=median( Hg))
+c( var=var( Hg), sd=sd( Hg), iqr=IQR( Hg))   # capital letters for IQR!
+summary( Hg)              # min, max, quartiles and mean
+range( Hg)                # min, max, but not the difference 
+tail( sort( Hg))          # sorts and then list the 6 largest values 
+
+## dat <- c(2, 15, 16, 32, 25, 10)   # see Figure 1.11
+## emissionsource <- c('Air', 'Transp', 'Manufac', 'Electr', 'Deforest', 'Other')
+## barplot( dat, names=emissionsource, ylab="Percent", las=2)
+## barplot( cbind('2005'=dat), col=c(2,3,4,5,6,7), legend=emissionsource,
+##       args.legend=list(bty='n'), ylab='Percent', xlim=c(0.2,4))
+```
+
+
+
+### R-Code/Figure: 
+### Bar plots: (Lecture IV)
+```{r}
+dat <- c(2, 15, 16, 32, 25, 10)   # see Figure 1.11
+emissionsource <- c('Air', 'Transp', 'Manufac', 'Electr', 'Deforest', 'Other')
+barplot(dat)
+barplot( dat, names=emissionsource, ylab="Percent")
+
+################## (not in the lecture)
+barplot( cbind('2005'=dat), col=c(2,3,4,5,6,7), legend=emissionsource,
+      args.legend=list(bty='n'), ylab='Percent', xlim=c(0.2,4))
+```      
+
+
+
+### R-Code/Figure: 
+### Histogram: (lecture V)
+```{r}
+par( mfrow=c(2, 2))
+histout <- hist( Hg)    # default histogram 
+hist( Hg, col=7, probability=TRUE, main="With 'smoothed density'")
+lines( density( Hg))    # add smooth version of the histogram
+abline( v=c(mean( Hg), median( Hg)), col=3:2, lty=2:3, lwd=2:3) 
+hist( Hg, col=7, breaks=90, main="Too many bins")
+hist( Hg, col=7, breaks=2, main="Too few bins")
+str( histout[1:3])      # Contains essentially all information of histogram
+```      
+
+
+
+
+
+
+### R-Code/Figure: 
+### Boxplots: (lecture VI)
+```{r}
+par( mfcol=c(1, 3)) # to have three plots next to each other. 
+out <- boxplot( Hg, col="LightBlue", ylab="Hg")
+
+out <- boxplot( Hg, col="LightBlue", ylab="Hg", outlty=1, outpch='') 
+
+  # 'out' contains numeric values of the boxplot 
+quantile( Hg, c(0.25, 0.75))  # compare with summary( Hg) and out["stats"]
+IQR( Hg)                      # interquartile range  
+quantile(Hg, 0.75) + 1.5 * IQR( Hg)           # upper boundary of the whisker
+Hg[ quantile(Hg, 0.75) + 1.5 * IQR( Hg) < Hg] # points beyond the whisker
+
+require(vioplot)                         # R package providing violin plots                
+vioplot( Hg, col="Lightblue", ylab="Hg") 
+```      
+
+
+
+
+
+### R-Code/Figure: 
+### QQplots: (lecture VII)
+```{r}
+qqnorm( Hg)            # QQplot with comparing with bell-shaped theoretical
+qqline( Hg, col=2, main='')  # add read line 
+theoQuant <- qchisq( ppoints( 293), df=5) # minor mystery for the moment
+# hist( theoQuant, prob=TRUE); lines(density(theoQuant)) # convince yourself
+qqplot( theoQuant, Hg, xlab="Theoretical quantiles")
+# For 'chisq' some a priori knowledge was used, for 'df=5' minimal 
+# trial and error was used.
+qqline( Hg, distribution=function(p) qchisq( p, df=5), col=2)
+``` 
+
+
+
+### R-Code/Figure: 
+### Barplots:
+```{r}
+par( mfcol=c(1,2))
+dat2 <- c(2, 10, 12, 28, 26, 22) # source c2es.org
+mat <- cbind( SWISS=dat, c2es.org=dat2)
+barplot(mat, col=c(2,3,4,5,6,7), xlim=c(0.2,5), legend=emissionsource,
+        args.legend=list(bty='n'), ylab='Percent', las=2)
+barplot(mat, col=c(2,3,4,5,6,7), xlim=c(1,30), legend=emissionsource,
+        args.legend=list(bty='n'), ylab='Percent', beside=TRUE, las=2)
+```      
+
+
+### R-Code (not in the script):
+### Scatter plot for penguins data set
+```{r}
+require(palmerpenguins)
+data("penguins") # the data is available from the package palmerpenguins
+str(penguins)
+pairs( penguins[,c(3:6)])
+pairs( penguins[,c(3:6)], col=penguins$species)
+```
+
+
+
+
+### R-Code/Figure: 
+### Histograms of the flipper length of the penguin dataset and further graphics
+```{r}
+require(palmerpenguins)
+penguins <- read.csv(       # 'path.package()' provides local location of pkg    
+	paste0( path.package('palmerpenguins'),'/extdata/penguins.csv'))
+str(penguins, strict.width='cut')
+summary(penguins[, c(3:6)])  # others variables can be summarized by 'table()'
+table(penguins[,c(2,1)])     # tabulating species on each island
+
+hist( penguins$flipper_length_mm, main='', xlab="Flipper length [mm]", col=7)
+box()                        # rectangle around for similar view with others
+with(penguins,  vioplot(flipper_length_mm[species=="Gentoo"], 
+      flipper_length_mm[species=="Chinstrap"], flipper_length_mm[ 
+      species=="Adelie"],  names=c("Gentoo", "Chinstrap", "Adelie"), 
+      col=5:3, xlab="Flipper length [mm]", horizontal=TRUE, las=1))
+mosaicplot( table( penguins[,c(2,1)]), col=3:5, main='', cex.axis=.75, las=1)
+upper.panel <- function( x,y, ...)   # see '?pairs' for a better and more 
+  points( x, y, col=as.numeric(penguins$species)+2,...) # complete way
+lower.panel <- function( x,y, ...) 
+  points( x, y, col=as.numeric(penguins$sex))
+
+```
+
+
+
+### R-Code/Figure:
+### Parallel coordinate plot of the swiss dataset:
+```{r}
+dim( swiss)   # in   package:datasets, available without the need to load.
+# str( swiss, strict.width='cut')    # or even:
+# head( swiss);  summary( swiss)
+require( MASS)    # package providing the function `parcoord()`
+parcoord( swiss, col=2-(swiss$Catholic<40) + (swiss$Catholic>60))
+```
+
+
+########################################################################
+# Reinhard Furrer, Spring 2023

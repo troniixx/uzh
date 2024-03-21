@@ -1,0 +1,214 @@
+---
+title: "02 Random Variable"
+author: "Reinhard Furrer with contributions of various others"
+date: "February 26, 2024"
+output:
+  pdf_document: 
+    latex_engine: xelatex
+    highlight: tango
+  word_document: default
+subtitle: 'STA120: Introduction to Statistics Spring semester 2023 IMath, University
+  of Zurich, Switzerland'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+ 
+```
+
+### Check the following functions to compute the density/pmf (d), the cumulative distribution function (p), the quantile function (q), or to sample from a distribution (r).
+
+?pnorm, qnorm, dnorm, rnorm ?pbinon, qbinom, dbinom, rbinom ?ppois, qpois, dpois, rpois  θ
+
+###Examples of densities, quantiles and cdf \### Lecture I
+
+```{r}
+pnorm(0)
+pnorm(0, mean = 4, sd = 4) #in R, one uses sd and not the variance as the parameter
+pnorm(0, 4, 4)
+
+qnorm(0.5)
+qnorm(0.999)
+
+pbinom(q = 0, size = 2, prob = 0.5)
+
+dbinom(x = 1, size = 2, prob = 0.8)
+```
+
+### Ploting: pmf, cdf, density. Lecture II
+
+```{r}
+# a pmf:
+x <- c(0:10)
+p <- dbinom(x = x, prob = 0.5, size = 10)
+plot(x, p)
+plot(x, p, type = "h", lwd = 5, col = "Darkred")
+
+# a cdf:
+#first try:
+cdf <- pbinom(q = x, prob = 0.5, size = 10)
+plot(x, cdf) # only in the defined points, we would like to see the whole cdf
+
+#second try:
+x2 <- seq(from = -1, to = 11, by = 0.01)
+cdf2 <- pbinom(q = x2, prob = 0.5, size = 10)
+plot(x2, cdf2, lwd = 1, t = "l", col = "Darkmagenta") # that does not look like a function
+
+#third try:
+plot( stepfun( x, c(0,cdf))) # that still does not look like a function
+
+plot( stepfun( x, c(0,cdf)), ylab=bquote(F[X](x)), verticals=FALSE,  main='', pch=20)
+# And finally a proper plot of a cdf
+
+# a density:
+x3 <- seq(from = -5, to = 5, by = 0.01)
+d <- dnorm(x = x3, mean = 1, sd = 0.75)
+plot(x3, d, type = "l", col = "mistyrose3", lwd = 3)
+```
+
+### R-Code/Figure:
+
+### Pmf and distribution function of a binomial distribution
+
+### Lecture III
+
+```{r}
+par( mfrow=c(2, 2))
+
+plot( 0:12, dbinom(0:12, size=12, prob=1/3)) # the easiest version
+
+plot( 0:12, dbinom(0:12, size=12, prob=1/3), type='h',
+      xlab='x', ylab=bquote(f[X](x)))  
+
+# or a bit more elegant and a bit more complex
+plot( stepfun( 0:12, pbinom(-1:12, size=12, prob=1/3)), 
+           ylab=bquote(F[X](x)), verticals=FALSE,  main='', pch=20)
+
+set.seed( 14)     # same results if the following lines are evaluated again
+print( x10 <- rbinom(10, size=12, prob=1/3 ))    # printing the 10 draws
+barplot( table( factor(x10, levels=0:12)))       # barplot of the 10 draws
+x100 <- rbinom(100, size=12, prob=1/3 )          # 100 draws
+barplot( table( factor(x100, levels=0:12))/100)  # frequency barplot 
+sum(x100==5) 
+
+hist(x100, freq = FALSE, breaks = c(0:12))
+lines(density(x100))
+
+qqnorm(x100)
+# how many times five face cards?
+## alternative way for the cdf:
+# plot( c(-.5,0,1,1.5), c(0,0,1,1), type='l', xlab='x', ylab=bquote(F[X](x)))
+```
+
+### R-Code/Figure:
+
+### Number of earthquakes and pmf of a Poisson distribution
+
+### Lecture IV
+
+```{r}
+mag4 <- c(2,0,0,2,5,0,1,4,1,2,1,3,3,2,2,3,0,0,3,1,2,2,2,4,3) # data
+hist( mag4, breaks=seq(-0.5, to=10), prob=TRUE, main="", col='gray')
+points( 0:10, dpois(0:10, lambda=2), pch=19, col=4)  # pmf of X~Pois(2)
+```
+
+############################################################################## 
+
+#### What would be a pseudocode for pmf and cdf of the sum of the roll of two dice?
+
+############################################################################## 
+
+### Function outer()
+
+```{r}
+outer(1:6,1:6,"+")
+outer(1:6,1:6)
+outer(1:6,1:6,"/")
+```
+
+### Function plot.ecdf() - Plot empirical cumulative distribution function
+
+```{r}
+plot.ecdf(c(1,1,1,2,2,3))
+```
+
+### R-Code/Figure:
+
+### pmf and cdf of the sum of the roll of two dice:
+
+```{r}
+par( mfrow=c(1, 2))
+plot.ecdf( outer(1:6, 1:6, "+"),     # generating all possible outcomes
+           ylab=bquote(F[X](x)), main='', pch=20)  # `bquote` for subscripts
+x <- 2:12               #  possible outcomes
+p <- c(1:6, 5:1)/36     #  corresponding probabilities
+plot( x, p, type='h', xlim=c(1,13), ylim=c(0, .2),
+     xlab=bquote(x[i]), ylab=bquote(p[i]==f[X](x[i])))
+points( x, p, pch = 20) # adding points for clarity
+```
+
+### R-Code/Figure:
+
+### Density and distribution function of the uniform continuous distribution
+
+```{r}
+par( mfrow=c(1, 2))
+plot( c(-0.5, 0, NA, 0, 1, NA, 1, 1.5), c(0, 0, NA, 1, 1, NA, 0, 0),  
+      type='l', xlab='x', ylab=bquote(f[X](x)))  
+# curve(dunif( x), -0.5, 1.5) # does not emphasize the discontinuity!!
+curve(punif( x), -0.5, 1.5)
+## alternative way for the cdf:
+# plot( c(-.5,0,1,1.5), c(0,0,1,1), type='l', xlab='x', ylab=bquote(F[X](x)))
+```
+
+############################################################################ 
+
+# Construction of Figure
+
+# This code is not shown in the script as an R-Chunk and is for illustration
+
+# purposes only.
+
+```{r}
+adens <- function( x, y, ...) {
+	polygon(c(x[1], x, x[length(x)]), c(0,y,0),..., border=NA)
+}
+
+par( mfcol=c(1,2), mai=c(.3,.1,.1,.1), cex=.75)
+h <- seq( -3.5, 3.5, l=100)
+col <- c( rgb(1,0,0,1), rgb(0,1,0,1), rgb(0,0,1,1))
+plot( h, dnorm(h), type='l', xlab='', ylab='', yaxt='n', xlim=c(-3.2, 3.2))
+adens( h[h< 2],  dnorm( h[h< 2]), col=col[1], density=30) 
+adens( h[h< 1],  dnorm( h[h< 1]), col=col[2], density=35, angle=90) 
+adens( h[h< 0],  dnorm( h[h< 0]), col=col[3], density=20, angle=-45) 
+text(3.1, .37, "P(Z<0)=50.0%", col=col[3], adj=1)
+text(3.1, .32, "P(Z<1)=84.1%", col=col[2], adj=1)
+text(3.1, .27, "P(Z<2)=97.7%", col=col[1], adj=1)
+round( pnorm(0:2),3)
+
+plot( h, dnorm(h), type='l', xlab='', ylab='', yaxt='n', xlim=c(-3.2, 3.2))
+adens( h[h< 3 & h > -3],  dnorm( h[h< 3 & h> -3]), col=col[1], density=30) 
+adens( h[h< 2 & h > -2],  dnorm( h[h< 2 & h> -2]), col=col[2], density=35, angle=90) 
+adens( h[h< 1 & h > -1],  dnorm( h[h< 1 & h> -1]), col=col[3], density=20, angle=-45) 
+text(3.2, .37, "P(-1<Z<1)=68.3%", col=col[3], adj=1)
+text(3.2, .32, "P(-2<Z<2)=95.4%", col=col[2], adj=1)
+text(3.2, .27, "P(-3<Z<3)=99.7%", col=col[1], adj=1)
+round( pnorm(1:3)-pnorm(-1:-3),3)
+```
+
+############################################################################ 
+
+### R-Code/Figure:
+
+### pdf, cdf and quantile function of the Gaussian distribution
+
+```{r}
+plot( dnorm, -3, 3, ylim=c(-.5,2), xlim=c(-2.6,2.6)) 
+abline( c(0, 1), h=c(0,1), v=c(0,1), col='gray') # diag and horizontal lines
+plot( pnorm, -3, 3, col=3, add=TRUE) 
+plot( qnorm, 0, 1, col=4, add=TRUE)
+```
+
+######################################################################## 
+
+# Reinhard Furrer, Spring 2023

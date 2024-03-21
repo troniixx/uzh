@@ -1,0 +1,256 @@
+---
+title: "Lecture05, FS24 STA120: Introduction to Statistics"
+author: "Reinhard Furrer with contributions of various others"
+date: "March 16, 2024"
+output: pdf_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+### An example, that the true mean may not be within the CI for this parameter
+```{r}
+set.seed(14)
+x <- rnorm(10,0,1)
+CI <- mean(x)+c(qnorm(c(0.025, 0.975), sd =1 ))/sqrt(10)
+print(CI)
+```
+
+
+### An example showing that the likelihood may be greater than 1
+```{r}
+set.seed(1)
+grid <- seq(-2,2, length.out = 1000)
+
+x <- rnorm(1,0,0.1)
+plot(grid, dnorm(grid, 0, 0.1), type = "l", col="darkorchid3")
+abline(v = x)
+abline(h =dnorm(x, 0, 0.1))
+print(x)
+print(dnorm(x, 0, 0.1))
+
+```
+
+
+### t-test for one sample. Here - randomly selected 10 numbers following a normal distribution, rounded to integers. t-test to compare their mean to 100.
+
+```{r}
+options(digits = 5)
+set.seed(10)
+x <- round(rnorm(10,110,8 ))
+x
+t.test(x, mu =100)
+```
+
+
+### An illustration to the test above.
+```{r}
+tobs <- (mean(x)-100)/(sd(x)/(sqrt(10)))
+tobs
+grid <- seq(-10,10,length.out = 1000)
+plot(grid, dt(grid, df = 9), type = "l", col ="darkorchid3")
+abline(v = tobs)
+abline(v = -tobs)
+abline(v = qt(0.025, df =9), col ="red")
+abline(v = qt(0.975, df =9), col ="red")
+pval <- 2*(1- pt(tobs, df = 9))
+pval
+
+```
+
+############################################################################ 
+############################################################################ 
+#  This code is not shown in the script as an R-Chunk and is for illustration
+#  purposes only.
+# 
+# Figure: 
+# Illustration of the p-values
+```{r}
+adens <- function( x, y, ...) {
+  polygon(c(x[1], x, x[length(x)]), c(0,y,0),...,border=NA)
+}
+
+obs <- 1.8
+h <- seq( -3.3, 3.5, l=250)
+plot( h, dnorm(h), type='l', xlab='', ylab='', yaxt='n', xlim=c(-3,3.2))
+text( -2, .3, bquote(H[0]), cex=1.3)
+rug(obs, col = "DarkGreen", ticksize = .4, lwd=3)
+text( obs+.6, .2,"Observation", cex=1.1, col="DarkGreen")
+adens( h[h< -obs],  dnorm( h[h< -obs]), col="DarkGreen") 
+adens( h[h>  obs],  dnorm( h[h> obs]), col="DarkGreen") 
+text( 3.2, .34, paste0("p-value=",2*round(1-pnorm(obs),3),"\n (two-sided)"), adj=1, cex=1.1)
+
+plot( h, dnorm(h), type='l', xlab='', ylab='', yaxt='n', xlim=c(-3,3.2))
+text( -2, .3, bquote(H[0]), cex=1.3)
+rug(obs, col = "DarkGreen", ticksize = .4, lwd=3)
+text( obs+.6, .2,"Observation", cex=1.1, col="DarkGreen")
+adens( h[h>  obs],  dnorm( h[h> obs]), col="DarkGreen") 
+text( 3.2, .34, paste0("p-value=",round(1-pnorm(obs),3),"\n (one-sided)"), adj=1, cex=1.1)
+```
+
+
+### Figure:
+### Critical values and rejection region.
+```{r}
+quant <-  qnorm(.975) #  is approx 1.96
+h <- seq( -3.3, 3.5, l=250)
+plot( h, dnorm(h), type='l', xlab='', ylab='', yaxt='n', xlim=c(-3,3.2))
+text( -2, .3, bquote(H[0]), cex=1.3)
+text( c(-2.4, 2.4), .2,"Critical value", cex=1.1, col=2)
+rug( c(-quant, quant), col="Brown", ticksize = .4, lwd=3)
+lines( c(quant, 4), -c(.01,.01), col="Orange", lwd=5)
+lines( -c(4, quant), -c(.01,.01), col="Orange", lwd=5)
+
+quant <-  qnorm(.95)
+plot( h, dnorm(h), type='l', xlab='', ylab='', yaxt='n', xlim=c(-3,3.2))
+text( -2, .3, bquote(H[0]), cex=1.3)
+text( quant+.7, .2,"Critical value", cex=1.1, col=2)
+rug( quant, col="Brown", ticksize = .4, lwd=3)
+lines( c(quant, 4), -c(.01,.01), col="Orange", lwd=5)
+```
+
+
+# Construction of Figure 4.4: Type I and Type II errors.
+#  This code is not shown in the scrip as an R-Chunk.
+```{r}
+h <- seq( -4, 8, l=700)
+quant <- qnorm(.95)  #  which is approx 1.64
+
+plot( h, dnorm(h), type='l', xlab='',ylab='',yaxt='n', xlim=c(-3,7))
+adens( h[h>quant],  dnorm( h[h>quant]), col=2) 
+adens( h[h< -quant],  dnorm( h[h< -quant]), col=2) 
+lines( h, dnorm(h,mean=2))
+adens( h[h<= quant & h>-quant],  dnorm(h[h<= quant & h>-quant], mean=2), col=4) 
+text( -2, .3, bquote(H[0]), cex=1.3)
+text(  4, .3, bquote(H[1]), cex=1.3)
+
+plot( h, dnorm(h), type='l', xlab='', ylab='', yaxt='n', xlim=c(-3,7))
+adens( h[h>quant],  dnorm( h[h>quant]), col=2) 
+adens( h[h< -quant],  dnorm( h[h< -quant]), col=2) 
+lines( h, dnorm(h,mean=4))
+adens( h[h<= quant],  dnorm( h[h<= quant],mean=4), col=4) 
+text( -2, .3, bquote(H[0]),cex=1.3)
+text(  6, .3, bquote(H[1]),cex=1.3)
+
+plot( h, dnorm(h), type='l', xlab='',ylab='',yaxt='n', xlim=c(-3,7))
+adens( h[h>quant],  dnorm( h[h>quant]), col=2) 
+lines( h, dnorm(h,mean=2))
+adens( h[h<= quant],  dnorm(h[h<= quant],mean=2), col=4) 
+text( -2, .3, bquote(H[0]), cex=1.3)
+text(  4, .3, bquote(H[1]), cex=1.3)
+
+plot( h, dnorm(h), type='l', xlab='', ylab='', yaxt='n', xlim=c(-3,7))
+adens( h[h>quant],  dnorm( h[h>quant]), col=2) 
+lines( h, dnorm(h,mean=4))
+adens( h[h<= quant],  dnorm( h[h<= quant],mean=4), col=4) 
+text( -2, .3, bquote(H[0]),cex=1.3)
+text(  6, .3, bquote(H[1]),cex=1.3)
+```
+
+# End Figures.
+############################################################################ 
+############################################################################ 
+
+
+### R-Code/Figure
+### Power-Kurve:
+```{r}
+alpha <- 0.05                       # significance level
+mu0 <- 0                            # mean under H_0
+mu1 <- seq(-1.5, to=5, by=0.1)      # mean under H_1
+power_onesided <- 1-pnorm( qnorm(1-alpha, mean=mu0), mean=mu1)
+power_twosided <- pnorm( qnorm(alpha/2, mean=mu0), mean=mu1) +
+    pnorm( qnorm(1-alpha/2, mean=mu0), mean=mu1, lower.tail=FALSE)
+plot( mu1, power_onesided, type='l', ylim=c(0,1), xlim=c(-1, 4.25), las=1,
+     xlab=bquote(mu[1]-mu[0]),  ylab="Power", col=4, yaxs='i', lwd=1) 
+axis(2, at=alpha, labels='')        # adding level
+axis(2, at=1.4*alpha, labels=bquote(alpha), las=1, adj=0, tick=FALSE)
+lines( mu1, power_twosided, lty=2)  # power curve for two-sided test
+abline( h=alpha, col='gray')        # significance level
+abline( v=c(2, 4), lwd=2, col=3)    # values from figure 4.3
+#       
+```  
+
+
+```{r}
+podo <- read.csv("http://user.math.uzh.ch/furrer/download/intro2stat/podo.csv")
+
+apply( podo, 2, function(x) length(unique(x)) ) # 4 visits, 2 barns
+
+PDHmean <- podo$PDHmean[podo$Visit==13]
+length( PDHmean)
+print( me <- mean( PDHmean))
+print( se <- sd( PDHmean))
+
+```
+
+### Example 4.5:
+```{r}
+PDHmean
+mean(PDHmean)
+sd(PDHmean)
+n <- length(PDHmean)
+tobs <- abs( mean(PDHmean) - 3.333)/sd(PDHmean)*sqrt(n)
+qt(0.975, n)
+2*(1-pt( tobs, n-1))  # equivalent to 2*pt( -tobs, n-1)
+
+print( out <- t.test( PDHmean, mu=3.333))   # print the result of the test
+out$p.val                                   # printing only the p-value
+```
+
+### Choosing data for the paired test
+```{r}
+podoV1V13 <- podo[podo$Visit %in% c(1,13),] # select visits from 2016 and 2017
+PDHmean2 <- matrix(podoV1V13$PDHmean[order(podoV1V13$ID)], ncol=2, byrow=TRUE)
+t.test( PDHmean2[,2], PDHmean2[,1], paired=TRUE)
+```
+
+
+### Example 4.6:
+```{r}
+PDHmeanB1 <- podoV1V13$PDHmean[podoV1V13$Barn==1]     
+PDHmeanB2 <- podoV1V13$PDHmean[podoV1V13$Barn==2]
+mean(PDHmeanB1)
+mean(PDHmeanB2)
+nx <- length(PDHmeanB1)
+ny <- length(PDHmeanB2)
+s_p <- sqrt( 1/(nx+ny-2)*( (nx-1)* var(PDHmeanB1) + 
+                           (ny-1)* var(PDHmeanB2))) 
+tobs <- abs( mean(PDHmeanB1) - mean(PDHmeanB2) )/ 
+              s_p*sqrt(nx*ny/(nx+ny))
+qt(0.975, nx+ny-2)
+2*(1-pt( tobs, nx+ny-2))  # equivalent to 2*pt( -tobs, nx+ny-2)
+
+t.test( PDHmeanB1, PDHmeanB2, var.equal=TRUE)
+```
+
+
+### Example 4.7:
+```{r}
+podoV1V13 <- podo[podo$Visit %in% c(1,13),]
+PDHmean2 <- matrix(podoV1V13$PDHmean[order(podoV1V13$ID)], ncol=2, byrow=TRUE)
+difference <- PDHmean2[,2] - PDHmean2[,1]
+mean( difference)
+sd( difference)
+n <- length(difference)
+tobs <- abs( mean(difference))/sd(difference)*sqrt(n)
+qt(0.975, n-1)
+2*(1-pt( tobs, n-1)) 
+
+podoV1V13 <- podo[podo$Visit %in% c(1,13),] # select visits from 2016 and 2017
+PDHmean2 <- matrix(podoV1V13$PDHmean[order(podoV1V13$ID)], ncol=2, byrow=TRUE)
+t.test( PDHmean2[,2], PDHmean2[,1], paired=TRUE)
+# Same result as with 
+# t.test( PDHmean2[,2] - PDHmean2[,1])
+
+
+
+### R-Code
+### Comparing two variances:
+var.test( PDHmeanB1, PDHmeanB2)
+```
+########################################################################
+# Reinhard Furrer, Spring 2023
