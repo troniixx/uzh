@@ -1,0 +1,16 @@
+stages:
+  - test
+
+unittest:
+  stage: test
+  image: python:3.11
+  script:
+    - pip install spacy~=3.7.4
+    - pip install pyphen~=0.11.0
+    - pip install pytest==7.4.3
+    - pip install coverage pytest-cov
+    - python -m pytest
+    - coverage run --source=. --omit='*/test_*.py,*_test.py,*__init__.py' -m pytest
+    - coverage report -m
+
+    coverage: /(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "Readability Analyzer"
+version = "1.0.0"
+authors = [
+    { name="Mert Erol", email="mert.erol@uzh.ch" }
+]
+description = "A project to calculate and interpret the readability of a given text"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+dependencies = ["spacy~=3.7.4", 
+                "pyphen~=0.14.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/readability_analysis"]
+
