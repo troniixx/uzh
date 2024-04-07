@@ -10,7 +10,7 @@ png(file = "solution.png")
 		col = "red", xlab = "x", ylab = "P(X <= x)",
 		ylim = c(0, 1), main = "Exact distribution vs. CLT approximation")
 
-	lines(grid, pnorm(grid, mean = p , sd = (1/n)*p*(1-p)), col = "blue")
+	lines(grid, pnorm(grid, mean = p , sd = sqrt(1/n * p * (1-p))), col = "blue")
 
 	legend("bottomright", legend = c("exact", "approximation"),
 		lty = 1, col = c("red", "blue"))
