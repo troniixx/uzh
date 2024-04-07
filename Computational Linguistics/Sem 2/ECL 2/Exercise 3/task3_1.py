@@ -1,58 +1,78 @@
-import string
-from gensim.models import Word2Vec
-from nltk.tokenize import word_tokenize
+import re
+import numpy as np
 
-TEXT = "/Users/merterol/uzh/Computational Linguistics/Sem 2/ECL 2/Exercise 3/gpt_text.txt"
+TEXT = "Computational Linguistics/Sem 2/ECL 2/Exercise 3/gpt_text.txt"
+CTX = ["animal_kingdom", "deadly", "adorable"]
 
-def tokenizer(txt):
+def process_text(txt):
     with open(txt, "r") as file:
         text = file.read()
 
-    text = text.translate(str.maketrans("", "", string.punctuation))
-    words = text.split()
-    
+    text = re.sub(r"animal kingdom", "animal_kingdom", text)
+    text = re.sub(r"[-,.!?]", "", text)
+    words = [word.lower() for word in text.split()]
+
     return words
 
-
-def get_token_count(txt):
-    words = tokenizer(txt)
-    word_counts = {}
+def token_count(txt):
+    cd = {}
+    words = process_text(txt)
 
     for word in words:
-        if word in word_counts:
-            word_counts[word] += 1
+        if word in cd:
+            cd[word] += 1
         else:
-            word_counts[word] = 1
-            
-    sorted_word_counts = sorted(word_counts.items(), key=lambda x: x[1], reverse=True)
+            cd[word] = 1
 
-    for word, count in sorted_word_counts:
-        print(f"{word}: {count}")
-    
-    return word_counts
+    return sorted(cd.items(), key=lambda x:x[1], reverse = True)
 
-def vector_creator(txt):
-    words = tokenizer(txt)
+# the function that embodies my lack of sleep and sanity
+def vectorize(text):
+    tokens = token_count(text) # get dict of tokens with count
+    words = process_text(text) # get list of words
+    v_animalkingdom, v_adorable, v_deadly = [0]*6, [0]*6, [0]*6 # initialize vectors for each context word
+    top_six = [word[0] for word in tokens if word[0] not in CTX][:6] # top 6 tokens excluding context words
+    positions = {ctx: [i for i, word in enumerate(words) if word == ctx] for ctx in CTX} # find positions of context words in text
+
+    for i, token in enumerate(top_six): # iterate through top 6 tokens
+        for ctx, pos_list in positions.items(): # iterate through context words
+            for pos in pos_list: # iterate through positions of context words
+                window = words[max(0, pos-5):min(len(words), pos+6)]  # list the 5 words before and after
+                if token in window: # if token is in window
+                    # increment the corresponding dimension of the corresponding vector
+                    if ctx == "animal_kingdom": v_animalkingdom[i] += 1
+                    elif ctx == "adorable": v_adorable[i] += 1
+                    elif ctx == "deadly": v_deadly[i] += 1
+
+    return v_animalkingdom, v_adorable, v_deadly
+
+def magn(x):
+    return np.sqrt(sum([i**2 for i in x]))
+
+def cosine_sim(x, y):
+    magn_x = magn(x)
+    magn_y = magn(y)
     
-    # Tokens and targets
-    top_six = ["the", "of", "and", "their", "animal", "kingdom"]
-    targets = ["animal kingdom", "adorable", "deadly"]
-    
-    # Initialize vectors
-    vectors = {target: [0] * len(top_six) for target in targets}
-    
-    # Iterate through words to fill in the context vectors
-    for i, word in enumerate(words):
-        if word in top_six:
-            for target in targets:
-                target_words = target.split()
-                # Check for presence of target words/phrases near the token
-                if all(target_word in words[max(0, i-10):i+10] for target_word in target_words):
-                    vectors[target][top_six.index(word)] += 1
-    
-    for target, vector in vectors.items():
-        print(f"Context vector for '{target}': {vector}")
+    if magn_x == 0 or magn_y == 0:
+        return 0  #for cases with zero magnitude
+    return np.dot(x, y) / (magn_x * magn_y)
 
 if __name__ == "__main__":
-    get_token_count(TEXT)
-    vector_creator(TEXT)
+    print("Token Count: ")
+    tokens = token_count(TEXT)
+    print(len(tokens))
+    print("6 most common tokens: ")
+    print(tokens[:6])
+    
+    print("Vectors: ")
+    v_animalkingdom, v_adorable, v_deadly = vectorize(TEXT)
+    print("Animal Kingdom:", v_animalkingdom)
+    print("Adorable:", v_adorable)
+    print("Deadly:", v_deadly)
+    
+    print("Cosine Similarity: ")
+    sim1 = cosine_sim(v_animalkingdom, v_adorable)
+    sim2 = cosine_sim(v_animalkingdom, v_deadly)
+    
+    print(f"Similarity between animal-kingdom and adorable: {sim1}")
+    print(f"Similarity between animal-kingdom and deadly: {sim2}")
