@@ -69,5 +69,5 @@ if __name__ == "__main__":
     print("Deadly:", v_deadly)
     
     print("Cosine Similarity: ")
-    print(f"Similarity between animal-kingdom and adorable: {cosine_sim(v_animalkingdom, v_adorable)}")
-    print(f"Similarity between animal-kingdom and deadly: {cosine_sim(v_animalkingdom, v_deadly)}")
+    print(f"Similarity between animal_kingdom and adorable: {cosine_sim(v_animalkingdom, v_adorable)}")
+    print(f"Similarity between animal_kingdom and deadly: {cosine_sim(v_animalkingdom, v_deadly)}")
