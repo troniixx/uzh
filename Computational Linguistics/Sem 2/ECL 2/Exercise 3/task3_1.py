@@ -58,11 +58,9 @@ def cosine_sim(x, y):
     return np.dot(x, y) / (magn_x * magn_y)
 
 if __name__ == "__main__":
-    print("Token Count: ")
-    tokens = token_count(TEXT)
-    print(len(tokens))
+    print(f"Token Count: {len(token_count(TEXT))}")
     print("6 most common tokens: ")
-    print(tokens[:6])
+    print(token_count(TEXT)[:6])
     
     print("Vectors: ")
     v_animalkingdom, v_adorable, v_deadly = vectorize(TEXT)
@@ -71,8 +69,5 @@ if __name__ == "__main__":
     print("Deadly:", v_deadly)
     
     print("Cosine Similarity: ")
-    sim1 = cosine_sim(v_animalkingdom, v_adorable)
-    sim2 = cosine_sim(v_animalkingdom, v_deadly)
-    
-    print(f"Similarity between animal-kingdom and adorable: {sim1}")
-    print(f"Similarity between animal-kingdom and deadly: {sim2}")
+    print(f"Similarity between animal-kingdom and adorable: {cosine_sim(v_animalkingdom, v_adorable)}")
+    print(f"Similarity between animal-kingdom and deadly: {cosine_sim(v_animalkingdom, v_deadly)}")
