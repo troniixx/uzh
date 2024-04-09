@@ -8,9 +8,9 @@ def process_text(txt):
     with open(txt, "r") as file:
         text = file.read()
 
-    text = re.sub(r"animal kingdom", "animal_kingdom", text)
-    text = re.sub(r"[-,.!?]", "", text)
-    words = [word.lower() for word in text.split()]
+    text = re.sub(r"animal kingdom", "animal_kingdom", text) # merge animal and kingdom to make it one token
+    text = re.sub(r"[-,.!?]", "", text) # remove punctuation
+    words = [word.lower() for word in text.split()] # split text into words and convert to lowercase
 
     return words
 
@@ -24,9 +24,8 @@ def token_count(txt):
         else:
             cd[word] = 1
 
-    return sorted(cd.items(), key=lambda x:x[1], reverse = True)
+    return sorted(cd.items(), key=lambda x:x[1], reverse = True) # sort the dictionary with token count in descending order
 
-# the function that embodies my lack of sleep and sanity
 def vectorize(text):
     tokens = token_count(text) # get dict of tokens with count
     words = process_text(text) # get list of words
@@ -37,8 +36,8 @@ def vectorize(text):
     for i, token in enumerate(top_six): # iterate through top 6 tokens
         for ctx, pos_list in positions.items(): # iterate through context words
             for pos in pos_list: # iterate through positions of context words
-                window = words[max(0, pos-5):min(len(words), pos+6)]  # list the 5 words before and after
-                if token in window: # if token is in window
+                window = words[max(0, pos-5):min(len(words), pos+6)]  # generate list with the 5 words around the current context word
+                if token in window: # if the current top_six token is in window
                     # increment the corresponding dimension of the corresponding vector
                     if ctx == "animal_kingdom": v_animalkingdom[i] += 1
                     elif ctx == "adorable": v_adorable[i] += 1
