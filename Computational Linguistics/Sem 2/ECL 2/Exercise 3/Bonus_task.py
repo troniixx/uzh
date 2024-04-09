@@ -1,5 +1,5 @@
 # authors: Mert Erol, Ishana Rana
-# environment: Python 3.12.0, numpy 1.26.1, gensim 4.3.2
+# environment: Python 3.12.3, numpy 1.26.1, gensim 4.3.2
 # encoding: utf-8
 
 import numpy as np

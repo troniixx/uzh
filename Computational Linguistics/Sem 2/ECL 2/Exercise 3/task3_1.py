@@ -1,5 +1,5 @@
 # authors: Mert Erol, Ishana Rana
-# environment: Python 3.12.0, numpy 1.26.1, re 2023.10.3
+# environment: Python 3.12.3, numpy 1.26.1, re 2023.10.3
 # encoding: utf-8
 
 import re
