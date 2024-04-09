@@ -1,5 +1,6 @@
 import numpy as np
 from gensim.models import KeyedVectors
+
 full_path = "/Users/merterol/Downloads"
 model = KeyedVectors.load_word2vec_format(f"{full_path}/cc.en.300.vec.gz", binary=False, limit=500000)
 

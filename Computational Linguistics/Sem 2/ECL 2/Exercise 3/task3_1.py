@@ -45,13 +45,10 @@ def vectorize(text):
 
     return v_animalkingdom, v_adorable, v_deadly
 
-def magn(x):
-    return np.sqrt(sum([i**2 for i in x]))
-
 def cosine_sim(x, y):
-    if magn(x) == 0 or magn(y) == 0:
+    if np.linalg.norm(x) == 0 or np.linalg.norm(y) == 0:
         return 0  #for cases with zero magnitude
-    return np.dot(x, y) / (magn(x) * magn(y))
+    return np.dot(x, y) / (np.linalg.norm(x) * np.linalg.norm(y))
 
 if __name__ == "__main__":
     print(f"Token Count: {len(token_count(TEXT))}")
