@@ -38,10 +38,10 @@ def vectorize(text):
     positions = {ctx: [i for i, word in enumerate(words) if word == ctx] for ctx in CTX} # find positions of context words in text
 
     for i, token in enumerate(top_six): # iterate through top 6 tokens
-        for ctx, pos_list in positions.items(): # iterate through context words
+        for ctx, pos_list in positions.items(): # iterate through context words and its positions in text
             for pos in pos_list: # iterate through positions of context words
                 window = words[max(0, pos-5):min(len(words), pos+6)]  # generate list with the 5 words around the current context word
-                if token in window: # if the current top_six token is in window
+                if token in window: # if the current top_six token is in window around the current context word
                     # increment the corresponding dimension of the corresponding vector
                     if ctx == "animal_kingdom": v_animalkingdom[i] += 1
                     elif ctx == "adorable": v_adorable[i] += 1
