@@ -1,6 +1,6 @@
 # Student Name: Mert Erol
 # Matriculation Number: 20-915-245
-# Environment: Python 3.12.3, re 2023.8.8
+# Environment: Python 3.12.3
 # Encoding: UTF-8
 
 from levenshtein_base import levenshtein
@@ -8,7 +8,14 @@ import argparse
 import sys
 
 # DONE: Create a functioning Command-Line Interface
-def float_or_int(value):
+def float_or_int(value: str) -> int | float | argparse.ArgumentTypeError:
+    """
+    function to convert a string to a float or int if possible and raise an error if not
+    
+    :param value: str
+    
+    :return: int | float | Error
+    """
     try:
         # Try converting to int first
         ivalue = int(value)
@@ -21,8 +28,13 @@ def float_or_int(value):
         except ValueError:
             raise argparse.ArgumentTypeError(f"Invalid numerical value: {value}")
         
-def create_parser():    
-    parser = argparse.ArgumentParser(description="Levenshtein Distance Calculator")
+def create_parser() -> argparse.ArgumentParser:
+    """
+    function to create an argument parser for the CLI and return it
+    
+    :return: argparse.ArgumentParser
+    """
+    parser = argparse.ArgumentParser(description="Levenshtein Distance Calculator on character Level or token Level")
     parser.add_argument("-f1", "--file1", help = "Path to the first file", type = str, required = True)
     parser.add_argument("-f2", "--file2", help = "Path to the second file", type = str, required = True)
     parser.add_argument("-i", "--insertion", help = "Set cost of insertion operation", type = float_or_int, default = 1)
@@ -33,6 +45,10 @@ def create_parser():
     return parser
 
 def main():
+    """
+    main function to run the CLI and calculate the levenshtein distance between the lines of two files passed as arguments
+    returns the levenshtein distance per line or an error message if the files are not found
+    """
     parser = create_parser()
     args = parser.parse_args()
     
