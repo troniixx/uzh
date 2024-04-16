@@ -5,7 +5,18 @@
 
 import re
 
-def error_check(a, b, insertion_cost, deletion_cost, substitution_cost, tokenize):
+def error_check(a: str | list[str], b: str | list[str], insertion_cost: int | float, deletion_cost: int | float, substitution_cost: int | float, tokenize: bool | int) -> None | ValueError:
+    """
+    function to check for errors in the arguments passed to the levenshtein function and argument_processor
+    :param a: str | list[str]
+    :param b: str | list[str]
+    :param insertion_cost: int | float
+    :param deletion_cost: int | float
+    :param substitution_cost: int | float
+    :param tokenize: bool | int
+    
+    :raises ValueError: if any of the arguments are invalid
+    """
     # error checking for arguments (type)
     if not all(isinstance(i, (int, float)) for i in [insertion_cost, deletion_cost, substitution_cost]):
         raise ValueError("Invalid arguments: insertion_cost, deletion_cost, and substitution_cost must be numbers")
@@ -23,13 +34,23 @@ def error_check(a, b, insertion_cost, deletion_cost, substitution_cost, tokenize
         raise ValueError("Invalid arguments: tokenize must be a boolean")
 
 def argument_processor(a: str | list[str], b: str | list[str], *args, **kwargs) -> tuple[str | list[str], str | list[str], int | float, int | float, int | float] | int:
-    # keyword-argument processor
+    """
+    function to process the arguments passed to the levenshtein function and return them in a tuple for further processing if successful
+    
+    :param a: str | list[str]
+    :param b: str | list[str]
+    :param args: list
+    :param kwargs: dict
+    
+    :return: tuple[str | list[str], str | list[str], int | float, int | float, int | float]
+    """
+    # keyword-argument processor (CLI) - if keyword arguments are passed
     insertion_cost = kwargs.get("insertion_cost")
     deletion_cost = kwargs.get("deletion_cost")
     substitution_cost = kwargs.get("substitution_cost")
     tokenize = kwargs.get("tokenize", False)
     
-    # argument processor (CLI)
+    # argument processor (CLI) - if NO keyword arguments are passed
     if len(args) == 4:
         insertion_cost, deletion_cost, substitution_cost, tokenize = args
 
@@ -51,6 +72,17 @@ def argument_processor(a: str | list[str], b: str | list[str], *args, **kwargs) 
     return a, b, insertion_cost, deletion_cost, substitution_cost
 
 def levenshtein(a: str | list[str], b: str | list[str], *args, **kwargs) -> float | None:
+    """
+    function to calculate the Levenshtein distance between two strings or lists and return the distance if successful
+    
+    :param a: str | list[str]
+    :param b: str | list[str]
+    :param args: list
+    :param kwargs: dict
+    
+    :return: float | None
+    
+    """
     # Get all arguments and process them (or raise an error if invalid)
     try:
         a, b, insertion_cost, deletion_cost, substitution_cost = argument_processor(a, b, *args, **kwargs)
