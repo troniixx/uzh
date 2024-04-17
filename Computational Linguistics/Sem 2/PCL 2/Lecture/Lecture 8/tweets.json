@@ -1,0 +1,22 @@
+{
+  "tweets": [
+    {
+      "date": {
+        "year": 2018,
+        "month": 5,
+        "day": 1
+      },
+      "author": "Philomena Cunk",
+      "text": "What a wonderful day"
+    },
+    {
+      "author": "Borat Sagdiyev",
+      "text": "This suit is black...\n\nNOT!"
+    },
+    {
+      "date": null,
+      "author": "Pierre de Fermat",
+      "text": "a\u207f + b\u207f = c\u207f for n > 2"
+    }
+  ]
+}
