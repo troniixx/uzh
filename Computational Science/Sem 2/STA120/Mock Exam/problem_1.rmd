@@ -1,6 +1,11 @@
+# Test Exam Part B - Problem 1
+### Mert Erol, 20-915-245
+```r
 library(ggplot2)
+```
 
-# **** Task a) ****
+## **** Task a) ****
+```r
 #load dataset
 data <- read.csv("/Users/merterol/uzh/Computational Science/Sem 2/STA120/Mock Exam/birds.csv")
 
@@ -14,15 +19,18 @@ boxplot(decibels ~ Urban, data = data, main = "Bird Song Volume by Location", xl
 # Histograms by group
 hist(data$decibels[data$Urban == TRUE], main = "Decibels in Urban Areas", xlab = "Decibels", col = "blue")
 hist(data$decibels[data$Urban == FALSE], main = "Decibels in Rural Areas", xlab = "Decibels", col = "green")
+```
 
-
-# **** Task b) ****
-
+## **** Task b) ****
+```r
 #t-test
-t.test(data$decibels ~ data$Urban)
+result_t <- t.test(data$decibels ~ data$Urban)
+print("Result of the t-test: " + result_t)
 
-# **** Task c) ****
+```
+## **** Task c) ****
 
+```r
 #permutation test function
 perm_test <- function(data, num_permutations = 1000){
     r <- 1000
@@ -41,3 +49,4 @@ perm_test <- function(data, num_permutations = 1000){
 }
 #run permutation test
 perm_test(data, 41)
+```

@@ -1,7 +1,12 @@
+# Test Exam Part B - Problem 2
+### Mert Erol, 20-915-245
+
+```r
 library(ggplot2)
 set.seed(123)
-
-# **** Task a) ****
+```
+## **** Task a) ****
+```r
 X <- rbinom(1000, size = 50, prob = 0.4)
 
 #plot histogram
@@ -16,8 +21,10 @@ points(X_values, pmf_values, col = "red", pch = 19)
 
 ggplot() + geom_line(x = X_values, y = pmf_values, col = "red", linewidth = 1) +
     geom_point(x = X_values, y = pmf_values, col = "red", pch = 19)
+```
 
-# **** Task b) ****
+## **** Task b) ****
+```r
 #sample 50 trials
 X_sample <- rbinom(50, size = 50, prob = 0.4)
 
@@ -31,8 +38,9 @@ z <- qnorm(0.975)
 wald_ci <- c(p_hat - z * sqrt(p_hat * (1 - p_hat) / 50), p_hat + z * sqrt(p_hat * (1 - p_hat) / 50))
 print("Wald Confidence interval = ")
 print(wald_ci)
-
-# **** Task c) ****
+```
+## **** Task c) ****
+```r
 n <- 50
 p_true <- 0.4
 num_samples <- 1000
@@ -47,11 +55,13 @@ p_values <- sapply(samples, function(x) {
 percentage <- mean(p_values < 0.05) * 100
 print("Percentage of p-values < 0.05 = ")
 print(percentage)
-
-# **** Task d) ****
+```
+## **** Task d) ****
+```r
 Y <- rbinom(50, size = 40, prob = 0.3)
 
 #run t-test
 t_test_res <- t.test(X_sample, Y)
 print("T-test results = ")
 print(t_test_res)
+```
