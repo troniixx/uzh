@@ -1,0 +1,10 @@
+png(file = "solution.png")
+    par(mai = c(0.8, 0.8, 0.1, 0.1))
+    require(mvtnorm)
+    set.seed(14)
+    mu <- c(1, 2)
+    sigma <- matrix(c(1, 1, 1, 2), byrow = TRUE, nrow = 2)
+    simulated <- rmvnorm(n = 500, mean = mu, sigma = sigma)
+    plot(simulated , xlab = "y", ylab = "z", pch = 20,
+        xlim = c(-3, 7), ylim = c(-3, 7))
+dev.off()
