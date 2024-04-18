@@ -1,4 +1,4 @@
-png(file="solution.png")
+png(file = "solution.png")
     require(mvtnorm)
     set.seed(14)
     mu <- c(1, 2)
@@ -12,7 +12,7 @@ png(file="solution.png")
 
     # exercise now
     # Make sure you choose a right operator instead of "%%%".
-    points(... > ... "%%%" ... < ... , ... ], col = "red", pch = 20)
+    points(... > ... "%%%" ... < ... , ... ], col = "red", pch = 20) #nolint
     z <- ...
     mu.constr <- ... # Use formula from the lecture.
     sigma.constr <- ... # Use formula from the lecture.

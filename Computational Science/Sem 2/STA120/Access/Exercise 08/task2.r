@@ -9,7 +9,7 @@ png(file = "solution.png")
     z <- seq(-2, 6, length = 100)
     grid <- expand.grid(y = y, z = z)
 
-    desngrid <- 
+    densgrid <- dmvnorm(grid, mean = mu, sigma = sigma)
 
     jdensity <- array(densgrid, c(100, 100))
     image.plot(y, z, jdensity, col = tim.colors())
