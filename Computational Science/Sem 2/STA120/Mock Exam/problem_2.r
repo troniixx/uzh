@@ -49,3 +49,9 @@ print("Percentage of p-values < 0.05 = ")
 print(percentage)
 
 # **** Task d) ****
+Y <- rbinom(50, size = 40, prob = 0.3)
+
+#run t-test
+t_test_res <- t.test(X_sample, Y)
+print("T-test results = ")
+print(t_test_res)
