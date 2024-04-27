@@ -19,16 +19,19 @@ png(file="solution.png")
     y.fitted <- beta0.hat + beta1.hat*x
     mod <- lm(y ~ x, data = data)
 
-    xx <- ... # Sequence from 0 to 10 with 0.01 step.
-    p.confidence <- predict( ... , newdata = ... , interval = " ... ")
-    p.prediction <- predict( ... , newdata = ... , interval = " ... ")
+    xx <- seq(0, 10, 0.01) # Sequence from 0 to 10 with 0.01 step.
+    p.confidence <- predict(mod, newdata = data.frame(x = xx), interval = "confidence")
+    p.prediction <- predict(mod, newdata = data.frame(x = xx), interval = "prediction")
 
-    plot(..., ...)
-    abline(a = ... , b = ... , col = "red")
-    points(... , ... , col = "red", pch = 2) # Add fitted points
-    lines(xx, ... , col = "blue", lty = 2) # Add upper CI
-    lines(xx, ... , col = "blue", lty = 2) # Add lower CI
-    lines(xx, ... [,2], col = "green", lty = 3) # Add upper Prediction
-    lines(xx, ... [,3], col = "green", lty = 3) # Add lower Prediction
+    plot(x, y)
+    abline(a = beta0.hat , b = beta1.hat, col = "red")  # Add the regression line with estimates
+    points(x, y.fitted, col = "red", pch = 2)  # Add fitted points
+    
+    # Assuming p.confidence and p.prediction have already been computed using 'predict'
+    lines(xx, p.confidence[, 'upr'], col = "blue", lty = 2)  # Add upper CI
+    lines(xx, p.confidence[, 'lwr'], col = "blue", lty = 2)  # Add lower CI
+    lines(xx, p.prediction[, 'upr'], col = "green", lty = 3)  # Add upper Prediction
+    lines(xx, p.prediction[, 'lwr'], col = "green", lty = 3)  # Add lower Prediction
+
     
 dev.off()
