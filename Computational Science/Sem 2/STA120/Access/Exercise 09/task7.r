@@ -9,12 +9,13 @@ png(file="solution.png")
     ## simulation of y values:
     y <- beta0.true + beta1.true * x + rnorm(length(x), mean = 0, sd = 2)
     
+    data <- data.frame(x = x, y = y)
     
     # start here to calculate your solution for the problem:
-    mod <- ... # Basic LM
-    mod2 <- ... # b_0 = 0 LM
+    mod <- lm(y ~ x, data = data) # Basic LM
+    mod2 <- lm(y ~ x + 0, data = data) # b_0 = 0 LM
     par(mfrow = c(1, 1))
     plot(data)
-    abline( ... , col = "red") # fit with intercept
-    abline( ..., lty = 2) # fit without intercept
+    abline( mod , col = "red") # fit with intercept
+    abline( mod2, lty = 2) # fit without intercept
 dev.off()

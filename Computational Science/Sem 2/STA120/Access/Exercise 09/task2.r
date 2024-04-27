@@ -16,10 +16,10 @@ png(file="solution.png")
     beta1.hat <- sum((x-x.mean)*(y-y.mean))/sum((x-x.mean)^2)
     beta0.hat <- y.mean - beta1.hat*x.mean
     
-    y.fitted <- b0.hat + b1.hat*x # Make sure you choose right formula
-    plot( ... , ... )
+    y.fitted <- beta0.hat + beta1.hat*x # Make sure you choose right formula
+    plot( x , y )
     # Abline your straight line with b_0 and b_1
-    ... ( ... = ... , ... = ... , col = "red") 
+    abline(a = beta0.hat, b = beta1.hat , col = "red") 
     # Add fitted points
-    ... ( ... , ... , col = "red", pch = 2)
+    points( x, y.fitted, col = "red", pch = 2)
 dev.off()
