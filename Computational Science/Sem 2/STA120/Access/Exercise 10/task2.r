@@ -1,0 +1,10 @@
+png(file="solution.png")
+    set.seed(16)
+    mydata <- read.table("resource/10salary.txt", header = TRUE, sep = ",")
+    head( ... )
+    dim( ... )
+    str( ... )
+    # we need to convert 'District' into factor
+    ... <- as.factor( ... )
+    pairs( ... , gap = 0, main = "Pairs plot of the data")
+dev.off()

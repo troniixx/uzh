@@ -1,0 +1,12 @@
+png(file="solution.png")
+    set.seed(16)
+    mydata <- read.table("resource/10salary.txt", header = TRUE, sep = ",")
+    ... <- as.factor( ... )
+    str( ... )
+    length(unique( ... ))
+    #Note that the elements in the column District are all distinct, so they can be thought as ''labels'' for the observations. Therefore, we discard such columns when fitting the linear model.
+    fit <- lm(... ~ ... + ... , data = mydata)
+    summary(fit)
+    par(mfrow = c(2, 2))
+    plot(fit)
+dev.off()
