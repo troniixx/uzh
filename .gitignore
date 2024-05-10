@@ -129,3 +129,14 @@ dmypy.json
 .pyre/
 Computational Science/ESC403/Course Project/API Tests/Reddit/clientsecret.txt
 Computational Science/ESC403/Course Project/API Tests/Reddit/clientid.txt
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/settings.json
+.vscode/tasks.json
+ignore/.idea/aws.xml
+ignore/.idea/misc.xml
+ignore/.idea/modules.xml
+ignore/.idea/vcs.xml
+ignore/.idea/inspectionProfiles/profiles_settings.xml
+ignore/.vscode/launch.json
+ignore/.vscode/tasks.json
