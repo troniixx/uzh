@@ -1,16 +1,3 @@
-{
-    "Named Entities": [
-        [
-            31,
-            "Alice"
-        ],
-        [
-            12,
-            "Rabbit"
-        ],
-        [
-            2,
-            "Duchess"
-        ]
-    ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:16e0b34ab56ab9079cf40a74d04fa46d3c7cdf97a4026cc6b2aeab27fb71f925
+size 205

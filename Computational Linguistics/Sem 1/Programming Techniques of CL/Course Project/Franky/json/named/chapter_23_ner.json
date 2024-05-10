@@ -1,28 +1,3 @@
-{
-    "Named Entities": [
-        [
-            6,
-            "Clerval"
-        ],
-        [
-            4,
-            "Henry"
-        ],
-        [
-            1,
-            "William"
-        ],
-        [
-            1,
-            "Justine"
-        ],
-        [
-            1,
-            "Elizabeth"
-        ],
-        [
-            1,
-            "Arthur"
-        ]
-    ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:aed25b4b739790a35937a1df46d09e2200e8d6228a59bd00b0adfc724484ee04
+size 379

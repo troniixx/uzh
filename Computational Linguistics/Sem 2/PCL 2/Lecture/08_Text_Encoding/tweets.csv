@@ -1,7 +1,3 @@
-date,author,text
-2018-05-01,Philomena Cunk,What a wonderful day
-,Guido van Rossum,"Hello, world!"
-2006-08-04,Borat Sagdiyev,"This suit is black...
-
-NOT!"
-1637-08-04,Pierre de Fermat,aⁿ + bⁿ = cⁿ for n > 2
+version https://git-lfs.github.com/spec/v1
+oid sha256:d14ec9732277fe729247a9ea24803574eb4813ce4b490623d95c9922a27b92d2
+size 211

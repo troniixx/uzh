@@ -1,24 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<tweets>
-    <tweet id="1847263">
-        <date year="2018" month="5" day="1" />
-        <author>Philomena Cunk</author>
-        <text>What a wonderful day</text>
-    </tweet>
-    <tweet id="3214239">
-        <date />
-        <author>Guido van Rossum</author>
-        <text>Hello, world!</text>
-    </tweet>
-    <tweet id="4732614">
-        <author>Borat Sagdiyev</author>
-        <text>This suit is black...
-        
-        <b>NOT!</b></text>
-    </tweet>
-    <tweet id="10423298">
-        <date year="2018" month="5" day="1" />
-        <author>Pierre de Fermat</author>
-        <text>aⁿ + bⁿ = cⁿ for n &gt; 2</text>
-    </tweet>
-</tweets>
+version https://git-lfs.github.com/spec/v1
+oid sha256:a424c25ddb472d48bbc4c11448d3846c9022ce0fb23bcea5e84119a26970d77b
+size 688

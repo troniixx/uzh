@@ -1,9 +1,3 @@
-{
-    "Positive Sentiments": [],
-    "Negative Sentiments": [
-        [
-            1,
-            "fear"
-        ]
-    ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:90202fb7a6e6d37a2c5a6533147b76e4de7b076d73bbcce45347af61e7b31ede
+size 123

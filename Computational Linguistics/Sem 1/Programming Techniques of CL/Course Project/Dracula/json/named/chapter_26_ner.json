@@ -1,28 +1,3 @@
-{
-    "Named Entities": [
-        [
-            18,
-            "Count"
-        ],
-        [
-            17,
-            "Van Helsing"
-        ],
-        [
-            16,
-            "Jonathan"
-        ],
-        [
-            14,
-            "Mina"
-        ],
-        [
-            6,
-            "Seward"
-        ],
-        [
-            3,
-            "Quincey"
-        ]
-    ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fe0f2cefed8f1daf6fde1dbabb48737a91240d710dd82b66ad401cee27edf5ee
+size 383

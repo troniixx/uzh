@@ -1,30 +1,3 @@
-{
-    "Positive Sentiments": [
-        [
-            3,
-            "wonderful"
-        ],
-        [
-            3,
-            "love"
-        ],
-        [
-            2,
-            "proud"
-        ],
-        [
-            1,
-            "satisfied"
-        ]
-    ],
-    "Negative Sentiments": [
-        [
-            9,
-            "fear"
-        ],
-        [
-            1,
-            "sad"
-        ]
-    ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9a554af8ffc09457e5ed472f820f6e52f2be7c494f1eaad595f1cf4bfac4ee64
+size 412

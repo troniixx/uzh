@@ -1,9 +1,3 @@
-{
-    "Positive Sentiments": [],
-    "Negative Sentiments": [
-        [
-            1,
-            "furious"
-        ]
-    ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7401f5298b0da01857c8e2ac6ae7c795562086a8ff29454eabd4650efa43030a
+size 126

@@ -1,28 +1,3 @@
-{
-    "Named Entities": [
-        [
-            52,
-            "Alice"
-        ],
-        [
-            25,
-            "Mock Turtle"
-        ],
-        [
-            20,
-            "Gryphon"
-        ],
-        [
-            19,
-            "Duchess"
-        ],
-        [
-            14,
-            "Queen"
-        ],
-        [
-            2,
-            "King"
-        ]
-    ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a7190774e79dbe6b4d580ea223883d6acbd82c09d6ff9cd5b14909254bb1d781
+size 382
