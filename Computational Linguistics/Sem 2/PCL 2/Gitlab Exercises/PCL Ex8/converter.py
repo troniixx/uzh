@@ -1,15 +1,11 @@
 import ijson, sys
 from lxml import etree as ET
 from datetime import datetime
-from tqdm import tqdm
 import argparse
-import time, logging
-from memory_profiler import profile
+import logging
+from tqdm import tqdm
 
-NUM_WRITES = 0
-logging.basicConfig(level=logging.INFO,
-                    format="%(levelname)s:%(name)s:%(message)s",
-                    stream=sys.stdout)
+logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s:%(message)s", stream=sys.stdout)
 
 def parse_json(file_path):
     return open(file_path, "rb")
@@ -43,39 +39,47 @@ def convert_to_xml(input_file, output_file):
     
     with open(output_file, "w", encoding="utf-8") as f:
         f.write('<?xml version="1.0" encoding="utf-8"?>\n<root>')
+        num_writes = 0
         for review in reviews:
             if is_weekend(review["date"]):
                 xml_review = create_xml_review(review)
                 f.write(xml_review)
-                
-                global NUM_WRITES 
-                NUM_WRITES += 1
-                
+                num_writes += 1
         f.write("</root>")
+        
+        return num_writes
 
-    file.close()
-    
 def count_items(file_path):
-    with open(file_path, "rb") as file:
-        items = ijson.items(file, "item")
-        total_count = sum(1 for _ in items)
-    return total_count
+    with parse_json(file_path) as file:
+        return sum(1 for _ in ijson.items(file, "item"))
 
-@profile
 def main():
     parser = argparse.ArgumentParser(description="Convert JSON reviews to XML format.")
     parser.add_argument("-j", "--json_file", help="Path to the JSON file containing reviews", required=True)
     parser.add_argument("-x", "--xml", help="Filename for the outputted XML file", required=True)
     
     args = parser.parse_args()
-    
-    start_time = time.time()
-    convert_to_xml(args.json_file, args.xml)
-    end_time = time.time()
+    num_writes = convert_to_xml(args.json_file, args.xml)
 
-    logging.info(f"Execution time: {end_time - start_time:.4f} seconds")
     logging.info(f"Processed {count_items(args.json_file)} reviews from file {args.json_file}")
-    logging.info(f"Written {NUM_WRITES} reviews to {args.xml}")
+    logging.info(f"Written {num_writes} reviews to {args.xml}")
+    
 
 if __name__ == "__main__":
     main()
+
+    """
+    review.json:
+        Converting to XML: 17it [00:00, 572.75it/s]
+        INFO:root:Processed 17 reviews from file review.json
+        INFO:root:Written 6 reviews to output_cli.xml
+        
+    review_large.json:
+        Converting to XML: 6990280it [04:55, 23666.40it/s]
+        INFO:root:Processed 6990280 reviews from file review_large.json
+        INFO:root:Written 2211365 reviews to output_cli_large.xml
+        
+        Run 1: Memory Usage: 16.98 MB
+        Run 2: Memory Usage: 16.914 MB
+        
+    """
