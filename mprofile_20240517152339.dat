@@ -1,2 +1,0 @@
-CMDLINE python3 efficient_conv.py -j review.json -x output_cli.xml
-MEM 0.367188 1715952219.0568
