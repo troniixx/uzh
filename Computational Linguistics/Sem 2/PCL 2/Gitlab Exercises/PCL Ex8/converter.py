@@ -1,10 +1,12 @@
+import sys
+import ijson
+import random
 import logging
 import argparse
-import ijson, sys
 from tqdm import tqdm
-from typing import Dict
 from lxml import etree as ET
 from datetime import datetime
+from typing import Dict, Tuple, List
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s:%(message)s", stream=sys.stdout)
 
@@ -64,32 +66,67 @@ def create_xml_review(review: Dict[str, str]) -> str:
     
     return ET.tostring(review_elem, pretty_print=True, encoding="unicode")
 
-def convert_to_xml(input_file: str, output_file: str) -> int:
+def convert_to_xml(input_file: str, train_file: str, test_file: str, n: int) -> Tuple[int, int]:
     """
-    Convert JSON reviews to XML format and write to a file.
+    Convert JSON reviews to XML format and write to train and test files using reservoir sampling.
     
     Args:
         input_file (str): The path to the JSON input file.
-        output_file (str): The path to the XML output file.
+        train_file (str): The path to the XML train output file.
+        test_file (str): The path to the XML test output file.
+        n (int): The number of items in the reservoir for the test set.
     
     Returns:
-        int: The number of reviews written to the XML file.
+        Tuple[int, int]: The number of reviews written to the train and test XML files.
     """
     
     file = parse_json(input_file)
-    reviews = tqdm(ijson.items(file, "item"), desc="Converting to XML")
+    reviews = ijson.items(file, "item")
     
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write('<?xml version="1.0" encoding="utf-8"?>\n<root>')
-        num_writes = 0
-        for review in reviews:
+    reservoir = []
+    train_count = 0
+    test_count = 0
+    
+    # prepare XML files
+    with open(train_file, "w", encoding="utf-8") as train_f, open(test_file, "w", encoding="utf-8") as test_f:
+        train_f.write('<?xml version="1.0" encoding="utf-8"?>\n<root>')
+        test_f.write('<?xml version="1.0" encoding="utf-8"?>\n<root>')
+
+        # start reservoir sampling
+        for review in tqdm(reviews, desc="Processing reviews"):
             if is_weekend(review["date"]):
                 xml_review = create_xml_review(review)
-                f.write(xml_review)
-                num_writes += 1
-        f.write("</root>")
+                
+                # n = 0 edge case --> write all reviews to train file
+                if n == 0:
+                    train_f.write(xml_review)
+                    train_count += 1
+                
+                # normal case
+                else:
+                    if len(reservoir) < n:
+                        reservoir.append(xml_review)
+                    else:
+                        j = random.randint(0, train_count + test_count)
+                        if j < n:
+                            train_f.write(reservoir[j])
+                            reservoir[j] = xml_review
+                            train_count += 1
+                        else:
+                            train_f.write(xml_review)
+                            train_count += 1
+                            
+        # write remaining reviews in reservoir to test file
+        if n > 0:
+            for xml_review in reservoir:
+                test_f.write(xml_review)
+                test_count += 1
         
-        return num_writes
+        # close XML files
+        train_f.write("</root>")
+        test_f.write("</root>")
+    
+    return train_count, test_count
 
 def count_items(file_path: str) -> int:
     """
@@ -105,26 +142,31 @@ def count_items(file_path: str) -> int:
     with parse_json(file_path) as file:
         return sum(1 for _ in ijson.items(file, "item"))
 
-def main():
+def main() -> None:
     """
     Main function to parse arguments and convert JSON reviews to XML format.
     """
     
     parser = argparse.ArgumentParser(description="Convert JSON reviews to XML format.")
     parser.add_argument("-j", "--json_file", help="Path to the JSON file containing reviews", required=True)
-    parser.add_argument("-x", "--xml", help="Filename for the outputted XML file", required=True)
+    parser.add_argument("-t", "--xml_test", help="Filename for the outputted XML test file", required=True)
+    parser.add_argument("-r", "--xml_train", help="Filename for the outputted XML train file", required=True)
+    parser.add_argument("-n", "--reservoir_size", type=int, help="Number of items in the reservoir for the test set", required=True)
     
     args = parser.parse_args()
-    num_writes = convert_to_xml(args.json_file, args.xml)
+    train_count, test_count = convert_to_xml(args.json_file, args.xml_train, args.xml_test, args.reservoir_size)
 
     logging.info(f"Processed {count_items(args.json_file)} reviews from file {args.json_file}")
-    logging.info(f"Written {num_writes} reviews to {args.xml}")
+    logging.info(f"Written {train_count} reviews to {args.xml_train}")
+    logging.info(f"Written {test_count} reviews to {args.xml_test}")
     
 
 if __name__ == "__main__":
     main()
 
     """
+    Notes:
+    
     review.json:
         Converting to XML: 17it [00:00, 572.75it/s]
         INFO:root:Processed 17 reviews from file review.json
@@ -138,4 +180,21 @@ if __name__ == "__main__":
         Run 1: Memory Usage = 16.98 MB
         Run 2: Memory Usage = 16.914 MB
         Run 3: Memory Usage = 16.9 MB
+        
+    reservoir sampling:
+        Processing reviews: 6990280it [05:44, 20267.64it/s]
+        INFO:root:Processed 6990280 reviews from file review_large.json
+        INFO:root:Written 2208365 reviews to train.xml
+        INFO:root:Written 3000 reviews to test.xml
+        
+        Run 1: Memory Usage = 21.04 MB
+        Run 2: Memory Usage = 20.09 MB
+        
+    reservoir sampling edge case (n = 0):
+        Processing reviews: 6990280it [05:45, 20207.64it/s]
+        INFO:root:Processed 6990280 reviews from file review_large.json
+        INFO:root:Written 2211365 reviews to train_edge.xml
+        INFO:root:Written 0 reviews to test_edge.xml
+        
+        Run 1: Memory Usage = 17.7 MB
     """
