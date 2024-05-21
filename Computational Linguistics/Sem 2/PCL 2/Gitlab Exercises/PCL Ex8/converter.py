@@ -91,8 +91,8 @@ def convert_to_xml(input_file: str, train_file: str, test_file: str, n: int) -> 
     
     # prepare XML files
     with open(train_file, "w", encoding="utf-8") as train_f, open(test_file, "w", encoding="utf-8") as test_f:
-        train_f.write('<?xml version="1.0" encoding="utf-8"?>\n<root>')
-        test_f.write('<?xml version="1.0" encoding="utf-8"?>\n<root>')
+        train_f.write("<?xml version='1.0' encoding='utf-8'?>\n<root>")
+        test_f.write("<?xml version='1.0' encoding='utf-8'?>\n<root>")
         
         # start reservoir sampling
         for review in tqdm(reviews, desc="Processing reviews"):
@@ -200,4 +200,5 @@ if __name__ == "__main__":
         Run 1: Memory Usage = 21.04 MiB
         Run 2: Memory Usage = 20.09 MiB
         Run 3: Memory Usage = 20.75 MiB
+        Run 4: Memory Usage = 20.95 MiB
     """

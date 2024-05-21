@@ -1,0 +1,12 @@
+Logged Statistics
+        Processing reviews: 6990280it [05:44, 20267.64it/s]
+        INFO:root:Processed 6990280 reviews from file review_large.json
+        INFO:root:Written 2208365 reviews to train.xml
+        INFO:root:Written 3000 reviews to test.xml
+
+Memory Usage:
+        Run 1: 21.04 MiB
+        Run 2: 20.09 MiB
+        Run 3: 20.75 MiB
+        Run 4: 20.95 MiB
+        Average: 20.71 MiB
