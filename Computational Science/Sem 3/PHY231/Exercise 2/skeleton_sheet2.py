@@ -82,6 +82,7 @@ def ex1():
     # The younger group is significantly faster than the older group, with a mean time difference of about 25.21 hours.
 
     # c)
+    
 
     # d)
 
@@ -94,9 +95,27 @@ def ex2():
     m = radiation[:, 0]
     u = radiation[:, 1]
 
-    print(f"The mean radiation (including mean uncertainty) is {mean(m):.6f} +/- {mean_uncertainty(u):.7f} mSv.")
+    weights = 1 / (u ** 2)
+    w_avg = np.sum(m * weights)/np.sum(weights)
 
+    w_avg_uncertain = np.sqrt(1 / np.sum(weights))
 
+    yearly = w_avg * 8760
+    yearly_uncertain = w_avg_uncertain * 8760
+
+    print(f"Weighted average radiation level: {yearly:.3f} mSv/year")
+    print(f"Uncertainty in the weighted average radiation level: {yearly_uncertain:.4f} mSv/year")
+    print(f"This leads to: {yearly:.3f} +/- {yearly_uncertain:.4f} mSv/year")
+
+    """
+    b)
+    Natural Background radiation = 2.4 mSv/year
+    My range = [2.5261, 2.6559] mSv/year
+
+    --> higher than the Natural backgroud radiation
+    --> also difference between natural and mine (0.191) is more than the uncertainty (0.0649) 
+    --> so the two values are not compatible
+    """
 
 if __name__ == '__main__':
     #ex1()
