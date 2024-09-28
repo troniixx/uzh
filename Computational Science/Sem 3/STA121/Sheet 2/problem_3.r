@@ -1,5 +1,5 @@
 # Problem 3
-# Author: Mert Erol
+# Author: Mert Erol, Kasper Powell, Ishana Rana
 
 require(mvtnorm)
 set.seed(123)

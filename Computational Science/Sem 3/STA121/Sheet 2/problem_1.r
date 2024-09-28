@@ -1,5 +1,5 @@
 # Problem 1
-# Author: Mert Erol
+# Author: Mert Erol, Kasper Powell, Ishana Rana
 
 # a)
 protein <- read.csv("/Users/merterol/Desktop/iMac27_github/uzh/Computational Science/Sem 3/STA121/Sheet 2/protein.txt", sep = "\t")

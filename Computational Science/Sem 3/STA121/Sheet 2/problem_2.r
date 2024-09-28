@@ -1,5 +1,5 @@
 # Problem 2
-# Author: Mert Erol
+# Author: Mert Erol, Kasper Powell, Ishana Rana
 
 require(maps)
 require(fields)
