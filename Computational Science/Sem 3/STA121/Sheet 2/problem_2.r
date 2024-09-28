@@ -34,4 +34,39 @@ map("world", add = TRUE)
 # b)
 
 dims_pre <- dim(pre)
+pre_scaled <- t(array(pre, c(dims_pre[1] * dims_pre[2], dims_pre[3])))
+pca <- prcomp(pre_scaled, scale = FALSE, center = TRUE)
 
+print(names(pca))
+print(str(pca))
+
+par(pty = "s", mfrow = c(2, 2), mar = c(2, 2, 2, 2))
+
+image.plot(lon, lat, array(pca$rotation[, 1], dim = dims_pre[1:2]))
+map("world", add = TRUE)
+
+image.plot(lon, lat, array(pca$rotation[, 2], dim = dims_pre[1:2]))
+map("world", add = TRUE)
+
+image.plot(lon, lat, array(pca$rotation[, 3], dim = dims_pre[1:2]))
+map("world", add = TRUE)
+
+image.plot(lon, lat, array(pca$rotation[, 4], dim = dims_pre[1:2]))
+map("world", add = TRUE)
+
+# c)
+
+par(mfrow = c(1, 1))
+var <- pca$sdev^2
+
+plot(var[-length(var)], type = "o", log = "y")
+plot(var[1:20], type = "o", log = "y", ylab = "Eigen")
+
+# d)
+
+v <- var
+error <- sqrt(2/dim(pca$rotation)[2])
+cut <- (v[-length(v)] - v[-1]) / v[-length(v)] < error
+
+plot(var[1:20], type = "o", log = "y", ylab = "Eigen")
+abline(v = which(cut) + 0.5, lty = 2, col = 2)
