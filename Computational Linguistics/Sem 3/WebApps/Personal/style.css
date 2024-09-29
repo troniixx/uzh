@@ -1,0 +1,33 @@
+body {
+    background-color: lightgrey;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+    color: black;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 70%;
+    font: Arial;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+a {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.pumpkin-pie-image {
+    width: 500px;
+    height: auto;
+}

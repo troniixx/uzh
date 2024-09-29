@@ -45,7 +45,7 @@ def mean_uncertainty(x):
 
 
 def ex1():
-    data = np.loadtxt("/Users/merterol/Desktop/VSCode/uzh/Computational Science/Sem 3/PHY231/Exercise 1/ironman.txt")
+    data = np.loadtxt("/Users/merterol/Desktop/iMac27_github/uzh/Computational Science/Sem 3/PHY231/Exercise 1/ironman.txt")
     age = 2010 - data[:, 1]
     total_time = data[:, 2]
 
@@ -89,7 +89,7 @@ def ex1():
     # e)
 
 def ex2():
-    radiation = np.loadtxt("/Users/merterol/Desktop/VSCode/uzh/Computational Science/Sem 3/PHY231/Exercise 2/radiation.txt")
+    radiation = np.loadtxt("/Users/merterol/Desktop/iMac27_github/uzh/Computational Science/Sem 3/PHY231/Exercise 2/radiation.txt")
 
     # a)
     m = radiation[:, 0]
