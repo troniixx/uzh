@@ -24,5 +24,9 @@ print(cumsum(pca$sdev^2)/9)
 
 
 #b)
-
-
+# There are 9 components that can be identified, based on the loading vectors.
+# Each component enscribes a source of protein, with clearly identifiable clusters.
+# For example, many eastern european countries are clustered around cereals.
+# Also, many middle- and western european countries are clustered around red and white meat,
+# or eggs and milk. These clear groupings seem to highlight distinguishable preferences
+# for certain sources of protein.
