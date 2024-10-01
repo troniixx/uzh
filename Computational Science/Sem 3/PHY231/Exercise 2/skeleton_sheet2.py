@@ -16,16 +16,13 @@ def mean(x):
     mean : float
         The mean of the data.
     """
-    # here goes your code
 
     return sum(x) / len(x)
 
 
 def std(x):
     """Calculate the standard deviation for an array-like object x."""
-    # here goes your code
-    print("Calculating")  # replace this with your code
-    return sqrt(variance(x))  # replace this with your code
+    return sqrt(variance(x))
 
 
 def variance(x):
@@ -43,11 +40,32 @@ def mean_uncertainty(x):
     # replace this with your code
     return s / sqrt(len(x))  # replace this with your code
 
+def covariance(x, y):
+    m_x = mean(x)
+    m_y = mean(y)
+    cov = sum((i - m_x) * (j - m_y) for i, j in zip(x, y)) / (len(x) - 1)
+    
+    return cov
+
+def correlation(x, y):
+    cov = covariance(x, y)
+    std_x = std(x)
+    std_y = std(y)
+    
+    return cov / (std_x * std_y)
+
 
 def ex1():
     data = np.loadtxt("/Users/merterol/Desktop/iMac27_github/uzh/Computational Science/Sem 3/PHY231/Exercise 1/ironman.txt")
     age = 2010 - data[:, 1]
     total_time = data[:, 2]
+    total_rank = data[:, 0]
+    swimming_time = data[:, 3]
+    swimming_rank = data[:, 4]
+    cycling_time = data[:, 5]
+    cycling_rank = data[:, 6]
+    running_time = data[:, 7]
+    running_rank = data[:, 8]
 
     # a)
     mean_age = mean(age)
@@ -60,6 +78,8 @@ def ex1():
 
     mean_total_time = mean(total_time)
     mean_total_time_uncertainty = mean_uncertainty(total_time)
+    
+    print("\n")
     print("Using my own functions:")
     print(f"The mean total time of the participants is {mean_total_time:.2f} +/- {mean_total_time_uncertainty:.2f} hours.")
     print("Using numpy functions:")
@@ -74,6 +94,7 @@ def ex1():
     younger_uncertainty = mean_uncertainty(younger_group)
     older_uncertainty = mean_uncertainty(older_group)
 
+    print("\n")
     print(f"The mean time of the younger group is {younger_mean:.2f} +/- {younger_uncertainty:.2f} hours.")
     print(f"The mean time of the older group is {older_mean:.2f} +/- {older_uncertainty:.2f} hours.")
 
@@ -87,13 +108,27 @@ def ex1():
     # d)
 
     # e)
+    
+    
+    print("\n")
+    print(f"The covariance between total rank and total time is {covariance(total_rank, total_time):.4f}")
+    print(f"The covariance between age and total time is {covariance(age, total_time):.4f}")
+    print(f"The covariance between swimming time and total time is {covariance(swimming_time, total_time):.4f}")
+    print(f"The covariance between cycling time and running time is {covariance(cycling_time, running_time):.4f}")
 
+    print("\n")
+    print(f"The correlation between total rank and total time is {correlation(total_rank, total_time):.4f}")
+    print(f"The correlation between age and total time is {correlation(age, total_time):.4f}")
+    print(f"The correlation between swimming time and total time is {correlation(swimming_time, total_time):.4f}")
+    print(f"The correlation between cycling time and running time is {correlation(cycling_time, running_time):.4f}")
+    
 def ex2():
-    radiation = np.loadtxt("/Users/merterol/Desktop/iMac27_github/uzh/Computational Science/Sem 3/PHY231/Exercise 2/radiation.txt")
-
+    DESKTOP = np.loadtxt("/Users/merterol/Desktop/iMac27_github/uzh/Computational Science/Sem 3/PHY231/Exercise 2/radiation.txt")
+    LAPTOP = np.loadtxt("/Users/merterol/uzh/Computational Science/Sem 3/PHY231/Exercise 2/radiation.txt")
+    
     # a)
-    m = radiation[:, 0]
-    u = radiation[:, 1]
+    m = LAPTOP[:, 0]
+    u = LAPTOP[:, 1]
 
     weights = 1 / (u ** 2)
     w_avg = np.sum(m * weights)/np.sum(weights)
@@ -118,5 +153,5 @@ def ex2():
     """
 
 if __name__ == '__main__':
-    #ex1()
-    ex2()  # uncomment to run ex2
+    ex1()
+    #ex2()  # uncomment to run ex2
