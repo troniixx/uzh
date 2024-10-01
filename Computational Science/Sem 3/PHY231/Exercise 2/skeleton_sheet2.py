@@ -1,5 +1,5 @@
 import numpy as np
-from math import sqrt
+from math import sqrt, ceil
 import matplotlib.pyplot as plt
 
 
@@ -57,15 +57,13 @@ def correlation(x, y):
 
 def ex1():
     data = np.loadtxt("/Users/merterol/Desktop/iMac27_github/uzh/Computational Science/Sem 3/PHY231/Exercise 1/ironman.txt")
+    total_rank = data[:, 0]
     age = 2010 - data[:, 1]
     total_time = data[:, 2]
-    total_rank = data[:, 0]
     swimming_time = data[:, 3]
-    swimming_rank = data[:, 4]
     cycling_time = data[:, 5]
-    cycling_rank = data[:, 6]
     running_time = data[:, 7]
-    running_rank = data[:, 8]
+
 
     # a)
     mean_age = mean(age)
@@ -102,14 +100,35 @@ def ex1():
     # Ranges do not overlap!
     # The younger group is significantly faster than the older group, with a mean time difference of about 25.21 hours.
 
-    # c)
-    
+    # c) & d)
+    def histo(data, n):
+        num_bins = int(1+3.322*np.log(n))
+        counts, edges = np.histogram(data, bins=num_bins)
+        bin_centers = 0.5 * (edges[:-1] + edges[1:])
 
-    # d)
+        # Plotting the histogram
+        plt.bar(bin_centers, counts, width=np.diff(edges), edgecolor='black', yerr = np.sqrt(counts), alpha=0.7)
+        plt.xlabel("Data")
+        plt.ylabel("Counts")
+        plt.title("Histogram")
+        plt.grid()
+        plt.show()
+        
+        total_counts = np.sum(counts)
+        mean = np.sum(bin_centers * counts) / total_counts if total_counts > 0 else 0
+        variance = np.sum(counts * (bin_centers - mean) ** 2) / total_counts if total_counts > 0 else 0
+        std_dev = np.sqrt(variance)
+        
+        print("\n")
+        print(f"Mean: {mean:.2f}")
+        print(f"Variance: {variance:.2f}")
+        print(f"Standard Deviation: {std_dev:.2f}")
+    
+    histo(age, len(age))  # age
+    histo(total_time, len(total_time))  # total time
+
 
     # e)
-    
-    
     print("\n")
     print(f"The covariance between total rank and total time is {covariance(total_rank, total_time):.4f}")
     print(f"The covariance between age and total time is {covariance(age, total_time):.4f}")
