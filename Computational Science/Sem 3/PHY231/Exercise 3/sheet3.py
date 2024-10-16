@@ -1,4 +1,4 @@
-"""Skeleton sheet 3 Datenanalyse University of Zurich"""
+# author: Mert Erol, 20-915-245, merol
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -50,7 +50,7 @@ def ex1(pdf):
 
     print("\nPart a)")
 
-    n = 4 # detectors
+    n = 4
     p_signal = 0.85
 
     x = range(n+1)
@@ -117,10 +117,64 @@ def ex3():
 def ex4():
     print("Exercise 4")
 
+    n = 500
+    p = 0.82
 
-if __name__ == '__main__':
+    # a)
+    k = 390
+    prob_a = 1 - stats.binom.cdf(k - 1, n, p)
+    print(f"Probability of detecting 390 or more Z-bosons: {prob_a:.4f}")
+
+    # b)
+    mu = n * p
+    sigma = np.sqrt(n * p * (1 - p))
+    x = np.arange(stats.binom.ppf(0.01, n, p), stats.binom.ppf(0.99, n, p))
+    binom_pmf = stats.binom.pmf(x, n, p)
+    norm_pdf = stats.norm.pdf(x, mu, sigma)
+
+    # c)
+    lambda_poisson = mu
+    poisson_pmf = stats.poisson.pmf(x, lambda_poisson)
+
+    # d)
+    p_decay_neutrinos = 0.18 
+    n_hour = n * (1 / 125)
+    x_neutrino = np.arange(0, int(n_hour * 3))
+    binom_pmf_neutrinos = stats.binom.pmf(x_neutrino, n_hour, p_decay_neutrinos)
+    poisson_pmf_neutrinos = stats.poisson.pmf(x_neutrino, n_hour * p_decay_neutrinos)
+
+    with PdfPages("task_4.pdf") as pdf:
+        plt.figure(figsize=(12, 10))
+
+        plt.subplot(221)
+        plt.plot(x, binom_pmf, "bo", label="Binomial PMF")
+        plt.plot(x, norm_pdf, "r-", label="Normal PDF")
+        plt.title("Binomial vs. Normal Approximation")
+        plt.legend()
+
+        plt.subplot(222)
+        plt.plot(x, binom_pmf, "bo", label="Binomial PMF")
+        plt.plot(x, poisson_pmf, "g-", label="Poisson PMF")
+        plt.title("Binomial vs. Poisson Approximation")
+        plt.legend()
+
+        plt.subplot(212)
+        plt.plot(x_neutrino, binom_pmf_neutrinos, "b-", label="Binomial Distribution")
+        plt.plot(x_neutrino, poisson_pmf_neutrinos, "g-", label="Poisson Approximation")
+        plt.title("Probability Distribution of Z-bosons Decaying to Neutrinos in One Hour")
+        plt.xlabel("Number of Z-bosons Decaying to Neutrinos")
+        plt.ylabel("Probability")
+        plt.legend()
+
+        plt.tight_layout()
+        pdf.savefig()
+        plt.close()
+
+    print("The plots were successfully saved as 'task_4.pdf'.")
+
+if __name__ == "__main__":
     #with PdfPages("Exercise 1.pdf") as pdf:
     #    ex1(pdf)
 
-    ex3()  # uncomment to run ex3
-    # ex4()  # uncomment to run ex4
+    #ex3()  # uncomment to run ex3
+    ex4()  # uncomment to run ex4
