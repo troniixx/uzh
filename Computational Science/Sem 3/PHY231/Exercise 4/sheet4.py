@@ -25,21 +25,25 @@ def a():
     plt.title("Granules vs Slope")
     plt.legend()
 
-    plt.show()
-    plt.savefig('plot_with_errorbars.pdf')
+    #plt.show()
+    plt.savefig("plots_task_a.pdf")
+    
+    print("Part a: Plots have been successfully saved as plots_task_a.pdf\n")
 
 def b():
+    print("Part b: ")
     x = 1.5
     m_uncert = ufloat(16.1, 1.0)
     q_uncert = ufloat(-2.61, 0.34)
     
     y = m_uncert * x + q_uncert
     
-    print(f"Slope of the beach for a sand grain diameter of {x} mm is {y}")
-    
-    return y
+    print(f"Slope of the beach for a sand grain diameter of {x} mm is {y}\n")
+
     
 def c():
+    print("Part c: ")
+    
     x = 1.5
     m_uncert = ufloat(16.1, 1.0)
     q_uncert = ufloat(-2.61, 0.34)
@@ -60,6 +64,6 @@ def c():
 
     
 if __name__ == "__main__":
-    #a()
-    #b()
+    a()
+    b()
     c()
