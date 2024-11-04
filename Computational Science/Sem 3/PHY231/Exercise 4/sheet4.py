@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from uncertainties import ufloat
 
-SAND = "/Users/merterol/uzh/Computational Science/Sem 3/PHY231/Exercise 4/sand.txt"
+SAND = "/Users/merterol/Desktop/iMac27_github/uzh/Computational Science/Sem 3/PHY231/Exercise 4/sand.txt"
 DF = np.loadtxt(SAND)
 
 def a():
