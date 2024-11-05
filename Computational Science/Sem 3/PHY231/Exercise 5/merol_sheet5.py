@@ -2,21 +2,90 @@
 
 from math import sqrt
 from scipy.stats import norm
+from scipy.stats import poisson
+from scipy.stats import ttest_ind
+from statsmodels.stats.proportion import proportions_ztest
 
 def ex_1():
     print("Exercise 1:")
     
     print("Part a:")
-    
+    predicted_RK = 1.0
+    measured_RK = 0.83
+    sigma_RK = 0.06
+
+    z_score_a = (measured_RK - predicted_RK) / sigma_RK
+
+    # Calculate two-tailed p-value
+    p_value_a = 2 * norm.cdf(-abs(z_score_a))
+    print("P-value for (a):", p_value_a)
+
     print("Part b:")
     
+    predicted_g = 9.70
+    measured_g = 9.90
+    sigma_predicted_g = 0.10
+    sigma_measured_g = 0.09
+
+    sigma_combined_b = (sigma_predicted_g**2 + sigma_measured_g**2)**0.5
+    z_score_b = (measured_g - predicted_g) / sigma_combined_b
+
+    # Calculate two-tailed p-value
+    p_value_b = 2 * norm.cdf(-abs(z_score_b))
+    print("P-value for (b):", p_value_b)
+    
     print("Part c:")
+    expected_events = 1.5
+    observed_events = 6
+
+    # Calculate one-tailed p-value
+    p_value_c = 1 - poisson.cdf(observed_events - 1, expected_events)
+    print("P-value for (c):", p_value_c)
     
     print("Part d:")
+    count_2019 = 50
+    count_2020 = 60
+    n_2019 = n_2020 = 50 + 60
+
+    counts = [count_2019, count_2020]
+    nobs = [n_2019, n_2020]
+
+    # Perform two-sample proportion z-test
+    _, p_value_d = proportions_ztest(counts, nobs)
+    print("P-value for (d):", p_value_d)
     
     print("Part e:")
+    expected_infection_rate = 3000 / 1e6
+    trial_population = 8924
+    observed_infections = 3
+
+    observed_infection_rate = observed_infections / trial_population
+
+    z_score_e = (observed_infection_rate - expected_infection_rate) / sqrt((expected_infection_rate * (1 - expected_infection_rate)) / trial_population)
+
+    # Calculate one-tailed p-value
+    p_value_e = norm.cdf(-abs(z_score_e))
+    print("P-value for (e):", p_value_e)
     
     print("Part f:")
+    hockey_heights = [187, 185, 183, 176, 190]
+    soccer_heights = [170, 174, 186, 178, 185, 176, 182, 184, 179, 189, 177]
+
+    # Independent two-sample t-test (unknown standard deviation)
+    _, p_value_f_ttest = ttest_ind(hockey_heights, soccer_heights, equal_var=False)
+    print("P-value for (f) using t-test:", p_value_f_ttest)
+
+    # Z-test if standard deviation is known (sigma = 5 cm)
+    sigma_known = 5
+    mean_diff = abs(sum(hockey_heights)/len(hockey_heights) - sum(soccer_heights)/len(soccer_heights))
+    n_hockey = len(hockey_heights)
+    n_soccer = len(soccer_heights)
+    sigma_combined_f = sigma_known * sqrt(1/n_hockey + 1/n_soccer)
+    z_score_f = mean_diff / sigma_combined_f
+    p_value_f_ztest = 2 * norm.cdf(-abs(z_score_f))
+    print("P-value for (f) using z-test:", p_value_f_ztest)
+    
+    print("\n")
 
 def ex_2():
     print("Exercise 2:")
@@ -57,7 +126,8 @@ def ex_2():
     f"{'is below' if is_below_annual_limit else 'exceeds'} the annual limit "
     f"({annual_limit_usv_per_hour:.4f} μSv per hour)")
     
-
+    print("\n")
+    
 def ex_3():
     print("Exercise 3:")
     m_measured = 90e24  # kg
@@ -72,7 +142,7 @@ def ex_3():
     m_neptune = 102.0e24  # kg
     d_neptune = 49.5e6    # m
     
-    sigma_combined = combined_uncertainty(sigma_m, sigma_d, rho)
+    sigma_combined = sqrt(sigma_m**2 + sigma_d**2 + 2 * rho * sigma_m * sigma_d)
     print("Combined Uncertainty (sigma_combined):", sigma_combined)
     
     diff_uranus_m = abs(m_measured - m_uranus)
@@ -86,11 +156,6 @@ def ex_3():
 
     sigma_neptune = sqrt((diff_neptune_m / sigma_m)**2 + (diff_neptune_d / sigma_d)**2)
     print("Standard Deviations from Neptune:", sigma_neptune)
-
-# Support function for ex_3
-def combined_uncertainty(sigma_m, sigma_d, rho):
-    return sqrt(sigma_m**2 + sigma_d**2 + 2 * rho * sigma_m * sigma_d)
-
 
 if __name__ == "__main__":
     ex_1()
