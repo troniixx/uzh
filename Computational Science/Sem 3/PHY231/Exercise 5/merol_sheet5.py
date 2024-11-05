@@ -10,11 +10,11 @@ def ex_1():
     print("Exercise 1:")
     
     print("Part a:")
-    predicted_RK = 1.0
-    measured_RK = 0.83
-    sigma_RK = 0.06
+    predicted_rk = 1.0
+    measured_rk = 0.83
+    sigma_rk = 0.06
 
-    z_score_a = (measured_RK - predicted_RK) / sigma_RK
+    z_score_a = (measured_rk - predicted_rk) / sigma_rk
 
     # Calculate two-tailed p-value
     p_value_a = 2 * norm.cdf(-abs(z_score_a))
