@@ -1,6 +1,6 @@
 # author: Mert Erol, 20-915-245, merol
 
-from math import sqrt
+from numpy import sqrt
 from scipy.stats import norm
 from scipy.stats import poisson
 from scipy.stats import ttest_ind
@@ -18,7 +18,7 @@ def ex_1():
 
     # Calculate two-tailed p-value
     p_value_a = 2 * norm.cdf(-abs(z_score_a))
-    print("P-value for (a):", p_value_a)
+    print("P-value for (a):", round(p_value_a, 4))
 
     print("Part b:")
     
@@ -32,7 +32,7 @@ def ex_1():
 
     # Calculate two-tailed p-value
     p_value_b = 2 * norm.cdf(-abs(z_score_b))
-    print("P-value for (b):", p_value_b)
+    print("P-value for (b):", round(p_value_b, 4))
     
     print("Part c:")
     expected_events = 1.5
@@ -40,19 +40,19 @@ def ex_1():
 
     # Calculate one-tailed p-value
     p_value_c = 1 - poisson.cdf(observed_events - 1, expected_events)
-    print("P-value for (c):", p_value_c)
+    print("P-value for (c):", round(p_value_c, 4))
     
     print("Part d:")
     count_2019 = 50
     count_2020 = 60
-    n_2019 = n_2020 = 50 + 60
+    n_2019 = n_2020 = 60 + 50
 
     counts = [count_2019, count_2020]
     nobs = [n_2019, n_2020]
 
     # Perform two-sample proportion z-test
     _, p_value_d = proportions_ztest(counts, nobs)
-    print("P-value for (d):", p_value_d)
+    print("P-value for (d):", round(p_value_d, 4))
     
     print("Part e:")
     expected_infection_rate = 3000 / 1e6
@@ -65,7 +65,7 @@ def ex_1():
 
     # Calculate one-tailed p-value
     p_value_e = norm.cdf(-abs(z_score_e))
-    print("P-value for (e):", p_value_e)
+    print("P-value for (e):", round(p_value_e, 4))
     
     print("Part f:")
     hockey_heights = [187, 185, 183, 176, 190]
@@ -73,7 +73,7 @@ def ex_1():
 
     # Independent two-sample t-test (unknown standard deviation)
     _, p_value_f_ttest = ttest_ind(hockey_heights, soccer_heights, equal_var=False)
-    print("P-value for (f) using t-test:", p_value_f_ttest)
+    print("P-value for (f) using t-test:", round(p_value_f_ttest, 4))
 
     # Z-test if standard deviation is known (sigma = 5 cm)
     sigma_known = 5
@@ -83,7 +83,7 @@ def ex_1():
     sigma_combined_f = sigma_known * sqrt(1/n_hockey + 1/n_soccer)
     z_score_f = mean_diff / sigma_combined_f
     p_value_f_ztest = 2 * norm.cdf(-abs(z_score_f))
-    print("P-value for (f) using z-test:", p_value_f_ztest)
+    print("P-value for (f) using z-test:", round(p_value_f_ztest, 4))
     
     print("\n")
 
@@ -91,12 +91,12 @@ def ex_2():
     print("Exercise 2:")
     print("Part a:")
     
-    counts = 240  # seconds
+    counts_per_minute = 240/5  
     usv_per_hour = 0.1  # corresponding to 0.1 μSv per hour
 
     # Mean and standard deviation
     mean_usv_per_hour = usv_per_hour
-    std_dev_usv_per_hour = usv_per_hour * sqrt(counts) / counts
+    std_dev_usv_per_hour = sqrt(counts_per_minute) * (usv_per_hour / counts_per_minute)
 
     # 68% interval is mean +/- 1 standard deviation
     lower_68_interval = mean_usv_per_hour - std_dev_usv_per_hour
@@ -145,17 +145,29 @@ def ex_3():
     sigma_combined = sqrt(sigma_m**2 + sigma_d**2 + 2 * rho * sigma_m * sigma_d)
     print("Combined Uncertainty (sigma_combined):", sigma_combined)
     
-    diff_uranus_m = abs(m_measured - m_uranus)
-    diff_uranus_d = abs(d_measured - d_uranus)
-    
-    sigma_uranus = sqrt((diff_uranus_m / sigma_m)**2 + (diff_uranus_d / sigma_d)**2)
-    print("Standard Deviations from Uranus:", sigma_uranus)
-    
-    diff_neptune_m = abs(m_measured - m_neptune)
-    diff_neptune_d = abs(d_measured - d_neptune)
+    sigma_uranus_m = abs(m_measured - m_uranus) / sigma_m
+    sigma_uranus_d = abs(d_measured - d_uranus) / sigma_d
+    sigma_uranus = sqrt(sigma_uranus_m**2 + sigma_uranus_d**2)
 
-    sigma_neptune = sqrt((diff_neptune_m / sigma_m)**2 + (diff_neptune_d / sigma_d)**2)
-    print("Standard Deviations from Neptune:", sigma_neptune)
+    sigma_neptune_m = abs(m_measured - m_neptune) / sigma_m
+    sigma_neptune_d = abs(d_measured - d_neptune) / sigma_d
+    sigma_neptune = sqrt(sigma_neptune_m**2 + sigma_neptune_d**2)
+
+    print("Standard deviation from Uranus:", round(sigma_uranus, 4))
+    print("Standard deviation from Neptune:", round(sigma_neptune, 4))
+
+    # Calculate the differences and standard deviations
+    diff_uranus = sqrt(((m_measured - m_uranus) / sigma_m)**2 +((d_measured - d_uranus) / sigma_d)**2)
+    diff_neptune = sqrt(((m_measured - m_neptune) / sigma_m)**2 +((d_measured - d_neptune) / sigma_d)**2)
+
+    # Determine the best fit
+    if diff_uranus < diff_neptune:
+        print("Uranus is the best fit.")
+        print(f"Difference in standard deviations: {diff_neptune - diff_uranus:.4f}")
+    else:
+        print("Neptune is the best fit.")
+        print(f"Difference in standard deviations: {diff_uranus - diff_neptune:.4f}")
+
 
 if __name__ == "__main__":
     ex_1()
