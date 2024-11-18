@@ -65,12 +65,27 @@ def chi2(x, y, err):
     """
     return np.sum(((x - y) / err) ** 2)  # Implemented chi2 calculation
 
+def chi2_2b(R):
+    """Calculate chi2 in dependence of the resistance considering uncertainties."""
+    # Calculate the predicted current using Ohm"s Law
+    current_pred = current_ohmslaw(voltage, R)
+    
+    # Calculate chi2, including the uncertainties
+    chi2val = np.sum(((current - current_pred) ** 2) / (uncertainties ** 2))
+    
+    return chi2val
+
 DATA = np.loadtxt("/Users/merterol/uzh/Computational Science/Sem 3/PHY231/Exercise 6/current_measurements.txt")  # Load the data from the file
 DATA_UNCERT = np.loadtxt("/Users/merterol/uzh/Computational Science/Sem 3/PHY231/Exercise 6/current_measurements_uncertainties.txt")  # Load the uncertainties from the file
 
-voltage = DATA[:, 0]  # Extract the voltage from the data
-current = DATA[:, 1]  # Extract the current from the data
-uncertanties = DATA_UNCERT[:, 2]  # Extract the uncertainties from the data
+# Used in exericse 1
+voltage = DATA[:, 0]
+current = DATA[:, 1]
+
+# Used in exercise 2
+voltage_two = DATA_UNCERT[:, 0]
+current_two = DATA_UNCERT[:, 1]
+uncertainties = DATA_UNCERT[:, 2]
 
 def ex_1a():
     """Run exercise 1a."""
@@ -98,7 +113,7 @@ def chi2_1b(R):
 
     # Here is your code for exercise 1b.
     current_pred = current_ohmslaw(voltage, R)
-    chi2val = chi2(current, current_pred, uncertanties)
+    chi2val = chi2(current, current_pred, 0.2)
     return chi2val
 
 
@@ -106,14 +121,13 @@ def ex_1c():
     """Run exercise 1c."""
 
     # Define the range of resistances
-    resistances = np.linspace(1, 100, 500)  # You can adjust start, stop, and number of steps
+    resistances = np.linspace(1, 100, 500)
 
     # Calculate chi2 for each resistance value
     chi2_values = [chi2_1b(R) for R in resistances]  # List of chi2 values for each resistance
 
     # Plot the chi2 value as a function of the resistance
-    plt.figure()  # Create a new figure
-
+    plt.figure()
     plt.plot(resistances, chi2_values, label=r"$\chi^2$ vs. Resistance")
 
     # Highlight the minimum chi2 value and corresponding resistance
@@ -121,21 +135,74 @@ def ex_1c():
     best_R = resistances[np.argmin(chi2_values)]
     plt.scatter(best_R, min_chi2, color="red", label=f"Minimum $\\chi^2$ at R = {best_R:.2f} Ohms")
 
-    # Add labels, title, and legend
     plt.xlabel("Resistance (Ohms)")
     plt.ylabel(r"$\chi^2$")
     plt.title(r"$\chi^2$ vs. Resistance")
     plt.grid(True)
     plt.legend()
 
-    # Save the plot as a PNG file
     plt.savefig("ex1c.png")
+    plt.close()
+
+    print(f"Best fit resistance: {best_R:.2f} Ohms with chi^2 = {min_chi2:.2f}")
+    
+def ex_2():
+    """Run exercise 1c with uncertainties."""
+    # Define the range of resistances
+    resistances = np.linspace(1, 100, 500)  # You can adjust start, stop, and number of steps
+
+    # Calculate chi2 for each resistance value considering uncertainties
+    chi2_values = [chi2_2b(R) for R in resistances]  # List of chi2 values for each resistance
+
+    # Plot the chi2 value as a function of the resistance
+    plt.figure()  # Create a new figure
+
+    plt.plot(resistances, chi2_values, label=r'$\chi^2$ vs. Resistance')
+
+    # Highlight the minimum chi2 value and corresponding resistance
+    min_chi2 = min(chi2_values)
+    best_R = resistances[np.argmin(chi2_values)]
+    plt.scatter(best_R, min_chi2, color='red', label=f'Minimum $\\chi^2$ at R = {best_R:.2f} Ohms')
+
+    # Add labels, title, and legend
+    plt.xlabel('Resistance (Ohms)')
+    plt.ylabel(r'$\chi^2$')
+    plt.title(r'$\chi^2$ vs. Resistance')
+    plt.legend()
+
+    # Save the plot as a PNG file
+    plt.savefig("ex1c_with_uncertainties.png")
 
     # Close the figure
     plt.close()
 
     # Print the best fit resistance value and chi^2
-    print(f"Best fit resistance: {best_R:.2f} Ohms with chi^2 = {min_chi2:.2f}")
+    print(f"Best fit resistance: {best_R:.2f} Ohms with $\\chi^2$ = {min_chi2:.2f}")
+
+    # Now overlay the best-fit function on the measurements
+    plt.figure()  # Create a new figure
+
+    # Plot the measured current as a scatter plot
+    plt.errorbar(voltage, current, yerr=uncertainties, fmt='o', label='Measured Current', color='blue')
+
+    # Calculate the predicted current using the best-fit resistance
+    predicted_current = current_ohmslaw(voltage, best_R)
+
+    # Plot the best-fit current as a line
+    plt.plot(voltage, predicted_current, label=f'Best fit: $R = {best_R:.2f}$ Ohms', color='red')
+
+    # Add labels, title, and legend
+    plt.xlabel('Voltage (V)')
+    plt.ylabel('Current (A)')
+    plt.title('Measured Current vs. Voltage with Best Fit')
+    plt.legend()
+
+    # Save the plot as a PNG file
+    plt.savefig("ex2_best_fit.png")
+
+    # Close the figure
+    plt.close()
+
 
 
 def ex_2g():
@@ -155,6 +222,7 @@ if __name__ == "__main__":
     # You can uncomment the exercises that you don"t want to run. Here we have just one,
     # but in general you can have more.
     #ex_1a()
-    ex_1c()
+    #ex_1c()
+    ex_2()
     #ex_2g()
     #plt.show()  # comment out when submitting
