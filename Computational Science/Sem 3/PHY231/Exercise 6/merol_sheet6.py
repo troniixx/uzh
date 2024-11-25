@@ -52,17 +52,17 @@ def plot_chi_square(r_range, chi_squares, best_fit_r, uncertainty_range=None):
     plt.figure(figsize=(10, 6))
     
     # Plot chi-square curve
-    plt.plot(r_range, chi_squares, "b-", label="χ² values")
+    plt.plot(r_range, chi_squares, "b-", label="chi^2 values")
     
     # Plot vertical line at best fit R
     min_chi = np.min(chi_squares)
     plt.axvline(x=best_fit_r, color="r", linestyle="--", 
                 label=f"Best Fit R = {best_fit_r:.2f} Ω")
     
-    # If uncertainty range is provided, show horizontal line at χ²_min + 1
+    # If uncertainty range is provided, show horizontal line at chi^2_min + 1
     if uncertainty_range is not None:
         r_lower, r_upper = uncertainty_range
-        plt.axhline(y=min_chi + 1, color="g", linestyle=":",label="Δχ² = 1")
+        plt.axhline(y=min_chi + 1, color="g", linestyle=":",label="Δchi^2 = 1")
         plt.axvline(x=r_lower, color="g", linestyle=":")
         plt.axvline(x=r_upper, color="g", linestyle=":")
         
@@ -122,6 +122,7 @@ def ex1():
     print(f"Minimum chi^2: {min_chi_square:.3f}")
     
 # ---- Exercise 2 ---- #
+
 from scipy.optimize import curve_fit
 
 # Load data from file
@@ -150,9 +151,9 @@ def ex2_b():
     min_chi2 = chi2_values[min_chi2_index]
     R_min_chi2 = R_range[min_chi2_index]
 
-    plt.plot(R_range, chi2_values, label="χ²")
+    plt.plot(R_range, chi2_values, label="chi^2")
 
-    plt.axvline(x=R_min_chi2, color="red", linestyle="--", label=f"Min χ² at R = {R_min_chi2:.2f}")
+    plt.axvline(x=R_min_chi2, color="red", linestyle="--", label=f"Min chi^2 at R = {R_min_chi2:.2f}")
     plt.axvline(x=R_best_fit, color="green", linestyle="--", label=f"Best-fit R = {R_best_fit:.2f}")
     plt.legend()
 
@@ -170,7 +171,7 @@ def ex2_c():
     
     return R_best_fit
 
-# (d) Uncertainty on R using Δ(χ²) = 1 rule
+# (d) Uncertainty on R using Δ(chi^2) = 1 rule
 def ex2_d():
     R_best_fit = ex2_c()
     
