@@ -230,6 +230,6 @@ def ex2():
 
 # ---- Runner ---- #
 
-if "__main__" == __name__:
-    #ex1()
+if __name__ == "__main__":
+    ex1()
     ex2()
