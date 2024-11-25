@@ -1,256 +1,235 @@
 import numpy as np
-from scipy import optimize
-import scipy.optimize as opt
-from scipy.stats import chi2
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 
+# ---- Exercise 1 ---- #
 
-def current_ohmslaw(U, R):
-    r"""Calculate the current according to Ohm"s Law given the voltage U and resistance R.
+def load_data(filename="/Users/merterol/uzh/Computational Science/Sem 3/PHY231/Exercise 6/current_measurements.txt"):
+    """Load voltage and current measurements from file"""
+    data = np.loadtxt(filename)
+    voltage = data[:, 0]
+    current = data[:, 1]
+    return voltage, current
 
-    Ohm"s Law states that the current is given by:
+def calculate_chi_square(func, x_data, y_data, uncertainty, params):
+    """Calculate chi-square value for a given function and data"""
+    y_predicted = func(x_data, *params)
+    chi_square = np.sum(((y_data - y_predicted) / uncertainty) ** 2)
+    return chi_square
 
-    .. math::
+def ohms_law(voltage, resistance):
+    """Define Ohm"s law: I = V/R"""
+    return voltage / resistance
 
-        I = \frac{U}{R}
+def analyze_resistance_range(voltage, current, uncertainty, r_range):
+    """Calculate chi-square values for a range of resistance values"""
+    chi_squares = []
+    for r in r_range:
+        chi_sq = calculate_chi_square(ohms_law, voltage, current, uncertainty, (r,))
+        chi_squares.append(chi_sq)
+    return np.array(chi_squares)
 
-    Args:
-        U (float, array): The measured voltage.
-        R (float, array): The resistance.
-
-    Returns:
-        float or array: Value of the linear function. Shape is the broadcast shape of
-            the inputs.
-    """
-    return U / R  # Implemented Ohm"s Law: I = U / R
-
-
-def current_ohmslaw_bias(U, R, bias=None):
-    """Calculate the current according to Ohm"s Law given the voltage U and resistance R with a bias.
-
-    Ohm"s Law states that the current is given by:
-
-    .. math::
-
-        I = \frac{U}{R}
-
-    We can add a bias to the current by adding a constant to the voltage:
-
-    .. math::
-
-        I = \frac{U + bias}{R}
-
-    Args:
-        U (float, array): The measured voltage.
-        R (float, array): The resistance.
-        bias (float, array): The bias to add to the voltage. If None, no bias is added.
-
-    Returns:
-        float or array: Value of the linear function. Shape is the broadcast shape of
-            the inputs.
-    """
-    if bias is None:
-        bias = 0  # with this, we can also use the function without bias.
-    return current_ohmslaw(U, R + bias)  # Reuse code from above by calling the function
-
-
-def chi2(x, y, err):
-    """Calculate the chi2 statistic for a dataset and its predictions.
-
-    Args:
-        x (array): The first data set.
-        y (array): Predicted values for the first data set.
-        err (array): The error on the measurements of the first data set.
-
-    Returns:
-        float: The chi2 statistic.
-    """
-    return np.sum(((x - y) / err) ** 2)  # Implemented chi2 calculation
-
-def chi2_2b(R):
-    """Calculate chi2 in dependence of the resistance considering uncertainties."""
-    # Calculate the predicted current using Ohm"s Law
-    current_pred = current_ohmslaw(voltage, R)
+def plot_measurements(voltage, current, uncertainty, best_fit_r):
+    """Plot current vs voltage with error bars and best-fit line"""
+    plt.figure(figsize=(10, 6))
     
-    # Calculate chi2, including the uncertainties
-    chi2val = np.sum(((current - current_pred) ** 2) / (uncertainties ** 2))
+    # Plot data points with error bars
+    plt.errorbar(voltage, current, yerr=uncertainty, fmt="o", label="Measurements")
     
-    return chi2val
-
-DATA = np.loadtxt("/Users/merterol/uzh/Computational Science/Sem 3/PHY231/Exercise 6/current_measurements.txt")  # Load the data from the file
-DATA_UNCERT = np.loadtxt("/Users/merterol/uzh/Computational Science/Sem 3/PHY231/Exercise 6/current_measurements_uncertainties.txt")  # Load the uncertainties from the file
-
-# Used in exericse 1
-voltage = DATA[:, 0]
-current = DATA[:, 1]
-
-# Used in exercise 2
-voltage_two = DATA_UNCERT[:, 0]
-current_two = DATA_UNCERT[:, 1]
-uncertainties = DATA_UNCERT[:, 2]
-
-def ex_1a():
-    """Run exercise 1a."""
-
-    # Plot the current as a function of voltage (without the trendline)
-    plt.scatter(voltage, current, color="blue", label="Measured data", marker="o")
-
-    # Add labels and title
+    # Add best-fit line
+    v_line = np.linspace(0, max(voltage)*1.1, 100)
+    i_line = ohms_law(v_line, best_fit_r)
+    plt.plot(v_line, i_line, "r-", label=f"Best Fit (R = {best_fit_r:.2f} Ω)")
+    
     plt.xlabel("Voltage (V)")
-    plt.ylabel("Current (I)")
-    plt.title("Current vs Voltage")
-    plt.grid(True)
-
-    # Display a legend
-    plt.legend()
-    plt.savefig("/Users/merterol/uzh/Computational Science/Sem 3/PHY231/Exercise 6/current_vs_voltage.pdf", dpi=300)
-
-    plt.close()
-    print("ex1a executed and plot saved.")
-
-
-# This is an example of creating 1b composing different functions together.
-def chi2_1b(R):
-    """Calculate chi2 in dependence of the resistance."""
-
-    # Here is your code for exercise 1b.
-    current_pred = current_ohmslaw(voltage, R)
-    chi2val = chi2(current, current_pred, 0.2)
-    return chi2val
-
-
-def ex_1c():
-    """Run exercise 1c."""
-
-    # Define the range of resistances
-    resistances = np.linspace(1, 100, 500)
-
-    # Calculate chi2 for each resistance value
-    chi2_values = [chi2_1b(R) for R in resistances]  # List of chi2 values for each resistance
-
-    # Plot the chi2 value as a function of the resistance
-    plt.figure()
-    plt.plot(resistances, chi2_values, label=r"$\chi^2$ vs. Resistance")
-
-    # Highlight the minimum chi2 value and corresponding resistance
-    min_chi2 = min(chi2_values)
-    best_R = resistances[np.argmin(chi2_values)]
-    plt.scatter(best_R, min_chi2, color="red", label=f"Minimum $\\chi^2$ at R = {best_R:.2f} Ohms")
-
-    plt.xlabel("Resistance (Ohms)")
-    plt.ylabel(r"$\chi^2$")
-    plt.title(r"$\chi^2$ vs. Resistance")
+    plt.ylabel("Current (A)")
+    plt.title("Current vs Voltage Measurements with Best Fit Line")
     plt.grid(True)
     plt.legend()
+    plt.show()
 
-    plt.savefig("ex1c.png")
-    plt.close()
-
-    print(f"Best fit resistance: {best_R:.2f} Ohms with chi^2 = {min_chi2:.2f}")
+def plot_chi_square(r_range, chi_squares, best_fit_r, uncertainty_range=None):
+    """Plot chi-square vs resistance with best-fit line and uncertainty range"""
+    plt.figure(figsize=(10, 6))
     
-def ex_1():
-    ex_1a()
-    ex_1c()
-
-### ---- Exercise 2 ---- ###
-
-def current_ohmslaw(U, R, bias=0):
-    """Calculate the current with potential bias according to Ohm"s law."""
-    return (U + bias) / R
-
-def chi_squared(R, bias, voltage, current, uncertainty):
-    """Calculate the chi-squared value for given resistance R and bias."""
-    predicted_current = current_ohmslaw(voltage, R, bias)
-    return np.sum(((current - predicted_current) / uncertainty) ** 2)
-
-def fit_func(data, R, bias):
-    """Function to be fitted, combining voltage, resistance, and bias."""
-    return current_ohmslaw(data, R, bias)
-
-initial_guess = [2.0, 0.0]
-
-# Task (g): Fit using curve_fit
-def ex2_g():
-    params, cov = opt.curve_fit(fit_func, voltage_two, current_two, p0=initial_guess, sigma=uncertainties, absolute_sigma=True)
-    best_R, best_bias = params
-    std_dev_R, std_dev_bias = np.sqrt(np.diag(cov))
+    # Plot chi-square curve
+    plt.plot(r_range, chi_squares, "b-", label="χ² values")
     
-    return best_R, best_bias, cov, std_dev_R, std_dev_bias
-
-# Task (a, b, c): Plot chi-squared as a function of R and overlay best fit
-def ex2_abc():
-    best_R, best_bias, cov, std_dev_R, std_dev_bias = ex2_g()
+    # Plot vertical line at best fit R
+    min_chi = np.min(chi_squares)
+    plt.axvline(x=best_fit_r, color="r", linestyle="--", 
+                label=f"Best Fit R = {best_fit_r:.2f} Ω")
     
-    R_values = np.linspace(0.5, 5, 400)
-    chi2_values = [chi_squared(R, best_bias, voltage_two, current_two, uncertainties) for R in R_values]
-
-    plt.figure(figsize=(10, 5))
-    plt.plot(R_values, chi2_values, label="Chi-squared")
-    plt.axvline(x=best_R, color="r", linestyle="--", label=f"Best R = {best_R:.2f} Ohms, Bias = {best_bias:.2f}")
-    plt.xlabel("Resistance R (ohms)")
-    plt.ylabel("Chi-squared")
-    plt.title("Chi-squared vs. Resistance")
+    # If uncertainty range is provided, show horizontal line at χ²_min + 1
+    if uncertainty_range is not None:
+        r_lower, r_upper = uncertainty_range
+        plt.axhline(y=min_chi + 1, color="g", linestyle=":",label="Δχ² = 1")
+        plt.axvline(x=r_lower, color="g", linestyle=":")
+        plt.axvline(x=r_upper, color="g", linestyle=":")
+        
+    plt.xlabel("Resistance (Ω)")
+    plt.ylabel("chi^2")
+    plt.title("chi^2 vs Resistance")
+    plt.grid(True)
     plt.legend()
+    plt.show()
+
+def linear_regression(x, y, uncertainty):
+    w = 1 / (uncertainty ** 2)
+    delta = np.sum(w) * np.sum(w * x * x) - (np.sum(w * x)) ** 2
+    m = (np.sum(w) * np.sum(w * x * y) - np.sum(w * x) * np.sum(w * y)) / delta
+    return m
+
+def find_uncertainty_range(r_range, chi_squares, min_chi_square):
+    delta_chi_square = chi_squares - min_chi_square
+    indices = np.where(delta_chi_square <= 1)[0]
+    return r_range[indices[0]], r_range[indices[-1]]
+
+def ex1_main():
+    # Load data
+    voltage, current = load_data()
+    uncertainty = 0.2
+    
+    # Calculate chi-square for range of resistances
+    r_range = np.linspace(1, 10, 1000)
+    chi_squares = analyze_resistance_range(voltage, current, uncertainty, r_range)
+    
+    # Find best fit resistance
+    best_fit_index = np.argmin(chi_squares)
+    best_fit_r = r_range[best_fit_index]
+    min_chi_square = chi_squares[best_fit_index]
+    
+    # Plot measurements with best-fit line
+    plot_measurements(voltage, current, uncertainty, best_fit_r)
+    
+    # Find uncertainty range
+    r_lower, r_upper = find_uncertainty_range(r_range, chi_squares, min_chi_square)
+    uncertainty_range = (r_lower, r_upper)
+    
+    # Plot chi-square with best-fit line and uncertainty range
+    plot_chi_square(r_range, chi_squares, best_fit_r, uncertainty_range)
+    
+    # Calculate analytical result
+    analytical_r = linear_regression(voltage, current, uncertainty)
+    uncertainty_r = (r_upper - r_lower) / 2
+    
+    return best_fit_r, analytical_r, uncertainty_r, min_chi_square
+
+def ex1():
+    best_fit_r, analytical_r, uncertainty_r, min_chi_square = ex1_main()
+    print(f"Best fit resistance: {best_fit_r:.3f} Ω")
+    print(f"Analytical resistance: {analytical_r:.3f} Ω")
+    print(f"Resistance uncertainty: ±{uncertainty_r:.3f} Ω")
+    print(f"Minimum chi^2: {min_chi_square:.3f}")
+    
+# ---- Exercise 2 ---- #
+from scipy.optimize import curve_fit
+
+# Load data from file
+data = np.loadtxt("/Users/merterol/uzh/Computational Science/Sem 3/PHY231/Exercise 6/current_measurements_uncertainties.txt")
+voltage = data[:, 0]
+current = data[:, 1]
+current_uncertainty = data[:, 2]
+
+# Ohm"s law function
+def ohms_law_two(voltage, resistance, bias=0):
+    return voltage / resistance + bias
+
+# Chi-squared function
+def chi_squared_two(resistance, bias=0):
+    model = ohms_law_two(voltage, resistance, bias)
+    return np.sum(((current - model) / current_uncertainty)**2)
+
+R_range = np.linspace(0, 3, 100)
+chi2_values = [chi_squared_two(R) for R in R_range]
+
+# (b) Plot chi-squared as a function of resistance
+def ex2_b():
+    R_best_fit = ex2_c()
+    
+    min_chi2_index = np.argmin(chi2_values)
+    min_chi2 = chi2_values[min_chi2_index]
+    R_min_chi2 = R_range[min_chi2_index]
+
+    plt.plot(R_range, chi2_values, label="χ²")
+
+    plt.axvline(x=R_min_chi2, color="red", linestyle="--", label=f"Min χ² at R = {R_min_chi2:.2f}")
+    plt.axvline(x=R_best_fit, color="green", linestyle="--", label=f"Best-fit R = {R_best_fit:.2f}")
+    plt.legend()
+
+    plt.xlabel("Resistance (Ohm)")
+    plt.ylabel("chi^2")
+    plt.title("Chi-Squared as a Function of Resistance")
     plt.grid(True)
     plt.savefig("ex2.png")
 
-# Task (d): Estimate uncertainty using Delta(chi^2) = 1 rule
+
+# (c) Find minimum chi-squared and best-fit R
+def ex2_c():
+    R_best_fit = R_range[np.argmin(chi2_values)]
+    print(f"Best-fit resistance: {R_best_fit:.4f}")
+    
+    return R_best_fit
+
+# (d) Uncertainty on R using Δ(χ²) = 1 rule
 def ex2_d():
-    best_R, best_bias, cov, std_dev_R, std_dev_bias = ex2_g()
-    R_values = np.linspace(0.5, 5, 400)
-    chi2_values = [chi_squared(R, best_bias, voltage_two, current_two, uncertainties) for R in R_values]
+    R_best_fit = ex2_c()
     
-    min_chi2 = chi_squared(best_R, best_bias, voltage_two, current_two, uncertainties)
-    chi2_plus_1 = min_chi2 + 1
-    confidence_band = [R for R, chi2 in zip(R_values, chi2_values) if chi2 <= chi2_plus_1]
+    delta_chi2 = 1
+    R_uncertainty = np.interp(chi2_values[np.argmin(chi2_values)] + delta_chi2, chi2_values[::-1], R_range[::-1]) - R_best_fit
+    print(f"Uncertainty on R: {R_uncertainty:.4f}")
 
-    if confidence_band:
-        R_uncertainty = (max(confidence_band) - min(confidence_band)) / 2
-    else:
-        R_uncertainty = None
-
-    print(f"Estimated R = {best_R:.4f} ± {R_uncertainty:.4f} Ohms")
-
-# Task (e): Chi-squared calculation with fixed bias
+# (e) Add bias offset and recalculate
 def ex2_e():
-    best_R, best_bias, cov, std_dev_R, std_dev_bias = ex2_g()
+    bias = 0.7
+    R_range_bias = np.linspace(0, 3, 100)
+    chi2_values_bias = [chi_squared_two(R, bias) for R in R_range_bias]
+    R_best_fit_bias = R_range_bias[np.argmin(chi2_values_bias)]
+    print(f"Best-fit resistance with bias: {R_best_fit_bias:.4f}")
     
-    fixed_bias = 0.7
-    chi2_fixed = chi_squared(best_R, fixed_bias, voltage_two, current_two, uncertainties)
-    print(f"Chi-squared with fixed bias ({fixed_bias:.4f} A): {chi2_fixed:.4f}")
+    return R_range_bias, R_best_fit_bias, chi2_values, chi2_values_bias
 
-# Task (f): Goodness-of-fit comparison
+# (f) Compare chi-squared/ndof and calculate goodness-of-fit probability
 def ex2_f():
-    fixed_bias = 0.7
-    best_R, best_bias, cov, std_dev_R, std_dev_bias = ex2_g()
-    min_chi2 = chi_squared(best_R, best_bias, voltage_two, current_two, uncertainties)
-    chi2_fixed = chi_squared(best_R, fixed_bias, voltage_two, current_two, uncertainties)
+    R_range_bias, R_best_fit_bias, chi2_values, chi2_values_bias = ex2_e()
     
-    print(f"Chi-squared per degree of freedom without bias: {(min_chi2 / (len(current_two) - 2)):.4f}")
-    print(f"Chi-squared per degree of freedom with fixed bias: {(chi2_fixed / (len(current_two) - 2)):.4f}")
+    ndof = len(voltage) - 2  # Degrees of freedom
+    chi2_ndof = chi2_values[np.argmin(chi2_values)] / ndof
+    chi2_ndof_bias = chi2_values_bias[np.argmin(chi2_values_bias)] / ndof
+    print(f"chi^2/ndof without bias: {chi2_ndof:.4f}")
+    print(f"chi^2/ndof with bias: {chi2_ndof_bias:.4f}")
 
-# Task (h): Analyzing covariance matrix
+# (g) Use curve_fit for simultaneous optimization
+def ex2_g():
+    R_best_fit = ex2_c()
+    bias = 0.7
+    
+    popt, pcov = curve_fit(ohms_law_two, voltage, current, sigma=current_uncertainty, absolute_sigma=True, p0=[R_best_fit, bias])
+    R_fit, bias_fit = popt
+    print(f"Curve_fit resistance: {R_fit:.4f}")
+    print(f"Curve_fit bias: {bias_fit:.4f}")
+    
+    return pcov
+
+# (h) Calculate uncertainties and correlation coefficient
 def ex2_h():
-    best_R, best_bias, cov, std_dev_R, std_dev_bias = ex2_g()
+    pcov = ex2_g()
     
-    print("Covariance matrix:")
-    print(cov)
-    print(f"Standard deviation of R: {std_dev_R:.4f}")
-    print(f"Standard deviation of bias: {std_dev_bias:.4f}")
-    print(f"Correlation coefficient between R and bias: {cov[0, 1] / (std_dev_R * std_dev_bias):.4f}")
+    perr = np.sqrt(np.diag(pcov))
+    R_fit_uncertainty, bias_fit_uncertainty = perr
+    corr_coeff = pcov[0, 1] / (perr[0] * perr[1])
+    print(f"Uncertainty on R from curve_fit: {R_fit_uncertainty:.4f}")
+    print(f"Correlation coefficient: {corr_coeff:.4f}")
     
-def ex_2():
-    ex2_g()
-    ex2_abc()
+def ex2():
+    ex2_b()
+    ex2_c()
     ex2_d()
     ex2_e()
     ex2_f()
     ex2_h()
 
-if __name__ == "__main__":
-    # You can uncomment the exercises that you don"t want to run. Here we have just one,
-    # but in general you can have more.
-    
-    ex_1()
-    ex_2()
-    #plt.show()  # comment out when submitting
+# ---- Runner ---- #
+
+if "__main__" == __name__:
+    #ex1()
+    ex2()
