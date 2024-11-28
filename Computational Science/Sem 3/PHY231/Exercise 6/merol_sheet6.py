@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # ---- Exercise 1 ---- #
 
-def load_data(filename="/Users/merterol/uzh/Computational Science/Sem 3/PHY231/Exercise 6/current_measurements.txt"):
+def load_data(filename="current_measurements.txt"):
     """Load voltage and current measurements from file"""
     data = np.loadtxt(filename)
     voltage = data[:, 0]
@@ -51,15 +51,12 @@ def plot_chi_square(r_range, chi_squares, best_fit_r, uncertainty_range=None):
     """Plot chi-square vs resistance with best-fit line and uncertainty range"""
     plt.figure(figsize=(10, 6))
     
-    # Plot chi-square curve
     plt.plot(r_range, chi_squares, "b-", label="chi^2 values")
     
-    # Plot vertical line at best fit R
     min_chi = np.min(chi_squares)
     plt.axvline(x=best_fit_r, color="r", linestyle="--", 
                 label=f"Best Fit R = {best_fit_r:.2f} Ω")
     
-    # If uncertainty range is provided, show horizontal line at chi^2_min + 1
     if uncertainty_range is not None:
         r_lower, r_upper = uncertainty_range
         plt.axhline(y=min_chi + 1, color="g", linestyle=":",label="Δchi^2 = 1")
@@ -85,30 +82,23 @@ def find_uncertainty_range(r_range, chi_squares, min_chi_square):
     return r_range[indices[0]], r_range[indices[-1]]
 
 def ex1_main():
-    # Load data
     voltage, current = load_data()
     uncertainty = 0.2
     
-    # Calculate chi-square for range of resistances
     r_range = np.linspace(1, 10, 1000)
     chi_squares = analyze_resistance_range(voltage, current, uncertainty, r_range)
-    
-    # Find best fit resistance
+
     best_fit_index = np.argmin(chi_squares)
     best_fit_r = r_range[best_fit_index]
     min_chi_square = chi_squares[best_fit_index]
     
-    # Plot measurements with best-fit line
     plot_measurements(voltage, current, uncertainty, best_fit_r)
-    
-    # Find uncertainty range
+
     r_lower, r_upper = find_uncertainty_range(r_range, chi_squares, min_chi_square)
     uncertainty_range = (r_lower, r_upper)
     
-    # Plot chi-square with best-fit line and uncertainty range
     plot_chi_square(r_range, chi_squares, best_fit_r, uncertainty_range)
     
-    # Calculate analytical result
     analytical_r = linear_regression(voltage, current, uncertainty)
     uncertainty_r = (r_upper - r_lower) / 2
     
@@ -125,17 +115,14 @@ def ex1():
 
 from scipy.optimize import curve_fit
 
-# Load data from file
-data = np.loadtxt("/Users/merterol/uzh/Computational Science/Sem 3/PHY231/Exercise 6/current_measurements_uncertainties.txt")
+data = np.loadtxt("current_measurements_uncertainties.txt")
 voltage = data[:, 0]
 current = data[:, 1]
 current_uncertainty = data[:, 2]
 
-# Ohm"s law function
 def ohms_law_two(voltage, resistance, bias=0):
     return voltage / resistance + bias
 
-# Chi-squared function
 def chi_squared_two(resistance, bias=0):
     model = ohms_law_two(voltage, resistance, bias)
     return np.sum(((current - model) / current_uncertainty)**2)
