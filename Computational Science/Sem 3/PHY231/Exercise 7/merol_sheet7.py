@@ -10,6 +10,7 @@ def nll_ex1(alpha, data):
     return -np.sum(np.log(0.5 * (1 + alpha * data)))
 
 def ex_1():
+    print("Exercise 1:")
     data = np.loadtxt("/Users/merterol/Desktop/iMac27_github/uzh/Computational Science/Sem 3/PHY231/Exercise 7/MLE.txt")
     
     # Plot the negative-log-likelihood function for 0 <= alpha <= 1
@@ -64,7 +65,7 @@ def binned_nll(tau, data, n_bins=40, t_min=0, t_max=5):
     return nll
 
 # Part (c): Chi-Square Calculation
-def chi_squared(tau, data, n_bins=40, t_min=0, t_max=5):
+def chi_squared_2(tau, data, n_bins=40, t_min=0, t_max=5):
     """
     Calculate the chi-squared for binned data given tau.
     """
@@ -85,16 +86,17 @@ def wider_binned_nll_and_chi_squared(tau, data):
     """
     Calculate the binned NLL and Chi-squared for just 2 bins.
     """
-    return binned_nll(tau, data, n_bins=2), chi_squared(tau, data, n_bins=2)
+    return binned_nll(tau, data, n_bins=2), chi_squared_2(tau, data, n_bins=2)
 
 def ex_2():
+    print("\nExercise 2:")
     tau_values = np.linspace(1.8, 2.2, 100)
 
     unbinned_nll_values = np.array([unbinned_nll(tau, exp_data) for tau in tau_values])
 
     binned_nll_values = np.array([binned_nll(tau, exp_data) for tau in tau_values])
 
-    chi_squared_values = np.array([chi_squared(tau, exp_data) for tau in tau_values])
+    chi_squared_values = np.array([chi_squared_2(tau, exp_data) for tau in tau_values])
 
     unbinned_nll_values -= np.min(unbinned_nll_values)
     binned_nll_values -= np.min(binned_nll_values)
@@ -129,6 +131,7 @@ def chi_squared(y_observed, y_fit, uncertainties):
     return np.sum(((y_observed - y_fit) / uncertainties) ** 2)
 
 def ex_3():
+    print("\nExercise 3:")
     n_bins = 20
     bin_edges = np.linspace(-1, 1, n_bins + 1)
     bin_centers = 0.5 * (bin_edges[:-1] + bin_edges[1:])
@@ -199,6 +202,6 @@ def ex_3():
 
 
 if __name__ == "__main__":
-    #ex_1()
-    #ex_2()
+    ex_1()
+    ex_2()
     ex_3()
