@@ -1,0 +1,36 @@
+
+# question 1
+codons = ['ATG', 'ATT', 'AGG', 'TAC', 'AAG', 'GGA', 'TAG', 'GTG']
+
+# question 2
+tens = [7, 4, 6, 0, 3, 5, 1, 4, 8, 2]
+ones = [3, 1, 5, 2, 6, 2, 9, 8, 4, 1]
+
+# question 3
+sequence = 'MNREGAPGKSPEEMYIQQKVRVLLMLRKMGSNLTASEEEQGAEDVVMAFSRRRQ'
+print(composition(sequence))
+
+# question 4
+pi_poem =  'How I wish I could recollect, of circle round, '
+pi_poem += 'the exact relation Arkimedes unwound.'
+
+# question 5
+# filename 'densities.csv'
+letter_to_index = {'A': 0, 'B': 1, 'C': 2, 'D': 3}
+
+# question 6
+students = [['11-287-233', 'Justus', 'Meier', 'Justus', 'C'], 
+            ['08-609-029', 'Luna Meier', 'Meier', 'Luna', 'A'], 
+            ['11-237-784', 'Mhood', 'Hood', 'Maria', 'C'], 
+            ['08-169-553', 'Shea_Toby', 'Shea', 'Toby', 'B'], 
+            ['08-364-725', 'linC', 'Lin-Schmidt', 'Cason', 'B'], 
+            ['08-959-799', 'perez123', 'Perez Sanchez', 'Maria', 'B'], 
+            ['09-106-042', 'shayrom', 'Romero', 'Shayna', 'A']]
+
+results = [['Justus',12,13,5], ['Luna Meier',10,11,14], ['Shea_Toby',7,6,2], 
+['Mhood',8,10,3], ['linC',13,10,15], ['perez123',2,3,0], ['shayrom',5,8,4]]
+
+# question 7
+primers = ['TCAGCTAGCTCGTAGCTACAGGC', 'CAGGTCACCTGTTAGACTCAGTCG',
+           'ACGAGTCGAGCGTAGTCTAC', 'TGAAGTGTGAATAGTACTCACGAG',
+           'CGCTCATGTATCATGAGCGCA', 'TGAAGTCGAATAGTTCGACTCA']

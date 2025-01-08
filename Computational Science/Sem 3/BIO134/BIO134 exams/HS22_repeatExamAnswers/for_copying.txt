@@ -1,0 +1,47 @@
+# repeat exam BO134, programming in biology, HS22, august 23
+# variables to copy 
+
+
+# Question 1
+seq = 'TAATTTCTGACNATGGCGTCAATGGTACTCGCGNNGAG'
+
+
+# Question 2
+original = ['my', 'care', 'is', 'loss', 'of', 'care', 'by', 'old', 'care', 'done'] 
+
+
+# Question 3
+import numpy as np 
+np.random.seed(1)
+
+np.random.randint(1,7)
+
+w, n, a = guessing(3,4) # winner, number, attempt
+print('Player {} won! {} was rolled with the {}. roll.'.format(w, n, a))
+
+
+# Question 4
+items = [['fly', 'bat', 'eagle'], ['hut', 'barn', 'villa', 'castle']]
+
+
+# Question 5
+protein = 'MALWRLLPALALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAED'
+protein += 'LQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSYQLENYCN'
+
+
+# Question 6
+# filename: 'sequence.txt'
+motif = 'ACAGTCAGT'
+      
+
+# Question 7
+persons = {}
+persons['darwin'] = ['Charles Darwin','12 February 1809', '19 April 1882'] 
+persons['shakespeare'] = ['William Shakespeare', '26 April 1564','23 April 1616'] 
+persons['cervantes'] = ['Miguel de Cervantes', '29 September 1547','23 April 1616']
+persons['lincoln'] = ['Abraham Lincoln', '12 February 1809','15 April 1865']
+
+months = [['January', 31], ['February', 28], ['March', 31], ['April', 30], \
+['May', 31], ['June', 30], ['July', 31], ['August', 31], ['September', 30], \
+['October', 31], ['November', 30], ['December', 31]]
+

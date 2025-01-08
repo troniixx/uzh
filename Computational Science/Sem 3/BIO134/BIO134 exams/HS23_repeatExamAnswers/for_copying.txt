@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+
+# Question 1
+#
+# code snippet for this question
+#
+genotypes = [1, 4, 2, 1, 3, 4, 3, 4, 1, 4, 3, 2, 4, 4, 2]
+#
+
+# Question 2
+#
+# code snippet for this question
+#
+codons = ['TCG', 'ATG', 'ATT', 'TCT', 'GAC', 'ATG', 'GCG', 'TCA', 'ATG', 'GTA', 'CTC', 'GCG', 'GAG']
+#
+
+# Question 3
+#
+# code snippets for this question
+#
+print(meltingTemperature('TCAGCTAGCTCGTAGCTACAGGC'))
+print(meltingTemperature('TGAAGTGTGAATAGTACTCACGAG'))
+#
+
+# Question 4
+#
+# code snippet for this question
+#
+# filename 'protoplasts.txt'
+#
+
+# Question 5
+#
+# code snippets for this question
+#
+encoded = 'rtrjsyx ufxx, zsstynhji, zsynq ymjd fwj ltsj.'
+#
+alphabet 	= 'abcdefghijklmnopqrstuvwxyz'
+key 		= 'fghijklmnopqrstuvwxyzabcde'
+#
+
+# Question 6
+#
+# code snippets for this question
+#
+import numpy as np
+#
+binary = np.zeros(shape=(6,8),dtype=int) 
+binary[0,7] = 1
+binary[5,3] = 1
+binary[3,1:4] = 1 
+#
+
+# Question 7
+#
+# code snippets for this question
+#
+# small example from question text #################
+samples = 3
+species = 4
+data    = [1,4,15,1,3,2,6]
+indices = [0,2,0,0,2,1,2]
+indptr  = [0,2,3,5,7]
+#
+# final dataset to be used as input #################
+samples = 10
+species = 9
+data    = [1, 4, 6, 1, 2, 2, 2, 1, 5, 1, 11, 3, 11, 2, 9, 7, 5, 11, 75, 1, 6, 103, 8, 11, 51, 13, 41, 44, 52, 16, 2, 2, 2, 1, 1, 1]
+indices = [3, 4, 5, 6, 7, 2, 6, 9, 2, 9, 0, 6, 0, 2, 3, 4, 5, 6, 7, 8, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 6, 1, 7, 1, 7, 9]
+indptr  = [0, 5, 8, 10, 12, 20, 30, 31, 33, 36]
+#
+
+
