@@ -58,10 +58,43 @@ print(".")
 
 for i in range(1, len(tokens)):
     pi += len(tokens[i]) / 10**i
-    print(f"{len(tokens[i])}{tokens[i]:^10}{pi}")
+    print(f"{len(tokens[i])} {tokens[i] + (10 - len(tokens[i])) * " "}{pi}")
 
 print("=====================================")
 print("Question 5")
+
+import numpy as np
+
+letter_to_index = {'A': 0, 'B': 1, 'C': 2, 'D': 3}
+arr_zeros = np.zeros((4, 6))
+
+with open("/Users/merterol/Desktop/iMac27_github/uzh/Computational Science/Sem 3/BIO134/BIO134 exams/HS23/densities.csv", "r") as f:
+    for line in f:
+        parts = line.strip().split(",")
+        if len(parts) != 3:
+            continue
+        
+        row_label, col_str, od_str = parts
+        
+        row = letter_to_index.get(row_label.upper())
+        col = int(col_str) - 1
+        od = float(od_str)
+        
+        arr_zeros[row, col] = od
+        
+print(arr_zeros)
+wild_od = np.mean(arr_zeros[0:2, :])
+mutant_od = np.mean(arr_zeros[2:4, :])
+
+non_viable_wild = np.sum(arr_zeros[0:2, :] < 0.05)
+non_viable_mutant = np.sum(arr_zeros[2:4, :] < 0.05)
+
+print("Wild type mean OD:", wild_od)
+print("Mutant mean OD:", mutant_od)
+
+print("Non-viable wild type:", non_viable_wild)
+print("Non-viable mutant:", non_viable_mutant)
+        
 
 print("=====================================")
 print("Question 6")
@@ -76,7 +109,7 @@ students = [['11-287-233', 'Justus', 'Meier', 'Justus', 'C'],
 
 results = [['Justus',12,13,5],['Luna Meier',10,11,14],['Shea_Toby',7,6,2],['Mhood',8,10,3],['linC',13,10,15],['perez123',2,3,0], ['shayrom',5,8,4]]
 
-print("a")
+print("\na\n")
 
 def find_best(l):
     best = 0
@@ -101,7 +134,7 @@ def stalk(stus):
 print("best student:", points)
 print(f"{stalk(students)}")
 
-print("b")
+print("\nb\n")
 
 def find_group(stus, result, group):
     g = []
@@ -122,6 +155,48 @@ def summer(full_name, result):
             continue
         
     return s
+
+group_a = find_group(students, results, "A")
+group_b = find_group(students, results, "B")
+group_c = find_group(students, results, "C")
+
+sums_a = {}
+sums_b = {}
+sums_c = {}
+
+for sub in group_a:
+    sums_a[sub[1]] = summer(sub[1], results)
+for sub in group_b:
+    sums_b[sub[1]] = summer(sub[1], results)
+for sub in group_c:
+    sums_c[sub[1]] = summer(sub[1], results)
+
+sums_a_sorted = dict(sorted(sums_a.items(), key=lambda item: item[1]))
+sums_b_sorted = dict(sorted(sums_b.items(), key=lambda item: item[1]))
+sums_c_sorted = dict(sorted(sums_c.items(), key=lambda item: item[1]))
+
+def look_for_name(name):
+    for sub in students:
+        if name in sub:
+            return f"{sub[2]} {sub[3]}"
+
+def look_for_mat(name):
+    for sub in students:
+        if name in sub:
+            return sub[0]
+
+def part_b():
+    print("Group A:")
+    for key, value in sums_a_sorted.items():
+        print(f"{value} {look_for_mat(key)} {look_for_name(key)}")
+    print(f"Group average: {sum(sums_a_sorted.values()) / len(sums_a_sorted)}")
+    print("Group B:")
+    for key, value in sums_b_sorted.items():
+        print(f"{value} {look_for_mat(key)} {look_for_name(key)}")
+    print(f"Group average: {sum(sums_b_sorted.values()) / len(sums_b_sorted)}")
+    print("Group C:")
+    for key, value in sums_c_sorted.items():
+        print(f"{value} {look_for_mat(key)} {look_for_name(key)}")
+    print(f"Group average: {sum(sums_c_sorted.values()) / len(sums_c_sorted)}")
     
-print(find_group(students, results, "A"))
-print(summer("Luna Meier", results))
+part_b()

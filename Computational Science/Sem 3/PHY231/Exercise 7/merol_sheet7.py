@@ -11,7 +11,7 @@ def nll_ex1(alpha, data):
 
 def ex_1():
     print("Exercise 1:")
-    data = np.loadtxt("/Users/merterol/Desktop/iMac27_github/uzh/Computational Science/Sem 3/PHY231/Exercise 7/MLE.txt")
+    data = np.loadtxt("MLE.txt")
     
     # Plot the negative-log-likelihood function for 0 <= alpha <= 1
     alpha = np.linspace(0, 1, 100)
@@ -26,12 +26,12 @@ def ex_1():
 
     # (b) Determine the maximum likelihood estimator alpha_hat
     alpha_hat = alpha[np.argmin(nll_values)]
-    print(f"The maximum likelihood estimator α̂ is: {alpha_hat:.2f}")
+    print(f"The maximum likelihood estimator alpha_hat is: {alpha_hat:.2f}")
 
 
 ### ----- Exercise 2 ----- ###
 
-exp_data = np.loadtxt("/Users/merterol/Desktop/iMac27_github/uzh/Computational Science/Sem 3/PHY231/Exercise 7/exponential_data.txt")
+exp_data = np.loadtxt("exponential_data.txt")
 
 # Constants
 tau_true = 2
@@ -121,7 +121,7 @@ def ex_2():
     
 ### ----- Exercise 3 ----- ###
 
-poly_data = np.loadtxt("/Users/merterol/Desktop/iMac27_github/uzh/Computational Science/Sem 3/PHY231/Exercise 7/polynomial_data.txt")
+poly_data = np.loadtxt("polynomial_data.txt")
 
 def poly_func(x, *params):
     degree = len(params) - 1
