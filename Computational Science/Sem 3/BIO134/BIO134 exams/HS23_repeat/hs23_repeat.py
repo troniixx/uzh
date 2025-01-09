@@ -60,3 +60,19 @@ print("Question 4")
 print("=====================================")
 print("Question 5")
 
+encoded = 'rtrjsyx ufxx, zsstynhji, zsynq ymjd fwj ltsj.'
+key = 'fghijklmnopqrstuvwxyzabcde'
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+# Create a mapping dictionary
+decode_dict = {k: a for k, a in zip(key, alphabet)}
+
+s = ""
+
+for char in encoded:
+    if char in decode_dict:
+        s += decode_dict[char]
+    else:
+        s += char
+
+print(s)
