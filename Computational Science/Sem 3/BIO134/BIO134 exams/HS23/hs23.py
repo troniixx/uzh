@@ -200,3 +200,11 @@ def part_b():
     print(f"Group average: {sum(sums_c_sorted.values()) / len(sums_c_sorted)}")
     
 part_b()
+
+print("=====================================")
+print("Question 7")
+
+primers = ['TCAGCTAGCTCGTAGCTACAGGC', 'CAGGTCACCTGTTAGACTCAGTCG',
+            'ACGAGTCGAGCGTAGTCTAC', 'TGAAGTGTGAATAGTACTCACGAG',
+            'CGCTCATGTATCATGAGCGCA', 'TGAAGTCGAATAGTTCGACTCA']
+
