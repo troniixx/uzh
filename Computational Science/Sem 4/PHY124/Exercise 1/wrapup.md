@@ -21,5 +21,8 @@
     else:
         #code
 ```
-9. while cond: code
-    - when its condition becomes false or terminate early using “break” inside the code block
+9. when its condition becomes false or terminate early using “break” inside the code block
+```python
+    while cond:
+        #code
+```
