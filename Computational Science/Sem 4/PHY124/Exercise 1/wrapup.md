@@ -25,4 +25,8 @@
 ```python
     while cond:
         #code
+        break
+
+    while cond2:
+        #code
 ```
