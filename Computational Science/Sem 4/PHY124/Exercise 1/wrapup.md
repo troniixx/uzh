@@ -9,7 +9,7 @@
 3. using ** (e.g. 2**3 is 8)
 4. e.g. 3j or 2j + 3
 5. These are very small or very large floating points using scientific notation
-    - 1,8e-301 is 1.8 * 10 ^(-300)
+    - 1,8e-301 is 1.8 * 10 ^(-301)
 6. using print()
 7. import “module” OR from module import function
 8. conditionals
