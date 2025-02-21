@@ -6,6 +6,8 @@ for char in seq:
     if char == "N":
         break
     print(char)
+    
+#this is a test
 
 print("=====================================")
 print("Question 2:")
