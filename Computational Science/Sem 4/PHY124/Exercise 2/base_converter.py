@@ -1,7 +1,4 @@
 def convert_to_base(num, base):
-    if base < 2 or base > 36:
-        raise ValueError("Base must be between 2 and 36")
-
     if num == 0:
         return "0"
 
