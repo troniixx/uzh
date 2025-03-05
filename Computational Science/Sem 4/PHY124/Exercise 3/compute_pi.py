@@ -21,8 +21,8 @@ def compute_pi(precision=1000):
     
     pi = 4 * (arctan_half + arctan_third)
 
-    return +pi.quantize(Decimal(10) ** -precision)  # Round to requested number of decimal places
+    return +pi.quantize(Decimal(10) ** -precision)  # Force-round to requested number of decimal places
 
 # Compute π to 1000 decimal places
-pi_1000_digits = compute_pi(1000)
+pi_1000_digits = str(compute_pi(1000))
 print(pi_1000_digits[901:913])
