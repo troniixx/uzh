@@ -22,5 +22,10 @@ def ngram_precision(hyp, ref, n):
     ngram_hyp = get_ngrams(hyp, n)
     ngram_ref = get_ngrams(ref, n)
 
+    for ngram in ngram_hyp:
+        if ngram in ngram_ref:
+            correct.append(ngram)
+                
 
+    return len(correct) / hyp_len
 
