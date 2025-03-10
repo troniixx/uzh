@@ -31,7 +31,4 @@ indexes_l2 = find(l2, max_common)
 print(indexes_l1, indexes_l2)
 
 # OR as oneliner
-idx1 = find(l1, max(common(filter(l1, [" "]), filter(l2, [" "]))))
-idx2 = find(l2, max(common(filter(l1, [" "]), filter(l2, [" "]))))
-
-print(idx1, idx2)
+print(find(l1, max(common(filter(l1, [" "]), filter(l2, [" "])))), find(l2, max(common(filter(l1, [" "]), filter(l2, [" "])))))
