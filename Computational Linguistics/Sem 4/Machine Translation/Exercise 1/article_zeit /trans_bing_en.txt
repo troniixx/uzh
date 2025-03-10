@@ -1,0 +1,63 @@
+You can't rely on Facebook to do its best
+No one should be a guinea pig for algorithms, the Federal Minister of Justice replies to Mark Zuckerberg – and explains how Facebook must be regulated.
+In a guest article for ZEIT ONLINE, founder and CEO Mark Zuckerberg commented on his company Facebook. He is responding to the ongoing criticism of the social network due to data misuse and personalized advertising.
+The Federal Minister of Justice and Consumer Protection, Katarina Barley (SPD), answers him at this point.
+I wish Facebook all the best for his 15th birthday!
+At the age of 15, one's own actions can already have serious consequences, young people at this age must already bear responsibility themselves.
+I think it's good that Facebook founder Mark Zuckerberg makes it clear with his guest post on ZEIT ONLINE that he is aware of Facebook's responsibility for society.
+On crucial points, however, it reveals a lack of awareness of the real problems.
+Regulation is a useful tool
+In fact, people on social media platforms, especially Facebook, often have mixed feelings:
+The offer offers new ways of communication and opportunities to present oneself and one's messages.
+But it's also scary how well the platform knows its own self.
+The platform, for example, gives the impression of already knowing who you want to be friends with before you have come up with the idea yourself.
+It becomes problematic for users when they are suddenly hostile or even threatened via the service, which is intended to facilitate contact with friends.
+Facebook is also criticized for not fighting insults and hatred decisively enough.
+It may be that it is not in Facebook's interest to display such content. But if the company simply refers to an immature algorithm or human error to explain hostility, then this is not very convincing and does not live up to the responsibility of the company.
+This also does little to help those affected.
+It is the responsibility of the respective platform to ensure that criminal content is deleted immediately and not redistributed.
+To ensure this, we have become active in Germany with the Network Enforcement Act.
+The law also obliges Facebook to take more consistent action against criminal content.
+Another important area is the handling of personal data.
+It is plausible that it is contrary to corporate interests to sell users' data to advertising partners. After all, you can earn a lot more money with your own marketing of advertising.
+But what if there is still a data leak?
+Facebook doesn't just have a responsibility not to intentionally hand over the data.
+It must also consistently protect them from access by third parties.
+External regulation is a useful means of giving users of platforms such as Facebook security in dealing with it again.
+There must be binding rules and controls of these rules.
+But what could a control look like that creates trust but allows the freedom of users to exist?
+Firstly, we need verifiability.
+The best regulation is of no use if it is not verifiable.
+Whether it's how an algorithm filters posts for targeted misinformation, or the question of exactly the purposes for which private data is used, we can't rely on Facebook to do its best, we need to be able to verify it.
+If a company assures that it is only acting with the best of intentions, this is sometimes not enough, as the scandal surrounding the analysis company Cambridge Analytica, which illegally tapped data from 87 million Facebook users, shows.
+This does not mean that Facebook should publish its algorithm, but there must be access so that external organizations – authorities or consumer protection organizations – can test and verify how it works.
+Secondly, we must not accept discrimination. Neither by algorithms that, for example, classify the view of a certain political group as particularly relevant, nor by users who use digital platforms to agitate against other people.
+Companies must prevent all forms of discrimination.
+Politicians must develop clear international standards for this.
+Thirdly, we need clear, verifiable guidelines for IT security.
+In the long term, companies will also benefit from this, which people will then trust more.
+So that companies are not tempted to save on IT security from a short-sighted economic point of view, it is better if the standards for security are defined by law at European level.
+Fourthly, in addition to social responsibility, digital responsibility must become a matter of course for companies.
+When Mark Zuckerberg points to an as yet immature algorithm, it highlights a dilemma:
+If we were to accept such an argument, there would be no basis at all for regulation, control and enforcement of the law.
+Zuckerberg's justification that Facebook's AI systems are not perfect cannot be an excuse.
+The company must face up to its responsibility here.
+Of course, not every decision of an algorithm can be humanly verified.
+Facebook employs thousands of people worldwide who are supposed to control the content on the platform.
+However, the conditions under which they work, and especially the sheer amount of data, make it simply impossible to verify any content.
+If an algorithm does not work, then the person who used the software must bear the responsibility.
+Real humans must not be guinea pigs for testing algorithms.
+We must not stand still at the borders of the EU
+Politicians have so far achieved too little internationally to make Internet platforms such as Facebook legal requirements and to enforce them.
+Regulation for Internet companies can hardly work nationally.
+The globally operating companies can simply move their headquarters to a country with lower data protection standards and lax regulation.
+If you want to have the lavish corporate taxes of a platform, you may be willing to turn a blind eye to data protection.
+That is why we must act internationally without waiting for us to reach an agreement with the last state.
+Europe must be a role model.
+With the introduction of the General Data Protection Regulation, we have already taken a huge step here, which has exemplary character.
+However, we must not stand still at the BORDERS of the EU.
+If enough countries with a large market power lead the way, then it can be possible for data protection to become a locational advantage.
+It's not Facebook's responsibility to regulate.
+But I'm curious to see if Mark Zuckerberg is really willing to submit to global regulation that focuses on the security and needs of users.
+In the end, the business model of Facebook and other social networks is based on trust.
+And there is not much left of that today.

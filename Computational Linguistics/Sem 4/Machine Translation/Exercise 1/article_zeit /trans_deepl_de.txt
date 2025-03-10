@@ -1,0 +1,63 @@
+Wir können nicht einfach davon ausgehen, dass Facebook sein Bestes tun wird
+Sich wie Laborratten für Algorithmen behandeln zu lassen, ist keine Option, sagt die deutsche Justizministerin in einer Antwort an Mark Zuckerberg und erklärt, wie Facebook reguliert werden muss.
+In einem auf ZEIT ONLINE veröffentlichten Gastbeitrag hat Facebook-Gründer und CEO Mark Zuckerberg zur anhaltenden Kritik an seinem Unternehmen Stellung genommen, darunter Vorwürfe des Datenmissbrauchs und Bedenken wegen personalisierter Werbung.
+Die deutsche Bundesministerin der Justiz und für Verbraucherschutz, Katarina Barley, antwortet Zuckerberg in einem Gastbeitrag für ZEIT ONLINE.
+Ich wünsche Facebook alles Gute zum 15. Geburtstag!
+Wenn man dieses Alter erreicht hat, hat das eigene Verhalten ernste Konsequenzen. Jugendliche in diesem Alter müssen für ihr eigenes Handeln verantwortlich gemacht werden.
+Ich begrüße es, dass Mark Zuckerberg in seinem ZEIT ONLINE-Beitrag deutlich macht, dass er sich der gesellschaftlichen Verantwortung von Facebook bewusst ist.
+Doch in entscheidenden Punkten lässt er ein mangelndes Bewusstsein für die drängendsten Probleme erkennen.
+Regulierung kann ein sinnvoller Weg sein
+Die Menschen haben oft gemischte Gefühle, wenn es um Social-Media-Plattformen und insbesondere um Facebook geht.
+Die Seite bietet neue Wege der Kommunikation und die Möglichkeit, sich und seine Gedanken zu präsentieren.
+Aber es ist auch beunruhigend, wie gut die Plattform ihre Nutzer kennt.
+Sie vermittelt zum Beispiel das Gefühl zu wissen, mit wem man befreundet sein möchte, bevor man es selbst merkt.
+Problematisch wird es für die Nutzer, wenn sie anfangen, feindselige Nachrichten oder sogar Drohungen über Facebook zu erhalten, eine Plattform, die eigentlich nur den Kontakt mit Freunden vereinfachen soll.
+Eine Kritik an Facebook lautet, dass es nicht genug gegen Beleidigungen und Hass unternimmt.
+Es mag sein, dass es nicht im Interesse von Facebook ist, solche Inhalte zu melden, aber wenn das Unternehmen Feindseligkeit lediglich auf menschliches Versagen oder einen noch nicht ganz ausgereiften Algorithmus schiebt, ist das weder besonders überzeugend noch wird es der Verantwortung des Unternehmens gerecht.
+Es hilft auch kaum denjenigen, die das Ziel solcher Angriffe sind.
+Es liegt in der Verantwortung jeder Social-Media-Plattform, dafür zu sorgen, dass strafbare Inhalte sofort gelöscht und nicht weiterverbreitet werden.
+Um dies zu gewährleisten, hat Deutschland das Netzwerkdurchsetzungsgesetz verabschiedet.
+Das Gesetz verpflichtet soziale Netzwerke, darunter auch Facebook, stärker gegen strafbare Inhalte vorzugehen.
+Ein weiterer wichtiger Bereich ist der Umgang mit persönlichen Daten.
+Es ist logisch, dass der Verkauf von Nutzerdaten an Werbetreibende den Unternehmensinteressen zuwiderläuft, da man mit dem Verkauf von Werbung selbst viel mehr Geld verdienen kann.
+Doch was passiert, wenn Daten trotzdem durchsickern?
+Facebook steht nicht nur in der Verantwortung, Daten nicht absichtlich weiterzugeben.
+Es muss diese Daten auch aktiv vor dem Zugriff Dritter schützen.
+Externe Regulierung ist ein sinnvoller Weg, um den Nutzern von Plattformen wie Facebook ein Gefühl der Sicherheit zurückzugeben.
+Verbindliche Regeln müssen mit einer Überwachung kombiniert werden, um sicherzustellen, dass die Regeln eingehalten werden.
+Doch wie sollten solche Kontrollen aussehen, wenn sie Vertrauen schaffen sollen, ohne die Freiheit der Nutzer einzuschränken?
+Erstens brauchen wir Überprüfbarkeit.
+Selbst die besten Vorschriften nützen nichts, wenn nicht überprüft werden kann, ob sie auch umgesetzt werden.
+Ob es darum geht, wie ein Algorithmus nach absichtlich irreführenden Informationen sucht oder wie genau private Informationen verwendet werden, wir können nicht einfach davon ausgehen, dass Facebook sein Bestes tut. Wir müssen die Möglichkeit haben, dies zu überprüfen.
+Manchmal reicht es nicht aus, wenn ein Unternehmen darauf besteht, dass es die besten Absichten hat. Das zeigt der Skandal um die Beratungsfirma Cambridge Analytica, die illegal die Daten von 87 Millionen Facebook-Nutzern gesammelt hat.
+Das bedeutet nicht, dass Facebook seinen Algorithmus offenlegen muss, aber es muss Zugang gewähren, damit externe Organisationen - Regierungsbehörden oder Verbraucherschutzgruppen - testen und überprüfen können, wie dieser Algorithmus funktioniert.
+Zweitens können wir keine Form der Diskriminierung akzeptieren, sei es durch Algorithmen, die zum Beispiel die Ansichten bestimmter politischer Gruppen als besonders relevant einstufen, oder durch Nutzer, die digitale Plattformen nutzen, um andere anzugreifen.
+Unternehmen müssen jede Form der Diskriminierung verhindern.
+Die Politik muss klare internationale Standards entwickeln.
+Drittens: Wir brauchen klare, überprüfbare Vorgaben für die IT-Sicherheit.
+Langfristig werden auch die Unternehmen davon profitieren, weil die Menschen ihnen wieder vertrauen.
+Damit Unternehmen nicht in Versuchung geraten, aus kurzfristigen wirtschaftlichen Interessen an der IT-Sicherheit zu sparen, wäre es besser, wenn Sicherheitsstandards auf europäischer Ebene gesetzlich definiert würden.
+Viertens: Neben der sozialen Verantwortung muss auch das Konzept der digitalen Verantwortung zum Standard für Unternehmen werden.
+Mark Zuckerbergs Hinweis auf einen noch unvollkommenen Algorithmus weist auf dieses Dilemma hin.
+Würden wir ein solches Argument akzeptieren, gäbe es keine Grundlage für Regulierung, Kontrolle oder die Anwendung von Gesetzen.
+Zuckerbergs Rechtfertigung, dass die KI-Systeme von Facebook noch nicht perfekt sind, ist keine Entschuldigung.
+Das Unternehmen muss seiner Verantwortung gerecht werden.
+Natürlich kann nicht jede Entscheidung, die ein Algorithmus trifft, von einem Menschen überprüft werden.
+Facebook beschäftigt zwar Tausende von Menschen auf der ganzen Welt, um die Inhalte auf der Plattform zu kontrollieren.
+Aber die Bedingungen, unter denen sie arbeiten, und vor allem die schiere Menge an Daten auf der Plattform machen es unmöglich, jeden Beitrag zu überprüfen.
+Wenn ein Algorithmus nicht funktioniert, dann liegt die Verantwortung bei der Person, die die Software eingesetzt hat.
+Echte Menschen können nicht zu Laborratten für die Prüfung eines Algorithmus werden.
+Wir sollten nicht an den Grenzen der EU Halt machen
+Die Politik hat auf internationaler Ebene noch nicht genug getan, um rechtliche Rahmenbedingungen für Internetplattformen wie Facebook zu schaffen und durchzusetzen.
+Schließlich kann die Regulierung von Internetkonzernen nicht wirklich auf nationaler Ebene funktionieren.
+Global agierende Unternehmen können ihren Hauptsitz einfach in ein Land mit niedrigeren Datenschutzstandards und weniger strengen Vorschriften verlegen.
+Wer an den erheblichen Steuereinnahmen interessiert ist, die mit dem Betrieb einer solchen Plattform einhergehen, ist vielleicht bereit, beim Datenschutz ein Auge zuzudrücken.
+Deshalb müssen wir international agieren, ohne zu warten, bis wir uns mit jedem einzelnen Land geeinigt haben.
+Europa muss mit gutem Beispiel vorangehen.
+Mit der Einführung der Datenschutzgrundverordnung haben wir bereits einen gewaltigen Schritt getan, der ein starkes Zeichen setzt.
+Aber wir sollten nicht an den Grenzen der EU Halt machen.
+Wenn genügend Länder mit großer Marktmacht mit gutem Beispiel vorangehen, könnte es uns gelingen, den Datenschutz als einen wichtigen Standortvorteil zu etablieren.
+Es ist nicht die Aufgabe von Facebook, für Regulierung zu sorgen.
+Aber ich bin gespannt, ob Mark Zuckerberg wirklich bereit ist, sich an ein globales Regelwerk zu halten, das sich an den Bedürfnissen der Nutzer orientiert.
+Letztlich hängt das Geschäftsmodell von Facebook und anderen sozialen Netzwerken vom Vertrauen ab.
+Und das ist in letzter Zeit ein knappes Gut geworden.
