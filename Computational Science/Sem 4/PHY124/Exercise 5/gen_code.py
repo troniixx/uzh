@@ -18,6 +18,12 @@ def process(input_file):
 
     return sol
 
+def sorter(d):
+    for value_list in d.values():
+        value_list.sort()
+
+    return d
+
 if __name__ == "__main__":
     if len(argv) < 2:
         print("Usage: python gen_code.py <input_file>")
@@ -25,3 +31,6 @@ if __name__ == "__main__":
 
     IN = argv[1]
     print(process(IN))
+
+    # in case its not already sorted
+    # print(sorter(process(IN)))
