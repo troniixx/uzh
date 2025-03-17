@@ -20,7 +20,7 @@ def process(input_file):
 
 if __name__ == "__main__":
     if len(argv) < 2:
-        print("Usage: python genetic_code_analysis.py <input_file>")
+        print("Usage: python gen_code.py <input_file>")
         exit(1)
 
     IN = argv[1]
