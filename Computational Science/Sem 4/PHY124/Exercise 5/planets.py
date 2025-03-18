@@ -16,9 +16,9 @@ def process(input):
 
     earth_like = exoplanets[
         (exoplanets["mass_earth"] > 0.5) & 
-        (exoplanets["mass_earth"] < 1.5) & 
+        (exoplanets["mass_earth"] < 3) & 
         (exoplanets["daylight_strength"] > 0.5) & 
-        (exoplanets["daylight_strength"] < 1.5)
+        (exoplanets["daylight_strength"] < 3)
     ]
 
 
