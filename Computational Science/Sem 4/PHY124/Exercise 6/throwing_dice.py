@@ -1,44 +1,42 @@
-import matplotlib.pyplot as plt
 import numpy as np
 from sys import argv
+import matplotlib.pyplot as plt
 
-def sum_throws(data):
-    sums = []
+data = np.loadtxt(argv[1], dtype=int)
 
-    with open(data, 'r') as f:
-        for line in f:
-            nums = list(map(int, line.strip().split(' ')))
-            sums.append(sum(nums))
+sums = data.sum(axis=1)
+print("Total number of entries (from sums array):", len(sums))
 
-    return sums
+plt.figure(figsize=(6,4))
+plt.plot(range(1, 101), sums[:100], 'o', markersize=4)
+plt.xlabel('Repetition (1–100)')
+plt.ylabel('Sum of 3 dice')
+plt.title('Sum for the first 100 repetitions')
+plt.grid(True)
+plt.tight_layout()
+plt.savefig("sum_3_dice.png")
 
-def summer(data):
-    sums = sum_throws(data)
+# Create bins from 2.5 to 18.5 (so integer sums 3..18 each get their own bin)
+bins = np.arange(2.5, 19.5, 1.0)
+counts, edges = np.histogram(sums, bins=bins)
+centers = 0.5 * (edges[:-1] + edges[1:])  # bin midpoints
+yerr = np.sqrt(counts)                    # error = sqrt(N)
+xerr = 0.5                                # half-bin width
 
-    plt.histogram(sums[:100], bins=range(3, 19), density=True)
-    plt.title('Sum of 3 dice rolls')
-    plt.xlabel('Sum')
-    plt.ylabel('Frequency')
-    plt.show()
+plt.figure(figsize=(7, 5))
+# Plot the histogram (lightly colored bars)
+plt.hist(sums, bins=bins, edgecolor='black', alpha=0.3, label='Histogram')
 
-def histo(data):
-    sums = sum_throws(data)
+# Overlay the points with error bars
+plt.errorbar(centers, counts, xerr=xerr, yerr=yerr, 
+                fmt='o', color='red', ecolor='black', capsize=3,
+                label='Bin counts with error')
 
-    plt.histogram(sums, bins=range(3, 19), density=True)
-    plt.title('Sum of 3 dice rolls')
-    plt.xlabel('Sum')
-    plt.ylabel('Frequency')
-    plt.show()
+plt.title('Distribution of sums of 3 dice (10,000 throws)')
+plt.xlabel('Sum')
+plt.ylabel('Count')
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.savefig("dice_histogram.png")
 
-def histo_with_error(data):
-    pass
-
-if __name__ == '__main__':
-    if len(argv) != 2:
-        print('Usage: python throwing_dice.py <txt file>')
-        exit(1)
-
-    data = argv[1]
-    summer(data)
-    histo(data)
-    histo_with_error(data)
