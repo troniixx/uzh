@@ -17,6 +17,7 @@ def box_filter(image, size=5):
 
 
 img = plt.imread('/Users/merterol/Desktop/iMac27_github/uzh/Computational Science/Sem 4/PHY124/Exercise 7/21.png')
+img2 = plt.imread('/Users/merterol/Desktop/iMac27_github/uzh/Computational Science/Sem 4/PHY124/Exercise 7/holbein.png')
 
 # end up with a 2D version of the image
 if img.ndim == 3:
