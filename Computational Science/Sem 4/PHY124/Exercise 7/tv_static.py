@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-#low-pass filter
+#low-pass filter (looked this up online)
 def box_filter(image, size=5):
     # Reflect-pad the image so we index neighbors near borders
     pad = size // 2
@@ -27,14 +27,8 @@ else:
 
 blurred = box_filter(gray, size=35)  # try different sizes (5,9,15,...)
 
-fig, axs = plt.subplots(1,2, figsize=(10,5))
-axs[0].imshow(gray, cmap='gray')
-axs[0].set_title('Original')
-axs[0].axis('off')
-
-axs[1].imshow(blurred, cmap='gray')
-axs[1].set_title('Blurred')
-axs[1].axis('off')
-
-plt.tight_layout()
+plt.figure(figsize=(6, 6))
+plt.imshow(blurred, cmap='gray')
+plt.title('Blurred Image')
+plt.axis('off')
 plt.show()
