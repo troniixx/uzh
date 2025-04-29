@@ -1,31 +1,23 @@
-from scipy.integrate import odeint
 import numpy as np
+from scipy.integrate import odeint
 
-def projectile_motion(state, t):
+def ode(state, t, g=9.81):
     x, y, vx, vy = state
+    return [vx, vy, 0, -g]
+
+def leapfrog_integration_odeint():
     g = 9.81
-    dxdt = vx
-    dydt = vy
-    dvxdt = 0.0
-    dvydt = -g
-    return [dxdt, dydt, dvxdt, dvydt]
-
-def solve_projectile_odeint():
-    x0 = 0.0
-    y0 = 0.0
-    vx0 = 14.0
-    vy0 = 11.0
-    initial_state = [x0, y0, vx0, vy0]
-
     total_time = 4.7
-    t = np.linspace(0, total_time, 1000)
+    dt = 0.001
+    t = np.arange(0, total_time + dt, dt)
 
-    sol = odeint(projectile_motion, initial_state, t)
+    initial_state = [0.0, 0.0, 8.0, 14.0]
+    solution = odeint(ode, initial_state, t, args=(g,))
 
-    return t, sol
+    x_final, y_final = solution[-1, 0], solution[-1, 1]
+    return x_final, y_final
 
 if __name__ == "__main__":
-    t, y = solve_projectile_odeint()
-    x_final = y[-1, 0]
-    y_final = y[-1, 1]
-    print(f"Position at t=4.7s: x = {x_final:.4f} m, y = {y_final:.4f} m")
+    x_final, y_final = leapfrog_integration_odeint()
+    print(f"x = {x_final:.4f} m, y = {y_final:.4f} m")
+    print(f"{x_final},{y_final}")

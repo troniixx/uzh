@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 
 def leapfrog(f_acceleration, y0, v0, dt, n_steps):
     y = np.zeros(n_steps)
-    v = np.zeros(n_steps)
     y[0] = y0
     v_half = v0 + 0.5 * dt * f_acceleration(y0, 0)
 
@@ -33,4 +32,5 @@ plotter(y, dt=0.01)
 
 """
 https://lemesurierb.people.charleston.edu/numerical-methods-and-analysis-python/main/ODE-IVP-6-multi-step-methods-introduction-python.html
+https://en.wikipedia.org/wiki/Leapfrog_integration
 """
