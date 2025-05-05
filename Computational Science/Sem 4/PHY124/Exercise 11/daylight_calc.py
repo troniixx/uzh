@@ -3,33 +3,40 @@ import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
 from matplotlib.animation import FuncAnimation
 
-beta_day = np.pi * 2 / 365
-axis_rad = np.radians(23.5)
+
+beta_per_day = 2 * np.pi / 365 
+inclination = np.radians(23.5)
 
 def Rx(theta):
-    return np.array([[1, 0, 0],
-                    [0, np.cos(theta), np.sin(theta)],
-                    [0, -np.sin(theta), np.cos(theta)]])
+    return np.array([
+        [1, 0, 0],
+        [0, np.cos(theta), np.sin(theta)],
+        [0, -np.sin(theta), np.cos(theta)]
+    ])
 
 def Ry(theta):
-    return np.array([[np.cos(theta), 0, -np.sin(theta)],
-                    [0, 1, 0],
-                    [np.sin(theta), 0, np.cos(theta)]])
+    return np.array([
+        [np.cos(theta), 0, -np.sin(theta)],
+        [0, 1, 0],
+        [np.sin(theta), 0, np.cos(theta)]
+    ])
 
 def Rz(theta):
-    return np.array([[np.cos(theta), np.sin(theta), 0],
-                    [-np.sin(theta), np.cos(theta), 0],
-                    [0, 0, 1]])
+    return np.array([
+        [np.cos(theta), np.sin(theta), 0],
+        [-np.sin(theta), np.cos(theta), 0],
+        [0, 0, 1]
+    ])
 
-def daylight(latitude, longitude, date, time):
+def daylight(latitude, longitude, day_of_year, time_fraction):
     lat = np.radians(latitude)
     lon = np.radians(longitude)
 
-    sigma = lon + 2 * np.pi * time + beta_day * date
+    sigma = lon + 2 * np.pi * time_fraction + beta_per_day * day_of_year
 
     e_x = np.array([1, 0, 0])
 
-    e_o = Rx(beta_day * date) @ Rz(-axis_rad) @ e_x
+    e_o = Rx(beta_per_day * day_of_year) @ Rz(-inclination) @ e_x
 
     e_perp = Ry(lat) @ Rz(sigma) @ e_x
 
@@ -54,6 +61,7 @@ def update(frame):
     ax.set_title(f"Daylight Map - Hour {frame}:00 (Day {day_of_year})")
     return [img]
 
-anim = FuncAnimation(fig, update, frames=24, interval=300)
+# 6. Animate
+ani = FuncAnimation(fig, update, frames=24, interval=300)
 
 plt.show()
