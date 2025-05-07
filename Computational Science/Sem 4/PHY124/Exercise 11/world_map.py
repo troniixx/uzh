@@ -2,19 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def load_and_plot_height_data():
-    # Load the data files (assuming they're in the same directory)
-    try:
-        terrain = np.loadtxt('terrain.xyz', skiprows=1)
-        surface = np.loadtxt('surface.xyz', skiprows=1)
-    except FileNotFoundError as e:
-        print(f"Error: {e}. Please make sure the files are in the correct directory.")
-        return
-    
-    # Extract coordinates and height values
+    terrain = np.loadtxt('terrain.xyz', skiprows=1)
+    surface = np.loadtxt('surface.xyz', skiprows=1)
+
+
     x_terrain, y_terrain, z_terrain = terrain[:, 0], terrain[:, 1], terrain[:, 2]
     x_surface, y_surface, z_surface = surface[:, 0], surface[:, 1], surface[:, 2]
     
-    # Determine the grid dimensions (since spacing is 0.5m for 1km² area)
     # 1000m / 0.5m = 2000 points per side
     grid_size = 2000
     
@@ -60,5 +54,4 @@ def load_and_plot_height_data():
     plt.tight_layout()
     plt.show()
 
-# Run the function
 load_and_plot_height_data()

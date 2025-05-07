@@ -61,7 +61,6 @@ def update(frame):
     ax.set_title(f"Daylight Map - Hour {frame}:00 (Day {day_of_year})")
     return [img]
 
-# 6. Animate
 ani = FuncAnimation(fig, update, frames=24, interval=300)
 
 plt.show()
