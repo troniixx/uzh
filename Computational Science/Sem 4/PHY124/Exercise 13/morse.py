@@ -115,24 +115,28 @@ MORSE = {
 }
 
 
+# --- Decode a single Morse code sequence into a character ---
 def decode_morse(code, tree=MORSE):
     if not code:
-        return "?"
+        return "?"  # Return '?' for empty input
 
-    node = tree.get(code[0])
+    node = tree.get(code[0])  # Start at root for first symbol
     if not node:
-        return "?"
+        return "?"  # Invalid starting symbol
 
+    # Traverse the Morse tree for each symbol after the first
     for symbol in code[1:]:
         node = node.get("children", {}).get(symbol)
         if not node:
-            return "?"
+            return "?"  # Invalid path in tree
 
-    return node.get("label", "?")
+    return node.get("label", "?")  # Return decoded character or '?' if missing
 
-
+# --- Decode a full Morse message (multiple letters) ---
 def decode_message(message):
+    # Split message into Morse letters, decode each, and join into string
     return ''.join(decode_morse(letter) for letter in message.strip().split())
+
 
 
 morse_input = "- . -..- -"
