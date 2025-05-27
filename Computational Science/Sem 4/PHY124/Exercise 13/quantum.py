@@ -29,7 +29,7 @@ for i in range(1, Nx - 1):
     laplacian[i, i - 1] = 1     # Off-diagonal left
     laplacian[i, i] = -2        # Diagonal center
     laplacian[i, i + 1] = 1     # Off-diagonal right
-laplacian /= dx**2              # Scale by 1/Δx²
+laplacian /= dx**2              # Scale by 1/dx^2
 
 # --- Set Up Plot for Animation ---
 fig, ax = plt.subplots()
