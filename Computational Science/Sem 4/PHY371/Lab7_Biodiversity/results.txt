@@ -1,0 +1,29 @@
+Logistic Regression:
+===== Overall Evaluation on All Species =====
+Accuracy: 0.7609
+F1-score: 0.3038
+Mean predicted per location: 7.88
+
+SMV:
+===== Overall Evaluation on All Species =====
+Accuracy: 0.7637
+F1-score: 0.3165
+Mean predicted per location: 7.94
+
+Random Forest:
+===== Overall Evaluation on All Species =====
+Accuracy: 0.7678
+F1-score: 0.2687
+Mean predicted per location: 7.10
+
+Neural Net:
+===== Overall Evaluation on All Species =====
+Accuracy: 0.7295
+F1-score: 0.2845
+Mean predicted per location: 8.92
+
+SINR AN-Full Loss:
+===== Overall Evaluation on All Species =====
+Accuracy: 0.7700
+F1-score: 0.2567
+Mean predicted per location: 6.85
