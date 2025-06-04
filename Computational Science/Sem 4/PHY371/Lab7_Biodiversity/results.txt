@@ -18,12 +18,12 @@ Mean predicted per location: 7.10
 
 Neural Net:
 ===== Overall Evaluation on All Species =====
-Accuracy: 0.7295
-F1-score: 0.2845
-Mean predicted per location: 8.92
+Accuracy: 0.7281
+F1-score: 0.3011
+Mean predicted per location: 9.25
 
 SINR AN-Full Loss:
 ===== Overall Evaluation on All Species =====
-Accuracy: 0.7700
-F1-score: 0.2567
-Mean predicted per location: 6.85
+Accuracy: 0.7753
+F1-score: 0.2809
+Mean predicted per location: 6.95
